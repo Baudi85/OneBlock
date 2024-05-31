@@ -1,0 +1,756 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:baby_dragon_2",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"dragon_control",
+					"dragon_ride"
+				]
+			},
+			"animations": {
+				"dragon_control": "controller.animation.dragon_controll",
+				"dragon_ride": "controller.animation.dragon_ride"
+			}
+		},
+		"component_groups": {
+			//Skin Variants
+			"skin1":{
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"skin2":{
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"skin3":{
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"skin4":{
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"skin5":{
+				"minecraft:variant": {
+					"value": 5
+				}
+			},
+			"skin6":{
+				"minecraft:variant": {
+					"value": 6
+				}
+			},
+			"skin7":{
+				"minecraft:variant": {
+					"value": 7
+				}
+			},
+			"skin8":{
+				"minecraft:variant": {
+					"value": 8
+				}
+			},
+			"skin9":{
+				"minecraft:variant": {
+					"value": 9
+				}
+			},
+			"skin10":{
+				"minecraft:variant": {
+					"value": 10
+				}
+			},
+			"skin11":{
+				"minecraft:variant": {
+					"value": 11
+				}
+			},
+			"skin12":{
+				"minecraft:variant": {
+					"value": 12
+				}
+			},
+			"skin13":{
+				"minecraft:variant": {
+					"value": 13
+				}
+			},
+			"skin14":{
+				"minecraft:variant": {
+					"value": 14
+				}
+			},
+			"skin15":{
+				"minecraft:variant": {
+					"value": 15
+				}
+			},
+
+
+			"baby": {
+				"minecraft:scale": {
+					"value": 1
+				},
+				
+				"minecraft:ageable": {
+					"feed_items":[
+						"kreatik:meaty_bone",
+						"chicken",
+						"cooked_chicken",
+						"beef",
+						"cooked_beef",
+						"muttonRaw",
+						"muttonCooked",
+						"porkchop",
+						"cooked_porkchop",
+						"rabbit",
+						"cooked_rabbit",
+						"rotten_flesh"
+					],
+					"grow_up": {
+						"event": "kreatik:adult",
+						"target": "self"
+					},
+					"duration": 300
+				},
+				"minecraft:type_family": {
+					"family": [
+						"baby"
+					]
+				}
+			},
+			"adult": {
+				"minecraft:scale": {
+					"value": 2.4
+				},
+				"minecraft:tameable": {
+					"probability": 0.2,
+					"tame_items": [
+						"beef",
+						"porkchop",
+						"fish",
+						"salmon",
+						"cod"
+					],
+					"tame_event": {
+						"event": "minecraft:on_tame",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:untamed": {
+				"minecraft:despawn": {
+					"despawn_from_distance": {}
+				}
+			},
+			"minecraft:tamed": {
+				"minecraft:is_tamed": {},
+				"minecraft:behavior.owner_hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				},
+				"minecraft:behavior.player_ride_tamed": {},
+				"minecraft:behavior.follow_owner": {
+					"priority": 4,
+					"start_distance": 15,
+					"stop_distance": 5
+				},
+				"minecraft:rideable": {
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Fly Dragon",
+					"crouching_skip_interact": true,
+					"seats": [
+						{
+							"position": [0, 0.5, -0.3]
+						}
+					]
+				},				
+				"minecraft:behavior.breed": {
+					"priority": 0,
+					"speed_multiplier": 1.5
+				},
+				"minecraft:breedable": {
+					"breed_items":[
+						"beef",
+						"porkchop",
+						"fish",
+						"salmon",
+						"cod"
+					],
+					"breeds_with":{
+						"mate_type": "kreatik:baby_dragon_2",
+						"baby_type": "kreatik:baby_dragon_2"
+					},
+					"inherit_tamed": true
+				},
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {}
+			},
+			"sit": {
+				"minecraft:sittable": {},
+				"minecraft:behavior.stay_while_sitting": {},
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"any_of": [
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "kreatik:meaty_bone"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:beef"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_beef"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:muttonRaw"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:muttonCooked"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:rotten_flesh"
+							}
+						]
+					},
+					"event": "kreatik:breed"
+				}
+			},
+			"minecraft:hover": {
+				"minecraft:physics": {
+					"has_gravity": false
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "fall",
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:behavior.controlled_by_player": {
+					"priority": 2,
+					"fractional_rotation": 0.5,
+					"fractional_rotation_limit": 5
+				},
+				"minecraft:movement": {
+					"max": 0.12
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [{
+						"filters": {
+							"subject": "self",
+							"operator": "not",
+							"value": "haste",
+							"test": "has_mob_effect"
+						},
+						"event": "minecraft:gravity"
+					}]
+				}
+			},
+			"minecraft:gravity": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "fall",
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:physics": {
+					"has_gravity": true
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [{
+						"event": "minecraft:hover",
+						"filters": {
+							"all_of": [{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"value": "haste"
+								},
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"operator": "not",
+									"value": "levitation"
+								},
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"operator": "not",
+									"value": "slow_falling"
+								}
+							]
+						}
+					}]
+				}
+			},
+			"breed_sensor": {
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"all_of": [
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "kreatik:meaty_bone"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:beef"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_beef"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:muttonRaw"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:muttonCooked"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:rotten_flesh"
+							}
+						]
+					},
+					"event": "kreatik:sit"
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"blue_dragon"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:movement": {
+				"value": 0.17
+			},
+			"minecraft:behavior.float": {
+			  	"priority": 0
+			},
+			"minecraft:behavior.run_around_like_crazy": {
+			  "priority": 2,
+			  "speed_multiplier": 0.12
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": true,
+				"avoid_water": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"reach_multiplier": 2,
+				"track_target": true,
+				"speed_multiplier": 1.5
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 2.7
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:attack": {
+				"damage": 10
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 6
+			},
+			"minecraft:health": {
+				"value": 30
+			}
+		},
+		"events": {
+			
+			
+
+			"minecraft:hover": {
+				"add": {
+					"component_groups": [
+						"minecraft:hover"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:gravity"
+					]
+				}
+			},
+			"minecraft:gravity": {
+				"add": {
+					"component_groups": [
+						"minecraft:gravity"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:hover"
+					]
+				}
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"minecraft:untamed",
+						"baby"
+					]
+				}
+			},
+			"kreatik:adult": {
+				"remove": {
+					"component_groups": [
+						"baby"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"adult"
+					]
+				}
+			},
+			"kreatik:breed": {
+				"remove": {
+					"component_groups": [
+						"sit"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"breed_sensor"
+					]
+				}
+			},
+			"kreatik:sit": {
+				"remove": {
+					"component_groups": [
+						"breed_sensor"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"sit"
+					]
+				}
+			},
+			//Skin variants
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minecraft:gravity"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:hover"
+					]
+				},
+				"randomize": [
+					{
+						"weight": 100,
+						"add": {
+							"component_groups": [
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin1",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin2",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin3",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin4",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin5",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin6",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin7",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin8",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin9",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin10",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin11",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin12",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin13",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin14",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"skin15",
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:on_tame": {
+				"add": {
+					"component_groups": [
+						"minecraft:tamed",
+						"sit"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:untamed"
+					]
+				}
+			}
+		}
+	}
+}

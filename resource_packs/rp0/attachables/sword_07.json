@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "ks:sword_07",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/models/weapons/sword07",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.sword_07"
+      },
+      "animations": {
+        "hold_first_person": "animation.sword_07.hold_first_person",
+        "hold_third_person": "animation.sword_07.hold_third_person"
+      },
+      "scripts": {
+        "animate": [
+
+          {
+            "hold_first_person": "c.is_first_person"
+          },
+          {
+            "hold_third_person": "!c.is_first_person"
+          }
+        ]
+      },
+      /*"particle_effects": {
+        "arrow_trail": "overpoweredbows:amethyst_arrow_trail"
+      },*/
+      "render_controllers": [
+        "controller.render.blaze_sword"
+      ]
+    }
+  }
+}

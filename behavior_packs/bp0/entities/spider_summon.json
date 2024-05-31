@@ -1,0 +1,108 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:spider_summon",
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"minecraft:5_spider": {
+				"minecraft:spawn_entity": [
+					{
+						"num_to_spawn": 5,
+						"spawn_entity": "minecraft:spider",
+						"single_use": true,
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"spawn_event": "minecraft:entity_spawned"
+					}
+				]
+			},
+			"minecraft:1_spider": {
+				"minecraft:spawn_entity": [
+					{
+						"num_to_spawn": 1,
+						"spawn_entity": "minecraft:spider",
+						"single_use": true,
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"spawn_event": "minecraft:entity_spawned"
+					}
+				]
+			},
+			"minecraft:3_spider": {
+				"minecraft:spawn_entity": [
+					{
+						"num_to_spawn": 3,
+						"spawn_entity": "minecraft:spider",
+						"single_use": true,
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"spawn_event": "minecraft:entity_spawned"
+					}
+				]
+			},
+			"minecraft:wait_despawn": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"event": "minecraft:despawn"
+					}
+				}
+			},
+			"minecraft:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:collision_box": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 30,
+						"add": {
+							"component_groups": [
+								"minecraft:1_spider",
+								"minecraft:wait_despawn"
+							]
+						}
+					},
+					{
+						"weight": 20,
+						"add": {
+							"component_groups": [
+								"minecraft:3_spider",
+								"minecraft:wait_despawn"
+							]
+						}
+					},
+					{
+						"weight": 10,
+						"add": {
+							"component_groups": [
+								"minecraft:5_spider",
+								"minecraft:wait_despawn"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"add": {
+					"component_groups": [
+						"minecraft:despawn"
+					]
+				}
+			}
+		}
+	}
+}

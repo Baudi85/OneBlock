@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "furniture:shower_with_box",
+        "materials": { 
+          "default": "slime",
+          "box": "slime_outer",
+          "shower2": "slime"
+         },
+        "textures": {
+          "default": "textures/entity/furniture/bathroom/shower/shower"
+        },
+        "geometry": {
+          "shower": "geometry.shower",
+          "box": "geometry.shower_box"
+        },
+        "spawn_egg": {
+          "texture": "shower_with_box", 
+          "texture_index": 0
+        },
+        "scripts": {
+          "pre_animation": [
+            "variable.rotation = query.variant*45;"
+            ],
+            "animate" : [
+                "rotation_controller",
+                "spawn"
+            ]
+        },
+        "sound_effects": {
+          "place": "furniture.place"
+        },
+        "particle_effects": {
+          "on_placed": "furniture:place"
+        },
+        "animations": {
+          "spawn": "controller.animation.furniture.new_on_spawn",
+          "rotation_controller": "controller.animation.furniture.rotation",
+          "rotation_static": "animation.furniture.rotation_static",
+          "rotation_dynamic": "animation.furniture.rotation_dynamic"
+        },
+        "render_controllers": [ "controller.render.shower_with_box","controller.render.shower_box" ]
+      }
+    }
+  }

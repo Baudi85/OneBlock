@@ -1,0 +1,38 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:jetski",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/jetski"
+			},
+			"geometry": {
+				"default": "geometry.jetski"
+			},
+			"render_controllers": [
+				"controller.render.main"
+			],
+			"animations": {
+				"steering": "animation.boat.steering",
+				"sound": "animation.car.move"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"steering": "query.has_rider"
+					},
+					{
+						"sound": "query.has_rider"
+					}
+				]
+			},
+			"sound_effects": {
+				"driving": "vehicle.driving"
+			}
+		}
+	}
+}

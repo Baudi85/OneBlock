@@ -1,0 +1,13 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "kreatik:return"
+		},
+		"components": {
+			"minecraft:icon": "return_item",
+			"minecraft:render_offsets": "miscellaneous"
+		}
+	}
+}

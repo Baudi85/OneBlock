@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:triceratops",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/triceratops/triceratops"
+			},
+			"geometry": {
+				"default": "geometry.triceratops.unsaddled",
+				"saddled": "geometry.triceratops.saddled"
+			},
+			"animations": {
+				"walking": "animation.triceratops.walk",
+				"idle": "animation.triceratops.stand",
+				"sit": "animation.triceratops.sit",
+				"controller": "controller.animation.main"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"spawn_egg":{
+				"base_color": "#803f1a",
+				"overlay_color": "#c9b678"
+			},
+			"render_controllers": [
+				"controller.render.main"
+			]
+		}
+	}
+}

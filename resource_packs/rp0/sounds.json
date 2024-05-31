@@ -1,0 +1,143 @@
+//bridge-file-version: #5
+{
+	"entity_sounds": {
+		"entities": {
+			"kreatik:trex": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.trex.roar",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:brachiosaurus": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.brachiosaurus.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:brontosaurus": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.brontosaurus.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:parasaurophus": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.parasaurophus.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:spinosaurus": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.spinosaurus.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:stegosaurus": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.stegosaurus.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:triceratops": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.triceratops.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			},
+			"kreatik:velociraptor": {
+				"volume": 3,
+				"pitch": [
+					0.5,
+					1.2
+				],
+				"events": {
+					"ambient": {
+						"sound": "mob.velociraptor.ambient",
+						"volume": 3
+					},
+					"death": {
+						"sound": "mob.dino.death",
+						"volume": 3
+					}
+				}
+			}
+		}
+	}
+}

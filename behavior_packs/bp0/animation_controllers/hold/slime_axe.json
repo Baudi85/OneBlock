@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.slime_axe_hold": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "slime_axe_hold": "(query.get_equipped_item_name == 'slime_axe')"
+            }
+          ]
+        },
+        "slime_axe_hold": {
+          "on_entry": [
+            "/effect @s jump_boost 1 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'slime_axe')"
+            },
+            {
+              "slime_axe_hold2": "(query.get_equipped_item_name == 'slime_axe')"
+            }
+          ]
+        },
+        "slime_axe_hold2": {
+          "on_entry": [
+            "/effect @s jump_boost 1 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'slime_axe')"
+            },
+            {
+              "slime_axe_hold": "(query.get_equipped_item_name == 'slime_axe')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

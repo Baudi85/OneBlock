@@ -1,0 +1,23 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.furniture.rotation_static" : {
+			"loop": true,
+			"bones" : {
+				"root" : {
+					"rotation" : [ 0, "variable.rotation", 0 ]
+                }
+			}
+		},
+		"animation.furniture.rotation_dynamic" : {
+			"bones" : {
+				"root" : {
+					"rotation" : {
+						"0.0": [ 0, "(query.variant - 1)*30", 0 ],
+						"1.0": [ 0, "variable.rotation", 0 ]
+					}
+                }
+			}
+		}
+	}
+}

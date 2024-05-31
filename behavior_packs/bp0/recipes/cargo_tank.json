@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "train:cargo_tank"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"priority": 0,
+		"ingredients": [
+			{
+				"item": "iron_block",
+				"count": 2
+			},
+			{
+				"count": 2,
+				"item": "iron_ingot"
+			},
+			{
+				"item": "lapis_block",
+				"count": 2
+			}
+		],
+		"result": {
+			"item": "train:cargo_tank_spawn_egg"
+		}
+	}
+}

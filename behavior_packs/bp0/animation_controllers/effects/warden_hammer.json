@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.warden_hammer_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "warden_hammer_active": "(query.get_equipped_item_name == 'warden_hammer') && query.is_using_item" }
+          ]
+        },
+		
+        "warden_hammer_active": {
+          "on_entry": [
+            "/playsound v.warden_hammer @a ~ ~ ~",
+            "/particle ks:warden_hammer_particle ~ ~ ~",
+            "/effect @s speed 6 1",
+            "/effect @s strength 6 2",
+            "/effect @s blindness 6"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

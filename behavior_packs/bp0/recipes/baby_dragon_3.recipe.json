@@ -1,0 +1,22 @@
+{
+	"format_version" : "1.12",
+	"minecraft:recipe_shaped" : {
+		"description" : {
+			"identifier" : "kreatik:baby_dragon_3"
+		},
+		"tags" : [ "crafting_table" ],
+		"pattern" : [ " b ", " Eb", " b " ],
+		"key" : {
+			"b" : {
+				"item" : "minecraft:blaze_powder"
+			},
+			"E" : {
+				"item" : "minecraft:egg"
+			}
+		},
+		"result" : {
+			"item" : "kreatik:baby_dragon_3_spawn_egg",
+			"count" : 1
+		}
+	}
+}

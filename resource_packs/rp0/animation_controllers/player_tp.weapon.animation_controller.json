@@ -1,0 +1,498 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.weapon.root_tp" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "v.weapon = 0.0;" ],
+					"transitions" : [
+						{
+							"weapon_1" : "q.get_equipped_item_name == 'weapon_1'"
+						},
+						{
+							"weapon_2" : "q.get_equipped_item_name == 'weapon_2'"
+						},
+						{
+							"weapon_3" : "q.get_equipped_item_name == 'weapon_3'"
+						},
+						{
+							"weapon_4" : "q.get_equipped_item_name == 'weapon_4'"
+						},
+						{
+							"weapon_5" : "q.get_equipped_item_name == 'weapon_5'"
+						},
+						{
+							"weapon_6" : "q.get_equipped_item_name == 'weapon_6'"
+						},
+						{
+							"weapon_7" : "q.get_equipped_item_name == 'weapon_7'"
+						},
+						{
+							"weapon_8" : "q.get_equipped_item_name == 'weapon_8'"
+						},
+						{
+							"weapon_9" : "q.get_equipped_item_name == 'weapon_9'"
+						},
+						{
+							"weapon_10" : "q.get_equipped_item_name == 'weapon_10'"
+						}
+					],
+					"on_exit" : [ "v.weapon = 1.0;" ],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_1" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_1'"
+						},
+						{
+							"weapon_1.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_1.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_1.attack_tp" : {
+					"animations" : [ "weapon_1.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_1'"
+						},
+						{
+							"weapon_1" : "q.all_animations_finished"
+						},
+						{
+							"weapon_1.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_1.use" : {
+					"animations" : [ "weapon_1.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_1'"
+						},
+						{
+							"weapon_1" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_2" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_2'"
+						},
+						{
+							"weapon_2.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_2.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_2.attack_tp" : {
+					"animations" : [ "weapon_2.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_2'"
+						},
+						{
+							"weapon_2" : "q.all_animations_finished"
+						},
+						{
+							"weapon_2.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_2.use" : {
+					"animations" : [ "weapon_2.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_2'"
+						},
+						{
+							"weapon_2" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_3" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_3'"
+						},
+						{
+							"weapon_3.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_3.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_3.attack_tp" : {
+					"animations" : [ "weapon_3.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_3'"
+						},
+						{
+							"weapon_3" : "q.all_animations_finished"
+						},
+						{
+							"weapon_3.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_3.use" : {
+					"animations" : [ "weapon_3.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_3'"
+						},
+						{
+							"weapon_3" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_4" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_4'"
+						},
+						{
+							"weapon_4.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_4.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_4.attack_tp" : {
+					"animations" : [ "weapon_4.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_4'"
+						},
+						{
+							"weapon_4" : "q.all_animations_finished"
+						},
+						{
+							"weapon_4.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_4.use" : {
+					"animations" : [ "weapon_4.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_4'"
+						},
+						{
+							"weapon_4" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_5" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_5'"
+						},
+						{
+							"weapon_5.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_5.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_5.attack_tp" : {
+					"animations" : [ "weapon_5.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_5'"
+						},
+						{
+							"weapon_5" : "q.all_animations_finished"
+						},
+						{
+							"weapon_5.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_5.use" : {
+					"animations" : [ "weapon_5.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_5'"
+						},
+						{
+							"weapon_5" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_6" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_6'"
+						},
+						{
+							"weapon_6.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_6.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_6.attack_tp" : {
+					"animations" : [ "weapon_6.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_6'"
+						},
+						{
+							"weapon_6" : "q.all_animations_finished"
+						},
+						{
+							"weapon_6.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_6.use" : {
+					"animations" : [ "weapon_6.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_6'"
+						},
+						{
+							"weapon_6" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_7" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_7'"
+						},
+						{
+							"weapon_7.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_7.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_7.attack_tp" : {
+					"animations" : [ "weapon_7.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_7'"
+						},
+						{
+							"weapon_7" : "q.all_animations_finished"
+						},
+						{
+							"weapon_7.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_7.use" : {
+					"animations" : [ "weapon_7.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_7'"
+						},
+						{
+							"weapon_7" : "!q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_8" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_8'"
+						},
+						{
+							"weapon_8.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_8.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_8.attack_tp" : {
+					"animations" : [ "weapon_8.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_8'"
+						},
+						{
+							"weapon_8" : "q.all_animations_finished"
+						},
+						{
+							"weapon_8.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_8.use" : {
+					"animations" : [ "weapon_8.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_8'"
+						},
+						{
+							"weapon_8" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_9" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_9'"
+						},
+						{
+							"weapon_9.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_9.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_9.attack_tp" : {
+					"animations" : [ "weapon_9.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_9'"
+						},
+						{
+							"weapon_9" : "q.all_animations_finished"
+						},
+						{
+							"weapon_9.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_9.use" : {
+					"animations" : [ "weapon_9.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_9'"
+						},
+						{
+							"weapon_9" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_10" : {
+					"animations" : [ "move.arms", "bob" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_10'"
+						},
+						{
+							"weapon_10.attack_tp" : "v.attack_time"
+						},
+						{
+							"weapon_10.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_10.attack_tp" : {
+					"animations" : [ "weapon_10.attack_tp" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_10'"
+						},
+						{
+							"weapon_10" : "q.all_animations_finished"
+						},
+						{
+							"weapon_10.use" : "q.is_using_item"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				},
+				"weapon_10.use" : {
+					"animations" : [ "weapon_10.use" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_10'"
+						},
+						{
+							"weapon_10" : "q.all_animations_finished"
+						}
+					],
+					"blend_via_shortest_path" : true,
+					"blend_transition" : 0.1
+				}
+			}
+		}
+	}
+}

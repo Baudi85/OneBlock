@@ -1,0 +1,88 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.block_9": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "placed": "1.0"
+                        }
+                    ]
+                },
+                "placed": {
+                    "on_entry": [
+                        "/function replace_9"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "1.0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.block_18": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "placed": "1.0"
+                        }
+                    ]
+                },
+                "placed": {
+                    "on_entry": [
+                        "/function replace_18"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "1.0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.pick_or_drop": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "pick_up": "query.is_sneaking"
+                        }
+                    ]
+                },
+                "pick_up": {
+                    "on_entry": [
+                        "/ride @e[family=backpack, c=1, r=1] start_riding @s teleport_rider"
+                    ],
+                    "transitions": [
+                        {
+                            "drop_test": "!query.is_sneaking"
+                        }
+                    ]
+                },
+                "drop_test": {
+                    "on_entry": [
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "drop": "query.is_sneaking"
+                        }
+                    ]
+                },
+                "drop": {
+                    "on_entry": [
+                        "/ride @s evict_riders"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_sneaking"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

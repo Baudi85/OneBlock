@@ -1,0 +1,51 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:velociraptor_egg",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"component_groups": {
+			"born": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"spawn_entity": "kreatik:velociraptor",
+							"num_to_spawn": 1,
+							"max_wait_time": 0,
+							"min_wait_time": 0,
+							"single_use": true
+						}
+					]
+				},
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 0.3
+			},
+			"minecraft:physics": {},
+			"minecraft:timer": {
+				"time": [
+					60,
+					120
+				],
+				"time_down_event": {
+					"event": "kreatik:hatch"
+				}
+			}
+		},
+		"events": {
+			"kreatik:hatch": {
+				"add": {
+					"component_groups": [
+						"born"
+					]
+				}
+			}
+		}
+	}
+}

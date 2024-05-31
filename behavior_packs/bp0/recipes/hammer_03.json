@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:hammer_03"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC ",
+      "BAC",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "C": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+
+    },
+    "result": {
+      "item": "ks:hammer_03",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.furniture.on_spawn" : {
+			"initial_state" : "base",
+			"states" : {
+				"base" : {
+					"transitions" : [
+						{
+							"on_spawn" : "!query.is_alive"
+						}
+					]
+				},
+				"on_spawn" : {
+					"sound_effects": [
+						{
+							"effect": "place"
+						}
+					],
+					"particle_effects" : [
+						{
+							"effect" : "on_placed"
+						}
+					],
+					"transitions" : [
+						{
+							"base" : "query.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.furniture.new_on_spawn" : {
+			"initial_state" : "base",
+			"states" : {
+				"base" : {
+					"transitions" : [
+						{
+							"on_spawn" : "!query.is_alive"
+						}
+					]
+				},
+				"on_spawn" : {
+					"sound_effects": [
+						{
+							"effect": "place"
+						}
+					],
+					"particle_effects" : [
+						{
+							"effect" : "on_placed"
+						}
+					],
+					"transitions" : [
+						{
+							"base" : "query.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.furniture.rotation" : {
+			"initial_state" : "static",
+			"states" : {
+				"static" : {
+					"animations": [ "rotation_static" ],
+					"transitions": [
+						{ "dynamic" : "query.is_saddled" }
+					]
+				},
+				"dynamic" : {
+					"animations": [ "rotation_dynamic" ],
+					"transitions": [ 
+						{ "static" : "!query.is_saddled" }
+					]
+				}
+			}
+		}
+	}
+}

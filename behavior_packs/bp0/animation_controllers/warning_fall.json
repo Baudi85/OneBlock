@@ -1,0 +1,29 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.fall" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"fall" : "1.0"
+						}
+					]
+				},
+				"fall" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/setblock 0 -1 0 barrier",
+						"/execute positioned as @e[type=!player] if block 0 0 0 air if block ~ -1 ~ barrier run tp @e[type=!player,r=1,c=1] 0 1.3 0",
+						"/execute positioned as @s if block 0 0 0 air if block ~ -1 ~ barrier run tp @s 0 1.3 0"
+					]
+				}
+			}
+		}
+	}
+}

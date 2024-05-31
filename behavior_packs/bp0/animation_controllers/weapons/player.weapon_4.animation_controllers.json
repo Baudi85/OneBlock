@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_4.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "v.attack_time" },
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "attack": {
+          "on_entry": [
+            "/summon ks:trigger_dummy ^^^1.5 e:weapon_4.attack"
+          ],
+          "transitions": [
+            { "default": "v.attack_time" }
+          ]
+        },
+        "use": {
+          "on_entry": [
+            "v.timer2 = q.life_time + 0.2;"
+          ],
+          "transitions": [
+            { "use2": "v.timer2 <= q.life_time" }
+          ]
+        },
+        "use2": {
+          "on_entry": [
+            "/summon lightning_bolt ~~~4",
+            "/summon lightning_bolt ~~~-4",
+            "/summon lightning_bolt ~4~~",
+            "/summon lightning_bolt ~-4~~",
+            "/execute as @e[family=mob,r=16] at @s run summon lightning_bolt ~~~",
+            "/effect @e@e[family=mob,r=16] slowness 3 2 true",
+            "/effect @e@e[family=mob,r=16] weakness 3 2 true"
+          ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        }
+      }
+    }
+  }
+}

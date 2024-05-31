@@ -1,0 +1,674 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.timer.cooldown" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"1" : "query.mark_variant == 1"
+						},
+						{
+							"2" : "query.mark_variant == 2"
+						},
+						{
+							"3" : "query.mark_variant == 3"
+						},
+						{
+							"4" : "query.mark_variant == 4"
+						},
+						{
+							"5" : "query.mark_variant == 5"
+						},
+						{
+							"6" : "query.mark_variant == 6"
+						},
+						{
+							"7" : "query.mark_variant == 7"
+						},
+						{
+							"8" : "query.mark_variant == 8"
+						},
+						{
+							"9" : "query.mark_variant == 9"
+						},
+						{
+							"10" : "query.mark_variant == 10"
+						},
+						{
+							"11" : "query.mark_variant == 11"
+						},
+						{
+							"12" : "query.mark_variant == 12"
+						},
+						{
+							"13" : "query.mark_variant == 13"
+						},
+						{
+							"14" : "query.mark_variant == 14"
+						},
+						{
+							"15" : "query.mark_variant == 15"
+						},
+						{
+							"16" : "query.mark_variant == 16"
+						},
+						{
+							"17" : "query.mark_variant == 17"
+						},
+						{
+							"18" : "query.mark_variant == 18"
+						},
+						{
+							"19" : "query.mark_variant == 19"
+						},
+						{
+							"20" : "query.mark_variant == 20"
+						},
+						{
+							"21" : "query.mark_variant == 21"
+						},
+						{
+							"22" : "query.mark_variant == 22"
+						},
+						{
+							"23" : "query.mark_variant == 23"
+						},
+						{
+							"24" : "query.mark_variant == 24"
+						},
+						{
+							"25" : "query.mark_variant == 25"
+						},
+						{
+							"26" : "query.mark_variant == 26"
+						},
+						{
+							"27" : "query.mark_variant == 27"
+						},
+						{
+							"28" : "query.mark_variant == 28"
+						},
+						{
+							"29" : "query.mark_variant == 29"
+						},
+						{
+							"30" : "query.mark_variant == 30"
+						},
+						{
+							"31" : "query.mark_variant == 31"
+						},
+						{
+							"32" : "query.mark_variant == 32"
+						},
+						{
+							"33" : "query.mark_variant == 33"
+						},
+						{
+							"34" : "query.mark_variant == 34"
+						},
+						{
+							"35" : "query.mark_variant == 35"
+						},
+						{
+							"36" : "query.mark_variant == 36"
+						},
+						{
+							"37" : "query.mark_variant == 37"
+						},
+						{
+							"38" : "query.mark_variant == 38"
+						},
+						{
+							"39" : "query.mark_variant == 39"
+						},
+						{
+							"40" : "query.mark_variant == 40"
+						},
+						{
+							"41" : "query.mark_variant == 41"
+						},
+						{
+							"42" : "query.mark_variant == 42"
+						},
+						{
+							"43" : "query.mark_variant == 43"
+						},
+						{
+							"44" : "query.mark_variant == 44"
+						},
+						{
+							"45" : "query.mark_variant == 45"
+						},
+						{
+							"46" : "query.mark_variant == 46"
+						},
+						{
+							"47" : "query.mark_variant == 47"
+						},
+						{
+							"48" : "query.mark_variant == 48"
+						},
+						{
+							"49" : "query.mark_variant == 49"
+						},
+						{
+							"50" : "query.mark_variant == 50"
+						},
+						{
+							"51" : "query.mark_variant == 51"
+						},
+						{
+							"52" : "query.mark_variant == 52"
+						},
+						{
+							"53" : "query.mark_variant == 53"
+						},
+						{
+							"54" : "query.mark_variant == 54"
+						},
+						{
+							"55" : "query.mark_variant == 55"
+						},
+						{
+							"56" : "query.mark_variant == 56"
+						},
+						{
+							"57" : "query.mark_variant == 57"
+						},
+						{
+							"58" : "query.mark_variant == 58"
+						},
+						{
+							"59" : "query.mark_variant == 59"
+						},
+						{
+							"60" : "query.mark_variant == 60"
+						}
+					]
+				},
+				"1" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 1"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/1" ]
+				},
+				"2" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 2"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/2" ]
+				},
+				"3" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 3"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/3" ]
+				},
+				"4" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 4"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/4" ]
+				},
+				"5" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 5"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/5" ]
+				},
+				"6" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 6"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/6" ]
+				},
+				"7" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 7"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/7" ]
+				},
+				"8" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 8"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/8" ]
+				},
+				"9" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 9"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/9" ]
+				},
+				"10" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 10"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/10" ]
+				},
+				"11" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 11"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/11" ]
+				},
+				"12" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 12"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/12" ]
+				},
+				"13" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 13"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/13" ]
+				},
+				"14" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 14"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/14" ]
+				},
+				"15" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 15"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/15" ]
+				},
+				"16" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 16"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/16" ]
+				},
+				"17" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 17"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/17" ]
+				},
+				"18" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 18"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/18" ]
+				},
+				"19" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 19"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/19" ]
+				},
+				"20" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 20"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/20" ]
+				},
+				"21" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 21"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/21" ]
+				},
+				"22" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 22"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/22" ]
+				},
+				"23" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 23"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/23" ]
+				},
+				"24" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 24"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/24" ]
+				},
+				"25" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 25"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/25" ]
+				},
+				"26" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 26"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/26" ]
+				},
+				"27" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 27"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/27" ]
+				},
+				"28" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 28"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/28" ]
+				},
+				"29" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 29"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/29" ]
+				},
+				"30" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 30"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/30" ]
+				},
+				"31" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 31"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/31" ]
+				},
+				"32" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 32"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/32" ]
+				},
+				"33" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 33"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/33" ]
+				},
+				"34" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 34"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/34" ]
+				},
+				"35" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 35"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/35" ]
+				},
+				"36" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 36"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/36" ]
+				},
+				"37" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 37"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/37" ]
+				},
+				"38" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 38"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/38" ]
+				},
+				"39" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 39"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/39" ]
+				},
+				"40" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 40"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/40" ]
+				},
+				"41" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 41"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/41" ]
+				},
+				"42" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 42"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/42" ]
+				},
+				"43" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 43"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/43" ]
+				},
+				"44" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 44"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/44" ]
+				},
+				"45" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 45"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/45" ]
+				},
+				"46" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 46"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/46" ]
+				},
+				"47" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 47"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/47" ]
+				},
+				"48" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 48"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/48" ]
+				},
+				"49" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 49"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/49" ]
+				},
+				"50" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 50"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/50" ]
+				},
+				"51" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 51"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/51" ]
+				},
+				"52" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 52"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/52" ]
+				},
+				"53" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 53"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/53" ]
+				},
+				"54" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 54"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/54" ]
+				},
+				"55" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 55"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/55" ]
+				},
+				"56" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 56"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/56" ]
+				},
+				"57" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 57"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/57" ]
+				},
+				"58" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 58"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/58" ]
+				},
+				"59" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 59"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/59" ]
+				},
+				"60" : {
+					"transitions" : [
+						{
+							"default" : "query.mark_variant != 60"
+						}
+					],
+					"on_entry" : [ "/title @a actionbar §aNext phase in: 60/60" ]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.mechanized_patriot_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.mechanized_patriot_armor",
+            "Texture.mechanized_patriot_armor_1",
+            "Texture.mechanized_patriot_armor_2",
+            "Texture.mechanized_patriot_armor_3",
+            "Texture.mechanized_patriot_armor_4",
+            "Texture.mechanized_patriot_armor_5",
+            "Texture.mechanized_patriot_armor_6",
+            "Texture.mechanized_patriot_armor_7",
+            "Texture.mechanized_patriot_armor_8",
+            "Texture.mechanized_patriot_armor_9",
+            "Texture.mechanized_patriot_armor_10",
+            "Texture.mechanized_patriot_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.mechanized_patriot_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

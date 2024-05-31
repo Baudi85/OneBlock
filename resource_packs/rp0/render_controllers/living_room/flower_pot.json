@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": { 
+        "controller.render.flower_pot": {
+          "arrays": {
+            "textures": {
+              "Array.skins": [
+                "Texture.texture_1",
+                "Texture.texture_2",
+                "Texture.texture_3"
+              ]
+            },
+            "geometries": {
+              "Array.geos": [
+                "Geometry.geometry_1",
+                "Geometry.geometry_2",
+                "Geometry.geometry_3"
+              ]
+            }
+          },
+            "geometry": "Array.geos[query.skin_id]",
+            "materials": [
+              { "*": "Material.default"}
+            ],
+            "textures": [
+              "Array.skins[query.skin_id]"
+            ]
+        }
+    } 
+}

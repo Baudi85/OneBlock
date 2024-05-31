@@ -1,0 +1,68 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.wheels": {
+            "states": {
+                "wheels_out": {
+                    "transitions": [
+                        {
+                            "wheels_in": "query.vertical_speed > 0.2"
+                        }
+                    ],
+                    "animations": [
+                        {
+                        "landing": "query.vertical_speed < -0.3"
+                        }
+                    ]
+                },
+                "wheels_in": {
+                    "transitions": [
+                        {
+                            "wheels_out": "query.vertical_speed < -0.2"
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "taking_off": "query.vertical_speed > 0.2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.steering": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        { 
+                            "tilt": "(query.yaw_speed / math.abs(query.yaw_speed)) != 0 && math.abs(query.yaw_speed) > 40 && query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.5
+                },
+                "tilt":{
+                    "animations":["tilt"],
+                    "transitions":[
+                        { 
+                            "default": "math.abs(query.yaw_speed) < 30"
+                         }
+                    ],
+                    "blend_transition": 0.5
+                }
+            }
+        },
+        "controller.animation.moving": {
+            "states": {
+                "moving": {
+                    "animations": [
+                        {
+                            "moving": "query.has_rider"
+                        },
+                        {
+                            "steering": "query.has_rider"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

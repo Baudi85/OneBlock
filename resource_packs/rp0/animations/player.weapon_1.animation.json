@@ -1,0 +1,132 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.weapon_1.attack_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2917,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, -57.5, 0],
+						"0.2917": [0, -360, 0]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 90, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_1.attack_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-62.5, 0, 0],
+						"0.3333": {
+							"pre": [0, 0, -17.49524],
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4583": {
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-30, 10, 0],
+						"0.3333": [0, 0, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [0, 60, 0],
+						"0.375": [0, -74.5, 0],
+						"0.4583": [0, -79.76, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"root": {
+					"rotation": {
+						"0.2083": [0, 0, 0],
+						"0.375": [0, -157.5, 0],
+						"0.4583": [0, -328.75, 0],
+						"0.5417": [0, -360, 0]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [0, 0, 0],
+						"0.375": [-22.5764, 59.99539, -25.64659],
+						"0.5417": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_1.use_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"anim_time_update": "q.anim_time + q.delta_time * 1.0",
+			"bones": {
+				"rightArm": {
+					"rotation": [0, 0, -17.4952]
+				},
+				"waist": {
+					"rotation": [0, -30, 0]
+				},
+				"root": {
+					"rotation": [0, "q.life_time * -1080", 0]
+				},
+				"rightItem": {
+					"rotation": [-22.5764, 59.9954, -25.6466]
+				}
+			}
+		},
+		"animation.player.weapon_1.hold_tp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightArm": {
+					"rotation": [-60, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-47.97985, 46.04179, 22.17599],
+					"position": [-2, 0, -2]
+				}
+			}
+		},
+		"animation.player.weapon_1.use_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.29167,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, -57.5, 0],
+						"0.2917": [0, -360, 0]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [20, 90, 0]
+					}
+				}
+			}
+		}
+	}
+}

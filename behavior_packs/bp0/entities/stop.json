@@ -1,0 +1,54 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:stop",
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"minecraft:despawn": {
+				"minecraft:despawn": {}
+			},
+			"minecraft:wait_despawn": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"target": "self",
+						"event": "minecraft:despawn"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			}
+		},
+		"events": {
+			"minecraft:despawn": {
+				"add": {
+					"component_groups": [
+						"minecraft:despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minecraft:wait_despawn"
+					]
+				}
+			}
+		}
+	}
+}

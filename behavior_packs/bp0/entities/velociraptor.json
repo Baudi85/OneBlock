@@ -1,0 +1,474 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:velociraptor",
+			"is_summonable": true,
+			"is_spawnable": true,
+			"animations": {
+				"spread": "controller.animation.spread"
+			},
+			"scripts": {
+				"animate": [
+					"spread"
+				]
+			}
+		},
+		"component_groups": {
+			"baby": {
+				"minecraft:scale": {
+					"value": 0.3
+				},
+				"minecraft:ageable": {
+					"grow_up": {
+						"event": "kreatik:adult",
+						"target": "self"
+					},
+					"duration": 120
+				},
+				"minecraft:type_family": {
+					"family": [
+						"baby"
+					]
+				}
+			},
+			"adult": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"spawn_entity": "kreatik:velociraptor_egg",
+							"num_to_spawn": 1,
+							"max_wait_time": 600,
+							"min_wait_time": 120,
+							"single_use": false
+						}
+					]
+				},
+				"minecraft:scale": {
+					"value": 0.6
+				}
+			},
+			"minecraft:untamed": {
+				"minecraft:despawn": {
+					"despawn_from_distance": {}
+				},
+				"minecraft:tameable": {
+					"probability": 0.2,
+					"tame_items": [
+						"kreatik:meaty_bone",
+						"chicken",
+						"cooked_chicken",
+						"beef",
+						"cooked_beef",
+						"muttonRaw",
+						"muttonCooked",
+						"porkchop",
+						"cooked_porkchop",
+						"rabbit",
+						"cooked_rabbit",
+						"rotten_flesh"
+					],
+					"tame_event": {
+						"event": "minecraft:on_tame",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 3,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "herbivore"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "egg"
+									}
+								]
+							}
+						}
+					],
+					"must_see": true
+				}
+			},
+			"minecraft:tamed": {
+				"minecraft:is_tamed": {},
+				"minecraft:behavior.owner_hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				},
+				"minecraft:behavior.player_ride_tamed": {},
+				"minecraft:behavior.follow_owner": {
+					"priority": 4,
+					"start_distance": 15,
+					"stop_distance": 5
+				},
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"slot": 0,
+							"item": "minecraft:saddle",
+							"on_equip": {
+								"event": "minecraft:saddle"
+							},
+							"on_unequip": {
+								"event": "minecraft:unsaddle"
+							},
+							"accepted_items": [
+								"minecraft:saddle"
+							]
+						}
+					]
+				},
+				"minecraft:rideable": {
+					"family_types": [
+						"player"
+					],
+					"interact_text": "ride",
+					"crouching_skip_interact": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								2.2,
+								0.3
+							]
+						}
+					]
+				},				
+				"minecraft:behavior.breed": {
+					"priority": 0,
+					"speed_multiplier": 2
+				},
+				"minecraft:breedable": {
+					"breed_items":[
+						"kreatik:meaty_bone",
+						"chicken",
+						"cooked_chicken",
+						"beef",
+						"cooked_beef",
+						"muttonRaw",
+						"muttonCooked",
+						"porkchop",
+						"cooked_porkchop",
+						"rabbit",
+						"cooked_rabbit",
+						"rotten_flesh"
+					],
+					"breeds_with":{
+						"mate_type": "kreatik:velociraptor",
+						"baby_type": "kreatik:velociraptor_egg"
+					},
+					"inherit_tamed": true
+				},
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {}
+			},
+			"sit": {
+				"minecraft:sittable": {},
+				"minecraft:behavior.stay_while_sitting": {},
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"any_of": [
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "kreatik:meaty_bone"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:beef"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_beef"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:muttonRaw"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:muttonCooked"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "==",
+								"test": "has_equipment",
+								"value": "minecraft:rotten_flesh"
+							}
+						]
+					},
+					"event": "kreatik:breed"
+				}
+			},
+			"breed_sensor": {
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"all_of": [
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "kreatik:meaty_bone"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_chicken"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:beef"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_beef"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:muttonRaw"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:muttonCooked"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_porkchop"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:cooked_rabbit"
+							},
+							{
+								"subject": "player",
+								"operator": "!=",
+								"test": "has_equipment",
+								"value": "minecraft:rotten_flesh"
+							}
+						]
+					},
+					"event": "kreatik:sit"
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"predator"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:movement": {
+				"value": 0.45
+			},
+			"minecraft:behavior.float": {
+			  	"priority": 0
+			},
+			"minecraft:behavior.run_around_like_crazy": {
+			  "priority": 2,
+			  "speed_multiplier": 1.2
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"reach_multiplier": 2,
+				"track_target": true,
+				"speed_multiplier": 1
+			},
+			"minecraft:collision_box": {
+				"width": 2.5,
+				"height": 2.7
+			},
+			"minecraft:attack": {
+				"damage": 10
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 6
+			},
+			"minecraft:health": {
+				"value": 50
+			}
+		},
+		"events": {
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"minecraft:untamed",
+						"baby"
+					]
+				}
+			},
+			"kreatik:adult": {
+				"remove": {
+					"component_groups": [
+						"baby"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"adult"
+					]
+				}
+			},
+			"kreatik:breed": {
+				"remove": {
+					"component_groups": [
+						"sit"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"breed_sensor"
+					]
+				}
+			},
+			"kreatik:sit": {
+				"remove": {
+					"component_groups": [
+						"breed_sensor"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"sit"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 6,
+						"add": {
+							"component_groups": [
+								"adult",
+								"minecraft:untamed"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"baby",
+								"minecraft:untamed"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:on_tame": {
+				"add": {
+					"component_groups": [
+						"minecraft:tamed",
+						"sit"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:untamed"
+					]
+				}
+			}
+		}
+	}
+}

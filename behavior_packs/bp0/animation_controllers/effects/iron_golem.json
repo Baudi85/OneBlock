@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.iron_golem_hammer_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "iron_golem_hammer_active": "(query.get_equipped_item_name == 'iron_golem_hammer') && query.is_using_item" }
+          ]
+        },
+		
+        "iron_golem_hammer_active": {
+          "on_entry": [
+            "/playsound v.iron_golem_hammer @a ~ ~ ~",
+            "/particle ks:iron_golem_hammer_particle ~ ~ ~",
+            "/summon iron_golem ~ ~ ~ minecraft:invocado",
+            "/effect @s resistance 15"
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

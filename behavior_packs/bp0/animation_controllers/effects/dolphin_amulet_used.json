@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dolphin_amulet_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "dolphin_amulet_active": "(query.get_equipped_item_name == 'dolphin_amulet') && query.is_using_item" }
+          ]
+        },
+		
+        "dolphin_amulet_active": {
+          "on_entry": [
+            "/playsound v.dolphin_amulet @a ~ ~ ~",
+            "/particle ks:dolphin_amulet_particle ~ ~ ~",
+            "/effect @s absorption 15 2"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:cybernetic_exosuit_armor_leggings"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "C C",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:redstone_block"
+      },
+      "B": {
+        "item": "minecraft:gold_block"
+      },
+      "C": {
+        "item": "minecraft:gold_block"
+      }
+
+    },
+    "result": {
+      "item": "armors:cybernetic_exosuit_armor_leggings",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

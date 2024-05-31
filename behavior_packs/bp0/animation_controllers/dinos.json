@@ -1,0 +1,96 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.spread": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "spawned": "1.0"
+                        }
+                    ]
+                },
+                "spawned": {
+                    "on_entry": [
+                        "variable.tp = math.random_integer(0, 7);"
+                    ],
+                    "transitions": [
+                        {
+                            "a": "variable.tp == 0"
+                        },
+                        {
+                            "b": "variable.tp == 1"
+                        },
+                        {
+                            "c": "variable.tp == 2"
+                        },
+                        {
+                            "d": "variable.tp == 3"
+                        },
+                        {
+                            "e": "variable.tp == 4"
+                        },
+                        {
+                            "f": "variable.tp == 5"
+                        },
+                        {
+                            "g": "variable.tp == 6"
+                        },
+                        {
+                            "h": "variable.tp == 7"
+                        },
+                        {
+                            "fail": "query.is_alive"
+                        }
+                    ]
+                },
+                "a": {
+                    "on_entry": [
+                       "/tp @s ~ ~ ~3"
+                    ]
+                },
+                "b": {
+                    "on_entry": [
+                       "/tp @s ~ ~ ~-3"
+                    ]
+                },
+                "c": {
+                    "on_entry": [
+                       "/tp @s ~3 ~ ~3"
+                    ]
+                },
+                "d": {
+                    "on_entry": [
+                       "/tp @s ~3 ~ ~-3"
+                    ]
+                },
+                "e": {
+                    "on_entry": [
+                       "/tp @s ~-3 ~ ~3"
+                    ]
+                },
+                "f": {
+                    "on_entry": [
+                       "/tp @s ~-3 ~ ~-3"
+                    ]
+                },
+                "g": {
+                    "on_entry": [
+                       "/tp @s ~3 ~ ~"
+                    ]
+                },
+                "h": {
+                    "on_entry": [
+                       "/tp @s ~-3 ~ ~"
+                    ]
+                },
+                "fail": {
+                    "on_entry": [
+                        "/say failed"
+                    ]
+                }
+            }
+        }
+    }
+}

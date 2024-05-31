@@ -1,0 +1,175 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bullet.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "effect1": "q.variant == 1" },
+            { "effect2": "q.variant == 2" },
+            { "effect3": "q.variant == 3" },
+            { "effect4": "q.variant == 4" },
+            { "effect5.1": "q.variant == 5 && q.mark_variant == 1" },
+            { "effect5.2": "q.variant == 5 && q.mark_variant == 2" },
+            { "effect5.3": "q.variant == 5 && q.mark_variant == 3" },
+            { "effect6.1": "q.variant == 6 && q.mark_variant == 1" },
+            { "effect6.2": "q.variant == 6 && q.mark_variant == 2" },
+            { "effect6.3": "q.variant == 6 && q.mark_variant == 3" },
+            { "effect7": "q.variant == 7" },
+            { "effect8": "q.variant == 8" },
+            { "effect9": "q.variant == 9" },
+            { "effect10": "q.variant == 10" },
+            { "effect11": "q.variant == 11" },
+            { "effect12": "q.variant == 12" },
+            { "effect13": "q.variant == 13" },
+            { "effect14": "q.variant == 14" },
+            { "effect15": "q.variant == 15" },
+            { "effect16": "q.variant == 16" }
+          ]
+        },
+        "effect1": {
+          "on_entry": [
+            "/tp @e[family=mob,r=3] ~~~",
+            "/damage @e[family=mob,r=3] 2 suicide"
+          ],
+          "transitions": [
+            { "effect1.loop": "!q.is_on_ground" }
+          ]
+        },
+        "effect1.loop": {
+          "on_entry": [
+            "/tp @e[family=mob,r=3] ~~~",
+            "/damage @e[family=mob,r=3] 2 suicide"
+          ],
+          "transitions": [
+            { "effect1": "!q.is_on_ground" }
+          ]
+        },
+        "effect2": {
+          "on_entry": [
+            "/particle ks:blue_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect3": {
+          "on_entry": [
+            "/particle ks:electric_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect4": {
+          "on_entry": [
+            "/particle ks:star_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect5.1": {
+          "on_entry": [
+            "/particle ks:explosion1 ~~~"
+          ]
+        },
+        "effect5.2": {
+          "on_entry": [
+            "/particle ks:explosion2 ~~~"
+          ]
+        },
+        "effect5.3": {
+          "on_entry": [
+            "/particle ks:explosion3 ~~~"
+          ]
+        },
+        "effect6.1": {
+          "on_entry": [
+            "/particle ks:fire_blast1 ~~~"
+          ]
+        },
+        "effect6.2": {
+          "on_entry": [
+            "/particle ks:fire_blast2 ~~~"
+          ]
+        },
+        "effect6.3": {
+          "on_entry": [
+            "/particle ks:fire_blast3 ~~~"
+          ]
+        },
+        "effect7": {
+          "on_entry": [
+            "/particle ks:red_blast_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect8": {
+          "on_entry": [
+            "/damage @e[family=mob,r=4] 8 magic entity @s",
+            "/particle ks:circle_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect9": {
+          "on_entry": [
+            "/damage @e[family=mob,r=4] 8 magic entity @s",
+            "/particle ks:circle_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect10": {
+          "on_entry": [
+            "/particle ks:circle3_onhit ~~~",
+            "/kill @s"
+          ]
+        },
+        "effect11": {
+          "on_entry": [
+            "/particle ks:heat_blast_onhit ~~~"
+          ]
+        },
+        "effect12": {
+          "on_entry": [
+            "/particle ks:cartoon_onhit ~~~"
+          ]
+        },
+        "effect13": {
+          "on_entry": [
+            "/effect @e[family=mob,r=8] wither 5 2 false",
+            "/particle ks:purple_onhit ~~~",
+            "/particle ks:purple_onhit2 ~~~"
+          ]
+        },
+        "effect14": {
+          "on_entry": [
+            "/effect @e[family=mob,r=8] fatal_poison 5 4 false",
+            "/particle ks:tornado_onhit ~~~",
+            "/particle ks:tornado_onhit2 ~~~"
+          ]
+        },
+        "effect15": {
+          "on_entry": [
+            "/damage @e[family=mob,r=4] 2 suicide",
+            "/effect @e[family=mob,r=4] slowness 3 2 true",
+            "/particle ks:green_onhit ~~~"
+          ]
+        },
+        "effect16": {
+          "on_entry": [
+            "v.timer = q.life_time + 1.0;",
+            "/particle ks:light_onhit ~~~",
+            "/damage @e[family=mob,r=5] 8 suicide entity @s"
+          ],
+          "transitions": [
+            { "effect16.exit": "v.timer <= q.life_time" }
+          ]
+        },
+        "effect16.exit": {
+          "on_entry": [
+            "/particle ks:light_onhit2 ~~~",
+            "/execute as @e[family=mob,r=16] at @s run particle ks:light_onhit2 ~~~",
+            "/damage @e[family=mob,r=16] 8 suicide entity @s",
+            "/kill @s"
+          ]
+        }
+      }
+    }
+  }
+}

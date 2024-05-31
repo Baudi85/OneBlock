@@ -1,0 +1,12 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ks:no_offhand",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": "no_offhand"
+		}
+	}
+}

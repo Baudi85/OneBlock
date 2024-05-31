@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "armors:beatly_buffer_armor_set_4",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": false,
+			"minecraft:use_duration": 999999,
+			"minecraft:food": {
+				"can_always_eat": true,
+				"cooldown_time": 20,
+                "cooldown_type": "armor_set"
+			},
+			"tag:armors:custom_armor":{}
+		}
+	}
+}

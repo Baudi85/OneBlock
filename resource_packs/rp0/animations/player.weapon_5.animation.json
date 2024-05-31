@@ -1,0 +1,183 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.weapon_5.attack_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2917,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [-10, 0, -60],
+						"0.125": {
+							"pre": [72.5, -20, -110],
+							"post": [72.5, -20, -110],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 3, 0],
+						"0.125": {
+							"pre": [6, 0, -3],
+							"post": [6, 0, -3],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.player.weapon_5.attack_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-62.5, 0, 0],
+						"0.3333": {
+							"pre": [33, -22, -44],
+							"post": [33, -22, -44],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4583": {
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-55, 10, 0],
+						"0.3333": [0, -32.5, 0],
+						"0.5417": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-2, 1, 0],
+						"0.3333": [-2, 1, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [0, 37.5, 0],
+						"0.3333": [12.8152, -62.2504, 0],
+						"0.375": [26.25, -7, 0],
+						"0.4583": [20.62762, -3.5007, 0],
+						"0.5417": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_5.hold_tp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightArm": {
+					"rotation": [-33.73499, -9.93191, -14.48174]
+				},
+				"leftArm": {
+					"rotation": [-50.47985, 46.04179, 22.17599],
+					"position": [-2, 0, -2]
+				},
+				"waist": {
+					"rotation": [12.5, 0, 0]
+				}
+			}
+		},
+		"animation.player.weapon_5.use_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.29167,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [-10, 0, -60],
+						"0.125": {
+							"pre": [68.22268, -3.80978, -110.10615],
+							"post": [68.22268, -3.80978, -110.10615],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 3, 0],
+						"0.125": {
+							"pre": [6, 0, -3],
+							"post": [6, 0, -3],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.player.weapon_5.use_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [90, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 12, 10]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-22.5, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-75, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-110, 0, -33]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-112.5, 0, 33]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [61.22913, 8.88829, 15.716]
+					}
+				}
+			}
+		}
+	}
+}

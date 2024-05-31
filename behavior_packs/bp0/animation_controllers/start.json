@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.start" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cooldown_block" : "query.mark_variant == 0"
+						}
+					]
+				},
+				"cooldown_block" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [ "/execute as @s unless block 0 0 0 grass run event entity @s plains" ]
+				}
+			}
+		}
+	}
+}

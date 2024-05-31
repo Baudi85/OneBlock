@@ -1,0 +1,41 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.outdoor_trash_bin",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "bin",
+					"parent": "root",
+					"pivot": [0, -0.5, 0],
+					"cubes": [
+						{"origin": [-6, 0, -5], "size": [12, 12, 10], "uv": [0, 0]},
+						{"origin": [-6, 0.01, -5], "size": [12, 12, 10], "pivot": [0, 6, 0], "rotation": [0, -90, 0], "uv": [0, 0]},
+						{"origin": [-6.5, 10.5, -5], "size": [13, 13, 10], "pivot": [0, 17, 0], "rotation": [-90, 0, 0], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [-1, 22.5, -8],
+					"cubes": [
+						{"origin": [-7.5, 15.5, -1], "size": [15, 15, 2], "pivot": [0, 23, 0], "rotation": [-90, 0, 0], "uv": [0, 45]},
+						{"origin": [-6, 18.5, -0.5], "size": [12, 12, 1], "pivot": [0, 24.5, 0], "rotation": [-90, 0, 0], "uv": [34, 45]},
+						{"origin": [-7.5, 22, -8.5], "size": [15, 1, 1], "uv": [0, 62]}
+					]
+				}
+			]
+		}
+	]
+}

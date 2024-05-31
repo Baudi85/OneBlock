@@ -1,0 +1,3871 @@
+{
+	"format_version" : "1.18.20",
+	"minecraft:entity" : {
+		"description" : {
+			"identifier" : "minecraft:player",
+			"is_spawnable" : false,
+			"is_summonable" : false,
+			"is_experimental" : false,
+			"animations" : {
+				"tutorial" : "controller.animation.player.tutorial",
+				"achievement" : "controller.animation.player.achievement",
+				"fall" : "controller.animation.player.fall",
+				"start" : "controller.animation.player.start",
+				"the_end" : "controller.animation.player.biome.end",
+				"the_desolate_land" : "controller.animation.player.biome.desolate_land",
+				"the_idyll" : "controller.animation.player.biome.idyll",
+				"the_nether" : "controller.animation.player.biome.nether",
+				"the_red_desert" : "controller.animation.player.biome.red_desert",
+				"the_dungeon" : "controller.animation.player.biome.dungeon",
+				"the_roofet_forest" : "controller.animation.player.biome.roofet_forest",
+				"the_jungle" : "controller.animation.player.biome.jungle",
+				"the_ocean" : "controller.animation.player.biome.ocean",
+				"the_snowy" : "controller.animation.player.biome.snowy",
+				"the_mushroom" : "controller.animation.player.biome.mushroom",
+				"the_cave" : "controller.animation.player.biome.cave",
+				"the_plains" : "controller.animation.player.biome.plains",
+				"armor_tester" : "controller.animation.armor_tester",
+				"music_on" : "controller.animation.player.music",
+				"music" : "animation.music.play",
+				"equip_items" : "controller.animation.behavior.equip_items",
+				"beatly_buffer_armor" : "controller.animation.beatly_buffer_armor_equip",
+				"bionical_hazard_armor" : "controller.animation.bionical_hazard_armor_equip",
+				"bug_out_armor" : "controller.animation.bug_out_armor_equip",
+				"cybernetic_exosuit_armor" : "controller.animation.cybernetic_exosuit_armor_equip",
+				"cyberpunk_robot_armor" : "controller.animation.cyberpunk_robot_armor_equip",
+				"grand_vault_armor" : "controller.animation.grand_vault_armor_equip",
+				"hydraulic_augmented_armor" : "controller.animation.hydraulic_augmented_armor_equip",
+				"neutro_tethered_armor" : "controller.animation.neutro_tethered_armor_equip",
+				"reinforced_steel_armor" : "controller.animation.reinforced_steel_armor_equip",
+				"flight_fix" : "animation.bp.player.flight_fix",
+				"jetpack_flight" : "controller.animation.bp.player.jetpack_flight",
+				"sword_01_used" : "controller.animation.sword_01_used",
+				"sword_02_used" : "controller.animation.sword_02_used",
+				"sword_07_used" : "controller.animation.sword_07_used",
+				"axe_01_used" : "controller.animation.axe_01_used",
+				"axe_02_used" : "controller.animation.axe_02_used",
+				"double_sword_01_used" : "controller.animation.double_sword_01_used",
+				"hammer_01_used" : "controller.animation.hammer_01_used",
+				"hammer_03_used" : "controller.animation.hammer_03_used",
+				"knife_01_used" : "controller.animation.knife_01_used",
+				"spear_01_used" : "controller.animation.spear_01_used",
+				"staff_01_used" : "controller.animation.staff_01_used",
+				"trident_01_used" : "controller.animation.trident_01_used",
+				"pick_or_drop" : "controller.animation.pick_or_drop",
+				"lucky_block" : "controller.animation.lucky_block",
+				"summon_lucky_block" : "controller.animation.summon_lucky_block",
+				"return_lobby_room" : "controller.animation.player.return",
+				"drop_clear" : "controller.animation.player.drop_clear",
+				"weapon" : "controller.animation.player.weapon_root",
+				"weapon_1" : "controller.animation.player.weapon_1.root",
+				"weapon_2" : "controller.animation.player.weapon_2.root",
+				"weapon_3" : "controller.animation.player.weapon_3.root",
+				"weapon_4" : "controller.animation.player.weapon_4.root",
+				"weapon_5" : "controller.animation.player.weapon_5.root",
+				"weapon_6" : "controller.animation.player.weapon_6.root",
+				"weapon_7" : "controller.animation.player.weapon_7.root",
+				"weapon_8" : "controller.animation.player.weapon_8.root",
+				"weapon_9" : "controller.animation.player.weapon_9.root",
+				"weapon_10" : "controller.animation.player.weapon_10.root",
+				"weapon_1.special.tick" : "controller.animation.player.weapon_1.special.tick",
+				"weapon_5.special.tick" : "controller.animation.player.weapon_5.special.tick",
+				"weapon_9.special.tick" : "controller.animation.player.weapon_9.special.tick"
+			},
+			"scripts" : {
+				"animate" : [
+					"achievement",
+					"tutorial",
+					"fall",
+					"start",
+					"the_end",
+					"the_desolate_land",
+					"the_idyll",
+					"the_nether",
+					"the_red_desert",
+					"the_dungeon",
+					"the_roofet_forest",
+					"the_jungle",
+					"the_ocean",
+					"the_snowy",
+					"the_mushroom",
+					"the_cave",
+					"the_plains",
+					"armor_tester",
+					"music_on",
+					"equip_items",
+					"jetpack_flight",
+					"flight_fix",
+					"beatly_buffer_armor",
+					"bionical_hazard_armor",
+					"bug_out_armor",
+					"cybernetic_exosuit_armor",
+					"cyberpunk_robot_armor",
+					"grand_vault_armor",
+					"hydraulic_augmented_armor",
+					"neutro_tethered_armor",
+					"reinforced_steel_armor",
+					{
+						"sword_01_used" : "query.get_equipped_item_name == 'sword_01'"
+					},
+					{
+						"sword_02_used" : "query.get_equipped_item_name == 'sword_02'"
+					},
+					{
+						"sword_07_used" : "query.get_equipped_item_name == 'sword_07'"
+					},
+					{
+						"axe_01_used" : "query.get_equipped_item_name == 'axe_01'"
+					},
+					{
+						"double_sword_01_used" : "query.get_equipped_item_name == 'double_sword_01'"
+					},
+					{
+						"hammer_01_used" : "query.get_equipped_item_name == 'hammer_01'"
+					},
+					{
+						"hammer_03_used" : "query.get_equipped_item_name == 'hammer_03'"
+					},
+					{
+						"knife_01_used" : "query.get_equipped_item_name == 'knife_01'"
+					},
+					{
+						"spear_01_used" : "query.get_equipped_item_name == 'spear_01'"
+					},
+					{
+						"staff_01_used" : "query.get_equipped_item_name == 'staff_01'"
+					},
+					{
+						"trident_01_used" : "query.get_equipped_item_name == 'trident_01'"
+					},
+					"pick_or_drop",
+					"lucky_block",
+					{
+						"summon_lucky_block" : "query.has_any_family('left_lobby_room') == 1.0"
+					},
+					{
+						"return_lobby_room" : "query.has_any_family('left_lobby_room') == 1.0"
+					},
+					"drop_clear",
+					"weapon",
+					"weapon_1.special.tick",
+					"weapon_5.special.tick",
+					"weapon_9.special.tick"
+				]
+			},
+			"properties" : {
+				"ks:weapon_1_special" : {
+					"type" : "int",
+					"range" : [ 0, 30 ],
+					"default" : 0,
+					"client_sync" : true
+				},
+				"ks:weapon_5_special" : {
+					"type" : "int",
+					"range" : [ 0, 1 ],
+					"default" : 0,
+					"client_sync" : true
+				},
+				"ks:weapon_9_special" : {
+					"type" : "int",
+					"range" : [ 0, 1 ],
+					"default" : 0,
+					"client_sync" : true
+				}
+			}
+		},
+		"component_groups" : {
+			"off" : {
+				"minecraft:mark_variant" : {
+					"value" : 0
+				}
+			},
+			"roofet_forest_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "roofet_forest_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"cave_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "cave_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"end_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "end_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"desolate_land_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "desolate_land_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"idyll_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "idyll_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"nether_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "nether_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"red_desert_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "red_desert_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"dungeon_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "dungeon_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"jungle_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "jungle_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"ocean_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "ocean_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"snowy_taiga_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "snowy_taiga_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"mushroom_cooldown" : {
+				"minecraft:timer" : {
+					"time" : [ 60, 60 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "mushroom_finish",
+						"target" : "self"
+					}
+				}
+			},
+			"roofet_forest" : {
+				"minecraft:mark_variant" : {
+					"value" : 13
+				}
+			},
+			"end" : {
+				"minecraft:mark_variant" : {
+					"value" : 12
+				}
+			},
+			"desolate_land" : {
+				"minecraft:mark_variant" : {
+					"value" : 11
+				}
+			},
+			"idyll" : {
+				"minecraft:mark_variant" : {
+					"value" : 10
+				}
+			},
+			"nether" : {
+				"minecraft:mark_variant" : {
+					"value" : 9
+				}
+			},
+			"red_desert" : {
+				"minecraft:mark_variant" : {
+					"value" : 8
+				}
+			},
+			"dungeon" : {
+				"minecraft:mark_variant" : {
+					"value" : 7
+				}
+			},
+			"jungle" : {
+				"minecraft:mark_variant" : {
+					"value" : 6
+				}
+			},
+			"ocean" : {
+				"minecraft:mark_variant" : {
+					"value" : 5
+				}
+			},
+			"snowy_taiga" : {
+				"minecraft:mark_variant" : {
+					"value" : 4
+				}
+			},
+			"mushroom" : {
+				"minecraft:mark_variant" : {
+					"value" : 3
+				}
+			},
+			"cave" : {
+				"minecraft:mark_variant" : {
+					"value" : 2
+				}
+			},
+			"plains" : {
+				"minecraft:mark_variant" : {
+					"value" : 1
+				}
+			},
+			"minecraft:add_bad_omen" : {
+				"minecraft:spell_effects" : {
+					"add_effects" : [
+						{
+							"effect" : "bad_omen",
+							"duration" : 6000,
+							"visible" : false,
+							"display_on_screen_animation" : true
+						}
+					]
+				},
+				"minecraft:timer" : {
+					"time" : [ 0, 0 ],
+					"looping" : false,
+					"time_down_event" : {
+						"event" : "minecraft:clear_add_bad_omen",
+						"target" : "self"
+					}
+				}
+			},
+			"minecraft:clear_bad_omen_spell_effect" : {
+				"minecraft:spell_effects" : {}
+			},
+			"minecraft:raid_trigger" : {
+				"minecraft:raid_trigger" : {
+					"triggered_event" : {
+						"event" : "minecraft:remove_raid_trigger",
+						"target" : "self"
+					}
+				},
+				"minecraft:spell_effects" : {
+					"remove_effects" : "bad_omen"
+				}
+			},
+			"minecraft:normal_player" : {
+				"minecraft:attack" : {
+					"damage" : 1
+				}
+			},
+			"minecraft:axe_01" : {
+				"minecraft:attack" : {
+					"damage" : 8
+				}
+			},
+			"minecraft:axe_02" : {
+				"minecraft:attack" : {
+					"damage" : 9
+				}
+			},
+			"minecraft:axe_03" : {
+				"minecraft:attack" : {
+					"damage" : 9
+				}
+			},
+			"minecraft:double_sword_01" : {
+				"minecraft:attack" : {
+					"damage" : 11
+				}
+			},
+			"minecraft:double_sword_02" : {
+				"minecraft:attack" : {
+					"damage" : 11
+				}
+			},
+			"minecraft:hammer_01" : {
+				"minecraft:attack" : {
+					"damage" : 12
+				}
+			},
+			"minecraft:hammer_02" : {
+				"minecraft:attack" : {
+					"damage" : 13
+				}
+			},
+			"minecraft:hammer_03" : {
+				"minecraft:attack" : {
+					"damage" : 13
+				}
+			},
+			"minecraft:knife_01" : {
+				"minecraft:attack" : {
+					"damage" : 8
+				}
+			},
+			"minecraft:knife_02" : {
+				"minecraft:attack" : {
+					"damage" : 8
+				}
+			},
+			"minecraft:spear_01" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:staff_01" : {
+				"minecraft:attack" : {
+					"damage" : 6
+				}
+			},
+			"minecraft:staff_02" : {
+				"minecraft:attack" : {
+					"damage" : 6
+				}
+			},
+			"minecraft:staff_03" : {
+				"minecraft:attack" : {
+					"damage" : 6
+				}
+			},
+			"minecraft:sword_01" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_02" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_03" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_04" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_05" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_06" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_07" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_08" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:sword_09" : {
+				"minecraft:attack" : {
+					"damage" : 10
+				}
+			},
+			"minecraft:trident_01" : {
+				"minecraft:attack" : {
+					"damage" : 11
+				}
+			},
+			"minecraft:trident_02" : {
+				"minecraft:attack" : {
+					"damage" : 11
+				}
+			},
+			"no_fly" : {
+				"minecraft:spell_effects" : {
+					"remove_effects" : [ "levitation", "strength" ]
+				}
+			},
+			"fly_up_0" : {
+				"minecraft:spell_effects" : {
+					"add_effects" : [
+						{
+							"effect" : "levitation",
+							"duration" : 1,
+							"amplifier" : 4,
+							"visible" : false
+						}
+					]
+				}
+			},
+			"fly_up_1" : {
+				"minecraft:spell_effects" : {
+					"add_effects" : [
+						{
+							"effect" : "levitation",
+							"duration" : 1,
+							"amplifier" : 8,
+							"visible" : false
+						}
+					]
+				}
+			},
+			"armors:id_0" : {
+				"minecraft:skin_id" : {
+					"value" : 0
+				}
+			},
+			"armors:id_1" : {
+				"minecraft:skin_id" : {
+					"value" : 1
+				}
+			},
+			"armors:id_2" : {
+				"minecraft:skin_id" : {
+					"value" : 2
+				}
+			},
+			"armors:id_3" : {
+				"minecraft:skin_id" : {
+					"value" : 3
+				}
+			},
+			"armors:id_4" : {
+				"minecraft:skin_id" : {
+					"value" : 4
+				}
+			},
+			"armors:id_5" : {
+				"minecraft:skin_id" : {
+					"value" : 5
+				}
+			},
+			"armors:id_6" : {
+				"minecraft:skin_id" : {
+					"value" : 6
+				}
+			},
+			"armors:id_7" : {
+				"minecraft:skin_id" : {
+					"value" : 7
+				}
+			},
+			"armors:id_8" : {
+				"minecraft:skin_id" : {
+					"value" : 8
+				}
+			},
+			"armors:id_9" : {
+				"minecraft:skin_id" : {
+					"value" : 9
+				}
+			},
+			"armors:id_10" : {
+				"minecraft:skin_id" : {
+					"value" : 10
+				}
+			},
+			"armors:id_11" : {
+				"minecraft:skin_id" : {
+					"value" : 11
+				}
+			},
+			"armors:id_12" : {
+				"minecraft:skin_id" : {
+					"value" : 12
+				}
+			},
+			"armors:id_13" : {
+				"minecraft:skin_id" : {
+					"value" : 13
+				}
+			},
+			"armors:id_14" : {
+				"minecraft:skin_id" : {
+					"value" : 14
+				}
+			},
+			"armors:id_15" : {
+				"minecraft:skin_id" : {
+					"value" : 15
+				}
+			},
+			"armors:id_16" : {
+				"minecraft:skin_id" : {
+					"value" : 16
+				}
+			},
+			"armors:id_17" : {
+				"minecraft:skin_id" : {
+					"value" : 17
+				}
+			},
+			"armors:id_18" : {
+				"minecraft:skin_id" : {
+					"value" : 18
+				}
+			},
+			"armors:id_19" : {
+				"minecraft:skin_id" : {
+					"value" : 19
+				}
+			},
+			"armors:id_20" : {
+				"minecraft:skin_id" : {
+					"value" : 20
+				}
+			},
+			"upgraded_none" : {},
+			"armors:no_armor" : {
+				"minecraft:health" : {
+					"max" : 20
+				},
+				"minecraft:variant" : {
+					"value" : 0
+				}
+			},
+			"armors:advanced_exoskeleton_armor_set" : {
+				"minecraft:health" : {
+					"max" : 58
+				},
+				"minecraft:variant" : {
+					"value" : 1
+				}
+			},
+			"armors:beatly_buffer_armor_set" : {
+				"minecraft:health" : {
+					"max" : 72
+				},
+				"minecraft:variant" : {
+					"value" : 2
+				}
+			},
+			"armors:bionical_hazard_armor_set" : {
+				"minecraft:health" : {
+					"max" : 58
+				},
+				"minecraft:variant" : {
+					"value" : 3
+				}
+			},
+			"armors:bug_out_armor_set" : {
+				"minecraft:health" : {
+					"max" : 60
+				},
+				"minecraft:variant" : {
+					"value" : 4
+				}
+			},
+			"armors:cybernetic_exosuit_armor_set" : {
+				"minecraft:health" : {
+					"max" : 50
+				},
+				"minecraft:variant" : {
+					"value" : 5
+				}
+			},
+			"armors:cyberpunk_robot_armor_set" : {
+				"minecraft:health" : {
+					"max" : 50
+				},
+				"minecraft:variant" : {
+					"value" : 6
+				}
+			},
+			"armors:grand_vault_armor_set" : {
+				"minecraft:health" : {
+					"max" : 40
+				},
+				"minecraft:variant" : {
+					"value" : 7
+				}
+			},
+			"armors:hydraulic_augmented_armor_set" : {
+				"minecraft:health" : {
+					"max" : 46
+				},
+				"minecraft:variant" : {
+					"value" : 8
+				}
+			},
+			"armors:jetpack_ash_armor_set" : {
+				"minecraft:health" : {
+					"max" : 30
+				},
+				"minecraft:variant" : {
+					"value" : 9
+				},
+				"minecraft:damage_sensor" : {
+					"triggers" : [
+						{
+							"cause" : "fall",
+							"deals_damage" : false
+						}
+					]
+				}
+			},
+			"armors:mechanized_guard_armor_set" : {
+				"minecraft:health" : {
+					"max" : 56
+				},
+				"minecraft:variant" : {
+					"value" : 10
+				},
+				"minecraft:mob_effect" : {
+					"effect_range" : 1,
+					"effect_time" : 10,
+					"mob_effect" : "weakness"
+				}
+			},
+			"armors:mechanized_patriot_armor_set" : {
+				"minecraft:health" : {
+					"max" : 48
+				},
+				"minecraft:variant" : {
+					"value" : 11
+				}
+			},
+			"armors:modular_exoskeleton_armor_set" : {
+				"minecraft:health" : {
+					"max" : 54
+				},
+				"minecraft:variant" : {
+					"value" : 12
+				}
+			},
+			"armors:neutro_tethered_armor_set" : {
+				"minecraft:health" : {
+					"max" : 36
+				},
+				"minecraft:variant" : {
+					"value" : 13
+				}
+			},
+			"armors:next_gen_reinforced_jet_armor_set" : {
+				"minecraft:health" : {
+					"max" : 40
+				},
+				"minecraft:variant" : {
+					"value" : 14
+				},
+				"minecraft:damage_sensor" : {
+					"triggers" : [
+						{
+							"cause" : "fall",
+							"deals_damage" : false
+						}
+					]
+				}
+			},
+			"armors:oblivion_armor_set" : {
+				"minecraft:health" : {
+					"max" : 50
+				},
+				"minecraft:variant" : {
+					"value" : 15
+				}
+			},
+			"armors:reinforced_steel_armor_set" : {
+				"minecraft:health" : {
+					"max" : 40
+				},
+				"minecraft:variant" : {
+					"value" : 16
+				}
+			},
+			"armors:scifi_suit_armor_set" : {
+				"minecraft:health" : {
+					"max" : 44
+				},
+				"minecraft:variant" : {
+					"value" : 17
+				},
+				"minecraft:mob_effect" : {
+					"effect_range" : 1,
+					"effect_time" : 10,
+					"mob_effect" : "nausea"
+				}
+			},
+			"armors:stormslider_armor_set" : {
+				"minecraft:health" : {
+					"max" : 40
+				},
+				"minecraft:variant" : {
+					"value" : 18
+				},
+				"minecraft:mob_effect" : {
+					"effect_range" : 1,
+					"effect_time" : 10,
+					"mob_effect" : "blindness"
+				}
+			},
+			"armors:trauma_resistant_armor_set" : {
+				"minecraft:health" : {
+					"max" : 40
+				},
+				"minecraft:variant" : {
+					"value" : 19
+				},
+				"minecraft:mob_effect" : {
+					"effect_range" : 1,
+					"effect_time" : 10,
+					"mob_effect" : "slowness"
+				}
+			},
+			"armors:veterans_sidearm_armor_set" : {
+				"minecraft:health" : {
+					"max" : 44
+				},
+				"minecraft:variant" : {
+					"value" : 20
+				},
+				"minecraft:mob_effect" : {
+					"effect_range" : 1,
+					"effect_time" : 10,
+					"mob_effect" : "poison"
+				}
+			},
+			"armors:dragon_set" : {
+				"minecraft:health" : {
+					"max" : 60
+				},
+				"minecraft:variant" : {
+					"value" : 2
+				}
+			},
+			"minecraft:default_player_family" : {
+				"minecraft:type_family" : {
+					"family" : [ "player" ]
+				}
+			},
+			"minecraft:left_the_room_family" : {
+				"minecraft:type_family" : {
+					"family" : [ "player", "left_lobby_room" ]
+				}
+			},
+			"g:vanilla_stats" : {
+				"minecraft:movement" : {
+					"value" : 0.1
+				},
+				"minecraft:physics" : {
+					"has_gravity" : true,
+					"has_collision" : true
+				},
+				"minecraft:attack" : {
+					"damage" : 1
+				}
+			},
+			"g:weapon_1" : {
+				"minecraft:movement" : {
+					"value" : 0.09
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0.5
+				}
+			},
+			"g:weapon_2" : {
+				"minecraft:movement" : {
+					"value" : 0.09
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0
+				}
+			},
+			"g:weapon_3" : {
+				"minecraft:movement" : {
+					"value" : 0.1
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0
+				}
+			},
+			"g:weapon_3.special" : {
+				"minecraft:spawn_entity" : {
+					"entities" : {
+						"min_wait_time" : 0,
+						"max_wait_time" : 0,
+						"num_to_spawn" : 1,
+						"single_use" : true,
+						"spawn_entity" : "ks:flame_rings",
+						"spawn_event" : "minecraft:entity_spawned"
+					}
+				}
+			},
+			"g:weapon_4" : {
+				"minecraft:movement" : {
+					"value" : 0.08
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0.8
+				}
+			},
+			"g:weapon_5" : {
+				"minecraft:movement" : {
+					"value" : 0.1
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0.7
+				}
+			},
+			"g:weapon_6" : {
+				"minecraft:movement" : {
+					"value" : 0.1
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0.8
+				}
+			},
+			"g:weapon_7" : {
+				"minecraft:knockback_resistance" : {
+					"value" : 0
+				}
+			},
+			"g:weapon_7.use_1" : {
+				"minecraft:spawn_entity" : {
+					"entities" : {
+						"min_wait_time" : 0,
+						"max_wait_time" : 0,
+						"num_to_spawn" : 1,
+						"single_use" : true,
+						"spawn_entity" : "ks:scifi_arrow",
+						"spawn_event" : "e:power_1"
+					}
+				}
+			},
+			"g:weapon_7.use_2" : {
+				"minecraft:spawn_entity" : {
+					"entities" : {
+						"min_wait_time" : 0,
+						"max_wait_time" : 0,
+						"num_to_spawn" : 1,
+						"single_use" : true,
+						"spawn_entity" : "ks:scifi_arrow",
+						"spawn_event" : "e:power_2"
+					}
+				}
+			},
+			"g:weapon_7.use_3" : {
+				"minecraft:spawn_entity" : {
+					"entities" : {
+						"min_wait_time" : 0,
+						"max_wait_time" : 0,
+						"num_to_spawn" : 1,
+						"single_use" : true,
+						"spawn_entity" : "ks:scifi_arrow",
+						"spawn_event" : "e:power_3"
+					}
+				}
+			},
+			"g:weapon_8" : {
+				"minecraft:movement" : {
+					"value" : 0.08
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0.7
+				}
+			},
+			"g:weapon_9" : {
+				"minecraft:movement" : {
+					"value" : 0.1
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0.7
+				}
+			},
+			"g:weapon_10" : {
+				"minecraft:movement" : {
+					"value" : 0.15
+				},
+				"minecraft:knockback_resistance" : {
+					"value" : 0
+				}
+			},
+			"g:weapon_10.special" : {}
+		},
+		"components" : {
+			"minecraft:experience_reward" : {
+				"on_death" : "Math.Min(query.player_level * 7, 100)"
+			},
+			"minecraft:type_family" : {
+				"family" : [ "player" ]
+			},
+			"minecraft:is_hidden_when_invisible" : {},
+			"minecraft:loot" : {
+				"table" : "loot_tables/empty.json"
+			},
+			"minecraft:collision_box" : {
+				"width" : 0.6,
+				"height" : 1.8
+			},
+			"minecraft:can_climb" : {},
+			"minecraft:movement" : {
+				"value" : 0.1
+			},
+			"minecraft:hurt_on_condition" : {
+				"damage_conditions" : [
+					{
+						"filters" : {
+							"test" : "in_lava",
+							"subject" : "self",
+							"operator" : "==",
+							"value" : true
+						},
+						"cause" : "lava",
+						"damage_per_tick" : 4
+					}
+				]
+			},
+			"minecraft:attack" : {
+				"damage" : 1
+			},
+			"minecraft:exhaustion_values" : {
+				"heal" : 6,
+				"jump" : 0.05,
+				"sprint_jump" : 0.2,
+				"mine" : 0.005,
+				"attack" : 0.1,
+				"damage" : 0.1,
+				"walk" : 0,
+				"sprint" : 0.01,
+				"swim" : 0.01
+			},
+			"minecraft:player.saturation" : {
+				"value" : 5,
+				"max" : 20
+			},
+			"minecraft:player.exhaustion" : {
+				"value" : 0,
+				"max" : 20
+			},
+			"minecraft:player.level" : {
+				"value" : 0,
+				"max" : 24791
+			},
+			"minecraft:player.experience" : {
+				"value" : 0,
+				"max" : 1
+			},
+			"minecraft:breathable" : {
+				"total_supply" : 15,
+				"suffocate_time" : -1,
+				"inhale_time" : 3.75,
+				"generates_bubbles" : false
+			},
+			"minecraft:nameable" : {
+				"always_show" : true,
+				"allow_name_tag_renaming" : false
+			},
+			"minecraft:physics" : {},
+			"minecraft:pushable" : {
+				"is_pushable" : false,
+				"is_pushable_by_piston" : true
+			},
+			"minecraft:insomnia" : {
+				"days_until_insomnia" : 3
+			},
+			"minecraft:conditional_bandwidth_optimization" : {},
+			"minecraft:block_climber" : {},
+			"minecraft:environment_sensor" : {
+				"triggers" : [
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_mob_effect",
+									"subject" : "self",
+									"value" : "bad_omen"
+								},
+								{
+									"test" : "is_in_village",
+									"subject" : "self",
+									"value" : true
+								}
+							]
+						},
+						"event" : "minecraft:trigger_raid"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:axe_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_axe_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:axe_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_axe_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:axe_03"
+								}
+							]
+						},
+						"event" : "minecraft:event_axe_03"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:double_sword_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_double_sword_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:double_sword_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_double_sword_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:hammer_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_hammer_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:hammer_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_hammer_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:hammer_03"
+								}
+							]
+						},
+						"event" : "minecraft:event_hammer_03"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:knife_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_knife_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:knife_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_knife_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:spear_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_spear_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:staff_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_staff_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:staff_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_staff_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:staff_03"
+								}
+							]
+						},
+						"event" : "minecraft:event_staff_03"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_03"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_03"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_04"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_04"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_05"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_05"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_06"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_06"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_07"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_07"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_08"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_08"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:sword_09"
+								}
+							]
+						},
+						"event" : "minecraft:event_sword_09"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:trident_01"
+								}
+							]
+						},
+						"event" : "minecraft:event_trident_01"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"value" : "ks:trident_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_trident_02"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:axe_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:axe_02"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:axe_03"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:double_sword_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:double_sword_02"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:hammer_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:hammer_02"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:hammer_03"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:knife_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:knife_02"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:spear_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:staff_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:staff_02"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:staff_03"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_02"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_03"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_04"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_05"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_06"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_07"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_08"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:sword_09"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:trident_01"
+								},
+								{
+									"test" : "has_equipment",
+									"subject" : "self",
+									"domain" : "hand",
+									"operator" : "!=",
+									"value" : "ks:trident_02"
+								}
+							]
+						},
+						"event" : "minecraft:event_normal_player"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:advanced_exoskeleton_armor_helmet_set"
+						},
+						"event" : "armors:equip_advanced_exoskeleton_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:beatly_buffer_armor_helmet_set"
+						},
+						"event" : "armors:equip_beatly_buffer_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:bionical_hazard_armor_helmet_set"
+						},
+						"event" : "armors:equip_bionical_hazard_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:bug_out_armor_helmet_set"
+						},
+						"event" : "armors:equip_bug_out_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:cybernetic_exosuit_armor_helmet_set"
+						},
+						"event" : "armors:equip_cybernetic_exosuit_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:cyberpunk_robot_armor_helmet_set"
+						},
+						"event" : "armors:equip_cyberpunk_robot_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:grand_vault_armor_helmet_set"
+						},
+						"event" : "armors:equip_grand_vault_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:hydraulic_augmented_armor_helmet_set"
+						},
+						"event" : "armors:equip_hydraulic_augmented_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:jetpack_ash_armor_helmet_set"
+						},
+						"event" : "armors:equip_jetpack_ash_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:mechanized_guard_armor_helmet_set"
+						},
+						"event" : "armors:equip_mechanized_guard_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:mechanized_patriot_armor_helmet_set"
+						},
+						"event" : "armors:equip_mechanized_patriot_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:modular_exoskeleton_armor_helmet_set"
+						},
+						"event" : "armors:equip_modular_exoskeleton_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:neutro_tethered_armor_helmet_set"
+						},
+						"event" : "armors:equip_neutro_tethered_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:next_gen_reinforced_jet_armor_helmet_set"
+						},
+						"event" : "armors:equip_next_gen_reinforced_jet_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:oblivion_armor_helmet_set"
+						},
+						"event" : "armors:equip_oblivion_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:reinforced_steel_armor_helmet_set"
+						},
+						"event" : "armors:equip_reinforced_steel_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:scifi_suit_armor_helmet_set"
+						},
+						"event" : "armors:equip_scifi_suit_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:stormslider_armor_helmet_set"
+						},
+						"event" : "armors:equip_stormslider_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:trauma_resistant_armor_helmet_set"
+						},
+						"event" : "armors:equip_trauma_resistant_armor_set"
+					},
+					{
+						"filters" : {
+							"test" : "has_equipment",
+							"domain" : "head",
+							"value" : "armors:veterans_sidearm_armor_helmet_set"
+						},
+						"event" : "armors:equip_veterans_sidearm_armor_set"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:advanced_exoskeleton_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:beatly_buffer_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:bionical_hazard_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:bug_out_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:cybernetic_exosuit_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:cyberpunk_robot_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:grand_vault_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:hydraulic_augmented_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:jetpack_ash_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:mechanized_guard_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:mechanized_patriot_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:modular_exoskeleton_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:neutro_tethered_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:next_gen_reinforced_jet_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:oblivion_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:reinforced_steel_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:scifi_suit_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:stormslider_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:trauma_resistant_armor_helmet_set"
+								},
+								{
+									"test" : "has_equipment",
+									"domain" : "head",
+									"operator" : "not",
+									"value" : "armors:veterans_sidearm_armor_helmet_set"
+								}
+							]
+						},
+						"event" : "armors:reset_player"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_tag",
+									"value" : "left_lobby_room"
+								}
+							]
+						},
+						"event" : "minecraft:player_left_lobby_room"
+					},
+					{
+						"filters" : {
+							"all_of" : [
+								{
+									"test" : "has_tag",
+									"operator" : "!=",
+									"value" : "left_lobby_room"
+								}
+							]
+						},
+						"event" : "minecraft:player_enter_lobby_room"
+					}
+				]
+			},
+			"minecraft:rideable" : {
+				"seat_count" : 1,
+				"family_types" : [ "backpack" ],
+				"seats" : [
+					{
+						"position" : [ 0, -0.95, 0 ],
+						"min_rider_count" : 0,
+						"max_rider_count" : 1,
+						"lock_rider_rotation" : 0
+					}
+				]
+			}
+		},
+		"events" : {
+			"roofet_forest_finish" : {
+				"add" : {
+					"component_groups" : [ "roofet_forest" ]
+				},
+				"remove" : {
+					"component_groups" : [ "roofet_forest_cooldown" ]
+				}
+			},
+			"end_finish" : {
+				"add" : {
+					"component_groups" : [ "end" ]
+				},
+				"remove" : {
+					"component_groups" : [ "end_cooldown" ]
+				}
+			},
+			"desolate_land_finish" : {
+				"add" : {
+					"component_groups" : [ "desolate_land" ]
+				},
+				"remove" : {
+					"component_groups" : [ "desolate_land_cooldown" ]
+				}
+			},
+			"idyll_finish" : {
+				"add" : {
+					"component_groups" : [ "idyll" ]
+				},
+				"remove" : {
+					"component_groups" : [ "idyll_cooldown" ]
+				}
+			},
+			"nether_finish" : {
+				"add" : {
+					"component_groups" : [ "nether" ]
+				},
+				"remove" : {
+					"component_groups" : [ "nether_cooldown" ]
+				}
+			},
+			"red_desert_finish" : {
+				"add" : {
+					"component_groups" : [ "red_desert" ]
+				},
+				"remove" : {
+					"component_groups" : [ "red_desert_cooldown" ]
+				}
+			},
+			"dungeon_finish" : {
+				"add" : {
+					"component_groups" : [ "dungeon" ]
+				},
+				"remove" : {
+					"component_groups" : [ "dungeon_cooldown" ]
+				}
+			},
+			"jungle_finish" : {
+				"add" : {
+					"component_groups" : [ "jungle" ]
+				},
+				"remove" : {
+					"component_groups" : [ "jungle_cooldown" ]
+				}
+			},
+			"ocean_finish" : {
+				"add" : {
+					"component_groups" : [ "ocean" ]
+				},
+				"remove" : {
+					"component_groups" : [ "ocean_cooldown" ]
+				}
+			},
+			"snowy_taiga_finish" : {
+				"add" : {
+					"component_groups" : [ "snowy_taiga" ]
+				},
+				"remove" : {
+					"component_groups" : [ "snowy_taiga_cooldown" ]
+				}
+			},
+			"mushroom_finish" : {
+				"add" : {
+					"component_groups" : [ "mushroom" ]
+				},
+				"remove" : {
+					"component_groups" : [ "mushroom_cooldown" ]
+				}
+			},
+			"roofet_forest" : {
+				"add" : {
+					"component_groups" : [ "roofet_forest_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "jungle" ]
+				}
+			},
+			"end" : {
+				"add" : {
+					"component_groups" : [ "end_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "desolate_land" ]
+				}
+			},
+			"desolate_land" : {
+				"add" : {
+					"component_groups" : [ "desolate_land_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "idyll" ]
+				}
+			},
+			"idyll" : {
+				"add" : {
+					"component_groups" : [ "idyll_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "nether" ]
+				}
+			},
+			"nether" : {
+				"add" : {
+					"component_groups" : [ "nether_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "red_desert" ]
+				}
+			},
+			"red_desert" : {
+				"add" : {
+					"component_groups" : [ "red_desert_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "dungeon" ]
+				}
+			},
+			"dungeon" : {
+				"add" : {
+					"component_groups" : [ "dungeon_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "roofet_forest" ]
+				}
+			},
+			"jungle" : {
+				"add" : {
+					"component_groups" : [ "jungle_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "ocean" ]
+				}
+			},
+			"ocean" : {
+				"add" : {
+					"component_groups" : [ "ocean_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "snowy_taiga" ]
+				}
+			},
+			"snowy_taiga" : {
+				"add" : {
+					"component_groups" : [ "snowy_taiga_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "mushroom" ]
+				}
+			},
+			"mushroom" : {
+				"add" : {
+					"component_groups" : [ "mushroom_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "cave" ]
+				}
+			},
+			"cave_finish" : {
+				"add" : {
+					"component_groups" : [ "cave" ]
+				},
+				"remove" : {
+					"component_groups" : [ "cave_cooldown" ]
+				}
+			},
+			"cave" : {
+				"add" : {
+					"component_groups" : [ "cave_cooldown" ]
+				},
+				"remove" : {
+					"component_groups" : [ "plains" ]
+				}
+			},
+			"plains" : {
+				"add" : {
+					"component_groups" : [ "plains" ]
+				}
+			},
+			"minecraft:gain_bad_omen" : {
+				"add" : {
+					"component_groups" : [ "minecraft:add_bad_omen" ]
+				}
+			},
+			"minecraft:clear_add_bad_omen" : {
+				"remove" : {
+					"component_groups" : [ "minecraft:add_bad_omen" ]
+				},
+				"add" : {
+					"component_groups" : [ "minecraft:clear_bad_omen_spell_effect" ]
+				}
+			},
+			"fly_up_0" : {
+				"remove" : {
+					"component_groups" : [ "no_fly", "fly_up_1" ]
+				},
+				"add" : {
+					"component_groups" : [ "fly_up_0" ]
+				}
+			},
+			"fly_up_1" : {
+				"remove" : {
+					"component_groups" : [ "no_fly", "fly_up_0" ]
+				},
+				"add" : {
+					"component_groups" : [ "fly_up_1" ]
+				}
+			},
+			"no_fly" : {
+				"add" : {
+					"component_groups" : [ "no_fly" ]
+				},
+				"remove" : {
+					"component_groups" : [ "fly_up_0", "fly_up_1" ]
+				}
+			},
+			"minecraft:trigger_raid" : {
+				"add" : {
+					"component_groups" : [ "minecraft:raid_trigger" ]
+				}
+			},
+			"minecraft:remove_raid_trigger" : {
+				"remove" : {
+					"component_groups" : [ "minecraft:raid_trigger" ]
+				}
+			},
+			"armors:set_id_0" : {
+				"add" : {
+					"component_groups" : [ "armors:id_0" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_1" : {
+				"add" : {
+					"component_groups" : [ "armors:id_1" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_2" : {
+				"add" : {
+					"component_groups" : [ "armors:id_2" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_3" : {
+				"add" : {
+					"component_groups" : [ "armors:id_3" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_4" : {
+				"add" : {
+					"component_groups" : [ "armors:id_4" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_5" : {
+				"add" : {
+					"component_groups" : [ "armors:id_5" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_6" : {
+				"add" : {
+					"component_groups" : [ "armors:id_6" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_7" : {
+				"add" : {
+					"component_groups" : [ "armors:id_7" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_8" : {
+				"add" : {
+					"component_groups" : [ "armors:id_8" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_9" : {
+				"add" : {
+					"component_groups" : [ "armors:id_9" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_10" : {
+				"add" : {
+					"component_groups" : [ "armors:id_10" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_11" : {
+				"add" : {
+					"component_groups" : [ "armors:id_11" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_12" : {
+				"add" : {
+					"component_groups" : [ "armors:id_12" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_13" : {
+				"add" : {
+					"component_groups" : [ "armors:id_13" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_14" : {
+				"add" : {
+					"component_groups" : [ "armors:id_14" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_15" : {
+				"add" : {
+					"component_groups" : [ "armors:id_15" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_16" : {
+				"add" : {
+					"component_groups" : [ "armors:id_16" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_17" : {
+				"add" : {
+					"component_groups" : [ "armors:id_17" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_18",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_18" : {
+				"add" : {
+					"component_groups" : [ "armors:id_18" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_19",
+						"armors:id_20",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_19" : {
+				"add" : {
+					"component_groups" : [ "armors:id_19" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_21",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:set_id_20" : {
+				"add" : {
+					"component_groups" : [ "armors:id_20" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:id_0",
+						"armors:id_1",
+						"armors:id_2",
+						"armors:id_3",
+						"armors:id_4",
+						"armors:id_5",
+						"armors:id_6",
+						"armors:id_7",
+						"armors:id_8",
+						"armors:id_9",
+						"armors:id_10",
+						"armors:id_11",
+						"armors:id_12",
+						"armors:id_13",
+						"armors:id_14",
+						"armors:id_15",
+						"armors:id_16",
+						"armors:id_17",
+						"armors:id_18",
+						"armors:id_20",
+						"armors:id_22",
+						"armors:id_23",
+						"armors:id_24",
+						"armors:id_25",
+						"armors:id_26",
+						"armors:id_27",
+						"armors:id_28"
+					]
+				}
+			},
+			"armors:reset_player" : {
+				"remove" : {
+					"component_groups" : [
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				},
+				"add" : {
+					"component_groups" : [ "armors:no_armor" ]
+				}
+			},
+			"armors:equip_advanced_exoskeleton_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:advanced_exoskeleton_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_beatly_buffer_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:beatly_buffer_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_bionical_hazard_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:bionical_hazard_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_bug_out_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:bug_out_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_cybernetic_exosuit_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:cybernetic_exosuit_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_cyberpunk_robot_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:cyberpunk_robot_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_grand_vault_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:grand_vault_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_hydraulic_augmented_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:hydraulic_augmented_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_jetpack_ash_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:jetpack_ash_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_mechanized_guard_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:mechanized_guard_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_mechanized_patriot_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:mechanized_patriot_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_modular_exoskeleton_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:modular_exoskeleton_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_neutro_tethered_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:neutro_tethered_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_next_gen_reinforced_jet_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:next_gen_reinforced_jet_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_oblivion_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:oblivion_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_reinforced_steel_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:reinforced_steel_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_scifi_suit_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:scifi_suit_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_stormslider_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:stormslider_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:trauma_resistant_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_trauma_resistant_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:trauma_resistant_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:veterans_sidearm_armor_set"
+					]
+				}
+			},
+			"armors:equip_veterans_sidearm_armor_set" : {
+				"add" : {
+					"component_groups" : [ "armors:veterans_sidearm_armor_set" ]
+				},
+				"remove" : {
+					"component_groups" : [
+						"armors:no_armor",
+						"armors:advanced_exoskeleton_armor_set",
+						"armors:beatly_buffer_armor_set",
+						"armors:bionical_hazard_armor_set",
+						"armors:bug_out_armor_set",
+						"armors:cybernetic_exosuit_armor_set",
+						"armors:cyberpunk_robot_armor_set",
+						"armors:grand_vault_armor_set",
+						"armors:hydraulic_augmented_armor_set",
+						"armors:jetpack_ash_armor_set",
+						"armors:mechanized_guard_armor_set",
+						"armors:mechanized_patriot_armor_set",
+						"armors:modular_exoskeleton_armor_set",
+						"armors:neutro_tethered_armor_set",
+						"armors:next_gen_reinforced_jet_armor_set",
+						"armors:oblivion_armor_set",
+						"armors:reinforced_steel_armor_set",
+						"armors:scifi_suit_armor_set",
+						"armors:stormslider_armor_set",
+						"armors:trauma_resistant_armor_set"
+					]
+				}
+			},
+			"minecraft:event_normal_player" : {
+				"add" : {
+					"component_groups" : [ "minecraft:normal_player" ]
+				}
+			},
+			"minecraft:event_axe_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:axe_01" ]
+				}
+			},
+			"minecraft:event_axe_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:axe_02" ]
+				}
+			},
+			"minecraft:event_axe_03" : {
+				"add" : {
+					"component_groups" : [ "minecraft:axe_03" ]
+				}
+			},
+			"minecraft:event_double_sword_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:double_sword_01" ]
+				}
+			},
+			"minecraft:event_double_sword_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:double_sword_02" ]
+				}
+			},
+			"minecraft:event_hammer_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:hammer_01" ]
+				}
+			},
+			"minecraft:event_hammer_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:hammer_02" ]
+				}
+			},
+			"minecraft:event_hammer_03" : {
+				"add" : {
+					"component_groups" : [ "minecraft:hammer_03" ]
+				}
+			},
+			"minecraft:event_knife_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:knife_01" ]
+				}
+			},
+			"minecraft:event_knife_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:knife_02" ]
+				}
+			},
+			"minecraft:event_spear_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:spear_01" ]
+				}
+			},
+			"minecraft:event_staff_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:staff_01" ]
+				}
+			},
+			"minecraft:event_staff_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:staff_02" ]
+				}
+			},
+			"minecraft:event_staff_03" : {
+				"add" : {
+					"component_groups" : [ "minecraft:staff_03" ]
+				}
+			},
+			"minecraft:event_sword_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_01" ]
+				}
+			},
+			"minecraft:event_sword_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_02" ]
+				}
+			},
+			"minecraft:event_sword_03" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_03" ]
+				}
+			},
+			"minecraft:event_sword_04" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_04" ]
+				}
+			},
+			"minecraft:event_sword_05" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_05" ]
+				}
+			},
+			"minecraft:event_sword_06" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_06" ]
+				}
+			},
+			"minecraft:event_sword_07" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_07" ]
+				}
+			},
+			"minecraft:event_sword_08" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_08" ]
+				}
+			},
+			"minecraft:event_sword_09" : {
+				"add" : {
+					"component_groups" : [ "minecraft:sword_09" ]
+				}
+			},
+			"minecraft:event_trident_01" : {
+				"add" : {
+					"component_groups" : [ "minecraft:trident_01" ]
+				}
+			},
+			"minecraft:event_trident_02" : {
+				"add" : {
+					"component_groups" : [ "minecraft:trident_02" ]
+				}
+			},
+			"minecraft:player_enter_lobby_room" : {
+				"add" : {
+					"component_groups" : [ "minecraft:default_player_family" ]
+				},
+				"remove" : {
+					"component_groups" : [ "minecraft:left_the_room_family" ]
+				}
+			},
+			"minecraft:player_left_lobby_room" : {
+				"add" : {
+					"component_groups" : [ "minecraft:left_the_room_family" ]
+				},
+				"remove" : {
+					"component_groups" : [ "minecraft:default_player_family" ]
+				}
+			},
+			"minecraft:entity_spawned" : {
+				"add" : {
+					"component_groups" : [
+						"g:vanilla_stats",
+						"off",
+						"minecraft:normal_player",
+						"minecraft:default_player_family"
+					]
+				}
+			},
+			"minecraft:reset_player" : {
+				"add" : {
+					"component_groups" : [ "off", "minecraft:normal_player", "minecraft:default_player_family" ]
+				},
+				"remove" : {
+					"component_groups" : [ "plains" ]
+				}
+			},
+			"e:vanilla_stats" : {
+				"add" : {
+					"component_groups" : [ "g:vanilla_stats" ]
+				}
+			},
+			"e:weapon_1" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_1" ]
+				}
+			},
+			"e:weapon_1.special" : {
+				"set_property" : {
+					"ks:weapon_1_special" : 30
+				}
+			},
+			"e:weapon_1.special.tick" : {
+				"set_property" : {
+					"ks:weapon_1_special" : "q.property('ks:weapon_1_special') - 1"
+				}
+			},
+			"e:weapon_2" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_2" ]
+				}
+			},
+			"e:weapon_3" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_3" ]
+				}
+			},
+			"e:weapon_3.special" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_3.special" ]
+				}
+			},
+			"e:weapon_4" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_4" ]
+				}
+			},
+			"e:weapon_5" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_5" ]
+				}
+			},
+			"e:weapon_5.special" : {
+				"set_property" : {
+					"ks:weapon_5_special" : 1
+				}
+			},
+			"e:weapon_5.special.stop" : {
+				"set_property" : {
+					"ks:weapon_5_special" : 0
+				}
+			},
+			"e:weapon_6" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_6" ]
+				}
+			},
+			"e:weapon_7" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_7" ]
+				}
+			},
+			"e:weapon_7.use_1" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_7.use_1" ]
+				}
+			},
+			"e:weapon_7.use_2" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_7.use_2" ]
+				}
+			},
+			"e:weapon_7.use_3" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_7.use_3" ]
+				}
+			},
+			"e:weapon_8" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_8" ]
+				}
+			},
+			"e:weapon_9" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_9" ]
+				}
+			},
+			"e:weapon_9.special" : {
+				"set_property" : {
+					"ks:weapon_9_special" : 1
+				}
+			},
+			"e:weapon_9.special.stop" : {
+				"set_property" : {
+					"ks:weapon_9_special" : 0
+				}
+			},
+			"e:weapon_10" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_10" ]
+				}
+			},
+			"e:weapon_10.special" : {
+				"add" : {
+					"component_groups" : [ "g:weapon_10.special" ]
+				}
+			}
+		}
+	}
+}

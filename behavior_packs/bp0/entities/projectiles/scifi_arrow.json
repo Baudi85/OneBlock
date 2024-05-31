@@ -1,0 +1,122 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ks:scifi_arrow",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:physics": {},
+      "minecraft:fire_immune": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 7,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "component_groups": {
+      "g:power_1": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 10,
+              "knockback": true
+            },
+            "stick_in_ground": {},
+            "definition_event": {
+              "event_trigger": {
+                "event": "e:despawn_timer",
+                "target": "self"
+              }
+            }
+          },
+          "anchor": 1,
+          "power": 1.85,
+          "gravity": 0.05
+        }
+      },
+      "g:power_2": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 15,
+              "knockback": true
+            },
+            "stick_in_ground": {},
+            "definition_event": {
+              "event_trigger": {
+                "event": "e:despawn_timer",
+                "target": "self"
+              }
+            }
+          },
+          "anchor": 1,
+          "power": 3.75,
+          "gravity": 0.05
+        }
+      },
+      "g:power_3": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 20,
+              "knockback": true
+            },
+            "stick_in_ground": {},
+            "definition_event": {
+              "event_trigger": {
+                "event": "e:despawn_timer",
+                "target": "self"
+              }
+            }
+          },
+          "anchor": 1,
+          "power": 6.5,
+          "gravity": 0.05
+        }
+      },
+      "g:despawn_timer": {
+        "minecraft:timer": {
+          "time": 5.0,
+          "time_down_event": {
+            "event": "e:despawn",
+            "target": "self"
+          }
+        }
+      },
+      "g:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "e:power_1": {
+        "add": { "component_groups": [ "g:power_1" ]}
+      },
+      "e:power_2": {
+        "add": { "component_groups": [ "g:power_2" ]}
+      },
+      "e:power_3": {
+        "add": { "component_groups": [ "g:power_3" ]}
+      },
+      "e:despawn_timer": {
+        "add": { "component_groups": [ "g:despawn_timer" ]}
+      },
+      "e:despawn": {
+        "add": { "component_groups": [ "g:despawn" ]}
+      }
+    }
+  }
+}

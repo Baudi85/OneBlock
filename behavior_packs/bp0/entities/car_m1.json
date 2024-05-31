@@ -1,0 +1,197 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cars:car_m1",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"default": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"black": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"blue": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"green": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"red": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"white": {
+				"minecraft:variant": {
+					"value": 5
+				}
+			},
+			"yellow": {
+				"minecraft:variant": {
+					"value": 6
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"car"
+				]
+			},
+			"minecraft:health": {
+				"value": 20,
+				"max": 20,
+				"min": 20
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.4
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.05
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"avoid_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"family_types": [
+					"player",
+					"skeleton",
+					"zombie"
+				],
+				"interact_text": "action.interact.ride.car",
+				"seats": [
+					{
+						"position": [
+							0.47,
+							0.2,
+							-0.24
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 1
+					},
+					{
+						"position": [
+							-0.47,
+							0.2,
+							-0.24
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2
+					}
+				]
+			},
+			"minecraft:behavior.mount_pathing": {
+				"priority": 2,
+				"speed_multiplier": 1.5,
+				"target_dist": 4,
+				"track_target": true
+			},
+			"minecraft:behavior.player_ride_tamed": {},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:can_power_jump": {},
+			"minecraft:is_tamed": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:scale": {
+				"value": 1.5
+			},
+			"minecraft:collision_box": {
+				"width": 0.85,
+				"height": 1.3
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1,
+				"max": 1
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"add": {
+							"component_groups": [
+								"default"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"black"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"blue"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"green"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"red"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"white"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"yellow"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

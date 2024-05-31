@@ -1,0 +1,98 @@
+{
+	"format_version" : "1.16.0",
+	"minecraft:entity" : {
+		"description" : {
+			"identifier" : "ks:floating_text",
+			"is_spawnable" : false,
+			"is_summonable" : true,
+			"is_experimental" : false,
+			"runtime_identifier" : "minecraft:ender_crystal"
+		},
+		"component_groups" : {
+			"despawn" : {
+				"minecraft:instant_despawn" : {}
+			},
+			"1" : {
+				"minecraft:mark_variant" : {
+					"value" : 1
+				},
+				"minecraft:nameable" : {}
+			}
+		},
+		"components" : {
+			"minecraft:hurt_on_condition" : {
+				"damage_conditions" : [
+					{
+						"filters" : {
+							"test" : "in_lava",
+							"subject" : "self",
+							"operator" : "==",
+							"value" : true
+						},
+						"cause" : "lava",
+						"damage_per_tick" : 0
+					}
+				]
+			},
+			"minecraft:physics" : {
+				"has_gravity" : true
+			},
+			"minecraft:pushable" : {
+				"is_pushable" : true,
+				"is_pushable_by_piston" : true
+			},
+			"minecraft:type_family" : {
+				"family" : [ "start" ]
+			},
+			"minecraft:collision_box" : {
+				"width" : 1,
+				"height" : 1.3
+			},
+			"minecraft:fire_immune" : {},
+			"minecraft:knockback_resistance" : {
+				"value" : 1
+			},
+			"minecraft:nameable" : {},
+			"minecraft:damage_sensor" : {
+				"triggers" : [
+					{
+						"cause" : "contact",
+						"deals_damage" : true
+					},
+					{
+						"cause" : "magma",
+						"deals_damage" : true
+					},
+					{
+						"cause" : "all",
+						"deals_damage" : false,
+						"on_damage" : {
+							"filters" : {
+								"test" : "has_damage",
+								"subject" : "self",
+								"value" : "fatal"
+							},
+							"event" : "despawn"
+						}
+					}
+				]
+			},
+			"minecraft:health" : {
+				"value" : 1,
+				"max" : 1
+			}
+		},
+		"events" : {
+			"despawn" : {
+				"add" : {
+					"component_groups" : [ "despawn" ]
+				}
+			},
+			"minecraft:entity_spawned" : {
+				"add" : {
+					"component_groups" : [ "1" ]
+				}
+			}
+		}
+	}
+}

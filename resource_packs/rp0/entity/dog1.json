@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dog:dog1",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"texture1": "textures/entity/dog1/dog1_1",
+				"texture2": "textures/entity/dog1/dog1_2",
+				"texture3": "textures/entity/dog1/dog1_3",
+				"texture4": "textures/entity/dog1/dog1_4",
+				"texture5": "textures/entity/dog1/dog1_5",
+				"texture6": "textures/entity/dog1/dog1_6",
+				"texture7": "textures/entity/dog1/dog1_7",
+				"texture8": "textures/entity/dog1/dog1_8",
+				"texture9": "textures/entity/dog1/dog1_5",
+				"texture10": "textures/entity/dog1/dog1_3",
+				"texture11": "textures/entity/dog1/dog1_1",
+				"texture12": "textures/entity/dog1/dog1_2"
+			},
+			"geometry": {
+				"default": "geometry.dog1"
+			},
+			"scripts": {
+				"animate": [
+				    "idle",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"roll": "query.mark_variant == 1"
+					},
+					{
+						"sit": "query.is_sitting"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.dog.walk",
+				"roll": "animation.cat.roll",
+				"idle": "animation.dog.stand",
+				"sit": "animation.dog.sit"
+			},
+			"spawn_egg": {
+				"texture": "dog1",
+				"texture_index": 0
+			},
+			"render_controllers": [ "controller.render.base" ]
+		}
+	}
+}

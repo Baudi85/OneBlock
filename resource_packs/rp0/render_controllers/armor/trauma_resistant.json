@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.trauma_resistant_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.trauma_resistant_armor",
+            "Texture.trauma_resistant_armor_1",
+            "Texture.trauma_resistant_armor_2",
+            "Texture.trauma_resistant_armor_3",
+            "Texture.trauma_resistant_armor_4",
+            "Texture.trauma_resistant_armor_5",
+            "Texture.trauma_resistant_armor_6",
+            "Texture.trauma_resistant_armor_7",
+            "Texture.trauma_resistant_armor_8",
+            "Texture.trauma_resistant_armor_9",
+            "Texture.trauma_resistant_armor_10",
+            "Texture.trauma_resistant_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.trauma_resistant_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

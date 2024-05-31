@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:bionical_hazard_armor_set_4"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "   ",
+      "AB ",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "armors:bionical_hazard_armor_set"
+      },
+      "B": {
+        "item": "minecraft:green_dye"
+      }
+
+    },
+    "result": {
+      "item": "armors:bionical_hazard_armor_set_4",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

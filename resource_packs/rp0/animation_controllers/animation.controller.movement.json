@@ -1,0 +1,78 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.movement_controller": {
+            "initial_state": "idle",
+            "states": {
+                "sit":{
+                    "transitions": [
+                        {
+                            "walk": "q.modified_move_speed > 0.05 && !q.is_sitting"
+                        },
+                        {
+                            "idle": "q.modified_move_speed < 0.05 && !q.is_sitting"
+                        },
+                        {
+                            "roll": "query.mark_variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "sit"
+                    ]
+                },
+                "idle":{
+                    "transitions": [
+                        {
+                            "walk": "q.modified_move_speed > 0.05 && !q.is_sitting"
+                        },
+                        {
+                            "sit": "query.is_sitting"
+                        },
+                        {
+                            "roll": "query.mark_variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "idle"
+                    ]
+                },
+                "roll":{
+                    "transitions": [
+                        {
+                            "sit": "query.is_sitting"
+                        },
+                        {
+                            "idle": "q.modified_move_speed < 0.05 && !q.is_sitting"
+                        },
+                        {
+                            "walk": "q.modified_move_speed > 0.05"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "roll"
+                    ]
+                },
+                "walk":{
+                    "transitions": [
+                        {
+                            "sit": "query.is_sitting"
+                        },
+                        {
+                            "idle": "q.modified_move_speed < 0.05 && !q.is_sitting"
+                        },
+                        {
+                            "roll": "query.mark_variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "walk"
+                    ]
+                }
+            }
+        }
+    }
+}

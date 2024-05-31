@@ -1,0 +1,53 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.wheels": {
+            "states": {
+                "wheels_out": {
+                    "transitions": [
+                        {
+                            "wheels_in": "query.vertical_speed > 0.2"
+                        }
+                    ],
+                    "animations": [
+                        {
+                        "landing": "query.vertical_speed < -0.3"
+                        }
+                    ]
+                },
+                "wheels_in": {
+                    "transitions": [
+                        {
+                            "wheels_out": "query.vertical_speed < -0.2"
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "taking_off": "query.vertical_speed > 0.2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.steering_wheel": {
+            "states": {
+                "steering_wheel": {
+                    "animations": [
+                        "steering_wheel"
+                    ]
+                }
+            }
+        },
+        "controller.animation.moving": {
+            "states": {
+                "moving": {
+                    "animations": [
+                        {
+                            "moving": "query.has_rider"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

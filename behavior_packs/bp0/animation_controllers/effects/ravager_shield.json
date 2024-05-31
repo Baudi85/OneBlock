@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ravager_shield_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "ravager_shield_active": "(query.get_equipped_item_name == 'ravager_shield') && query.is_using_item" }
+          ]
+        },
+		
+        "ravager_shield_active": {
+          "on_entry": [
+            "/playsound v.ravager_shield @a ~ ~ ~",
+            "/particle ks:ravager_shield_particle ~ ~ ~",
+            "/effect @s resistance 15 2"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

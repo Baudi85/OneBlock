@@ -1,0 +1,12 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "armors:beatly_buffer_armor_set",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": "beatly_buffer_armor_set"
+		}
+	}
+}

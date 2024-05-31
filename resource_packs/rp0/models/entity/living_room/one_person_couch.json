@@ -1,0 +1,71 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.one_person_couch",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"parent": "root",
+					"name": "leg",
+					"pivot": [6.5, 2, -6.5],
+					"cubes": [
+						{"origin": [5, 0, -6.25], "size": [2, 4, 2], "uv": [36, 21]},
+						{"origin": [5, 0, 4.75], "size": [2, 4, 2], "pivot": [6, 2, 5.75], "rotation": [0, -90, 0], "uv": [36, 21]},
+						{"origin": [-7, 0, -6.25], "size": [2, 4, 2], "uv": [36, 21], "mirror": true},
+						{"origin": [-7, 0, 4.75], "size": [2, 4, 2], "pivot": [-6, 2, 5.75], "rotation": [0, 180, 0], "uv": [36, 21]}
+					]
+				},
+				{
+					"name": "couch",
+					"parent": "root",
+					"pivot": [-0.5, 8, 0],
+					"cubes": [
+						{"origin": [-8, 5, -8.5], "size": [16, 15, 2], "pivot": [-0.5, 5, -7.5], "rotation": [-90, 0, 0], "uv": [0, 0]},
+						{"origin": [-7.5, 7, -8.5], "size": [15, 14, 2], "pivot": [-0.5, 7, -7.5], "rotation": [-90, 0, 0], "uv": [0, 32]},
+						{"origin": [-8, 6, 6], "size": [16, 13, 2], "uv": [0, 17]},
+						{"origin": [-7, 8, 5.5], "size": [14, 10, 1], "uv": [34, 32]}
+					]
+				},
+				{
+					"name": "arm",
+					"parent": "root",
+					"pivot": [-8.5, 11.75, -0.5],
+					"cubes": [
+						{"origin": [0.375, 4.25, -12.75], "size": [12, 5, 2], "pivot": [12.875, 6.75, -6.25], "rotation": [0, 90, 15], "uv": [36, 0], "mirror": true},
+						{"origin": [-12.375, 4.25, -12.75], "size": [12, 5, 2], "pivot": [-12.875, 6.75, -6.25], "rotation": [0, -90, -15], "uv": [36, 0]},
+						{"origin": [-3, 9.75, 3.75], "size": [13, 3, 3], "pivot": [8.5, 11.25, 5.25], "rotation": [0, -90, 0], "uv": [32, 44], "mirror": true},
+						{"origin": [-10, 9.75, 3.75], "size": [13, 3, 3], "pivot": [-8.5, 11.25, 5.25], "rotation": [0, 90, 0], "uv": [32, 44]}
+					]
+				},
+				{
+					"name": "decor",
+					"parent": "root",
+					"pivot": [0, 21, -1],
+					"cubes": [
+						{"origin": [-7.5, 3, -4.75], "size": [15, 14, 2], "pivot": [0, 4.5, -5.25], "rotation": [-90, 0, 0], "uv": [0, 48]},
+						{"origin": [-7, 19, 7], "size": [14, 3, 0], "uv": [36, 7]}
+					]
+				},
+				{
+					"name": "pillow",
+					"parent": "root",
+					"pivot": [-0.5, 8, 4],
+					"cubes": [
+						{"origin": [-7, 8, 4], "size": [8, 8, 3], "pivot": [-0.5, 8, 4], "rotation": [0, -60, -20], "uv": [36, 10]}
+					]
+				}
+			]
+		}
+	]
+}

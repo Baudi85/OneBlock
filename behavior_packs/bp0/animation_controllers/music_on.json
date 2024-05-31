@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+      "controller.animation.player.music": {
+          "initial_state": "default",
+          "states": {
+              "default": {
+                  "transitions": [
+                      {"start_music": "1.0"}
+                  ]
+              },
+              "start_music": {
+                  "animations": ["music"]
+              }
+          }
+      }
+  }
+}

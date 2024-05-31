@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_5.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "v.attack_time" },
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "attack": {
+          "on_entry": [
+            "/summon ks:trigger_dummy ^^^1.5 e:weapon_5.attack"
+          ],
+          "transitions": [
+            { "default": "!v.attack_time" }
+          ]
+        },
+        "use": {
+          "on_entry": [ "@s e:weapon_5.special"],
+          "transitions": [
+            { "default": "!q.is_using_item" }
+          ],
+          "on_exit": [ "@s e:weapon_5.special.stop" ]
+        }
+      }
+    },
+    "controller.animation.player.weapon_5.special.tick": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+						{ "execute": "q.property('ks:weapon_5_special') != 0" }
+					]
+        },
+        "execute": {
+          "on_entry": [ "/summon ks:trigger_dummy ^^^-0.5 e:weapon_5.special"  ],
+          "transitions": [
+            { "default": "q.property('ks:weapon_5_special') == 0" },
+            { "execute2": "q.property('ks:weapon_5_special') != 0" }
+          ]
+        },
+        "execute2": {
+          "on_entry": [ "/summon ks:trigger_dummy ^^^-0.5 e:weapon_5.special"  ],
+          "transitions": [
+            { "default": "q.property('ks:weapon_5_special') == 0" },
+            { "execute": "q.property('ks:weapon_5_special') != 0" }
+          ]
+        }
+      }
+    }
+  }
+}

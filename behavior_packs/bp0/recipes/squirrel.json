@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "cat:dogggg"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "   ",
+            "#E#",
+            " # "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:apple"
+            },
+            "E": {
+                "item": "minecraft:egg"
+            }
+        },
+        "result": {
+            "item": "kreatik:squirrel_spawn_egg",
+            "count": 1
+        }
+    }
+}

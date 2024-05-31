@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:backpack_1_green",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"block"
+				]
+			},
+			"animations": {
+				"block": "controller.animation.block_9"
+			}
+		},
+		"component_groups": {
+			
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"backpack"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:health": {
+				"max": 1,
+				"value": 1
+			},
+			"minecraft:inventory": {
+				"inventory_size": 27,
+				"container_type": "inventory"
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/backpack_1/green.json"
+			}
+		},
+		"events": {}
+	}
+}

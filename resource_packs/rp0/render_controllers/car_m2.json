@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.car_m2": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.textures[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.textures": [
+						"Texture.default",
+						"Texture.gray",
+						"Texture.green",
+						"Texture.light_blue",
+						"Texture.orange",
+						"Texture.purple",
+						"Texture.white"
+					]
+				}
+			},
+			"is_hurt_color": {
+				"a": 0,
+				"r": 0,
+				"g": 0,
+				"b": 0
+			}
+		}
+	}
+}

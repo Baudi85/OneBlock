@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_8.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "v.attack_time" },
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "attack": {
+          "on_entry": [ "v.timer = q.life_time + 0.1;" ],
+          "transitions": [
+            { "attack2": "v.timer <= q.life_time" }
+          ]
+        },
+        "attack2": {
+          "on_entry": [
+            "/execute positioned ^^^1.5 run execute as @e[r=2,family=mob] at @s run effect @s levitation 1 0 true",
+            "/execute positioned ^^^1.5 run execute as @e[r=2,family=mob] at @s run damage @s 9 magic entity @p"
+          ],
+          "transitions": [
+            { "default": "!v.attack_time" }
+          ]
+        },
+        "use": {
+          "on_entry": [ "v.timer2 = q.life_time + 0.1;" ],
+          "transitions": [
+            { "use2": "v.timer2 <= q.life_time" }
+          ]
+        },
+        "use2": {
+          "on_entry": [ "/effect @e[r=16,family=mob] levitation 1 29 true" ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        }
+      }
+    }
+  }
+}

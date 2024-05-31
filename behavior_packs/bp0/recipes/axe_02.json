@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:axe_02"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BCB",
+      "BAB",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:echo_shard"
+      },
+      "B": {
+        "item": "minecraft:diamond"
+      },
+      "C": {
+        "item": "minecraft:diamond_block"
+      },
+      "D": {
+        "item": "minecraft:blaze_powder"
+      }
+
+    },
+    "result": {
+      "item": "ks:axe_02",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

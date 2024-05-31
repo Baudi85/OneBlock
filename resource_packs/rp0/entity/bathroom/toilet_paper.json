@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "furniture:toilet_paper",
+        "materials": { 
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/entity/furniture/bathroom/toilet_paper/toilet_paper"
+        },
+        "geometry": {
+          "default": "geometry.toilet_paper"
+        },
+        "spawn_egg": {
+          "texture": "toilet_paper", 
+          "texture_index": 0
+        },
+        "scripts": {
+          "pre_animation": [
+            "variable.rotation = query.variant*45;"
+            ],
+            "animate" : [
+                "rotation_controller",
+                "spawn"
+            ]
+        },
+        "sound_effects": {
+          "place": "furniture.place"
+        },
+        "particle_effects": {
+          "on_placed": "furniture:place"
+        },
+        "animations": {
+          "spawn": "controller.animation.furniture.new_on_spawn",
+          "rotation_controller": "controller.animation.furniture.rotation",
+          "rotation_static": "animation.furniture.rotation_static",
+          "rotation_dynamic": "animation.furniture.rotation_dynamic"
+        },
+        "render_controllers": [ "controller.render.toilet_paper" ]
+      }
+    }
+  }

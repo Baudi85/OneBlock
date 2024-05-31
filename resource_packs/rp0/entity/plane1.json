@@ -1,0 +1,44 @@
+{
+	"format_version" : "1.10.0",
+	"minecraft:client_entity" : {
+		"description" : {
+			"identifier" : "kreatik:plane1",
+			"materials" : {
+				"default" : "skeleton"
+			},
+			"textures" : {
+				"texture_0" : "textures/entities/plane1_black",
+				"texture_1" : "textures/entities/plane1_blue",
+				"texture_2" : "textures/entities/plane1_dark_blue",
+				"texture_3" : "textures/entities/plane1_green",
+				"texture_4" : "textures/entities/plane1_orange",
+				"texture_5" : "textures/entities/plane1_purple",
+				"texture_6" : "textures/entities/plane1_red",
+				"texture_7" : "textures/entities/plane1_yellow"
+			},
+			"geometry" : {
+				"default" : "geometry.plane1"
+			},
+			"render_controllers" : [ "controller.render.plane" ],
+			"animations" : {
+				"moving" : "animation.plane.propeller",
+				"steering" : "animation.plane.steering",
+				"yaw" : "controller.animation.steering",
+				"tilt" : "animation.plane.tilt"
+			},
+			"scripts" : {
+				"animate" : [
+					{
+						"moving" : "query.has_rider"
+					},
+					{
+						"yaw" : "query.has_rider && !query.is_on_ground"
+					},
+					{
+						"steering" : "query.has_rider"
+					}
+				]
+			}
+		}
+	}
+}

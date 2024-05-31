@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:velociraptor",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/velociraptor/velociraptor"
+			},
+			"geometry": {
+				"default": "geometry.velociraptor.unsaddled",
+				"saddled": "geometry.velociraptor.saddled"
+			},
+			"animations": {
+				"walking": "animation.velociraptor.walk",
+				"idle": "animation.velociraptor.stand",
+				"sit": "animation.velociraptor.sit",
+				"controller": "controller.animation.main"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"spawn_egg":{
+				"base_color": "#642810",
+				"overlay_color": "#0e0500"
+			},
+			"render_controllers": [
+				"controller.render.main"
+			]
+		}
+	}
+}

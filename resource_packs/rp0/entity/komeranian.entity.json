@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:komeranian",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"texture1": "textures/entity/komeranian1",
+				"texture2": "textures/entity/komeranian2",
+				"texture3": "textures/entity/komeranian3",
+				"texture4": "textures/entity/komeranian4",
+				"texture5": "textures/entity/komeranian5",
+				"texture6": "textures/entity/komeranian4",
+				"texture7": "textures/entity/komeranian7",
+				"texture8": "textures/entity/komeranian4",
+				"texture9": "textures/entity/komeranian4",
+				"texture10": "textures/entity/komeranian2",
+				"texture11": "textures/entity/komeranian3",
+				"texture12": "textures/entity/komeranian4"
+			},
+			"animations": {
+				"movement_controller": "controller.animation.german",
+					"walk": "animation.pomeranian_dog.walk",
+					"idle": "animation.pomeranian_dog.idle"
+			},
+			"scripts": {
+				"animate": [
+					"movement_controller"
+				]
+			},
+			"geometry": {
+				"default": "geometry.komeranian"
+			},
+			"render_controllers": ["controller.render.base"],
+			"spawn_egg": {
+				"texture": "komeranian",
+				"texture_index": 0
+			}
+		}
+	}
+}

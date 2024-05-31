@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.villager_wand_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "villager_wand_active": "(query.get_equipped_item_name == 'villager_wand') && query.is_using_item" }
+          ]
+        },
+		
+        "villager_wand_active": {
+          "on_entry": [
+            "/playsound v.villager_wand @a ~ ~ ~",
+            "/particle minecraft:crop_growth_area_emitter ~ ~ ~",
+            "/effect @e absorption 15",
+            "/effect @e instant_health 3",
+            "/effect @e strength 15"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,30 @@
+//bridge-file-version: #1
+{
+	"pools": [
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_helmet",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_chestplate",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_leggings",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_boots",
+					"weight": 5
+				}
+			]
+		}
+	]
+}

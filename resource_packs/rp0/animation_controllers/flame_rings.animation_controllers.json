@@ -1,0 +1,23 @@
+  {
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.flame_rings.particles": {
+      "initial_state" : "default",
+			"states" : {
+				"default" : {
+          "transitions" : [
+            { "execute" : "q.is_moving" }
+          ]
+        },
+        "execute": {
+          "particle_effects": [
+            { "effect": "trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_moving" }
+          ]
+        }
+			}
+    }
+  }
+}

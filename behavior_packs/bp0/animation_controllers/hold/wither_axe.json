@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.wither_axe_hold": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "wither_axe_hold": "(query.get_equipped_item_name == 'wither_axe')"
+            }
+          ]
+        },
+        "wither_axe_hold": {
+          "on_entry": [
+            "/effect @s slowness 1",
+            "/effect @s strength 1 2"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'wither_axe')"
+            },
+            {
+              "wither_axe_hold2": "(query.get_equipped_item_name == 'wither_axe')"
+            }
+          ]
+        },
+        "wither_axe_hold2": {
+          "on_entry": [
+            "/effect @s slowness 1",
+            "/effect @s strength 1 2"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'wither_axe')"
+            },
+            {
+              "wither_axe_hold": "(query.get_equipped_item_name == 'wither_axe')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

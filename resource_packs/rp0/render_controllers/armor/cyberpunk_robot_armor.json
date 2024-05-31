@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cyberpunk_robot_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.cyberpunk_robot_armor",
+            "Texture.cyberpunk_robot_armor_1",
+            "Texture.cyberpunk_robot_armor_2",
+            "Texture.cyberpunk_robot_armor_3",
+            "Texture.cyberpunk_robot_armor_4",
+            "Texture.cyberpunk_robot_armor_5",
+            "Texture.cyberpunk_robot_armor_6",
+            "Texture.cyberpunk_robot_armor_7",
+            "Texture.cyberpunk_robot_armor_8",
+            "Texture.cyberpunk_robot_armor_9",
+            "Texture.cyberpunk_robot_armor_10",
+            "Texture.cyberpunk_robot_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.cyberpunk_robot_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

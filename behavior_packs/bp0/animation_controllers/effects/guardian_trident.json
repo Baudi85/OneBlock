@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.guardian_trident_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "guardian_trident_active": "(query.get_equipped_item_name == 'guardian_trident') && query.is_using_item" }
+          ]
+        },
+		
+        "guardian_trident_active": {
+          "on_entry": [
+            "/playsound v.guardian_trident @a ~ ~ ~",
+            "/particle ks:guardian_trident_particle ~ ~ ~",
+            "/effect @e [r=10] mining_fatigue 15",
+            "/effect @s clear"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

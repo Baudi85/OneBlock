@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:sword_01"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      "BA ",
+      "CB "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:diamond_block"
+      },
+      "B": {
+        "item": "minecraft:blue_ice"
+      },
+      "C": {
+        "item": "minecraft:stick"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+
+    },
+    "result": {
+      "item": "ks:sword_01",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

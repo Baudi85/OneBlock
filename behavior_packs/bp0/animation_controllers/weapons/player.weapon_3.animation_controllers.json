@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_3.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "v.attack_time" },
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "attack": {
+          "on_entry": [ "v.timer1 = q.life_time + 0.2;" ],
+          "transitions": [
+            { "attack2": "v.timer1 <= q.life_time" }
+          ]
+        },
+        "attack2": {
+          "on_entry": [ "/execute positioned ^^^1.5 run execute as @e[r=1.5,family=mob] at @s run summon ks:flame_dummy ~~~ e:weapon_3" ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        },
+        "use": {
+          "on_entry": [ "v.timer2 = q.life_time + 0.2;" ],
+          "transitions": [
+            { "use2": "v.timer2 <= q.life_time" }
+          ]
+        },
+        "use2": {
+          "on_entry": [ "@s e:weapon_3.special" ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        }
+      }
+    }
+  }
+}

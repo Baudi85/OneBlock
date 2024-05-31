@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.translucent_glowing": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.translucent_glowing" }],
+      "textures": [ "Texture.default" ],
+      "is_hurt_color": {},
+      "on_fire_color": {},
+      "light_color_multiplier": 2.5,
+      "ignore_lighting": true
+    },
+    "controller.render.beam": {
+      "geometry": "q.variant == 6 ? Geometry.beam2 : Geometry.beam",
+      "materials": [{ "*": "Material.translucent_glowing" }],
+      "textures": [ "q.variant == 6 ? Texture.beam2 : Texture.beam" ],
+      "is_hurt_color": {},
+      "on_fire_color": {},
+      "light_color_multiplier": 2.5,
+      "ignore_lighting": true
+    }
+  }
+}

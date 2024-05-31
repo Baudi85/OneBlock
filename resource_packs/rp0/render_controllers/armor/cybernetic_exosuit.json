@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cybernetic_exosuit_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.cybernetic_exosuit_armor",
+            "Texture.cybernetic_exosuit_armor_1",
+            "Texture.cybernetic_exosuit_armor_2",
+            "Texture.cybernetic_exosuit_armor_3",
+            "Texture.cybernetic_exosuit_armor_4",
+            "Texture.cybernetic_exosuit_armor_5",
+            "Texture.cybernetic_exosuit_armor_6",
+            "Texture.cybernetic_exosuit_armor_7",
+            "Texture.cybernetic_exosuit_armor_8",
+            "Texture.cybernetic_exosuit_armor_9",
+            "Texture.cybernetic_exosuit_armor_10",
+            "Texture.cybernetic_exosuit_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.cybernetic_exosuit_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

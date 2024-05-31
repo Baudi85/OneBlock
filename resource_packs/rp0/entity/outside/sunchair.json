@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "furniture:sunchair",
+        "materials": { "default": "entity" },
+        "textures": {
+          "texture_1": "textures/entity/furniture/outside/sunchair/sunchair_0",
+          "texture_2": "textures/entity/furniture/outside/sunchair/sunchair_1",
+          "texture_3": "textures/entity/furniture/outside/sunchair/sunchair_2",
+          "texture_4": "textures/entity/furniture/outside/sunchair/sunchair_3",
+          "texture_5": "textures/entity/furniture/outside/sunchair/sunchair_4",
+          "texture_6": "textures/entity/furniture/outside/sunchair/sunchair_5",
+          "texture_7": "textures/entity/furniture/outside/sunchair/sunchair_6",
+          "texture_8": "textures/entity/furniture/outside/sunchair/sunchair_7",
+          "texture_9": "textures/entity/furniture/outside/sunchair/sunchair_8",
+          "texture_10": "textures/entity/furniture/outside/sunchair/sunchair_9",
+          "texture_11": "textures/entity/furniture/outside/sunchair/sunchair_10",
+          "texture_12": "textures/entity/furniture/outside/sunchair/sunchair_11"
+        },
+        "geometry": {
+          "default": "geometry.sunchair"
+        },
+        "spawn_egg": {
+          "texture": "sunchair", 
+          "texture_index": 0
+        },
+        "scripts": {
+          "pre_animation": [
+            "variable.rotation = query.variant*30;"
+            ],
+            "animate" : [
+                "rotation_controller",
+                "spawn"
+            ]
+        },
+        "sound_effects": {
+          "place": "furniture.place"
+        },
+        "particle_effects": {
+          "on_placed": "furniture:place"
+        },
+        "animations": {
+          "spawn": "controller.animation.furniture.on_spawn",
+          "rotation_controller": "controller.animation.furniture.rotation",
+          "rotation_static": "animation.furniture.rotation_static",
+          "rotation_dynamic": "animation.furniture.rotation_dynamic"
+        },
+        "render_controllers": [ "controller.render.furniture_12" ]
+      }
+    }
+  }

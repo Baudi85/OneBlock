@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.item_renderer": {
+        "geometry": "Geometry.item_render",
+        "materials": [ { "*": "Material.item" } ],
+        "textures": [ "Texture.item" ]
+      }
+    }
+  }

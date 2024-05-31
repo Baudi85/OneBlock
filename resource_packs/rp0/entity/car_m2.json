@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cars:car_m2",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/car2/car2_gray",
+				"gray": "textures/entity/car2/car2_gray",
+				"green": "textures/entity/car2/car2_green",
+				"light_blue": "textures/entity/car2/car2_light_blue",
+				"orange": "textures/entity/car2/car2_orange",
+				"purple": "textures/entity/car2/car2_purple",
+				"white": "textures/entity/car2/car2_white"
+			},
+			"geometry": {
+				"default": "geometry.car_m2"
+			},
+			"animations": {
+				"move": "animation.car.move",
+				"steering": "animation.car.steering"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"steering"
+				]
+			},
+			"render_controllers": [
+				"controller.render.car_m2"
+			],
+			"spawn_egg": {
+				"texture": "car_icon",
+				"texture_index": 0
+			},
+			"sound_effects": {
+				"driving": "vehicle.driving1"
+			}
+		}
+	}
+}

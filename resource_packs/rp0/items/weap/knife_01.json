@@ -1,0 +1,12 @@
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ks:knife_01",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": "knife_01"
+		}
+	}
+}

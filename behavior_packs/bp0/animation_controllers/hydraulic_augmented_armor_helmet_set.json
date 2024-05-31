@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hydraulic_augmented_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "hydraulic_augmented_armor_helmet_set_equip": "query.variant == 8"
+            }
+          ]
+        },
+        "hydraulic_augmented_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s resistance 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 8"
+            },
+            {
+              "hydraulic_augmented_armor_helmet_set_equip2": "query.variant == 8"
+            }
+          ]
+        },
+        "hydraulic_augmented_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s resistance 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 8"
+            },
+            {
+              "hydraulic_augmented_armor_helmet_set_equip": "query.variant == 8"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

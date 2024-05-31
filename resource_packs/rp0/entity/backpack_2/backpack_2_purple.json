@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:backpack_2_purple",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/backpack2/backpack2_purple"
+			},
+			"geometry": {
+				"default": "geometry.backpack2"
+			},
+			"render_controllers": ["controller.render.main"],
+			"spawn_egg": {
+				"texture": "kreatik_backpack_2_egg_purple",
+				"texture_index": 0
+			}
+		}
+	}
+}

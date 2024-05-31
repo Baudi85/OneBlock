@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.oblivion_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "oblivion_armor_helmet_set_equip": "query.variant == 15"
+            }
+          ]
+        },
+        "oblivion_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s strength 1 1",
+            "/effect @s haste 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 15"
+            },
+            {
+              "oblivion_armor_helmet_set_equip2": "query.variant == 15"
+            }
+          ]
+        },
+        "oblivion_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s strength 1 1",
+            "/effect @s haste 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 15"
+            },
+            {
+              "oblivion_armor_helmet_set_equip": "query.variant == 15"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

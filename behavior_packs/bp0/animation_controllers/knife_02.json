@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.knife_02_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "knife_02_active": "(query.get_equipped_item_name == 'knife_02') && query.is_using_item" }
+          ]
+        },
+		
+        "knife_02_active": {
+          "on_entry": [
+            "/playsound v.knife_02 @a ~ ~ ~",
+            "/particle ks:knife_02_particle ~ ~ ~",
+            "/effect @s fire_resistance 23"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

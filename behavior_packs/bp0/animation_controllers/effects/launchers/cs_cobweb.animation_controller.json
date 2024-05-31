@@ -1,0 +1,47 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.effect.cave_spider_cobweb" : {
+			"initial_state" : "initial",
+			"states" : {
+				"initial": {
+					"transitions": [
+						{
+							"particles": "(1.0)"
+						}
+					]
+				},
+				"particles": {
+					"on_entry": [
+						"/effect @e [r=2,type=!ks:cave_spider_cobweb] poison 6"
+					],
+					"transitions": [
+						{
+							"stage_0": "(1.0)"
+						}
+					]
+				},
+				"stage_0" : {
+					"transitions": [
+                        {
+                            "stage_1": "(1.0)"
+                        }
+                    ],
+					"on_entry": [
+						"/effect @e [r=2,type=!ks:cave_spider_cobweb] poison 6"
+                    ]
+				},
+                "stage_1": {
+                    "on_entry": [
+						"/effect @e [r=6,type=!ks:cave_spider_cobweb] poison 6"
+                    ],
+					"transitions": [
+                        {
+                            "stage_0": "(1.0)"
+                        }
+                    ]
+                }
+			}
+		}
+	}
+}

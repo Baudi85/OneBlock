@@ -1,0 +1,226 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.weapon_root" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "@s e:vanilla_stats", "/clear @s ks:no_offhand" ],
+					"transitions" : [
+						{
+							"weapon_1" : "q.is_alive && q.get_equipped_item_name == 'weapon_1'"
+						},
+						{
+							"weapon_2" : "q.is_alive && q.get_equipped_item_name == 'weapon_2'"
+						},
+						{
+							"weapon_3" : "q.is_alive && q.get_equipped_item_name == 'weapon_3'"
+						},
+						{
+							"weapon_4" : "q.is_alive && q.get_equipped_item_name == 'weapon_4'"
+						},
+						{
+							"weapon_5" : "q.is_alive && q.get_equipped_item_name == 'weapon_5'"
+						},
+						{
+							"weapon_6" : "q.is_alive && q.get_equipped_item_name == 'weapon_6'"
+						},
+						{
+							"weapon_7" : "q.is_alive && q.get_equipped_item_name == 'weapon_7'"
+						},
+						{
+							"weapon_8" : "q.is_alive && q.get_equipped_item_name == 'weapon_8'"
+						},
+						{
+							"weapon_9" : "q.is_alive && q.get_equipped_item_name == 'weapon_9'"
+						},
+						{
+							"weapon_10" : "q.is_alive && q.get_equipped_item_name == 'weapon_10'"
+						}
+					],
+					"on_exit" : [
+						"/replaceitem entity @s slot.weapon.offhand 0 ks:no_offhand 1 0 {\"minecraft:item_lock\":{\"mode\":\"lock_in_slot\"},\"minecraft:keep_on_death\":{}}"
+					]
+				},
+				"weapon_1" : {
+					"on_entry" : [ "@s e:weapon_1", "/effect @s resistance 999999 1 true" ],
+					"animations" : [ "weapon_1" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_1'"
+						}
+					],
+					"on_exit" : [ "@s e:vanilla_stats", "/effect @s resistance 0 0" ]
+				},
+				"weapon_2" : {
+					"on_entry" : [
+						"@s e:weapon_2",
+						"/effect @s resistance 999999 0 true",
+						"/effect @s strength 999999 0 true"
+					],
+					"animations" : [ "weapon_2" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_2'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s resistance 0 0",
+						"/effect @s strength 0 0"
+					]
+				},
+				"weapon_3" : {
+					"on_entry" : [
+						"@s e:weapon_3",
+						"/effect @s instant_health 1 4 true",
+						"/effect @s health_boost 999999 4 true",
+						"/effect @s fire_resistance 999999 0 true"
+					],
+					"animations" : [ "weapon_3" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_3'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s health_boost 0 0",
+						"/effect @s fire_resistance 0 0"
+					]
+				},
+				"weapon_4" : {
+					"on_entry" : [
+						"@s e:weapon_4",
+						"/effect @s jump_boost 999999 2 true",
+						"/effect @s slow_falling 999999 1 true",
+						"/effect @s regeneration 999999 1 true"
+					],
+					"animations" : [ "weapon_4" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_4'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s jump_boost 0 0",
+						"/effect @s slow_falling 0 0",
+						"/effect @s regeneration 0 0"
+					]
+				},
+				"weapon_5" : {
+					"on_entry" : [
+						"@s e:weapon_5",
+						"/effect @s night_vision 999999 0 true",
+						"/effect @s slow_falling 99999 0 true"
+					],
+					"animations" : [ "weapon_5" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_5'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s night_vision 0 0",
+						"/effect @s slow_falling 0 0"
+					]
+				},
+				"weapon_6" : {
+					"on_entry" : [
+						"@s e:weapon_6",
+						"/effect @s jump_boost 999999 2 true",
+						"/effect @s strength 999999 1 true"
+					],
+					"animations" : [ "weapon_6" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_6'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s jump_boost 0 0",
+						"/effect @s strength 0 0"
+					]
+				},
+				"weapon_7" : {
+					"on_entry" : [
+						"@s e:weapon_7",
+						"/effect @s jump_boost 999999 2 true",
+						"/effect @s regeneration 999999 1 true"
+					],
+					"animations" : [ "weapon_7" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_7'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s jump_boost 0 0",
+						"/effect @s regeneration 0 0"
+					]
+				},
+				"weapon_8" : {
+					"on_entry" : [
+						"@s e:weapon_8",
+						"/effect @s jump_boost 99999 2 true",
+						"/effect @s slow_falling 99999 0 true",
+						"/effect @s resistance 999999 0 true"
+					],
+					"animations" : [ "weapon_8" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_8'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s jump_boost 0 0",
+						"/effect @s slow_falling 0 0",
+						"/effect @s resistance 0 0"
+					]
+				},
+				"weapon_9" : {
+					"on_entry" : [
+						"@s e:weapon_9",
+						"/effect @s regeneration 999999 1 true",
+						"/effect @s health_boost 999999 7 true",
+						"/effect @s instant_health 1 7 true"
+					],
+					"animations" : [ "weapon_9" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_9'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s regeneration 0 0",
+						"/effect @s health_boost 0 0"
+					]
+				},
+				"weapon_10" : {
+					"on_entry" : [
+						"@s e:weapon_10",
+						"/effect @s jump_boost 999999 3 true",
+						"/effect @s strength 999999 0 true"
+					],
+					"animations" : [ "weapon_10" ],
+					"transitions" : [
+						{
+							"default" : "q.get_equipped_item_name != 'weapon_10'"
+						}
+					],
+					"on_exit" : [
+						"@s e:vanilla_stats",
+						"/effect @s jump_boost 0 0",
+						"/effect @s strength 0 0"
+					]
+				}
+			}
+		}
+	}
+}

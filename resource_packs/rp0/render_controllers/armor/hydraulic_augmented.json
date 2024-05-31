@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.hydraulic_augmented_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.hydraulic_augmented_armor",
+            "Texture.hydraulic_augmented_armor_1",
+            "Texture.hydraulic_augmented_armor_2",
+            "Texture.hydraulic_augmented_armor_3",
+            "Texture.hydraulic_augmented_armor_4",
+            "Texture.hydraulic_augmented_armor_5",
+            "Texture.hydraulic_augmented_armor_6",
+            "Texture.hydraulic_augmented_armor_7",
+            "Texture.hydraulic_augmented_armor_8",
+            "Texture.hydraulic_augmented_armor_9",
+            "Texture.hydraulic_augmented_armor_10",
+            "Texture.hydraulic_augmented_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.hydraulic_augmented_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

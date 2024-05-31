@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ks:battle_drone",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bat"
+      },
+      "geometry": {
+        "default": "geometry.bat"
+      },
+      "scripts": {
+        "scale": "0.35",
+        "animate": [
+          "move"
+        ]
+      },
+      "animations": {
+        "move": "controller.animation.bat.move",
+        "resting": "animation.bat.resting",
+        "flying": "animation.bat.flying"
+      },
+      "render_controllers": [
+        "controller.render.bat"
+      ]
+    }
+  }
+}

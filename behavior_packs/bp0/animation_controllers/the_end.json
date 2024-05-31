@@ -1,0 +1,37 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.biome.end" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cooldown_block" : "query.mark_variant == 12"
+						}
+					]
+				},
+				"cooldown_block" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/scoreboard objectives add onblocks dummy eblocks",
+						"/scoreboard players add @s eblocks 0",
+						"/scoreboard objectives add onblocks dummy onblocks",
+						"/scoreboard players add @s onblocks 0",
+						"/execute as @s if block 0 0 0 bedrock if score @s onblocks matches 0 run setblock 0 0 0 end_stone",
+						"/execute as @s if block 0 0 0 end_stone if score @s onblocks matches 0 run structure load portal -2 -4 -2",
+						"/execute as @s unless block 0 0 0 bedrock if score @s onblocks matches 0 run titleraw @s title {\"rawtext\":[{\"text\":\"the_end\"}]}",
+						"/execute as @s unless block 0 0 0 bedrock if score @s onblocks matches 0 run scoreboard players add @s onblocks 1",
+						"/execute as @s if block 0 0 0 air if score @s eblocks matches 0..299 run event entity @e[type=ks:floating_text] despawn",
+						"/execute as @s if block 0 0 0 air if score @s eblocks matches 0..299 run function end",
+						"/execute as @s if block 0 0 0 air if score @s eblocks matches 300 run function oneblock"
+					]
+				}
+			}
+		}
+	}
+}

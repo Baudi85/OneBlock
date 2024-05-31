@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "train:engine"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"priority": 0,
+		"ingredients": [
+			{
+				"item": "iron_block",
+				"count": 3
+			},
+			{
+				"item": "flint_and_steel",
+				"count": 1
+			},
+			{
+				"count": 1,
+				"item": "coal"
+			},
+			{
+				"item": "log",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "train:engine_spawn_egg"
+		}
+	}
+}

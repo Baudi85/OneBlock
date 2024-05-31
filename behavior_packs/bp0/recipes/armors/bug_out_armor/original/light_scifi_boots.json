@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:bug_out_armor_boots"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "CCC",
+      "ABA",
+      "CCC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:redstone"
+      },
+      "B": {
+        "item": "minecraft:iron_boots"
+      },
+      "C": {
+        "item": "minecraft:raw_copper"
+      }
+
+    },
+    "result": {
+      "item": "armors:bug_out_armor_boots",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

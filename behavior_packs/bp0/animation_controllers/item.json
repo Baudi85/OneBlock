@@ -1,0 +1,56 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.return": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "clicked": "variable.attack_time > 0.5 && query.get_equipped_item_name('main_hand') == 'return' && query.is_on_ground"
+                        }
+                    ]
+                },
+                "clicked": {
+                    "on_entry": [
+                        "/tp @s -3 102 -309",
+                        "/scoreboard players set @a luckyz 0",
+                        "/clear @s kreatik:return",
+                        "/tag @s remove left_lobby_room"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!variable.attack_time"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.player.drop_clear": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "drop_clear": "query.health <= 0.0"
+                        }
+                    ]
+                },
+                "drop_clear": {
+                    "on_entry": [
+                        "/kill @e[x=~,y=~,z=~,type=item,r=6]",
+                        "/execute @s[scores={entity_count=1}] ~ ~ ~ kill @e[type=kreatik:lucky_block]",
+                        "/tag @s remove left_lobby_room"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove have_kit",
+                        "/tag @s remove left_lobby_room"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.health > 0.0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

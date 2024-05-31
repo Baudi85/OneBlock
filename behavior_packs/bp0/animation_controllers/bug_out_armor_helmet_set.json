@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bug_out_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "bug_out_armor_helmet_set_equip": "query.variant == 4"
+            }
+          ]
+        },
+        "bug_out_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s night_vision 14"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 4"
+            },
+            {
+              "bug_out_armor_helmet_set_equip2": "query.variant == 4"
+            }
+          ]
+        },
+        "bug_out_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s night_vision 14"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 4"
+            },
+            {
+              "bug_out_armor_helmet_set_equip": "query.variant == 4"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

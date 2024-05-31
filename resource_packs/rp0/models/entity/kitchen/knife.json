@@ -1,0 +1,62 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.knife",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "knife",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [1.5, 0, 0],
+							"size": [4, 0.5, 1],
+							"uv": {
+								"north": {"uv": [1, 3.5], "uv_size": [4, 0.5]},
+								"east": {"uv": [0, 3.5], "uv_size": [1, 0.5]},
+								"south": {"uv": [6, 3.5], "uv_size": [4, 0.5]},
+								"west": {"uv": [5, 3.5], "uv_size": [1, 0.5]},
+								"up": {"uv": [1, 2.5], "uv_size": [4, 1]},
+								"down": {"uv": [9, 3.5], "uv_size": [-4, -1]}
+							}
+						},
+						{
+							"origin": [4.5, 0.001, 0],
+							"size": [1, 0.498, 1],
+							"pivot": [5.5, 0.25, 0],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [1, 5], "uv_size": [1, 0.498]},
+								"east": {"uv": [0, 5], "uv_size": [1, 0.498]},
+								"south": {"uv": [3, 5], "uv_size": [1, 0.498]},
+								"west": {"uv": [2, 5], "uv_size": [1, 0.498]},
+								"up": {"uv": [2, 5], "uv_size": [-1, -1]},
+								"down": {"uv": [2, 5], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-6.5, 0.25, 0],
+							"size": [8, 0, 2.5],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [8, 2.5]},
+								"down": {"uv": [8, 2.5], "uv_size": [8, -2.5]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

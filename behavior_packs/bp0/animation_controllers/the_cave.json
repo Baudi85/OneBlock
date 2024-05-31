@@ -1,0 +1,37 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.biome.cave" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cooldown_block" : "query.mark_variant == 2"
+						}
+					]
+				},
+				"cooldown_block" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/scoreboard objectives add cblocks dummy cblocks",
+						"/scoreboard players add @s cblocks 0",
+						"/execute as @s if block 0 0 0 bedrock if score @s cblocks matches 0 run setblock 0 0 0 stone",
+						"/execute as @s unless block 0 0 0 bedrock if score @s cblocks matches 0 run titleraw @s title {\"rawtext\":[{\"text\":\"the_cave\"}]}",
+						"/execute as @s unless block 0 0 0 bedrock if score @s cblocks matches 0 run scoreboard players add @s cblocks 1",
+						"/execute as @s if block 0 0 0 air if score @s cblocks matches 0..599 run event entity @e[type=ks:floating_text] despawn",
+						"/execute as @s if block 0 0 0 air if score @s cblocks matches 0..599 run function cave",
+						"/execute as @s if block 0 0 0 air if score @s cblocks matches 600 run event entity @s mushroom",
+						"/execute as @s if block 0 0 0 air if score @s cblocks matches 600 run summon ks:timer 0 1 0",
+						"/execute as @s if block 0 0 0 air if score @s cblocks matches 600 run setblock 0 0 0 bedrock",
+						"/execute as @s if block 0 0 0 bedrock if score @s cblocks matches 600 run scoreboard players set @s cblocks 601"
+					]
+				}
+			}
+		}
+	}
+}

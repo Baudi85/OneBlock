@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.stormslider_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.stormslider_armor",
+            "Texture.stormslider_armor_1",
+            "Texture.stormslider_armor_2",
+            "Texture.stormslider_armor_3",
+            "Texture.stormslider_armor_4",
+            "Texture.stormslider_armor_5",
+            "Texture.stormslider_armor_6",
+            "Texture.stormslider_armor_7",
+            "Texture.stormslider_armor_8",
+            "Texture.stormslider_armor_9",
+            "Texture.stormslider_armor_10",
+            "Texture.stormslider_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.stormslider_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

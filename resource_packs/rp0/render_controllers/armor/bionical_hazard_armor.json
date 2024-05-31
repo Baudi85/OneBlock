@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.bionical_hazard_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.bionical_hazard_armor",
+            "Texture.bionical_hazard_armor_1",
+            "Texture.bionical_hazard_armor_2",
+            "Texture.bionical_hazard_armor_3",
+            "Texture.bionical_hazard_armor_4",
+            "Texture.bionical_hazard_armor_5",
+            "Texture.bionical_hazard_armor_6",
+            "Texture.bionical_hazard_armor_7",
+            "Texture.bionical_hazard_armor_8",
+            "Texture.bionical_hazard_armor_9",
+            "Texture.bionical_hazard_armor_10",
+            "Texture.bionical_hazard_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.bionical_hazard_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

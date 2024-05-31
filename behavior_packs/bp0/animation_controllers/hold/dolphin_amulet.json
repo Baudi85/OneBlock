@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dolphin_amulet_hold": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "dolphin_amulet_hold": "(query.get_equipped_item_name == 'dolphin_amulet')"
+            }
+          ]
+        },
+        "dolphin_amulet_hold": {
+          "on_entry": [
+            "/effect @s conduit_power 5"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'dolphin_amulet')"
+            },
+            {
+              "dolphin_amulet_hold2": "(query.get_equipped_item_name == 'dolphin_amulet')"
+            }
+          ]
+        },
+        "dolphin_amulet_hold2": {
+          "on_entry": [
+            "/effect @s conduit_power 5"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'dolphin_amulet')"
+            },
+            {
+              "dolphin_amulet_hold": "(query.get_equipped_item_name == 'dolphin_amulet')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

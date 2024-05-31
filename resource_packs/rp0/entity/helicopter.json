@@ -1,0 +1,33 @@
+//bridge-file-version: #14
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:helicopter",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/helicopter/helicopter"
+			},
+			"geometry": {
+				"default": "geometry.helicopter"
+			},
+			"render_controllers": [
+				"controller.render.main"
+			],
+			"animations": {
+				"propellers": "animation.helicopter.propellers",
+				"joysticks": "animation.helicopter.joysticks"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"propellers": "query.has_rider"
+					},
+					"joysticks"
+				]
+			}
+		}
+	}
+}

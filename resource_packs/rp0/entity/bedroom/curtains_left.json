@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "furniture:curtains_left",
+        "materials": { "default": "entity_alphatest" },
+        "textures": {
+          "texture_1": "textures/entity/furniture/bedroom/curtains/curtains_0",
+          "texture_2": "textures/entity/furniture/bedroom/curtains/curtains_1",
+          "texture_3": "textures/entity/furniture/bedroom/curtains/curtains_2",
+          "texture_4": "textures/entity/furniture/bedroom/curtains/curtains_3",
+          "texture_5": "textures/entity/furniture/bedroom/curtains/curtains_4",
+          "texture_6": "textures/entity/furniture/bedroom/curtains/curtains_5"
+        },
+        "geometry": {
+          "default": "geometry.curtains_left"
+        },
+        "spawn_egg": {
+          "texture": "curtains", 
+          "texture_index": 0
+        },
+        "scripts": {
+          "pre_animation": [
+            "variable.rotation = query.variant*45;"
+            ],
+            "animate" : [
+                "rotation_controller",
+                "spawn"
+            ]
+        },
+        "sound_effects": {
+          "place": "furniture.place"
+        },
+        "particle_effects": {
+          "on_placed": "furniture:place"
+        },
+        "animations": {
+          "spawn": "controller.animation.furniture.new_on_spawn",
+          "rotation_controller": "controller.animation.furniture.rotation",
+          "rotation_static": "animation.furniture.rotation_static",
+          "rotation_dynamic": "animation.furniture.rotation_dynamic"
+        },
+        "render_controllers": [ "controller.render.furniture_6" ]
+      }
+    }
+  }

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "furniture:x",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "rotator",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

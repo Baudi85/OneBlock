@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:bug_out_armor_set_5"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "   ",
+      "ABC",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "armors:bug_out_armor_set"
+      },
+      "B": {
+        "item": "minecraft:pink_dye"
+      },
+      "C": {
+        "item": "minecraft:white_dye"
+      }
+
+    },
+    "result": {
+      "item": "armors:bug_out_armor_set_5",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:sword_02"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      "BA ",
+      "CB "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_block"
+      },
+      "B": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "C": {
+        "item": "minecraft:stick"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+
+    },
+    "result": {
+      "item": "ks:sword_02",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

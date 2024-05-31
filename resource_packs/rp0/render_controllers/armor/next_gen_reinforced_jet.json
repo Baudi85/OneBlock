@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.next_gen_reinforced_jet_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.next_gen_reinforced_jet_armor",
+            "Texture.next_gen_reinforced_jet_armor_1",
+            "Texture.next_gen_reinforced_jet_armor_2",
+            "Texture.next_gen_reinforced_jet_armor_3",
+            "Texture.next_gen_reinforced_jet_armor_4",
+            "Texture.next_gen_reinforced_jet_armor_5",
+            "Texture.next_gen_reinforced_jet_armor_6",
+            "Texture.next_gen_reinforced_jet_armor_7",
+            "Texture.next_gen_reinforced_jet_armor_8",
+            "Texture.next_gen_reinforced_jet_armor_9",
+            "Texture.next_gen_reinforced_jet_armor_10",
+            "Texture.next_gen_reinforced_jet_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.next_gen_reinforced_jet_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

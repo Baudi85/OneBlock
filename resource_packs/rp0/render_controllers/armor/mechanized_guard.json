@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.mechanized_guard_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.mechanized_guard_armor",
+            "Texture.mechanized_guard_armor_1",
+            "Texture.mechanized_guard_armor_2",
+            "Texture.mechanized_guard_armor_3",
+            "Texture.mechanized_guard_armor_4",
+            "Texture.mechanized_guard_armor_5",
+            "Texture.mechanized_guard_armor_6",
+            "Texture.mechanized_guard_armor_7",
+            "Texture.mechanized_guard_armor_8",
+            "Texture.mechanized_guard_armor_9",
+            "Texture.mechanized_guard_armor_10",
+            "Texture.mechanized_guard_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.mechanized_guard_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": { 
+        "controller.render.coffeetable": {
+          "arrays": {
+            "textures": {
+              "Array.skins": [
+                "Texture.texture_1",
+                "Texture.texture_2",
+                "Texture.texture_3",
+                "Texture.texture_4",
+                "Texture.texture_5",
+                "Texture.texture_6"
+              ]
+            }
+          },
+            "geometry": "Geometry.default",
+            "materials": [
+              { "*": "Material.default", "leg": "Material.leg" }
+            ],
+            "textures": [
+              "Array.skins[query.skin_id]"
+            ]
+        }
+    } 
+}

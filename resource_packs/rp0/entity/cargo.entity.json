@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "train:cargo",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cargo/wooden",
+				"magenta": "textures/entity/cargo/magenta",
+				"blue": "textures/entity/cargo/blue",
+				"green": "textures/entity/cargo/green",
+				"orange": "textures/entity/cargo/orange",
+				"red": "textures/entity/cargo/red",
+				"yellow": "textures/entity/cargo/yellow",
+				"iron": "textures/entity/cargo/iron"
+			},
+			"geometry": {
+				"default": "geometry.cargo"
+			},
+			"scripts": {
+				"animate": [
+					"body_rotation",
+					{
+						"move": "query.is_moving"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.cargo.move",
+				"body_rotation": "animation.body_rotation"
+			},
+			"render_controllers": [
+				"controller.render.train"
+			],
+			"spawn_egg": {
+				"texture": "cargo"
+			}
+		}
+	}
+}

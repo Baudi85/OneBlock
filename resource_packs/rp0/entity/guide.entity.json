@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+            "identifier": "furniture:guide",
+            "render_controllers": [
+				"controller.render.default"
+            ],
+            "textures": {
+				"default": "textures/entity/guide"
+			},
+			"geometry": {
+				"default": "geometry.guide"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target"
+				]
+			}
+        }
+    }
+}

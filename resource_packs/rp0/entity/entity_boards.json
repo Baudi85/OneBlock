@@ -1,0 +1,79 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ks:entity_boards",
+            "min_engine_version": "1.8.0",
+            "materials": {
+                "default": "armor_stand"
+            },
+            "textures": {
+                "default": "textures/entity/entity_boards/entity_boards",
+                "two": "textures/entity/entity_boards/entity_boards2",
+                "three": "textures/entity/entity_boards/entity_boards3",
+                "four": "textures/entity/entity_boards/entity_boards4",
+                "five": "textures/entity/entity_boards/entity_boards5",
+                "six": "textures/entity/entity_boards/entity_boards6",
+                "seven": "textures/entity/entity_boards/entity_boards7",
+                "eight": "textures/entity/entity_boards/entity_boards8",
+                "nine": "textures/entity/entity_boards/entity_boards9",
+                "ten": "textures/entity/entity_boards/entity_boards10",
+                
+                "once": "textures/entity/entity_boards/entity_boards11",
+                "doce": "textures/entity/entity_boards/entity_boards12",
+                "trece": "textures/entity/entity_boards/entity_boards13",
+                "catorce": "textures/entity/entity_boards/entity_boards14",
+                "quince": "textures/entity/entity_boards/entity_boards15",
+                "dieciseis": "textures/entity/entity_boards/entity_boards16",
+                "diecisiete": "textures/entity/entity_boards/entity_boards17",
+                "dieciocho": "textures/entity/entity_boards/entity_boards18",
+                "diecinueve": "textures/entity/entity_boards/entity_boards19",
+                "veinte": "textures/entity/entity_boards/entity_boards20",
+                                
+                "veintiuno": "textures/entity/entity_boards/entity_boards21",
+                "veintidos": "textures/entity/entity_boards/entity_boards22",
+                "veintitres": "textures/entity/entity_boards/entity_boards23",
+                "veinticuatro": "textures/entity/entity_boards/entity_boards24",
+                "veinticinco": "textures/entity/entity_boards/entity_boards25",
+                "veintiseis": "textures/entity/entity_boards/entity_boards26",
+                "veintisiete": "textures/entity/entity_boards/entity_boards27",
+                "veintiocho": "textures/entity/entity_boards/entity_boards28",
+                "veintinueve": "textures/entity/entity_boards/entity_boards29",
+                "treinta": "textures/entity/entity_boards/entity_boards30",
+                                
+                "treintayuno": "textures/entity/entity_boards/entity_boards31",
+                "treintaydos": "textures/entity/entity_boards/entity_boards32",
+                "treintaytres": "textures/entity/entity_boards/entity_boards33",
+                "treintaycuatro": "textures/entity/entity_boards/entity_boards34",
+                "treintaycinco": "textures/entity/entity_boards/entity_boards35",
+                "treintayseis": "textures/entity/entity_boards/entity_boards36",
+                "treintaysiete": "textures/entity/entity_boards/entity_boards37",
+                "treintayocho": "textures/entity/entity_boards/entity_boards38",
+                "treintaynueve": "textures/entity/entity_boards/entity_boards39",
+                "cuarenta": "textures/entity/entity_boards/entity_boards40",
+                                
+                "cuarentayuno": "textures/entity/entity_boards/entity_boards41",
+                "cuarentaydos": "textures/entity/entity_boards/entity_boards42",
+                "cuarentaytres": "textures/entity/entity_boards/entity_boards43",
+                "cuarentaycuatro": "textures/entity/entity_boards/entity_boards44",
+                "cuarentaycinco": "textures/entity/entity_boards/entity_boards45",
+                "cuarentayseis": "textures/entity/entity_boards/entity_boards46",
+                "cuarentaysiete": "textures/entity/entity_boards/entity_boards47",
+                "cuarentayocho": "textures/entity/entity_boards/entity_boards48",
+                "cuarentaynueve": "textures/entity/entity_boards/entity_boards49",
+                "cincuenta": "textures/entity/entity_boards/entity_boards50"
+            },
+            "geometry": {
+                "default": "geometry.entity_boards"
+            },
+            "render_controllers": [
+                "controller.render.entity_boards"
+            ],
+            "spawn_egg": {
+				"texture": "entity_board",
+				"texture_index": 0
+			},
+            "enable_attachables": true
+        }
+    }
+}

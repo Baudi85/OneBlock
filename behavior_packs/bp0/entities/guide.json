@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "furniture:guide",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"controller.play_sound": "controller.animation.guide.play_sound"
+			},
+			"scripts": {
+				"animate": [
+					"controller.play_sound"
+				]
+			}
+		},
+		"component_groups": {
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:navigation.walk": {},
+			"minecraft:movement": {
+				"value": 0.0
+			},
+			"minecraft:persistent": {},
+			"minecraft:can_climb": {},
+			"minecraft:jump.static": {},
+			"minecraft:behavior.look_at_player": {
+				"priority": 0,
+				"probability": 1.0
+			},
+			"minecraft:collision_box": {
+				"width": 1.0,
+				"height": 1.62
+			},
+			"minecraft:physics": {},
+			"minecraft:push_through": {
+				"value": 1.0
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+		}
+	}
+}

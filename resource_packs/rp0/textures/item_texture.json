@@ -1,0 +1,1638 @@
+{
+	"resource_pack_name" : "Project Armor",
+	"texture_name" : "atlas.items",
+	"texture_data" : {
+		"no_offhand" : {
+			"textures" : "textures/no_offhand"
+		},
+		"remove_block" : {
+			"textures" : "textures/items/remove_block"
+		},
+		"plane_palette" : {
+			"textures" : "textures/items/plane_palette"
+		},
+		"furniture_palette" : {
+			"textures" : "textures/items/furniture_palette"
+		},
+		"train_palette" : {
+			"textures" : "textures/items/train_palette"
+		},
+		"rotator" : {
+			"textures" : "textures/items/rotate"
+		},
+		"furniture_item" : {
+			"textures" : "textures/items/furniture_item"
+		},
+		"pick_block" : {
+			"textures" : "textures/items/pick_block"
+		},
+		"bath_with_shower" : {
+			"textures" : "textures/items/bathroom/bath_with_shower"
+		},
+		"bathroom_sink" : {
+			"textures" : "textures/items/bathroom/bathroom_sink"
+		},
+		"mirror" : {
+			"textures" : "textures/items/bathroom/mirror"
+		},
+		"shower_with_box" : {
+			"textures" : "textures/items/bathroom/shower_with_box"
+		},
+		"shower" : {
+			"textures" : "textures/items/bathroom/shower"
+		},
+		"toilet_paper" : {
+			"textures" : "textures/items/bathroom/toilet_paper"
+		},
+		"toilet" : {
+			"textures" : "textures/items/bathroom/toilet"
+		},
+		"towel_holder" : {
+			"textures" : "textures/items/bathroom/towel_holder"
+		},
+		"armchair" : {
+			"textures" : "textures/items/bedroom/armchair"
+		},
+		"bedside_table" : {
+			"textures" : "textures/items/bedroom/bedside_table"
+		},
+		"curtains" : {
+			"textures" : "textures/items/bedroom/curtains"
+		},
+		"desk" : {
+			"textures" : "textures/items/bedroom/desk"
+		},
+		"office_chair" : {
+			"textures" : "textures/items/bedroom/office_chair"
+		},
+		"one_person_bed" : {
+			"textures" : "textures/items/bedroom/one_person_bed"
+		},
+		"shelf" : {
+			"textures" : "textures/items/bedroom/shelf"
+		},
+		"tall_bedside_table" : {
+			"textures" : "textures/items/bedroom/tall_bedside_table"
+		},
+		"two_person_bed" : {
+			"textures" : "textures/items/bedroom/two_person_bed"
+		},
+		"wardrobe" : {
+			"textures" : "textures/items/bedroom/wardrobe"
+		},
+		"wide_shelf" : {
+			"textures" : "textures/items/bedroom/wide_shelf"
+		},
+		"chair" : {
+			"textures" : "textures/items/kitchen/chair"
+		},
+		"dining_table" : {
+			"textures" : "textures/items/kitchen/dining_table"
+		},
+		"dough_roller" : {
+			"textures" : "textures/items/kitchen/dough_roller"
+		},
+		"kitchen_cabinets" : {
+			"textures" : "textures/items/kitchen/kitchen_cabinets"
+		},
+		"kitchen_sink" : {
+			"textures" : "textures/items/kitchen/kitchen_sink"
+		},
+		"knife" : {
+			"textures" : "textures/items/kitchen/knife"
+		},
+		"microwave" : {
+			"textures" : "textures/items/kitchen/microwave"
+		},
+		"oven" : {
+			"textures" : "textures/items/kitchen/oven"
+		},
+		"plate_with_cutlery" : {
+			"textures" : "textures/items/kitchen/plate_with_cutlery"
+		},
+		"plate" : {
+			"textures" : "textures/items/kitchen/plate"
+		},
+		"range_hood" : {
+			"textures" : "textures/items/kitchen/range_hood"
+		},
+		"refrigerator" : {
+			"textures" : "textures/items/kitchen/refrigerator"
+		},
+		"stove" : {
+			"textures" : "textures/items/kitchen/stove"
+		},
+		"bookshelf" : {
+			"textures" : "textures/items/living_room/bookshelf"
+		},
+		"carpet" : {
+			"textures" : "textures/items/living_room/carpet"
+		},
+		"coffeetable" : {
+			"textures" : "textures/items/living_room/coffeetable"
+		},
+		"drawer_unit" : {
+			"textures" : "textures/items/living_room/drawer_unit"
+		},
+		"flatscreen_tv" : {
+			"textures" : "textures/items/living_room/flatscreen_tv"
+		},
+		"furniture_flower_pot" : {
+			"textures" : "textures/items/living_room/flower_pot"
+		},
+		"one_person_couch" : {
+			"textures" : "textures/items/living_room/one_person_couch"
+		},
+		"rocking_chair" : {
+			"textures" : "textures/items/living_room/rocking_chair"
+		},
+		"single_couch" : {
+			"textures" : "textures/items/living_room/single_couch"
+		},
+		"small_closet" : {
+			"textures" : "textures/items/living_room/small_closet"
+		},
+		"standing_lamp" : {
+			"textures" : "textures/items/living_room/standing_lamp"
+		},
+		"tall_closet" : {
+			"textures" : "textures/items/living_room/tall_closet"
+		},
+		"three_person_couch" : {
+			"textures" : "textures/items/living_room/three_person_couch"
+		},
+		"tv_stand" : {
+			"textures" : "textures/items/living_room/tv_stand"
+		},
+		"two_person_couch" : {
+			"textures" : "textures/items/living_room/two_person_couch"
+		},
+		"vase" : {
+			"textures" : "textures/items/living_room/vase"
+		},
+		"bench_1" : {
+			"textures" : "textures/items/miscellaneous/bench"
+		},
+		"ceiling_lamps" : {
+			"textures" : "textures/items/miscellaneous/ceiling_lamps"
+		},
+		"clock" : {
+			"textures" : "textures/items/miscellaneous/clock"
+		},
+		"closet" : {
+			"textures" : "textures/items/miscellaneous/closet"
+		},
+		"high_cabinet" : {
+			"textures" : "textures/items/miscellaneous/high_cabinet"
+		},
+		"indoor_trash_bin" : {
+			"textures" : "textures/items/miscellaneous/indoor_trash_bin"
+		},
+		"large_bookshelf" : {
+			"textures" : "textures/items/miscellaneous/large_bookshelf"
+		},
+		"medium_cabinet" : {
+			"textures" : "textures/items/miscellaneous/medium_cabinet"
+		},
+		"office_desk" : {
+			"textures" : "textures/items/miscellaneous/office_desk"
+		},
+		"outdoor_trash_bin" : {
+			"textures" : "textures/items/miscellaneous/outdoor_trash_bin"
+		},
+		"pendulum_clock" : {
+			"textures" : "textures/items/miscellaneous/pendulum_clock"
+		},
+		"plants" : {
+			"textures" : "textures/items/miscellaneous/plants"
+		},
+		"radiator" : {
+			"textures" : "textures/items/miscellaneous/radiator"
+		},
+		"trophy" : {
+			"textures" : "textures/items/miscellaneous/trophy"
+		},
+		"barbeque" : {
+			"textures" : "textures/items/outside/barbeque"
+		},
+		"bench_2" : {
+			"textures" : "textures/items/outside/bench"
+		},
+		"picnic_table" : {
+			"textures" : "textures/items/outside/picnic_table"
+		},
+		"sunchair" : {
+			"textures" : "textures/items/outside/sunchair"
+		},
+		"axe_01" : {
+			"textures" : "textures/models/items/sword/axe01"
+		},
+		"axe_02" : {
+			"textures" : "textures/models/items/sword/axe02"
+		},
+		"axe_03" : {
+			"textures" : "textures/models/items/sword/axe03"
+		},
+		"weapon_1" : {
+			"textures" : "textures/items/weapons/weapon_1"
+		},
+		"weapon_2" : {
+			"textures" : "textures/items/weapons/weapon_2"
+		},
+		"weapon_3" : {
+			"textures" : "textures/items/weapons/weapon_3"
+		},
+		"weapon_4" : {
+			"textures" : "textures/items/weapons/weapon_4"
+		},
+		"weapon_5" : {
+			"textures" : "textures/items/weapons/weapon_5"
+		},
+		"weapon_6" : {
+			"textures" : "textures/items/weapons/weapon_6"
+		},
+		"weapon_7" : {
+			"textures" : "textures/items/weapons/weapon_7"
+		},
+		"weapon_8" : {
+			"textures" : "textures/items/weapons/weapon_8"
+		},
+		"weapon_9" : {
+			"textures" : "textures/items/weapons/weapon_9"
+		},
+		"weapon_10" : {
+			"textures" : "textures/items/weapons/weapon_10"
+		},
+		"weapon_11" : {
+			"textures" : "textures/items/weapons/weapon_11"
+		},
+		"weapon_12" : {
+			"textures" : "textures/items/weapons/weapon_12"
+		},
+		"weapon_13" : {
+			"textures" : "textures/items/weapons/weapon_13"
+		},
+		"weapon_14" : {
+			"textures" : "textures/items/weapons/weapon_14"
+		},
+		"weapon_15" : {
+			"textures" : "textures/items/weapons/weapon_15"
+		},
+		"weapon_16" : {
+			"textures" : "textures/items/weapons/weapon_16"
+		},
+		"weapon_17" : {
+			"textures" : "textures/items/weapons/weapon_17"
+		},
+		"weapon_18" : {
+			"textures" : "textures/items/weapons/weapon_18"
+		},
+		"weapon_19" : {
+			"textures" : "textures/items/weapons/weapon_19"
+		},
+		"weapon_20" : {
+			"textures" : "textures/items/weapons/weapon_20"
+		},
+		"weapon_21" : {
+			"textures" : "textures/items/weapons/weapon_21"
+		},
+		"weapon_22" : {
+			"textures" : "textures/items/weapons/weapon_22"
+		},
+		"weapon_23" : {
+			"textures" : "textures/items/weapons/weapon_23"
+		},
+		"weapon_24" : {
+			"textures" : "textures/items/weapons/weapon_24"
+		},
+		"weapon_25" : {
+			"textures" : "textures/items/weapons/weapon_25"
+		},
+		"weapon_26" : {
+			"textures" : "textures/items/weapons/weapon_26"
+		},
+		"weapon_27" : {
+			"textures" : "textures/items/weapons/weapon_27"
+		},
+		"weapon_28" : {
+			"textures" : "textures/items/weapons/weapon_28"
+		},
+		"weapon_29" : {
+			"textures" : "textures/items/weapons/weapon_29"
+		},
+		"double_sword_01" : {
+			"textures" : "textures/models/items/sword/double_sword01"
+		},
+		"double_sword_02" : {
+			"textures" : "textures/models/items/sword/double_sword02"
+		},
+		"hammer_01" : {
+			"textures" : "textures/models/items/sword/hammer01"
+		},
+		"hammer_02" : {
+			"textures" : "textures/models/items/sword/hammer02"
+		},
+		"hammer_03" : {
+			"textures" : "textures/models/items/sword/hammer03"
+		},
+		"knife_01" : {
+			"textures" : "textures/models/items/sword/knife01"
+		},
+		"knife_02" : {
+			"textures" : "textures/models/items/sword/knife02"
+		},
+		"spear_01" : {
+			"textures" : "textures/models/items/sword/spear01"
+		},
+		"staff_01" : {
+			"textures" : "textures/models/items/sword/staff01"
+		},
+		"staff_02" : {
+			"textures" : "textures/models/items/sword/staff02"
+		},
+		"staff_03" : {
+			"textures" : "textures/models/items/sword/staff03"
+		},
+		"sword_01" : {
+			"textures" : "textures/models/items/sword/sword01"
+		},
+		"sword_02" : {
+			"textures" : "textures/models/items/sword/sword02"
+		},
+		"sword_03" : {
+			"textures" : "textures/models/items/sword/sword03"
+		},
+		"sword_04" : {
+			"textures" : "textures/models/items/sword/sword04"
+		},
+		"sword_05" : {
+			"textures" : "textures/models/items/sword/sword05"
+		},
+		"sword_06" : {
+			"textures" : "textures/models/items/sword/sword06"
+		},
+		"sword_07" : {
+			"textures" : "textures/models/items/sword/sword07"
+		},
+		"sword_08" : {
+			"textures" : "textures/models/items/sword/sword08"
+		},
+		"sword_09" : {
+			"textures" : "textures/models/items/sword/sword09"
+		},
+		"trident_01" : {
+			"textures" : "textures/models/items/sword/trident01"
+		},
+		"trident_02" : {
+			"textures" : "textures/models/items/sword/trident02"
+		},
+		"advanced_exoskeleton_armor_set" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_0"
+		},
+		"advanced_exoskeleton_armor_helmet_set" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/helmet"
+		},
+		"advanced_exoskeleton_armor_helmet" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/helmet"
+		},
+		"advanced_exoskeleton_armor_chestplate" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/chestplate"
+		},
+		"advanced_exoskeleton_armor_leggings" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/leggings"
+		},
+		"advanced_exoskeleton_armor_boots" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/boots"
+		},
+		"advanced_exoskeleton_armor_set_1" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_1"
+		},
+		"advanced_exoskeleton_armor_set_2" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_2"
+		},
+		"advanced_exoskeleton_armor_set_3" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_3"
+		},
+		"advanced_exoskeleton_armor_set_4" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_4"
+		},
+		"advanced_exoskeleton_armor_set_5" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_5"
+		},
+		"advanced_exoskeleton_armor_set_6" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_6"
+		},
+		"advanced_exoskeleton_armor_set_7" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_7"
+		},
+		"advanced_exoskeleton_armor_set_8" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_8"
+		},
+		"advanced_exoskeleton_armor_set_9" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_9"
+		},
+		"advanced_exoskeleton_armor_set_10" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_10"
+		},
+		"advanced_exoskeleton_armor_set_11" : {
+			"textures" : "textures/items/advanced_exoskeleton_armor/2_11"
+		},
+		"beatly_buffer_armor_set" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_0"
+		},
+		"beatly_buffer_armor_helmet" : {
+			"textures" : "textures/items/beatly_buffer_armor/helmet"
+		},
+		"beatly_buffer_armor_chestplate" : {
+			"textures" : "textures/items/beatly_buffer_armor/chestplate"
+		},
+		"beatly_buffer_armor_leggings" : {
+			"textures" : "textures/items/beatly_buffer_armor/leggings"
+		},
+		"beatly_buffer_armor_boots" : {
+			"textures" : "textures/items/beatly_buffer_armor/boots"
+		},
+		"beatly_buffer_armor_set_1" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_1"
+		},
+		"beatly_buffer_armor_set_2" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_2"
+		},
+		"beatly_buffer_armor_set_3" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_3"
+		},
+		"beatly_buffer_armor_set_4" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_4"
+		},
+		"beatly_buffer_armor_set_5" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_5"
+		},
+		"beatly_buffer_armor_set_6" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_6"
+		},
+		"beatly_buffer_armor_set_7" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_7"
+		},
+		"beatly_buffer_armor_set_8" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_8"
+		},
+		"beatly_buffer_armor_set_9" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_9"
+		},
+		"beatly_buffer_armor_set_10" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_10"
+		},
+		"beatly_buffer_armor_set_11" : {
+			"textures" : "textures/items/beatly_buffer_armor/17_11"
+		},
+		"bionical_hazard_armor_set" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_0"
+		},
+		"bionical_hazard_armor_helmet" : {
+			"textures" : "textures/items/bionical_hazard_armor/helmet"
+		},
+		"bionical_hazard_armor_chestplate" : {
+			"textures" : "textures/items/bionical_hazard_armor/chestplate"
+		},
+		"bionical_hazard_armor_leggings" : {
+			"textures" : "textures/items/bionical_hazard_armor/leggings"
+		},
+		"bionical_hazard_armor_boots" : {
+			"textures" : "textures/items/bionical_hazard_armor/boots"
+		},
+		"bionical_hazard_armor_set_1" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_1"
+		},
+		"bionical_hazard_armor_set_2" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_2"
+		},
+		"bionical_hazard_armor_set_3" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_3"
+		},
+		"bionical_hazard_armor_set_4" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_4"
+		},
+		"bionical_hazard_armor_set_5" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_5"
+		},
+		"bionical_hazard_armor_set_6" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_6"
+		},
+		"bionical_hazard_armor_set_7" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_7"
+		},
+		"bionical_hazard_armor_set_8" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_8"
+		},
+		"bionical_hazard_armor_set_9" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_9"
+		},
+		"bionical_hazard_armor_set_10" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_10"
+		},
+		"bionical_hazard_armor_set_11" : {
+			"textures" : "textures/items/bionical_hazard_armor/13_11"
+		},
+		"bug_out_armor_set" : {
+			"textures" : "textures/items/bug_out_armor/18_0"
+		},
+		"bug_out_armor_helmet" : {
+			"textures" : "textures/items/bug_out_armor/helmet"
+		},
+		"bug_out_armor_chestplate" : {
+			"textures" : "textures/items/bug_out_armor/chestplate"
+		},
+		"bug_out_armor_leggings" : {
+			"textures" : "textures/items/bug_out_armor/leggings"
+		},
+		"bug_out_armor_boots" : {
+			"textures" : "textures/items/bug_out_armor/boots"
+		},
+		"bug_out_armor_set_1" : {
+			"textures" : "textures/items/bug_out_armor/18_1"
+		},
+		"bug_out_armor_set_2" : {
+			"textures" : "textures/items/bug_out_armor/18_2"
+		},
+		"bug_out_armor_set_3" : {
+			"textures" : "textures/items/bug_out_armor/18_3"
+		},
+		"bug_out_armor_set_4" : {
+			"textures" : "textures/items/bug_out_armor/18_4"
+		},
+		"bug_out_armor_set_5" : {
+			"textures" : "textures/items/bug_out_armor/18_5"
+		},
+		"bug_out_armor_set_6" : {
+			"textures" : "textures/items/bug_out_armor/18_6"
+		},
+		"bug_out_armor_set_7" : {
+			"textures" : "textures/items/bug_out_armor/18_7"
+		},
+		"bug_out_armor_set_8" : {
+			"textures" : "textures/items/bug_out_armor/18_8"
+		},
+		"bug_out_armor_set_9" : {
+			"textures" : "textures/items/bug_out_armor/18_9"
+		},
+		"bug_out_armor_set_10" : {
+			"textures" : "textures/items/bug_out_armor/18_10"
+		},
+		"bug_out_armor_set_11" : {
+			"textures" : "textures/items/bug_out_armor/18_11"
+		},
+		"cybernetic_exosuit_armor_set" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_0"
+		},
+		"cybernetic_exosuit_armor_helmet" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/helmet"
+		},
+		"cybernetic_exosuit_armor_chestplate" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/chestplate"
+		},
+		"cybernetic_exosuit_armor_leggings" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/leggings"
+		},
+		"cybernetic_exosuit_armor_boots" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/boots"
+		},
+		"cybernetic_exosuit_armor_set_1" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_1"
+		},
+		"cybernetic_exosuit_armor_set_2" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_2"
+		},
+		"cybernetic_exosuit_armor_set_3" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_3"
+		},
+		"cybernetic_exosuit_armor_set_4" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_4"
+		},
+		"cybernetic_exosuit_armor_set_5" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_5"
+		},
+		"cybernetic_exosuit_armor_set_6" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_6"
+		},
+		"cybernetic_exosuit_armor_set_7" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_7"
+		},
+		"cybernetic_exosuit_armor_set_8" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_8"
+		},
+		"cybernetic_exosuit_armor_set_9" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_9"
+		},
+		"cybernetic_exosuit_armor_set_10" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_10"
+		},
+		"cybernetic_exosuit_armor_set_11" : {
+			"textures" : "textures/items/cybernetic_exosuit_armor/6_11"
+		},
+		"cyberpunk_robot_armor_set" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_0"
+		},
+		"cyberpunk_robot_armor_helmet" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/helmet"
+		},
+		"cyberpunk_robot_armor_chestplate" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/chestplate"
+		},
+		"cyberpunk_robot_armor_leggings" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/leggings"
+		},
+		"cyberpunk_robot_armor_boots" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/boots"
+		},
+		"cyberpunk_robot_armor_set_1" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_1"
+		},
+		"cyberpunk_robot_armor_set_2" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_2"
+		},
+		"cyberpunk_robot_armor_set_3" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_3"
+		},
+		"cyberpunk_robot_armor_set_4" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_4"
+		},
+		"cyberpunk_robot_armor_set_5" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_5"
+		},
+		"cyberpunk_robot_armor_set_6" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_6"
+		},
+		"cyberpunk_robot_armor_set_7" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_7"
+		},
+		"cyberpunk_robot_armor_set_8" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_8"
+		},
+		"cyberpunk_robot_armor_set_9" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_9"
+		},
+		"cyberpunk_robot_armor_set_10" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_10"
+		},
+		"cyberpunk_robot_armor_set_11" : {
+			"textures" : "textures/items/cyberpunk_robot_armor/10_11"
+		},
+		"grand_vault_armor_set" : {
+			"textures" : "textures/items/grand_vault_armor/11_0"
+		},
+		"grand_vault_armor_helmet" : {
+			"textures" : "textures/items/grand_vault_armor/helmet"
+		},
+		"grand_vault_armor_chestplate" : {
+			"textures" : "textures/items/grand_vault_armor/chestplate"
+		},
+		"grand_vault_armor_leggings" : {
+			"textures" : "textures/items/grand_vault_armor/leggings"
+		},
+		"grand_vault_armor_boots" : {
+			"textures" : "textures/items/grand_vault_armor/boots"
+		},
+		"grand_vault_armor_set_1" : {
+			"textures" : "textures/items/grand_vault_armor/11_1"
+		},
+		"grand_vault_armor_set_2" : {
+			"textures" : "textures/items/grand_vault_armor/11_2"
+		},
+		"grand_vault_armor_set_3" : {
+			"textures" : "textures/items/grand_vault_armor/11_3"
+		},
+		"grand_vault_armor_set_4" : {
+			"textures" : "textures/items/grand_vault_armor/11_4"
+		},
+		"grand_vault_armor_set_5" : {
+			"textures" : "textures/items/grand_vault_armor/11_5"
+		},
+		"grand_vault_armor_set_6" : {
+			"textures" : "textures/items/grand_vault_armor/11_6"
+		},
+		"grand_vault_armor_set_7" : {
+			"textures" : "textures/items/grand_vault_armor/11_7"
+		},
+		"grand_vault_armor_set_8" : {
+			"textures" : "textures/items/grand_vault_armor/11_8"
+		},
+		"grand_vault_armor_set_9" : {
+			"textures" : "textures/items/grand_vault_armor/11_9"
+		},
+		"grand_vault_armor_set_10" : {
+			"textures" : "textures/items/grand_vault_armor/11_10"
+		},
+		"grand_vault_armor_set_11" : {
+			"textures" : "textures/items/grand_vault_armor/11_11"
+		},
+		"hydraulic_augmented_armor_set" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_0"
+		},
+		"hydraulic_augmented_armor_helmet" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/helmet"
+		},
+		"hydraulic_augmented_armor_chestplate" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/chestplate"
+		},
+		"hydraulic_augmented_armor_leggings" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/leggings"
+		},
+		"hydraulic_augmented_armor_boots" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/boots"
+		},
+		"hydraulic_augmented_armor_set_1" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_1"
+		},
+		"hydraulic_augmented_armor_set_2" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_2"
+		},
+		"hydraulic_augmented_armor_set_3" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_3"
+		},
+		"hydraulic_augmented_armor_set_4" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_4"
+		},
+		"hydraulic_augmented_armor_set_5" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_5"
+		},
+		"hydraulic_augmented_armor_set_6" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_6"
+		},
+		"hydraulic_augmented_armor_set_7" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_7"
+		},
+		"hydraulic_augmented_armor_set_8" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_8"
+		},
+		"hydraulic_augmented_armor_set_9" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_9"
+		},
+		"hydraulic_augmented_armor_set_10" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_10"
+		},
+		"hydraulic_augmented_armor_set_11" : {
+			"textures" : "textures/items/hydraulic_augmented_armor/9_11"
+		},
+		"jetpack_ash_armor_set" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_0"
+		},
+		"jetpack_ash_armor_helmet" : {
+			"textures" : "textures/items/jetpack_ash_armor/helmet"
+		},
+		"jetpack_ash_armor_chestplate" : {
+			"textures" : "textures/items/jetpack_ash_armor/chestplate"
+		},
+		"jetpack_ash_armor_leggings" : {
+			"textures" : "textures/items/jetpack_ash_armor/leggings"
+		},
+		"jetpack_ash_armor_boots" : {
+			"textures" : "textures/items/jetpack_ash_armor/boots"
+		},
+		"jetpack_ash_armor_set_1" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_1"
+		},
+		"jetpack_ash_armor_set_2" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_2"
+		},
+		"jetpack_ash_armor_set_3" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_3"
+		},
+		"jetpack_ash_armor_set_4" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_4"
+		},
+		"jetpack_ash_armor_set_5" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_5"
+		},
+		"jetpack_ash_armor_set_6" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_6"
+		},
+		"jetpack_ash_armor_set_7" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_7"
+		},
+		"jetpack_ash_armor_set_8" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_8"
+		},
+		"jetpack_ash_armor_set_9" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_9"
+		},
+		"jetpack_ash_armor_set_10" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_10"
+		},
+		"jetpack_ash_armor_set_11" : {
+			"textures" : "textures/items/jetpack_ash_armor/3_11"
+		},
+		"mechanized_guard_armor_set" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_0"
+		},
+		"mechanized_guard_armor_helmet" : {
+			"textures" : "textures/items/mechanized_guard_armor/helmet"
+		},
+		"mechanized_guard_armor_chestplate" : {
+			"textures" : "textures/items/mechanized_guard_armor/chestplate"
+		},
+		"mechanized_guard_armor_leggings" : {
+			"textures" : "textures/items/mechanized_guard_armor/leggings"
+		},
+		"mechanized_guard_armor_boots" : {
+			"textures" : "textures/items/mechanized_guard_armor/boots"
+		},
+		"mechanized_guard_armor_set_1" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_1"
+		},
+		"mechanized_guard_armor_set_2" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_2"
+		},
+		"mechanized_guard_armor_set_3" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_3"
+		},
+		"mechanized_guard_armor_set_4" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_4"
+		},
+		"mechanized_guard_armor_set_5" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_5"
+		},
+		"mechanized_guard_armor_set_6" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_6"
+		},
+		"mechanized_guard_armor_set_7" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_7"
+		},
+		"mechanized_guard_armor_set_8" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_8"
+		},
+		"mechanized_guard_armor_set_9" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_9"
+		},
+		"mechanized_guard_armor_set_10" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_10"
+		},
+		"mechanized_guard_armor_set_11" : {
+			"textures" : "textures/items/mechanized_guard_armor/8_11"
+		},
+		"mechanized_patriot_armor_set" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_0"
+		},
+		"mechanized_patriot_armor_helmet" : {
+			"textures" : "textures/items/mechanized_patriot_armor/helmet"
+		},
+		"mechanized_patriot_armor_chestplate" : {
+			"textures" : "textures/items/mechanized_patriot_armor/chestplate"
+		},
+		"mechanized_patriot_armor_leggings" : {
+			"textures" : "textures/items/mechanized_patriot_armor/leggings"
+		},
+		"mechanized_patriot_armor_boots" : {
+			"textures" : "textures/items/mechanized_patriot_armor/boots"
+		},
+		"mechanized_patriot_armor_set_1" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_1"
+		},
+		"mechanized_patriot_armor_set_2" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_2"
+		},
+		"mechanized_patriot_armor_set_3" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_3"
+		},
+		"mechanized_patriot_armor_set_4" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_4"
+		},
+		"mechanized_patriot_armor_set_5" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_5"
+		},
+		"mechanized_patriot_armor_set_6" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_6"
+		},
+		"mechanized_patriot_armor_set_7" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_7"
+		},
+		"mechanized_patriot_armor_set_8" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_8"
+		},
+		"mechanized_patriot_armor_set_9" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_9"
+		},
+		"mechanized_patriot_armor_set_10" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_10"
+		},
+		"mechanized_patriot_armor_set_11" : {
+			"textures" : "textures/items/mechanized_patriot_armor/12_11"
+		},
+		"modular_exoskeleton_armor_set" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_0"
+		},
+		"modular_exoskeleton_armor_helmet" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/helmet"
+		},
+		"modular_exoskeleton_armor_chestplate" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/chestplate"
+		},
+		"modular_exoskeleton_armor_leggings" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/leggings"
+		},
+		"modular_exoskeleton_armor_boots" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/boots"
+		},
+		"modular_exoskeleton_armor_set_1" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_1"
+		},
+		"modular_exoskeleton_armor_set_2" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_2"
+		},
+		"modular_exoskeleton_armor_set_3" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_3"
+		},
+		"modular_exoskeleton_armor_set_4" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_4"
+		},
+		"modular_exoskeleton_armor_set_5" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_5"
+		},
+		"modular_exoskeleton_armor_set_6" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_6"
+		},
+		"modular_exoskeleton_armor_set_7" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_7"
+		},
+		"modular_exoskeleton_armor_set_8" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_8"
+		},
+		"modular_exoskeleton_armor_set_9" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_9"
+		},
+		"modular_exoskeleton_armor_set_10" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_10"
+		},
+		"modular_exoskeleton_armor_set_11" : {
+			"textures" : "textures/items/modular_exoskeleton_armor/4_11"
+		},
+		"neutro_tethered_armor_set" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_0"
+		},
+		"neutro_tethered_armor_helmet" : {
+			"textures" : "textures/items/neutro_tethered_armor/helmet"
+		},
+		"neutro_tethered_armor_chestplate" : {
+			"textures" : "textures/items/neutro_tethered_armor/chestplate"
+		},
+		"neutro_tethered_armor_leggings" : {
+			"textures" : "textures/items/neutro_tethered_armor/leggings"
+		},
+		"neutro_tethered_armor_boots" : {
+			"textures" : "textures/items/neutro_tethered_armor/boots"
+		},
+		"neutro_tethered_armor_set_1" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_1"
+		},
+		"neutro_tethered_armor_set_2" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_2"
+		},
+		"neutro_tethered_armor_set_3" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_3"
+		},
+		"neutro_tethered_armor_set_4" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_4"
+		},
+		"neutro_tethered_armor_set_5" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_5"
+		},
+		"neutro_tethered_armor_set_6" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_6"
+		},
+		"neutro_tethered_armor_set_7" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_7"
+		},
+		"neutro_tethered_armor_set_8" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_8"
+		},
+		"neutro_tethered_armor_set_9" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_9"
+		},
+		"neutro_tethered_armor_set_10" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_10"
+		},
+		"neutro_tethered_armor_set_11" : {
+			"textures" : "textures/items/neutro_tethered_armor/15_11"
+		},
+		"next_gen_reinforced_jet_armor_set" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_0"
+		},
+		"next_gen_reinforced_jet_armor_helmet" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/helmet"
+		},
+		"next_gen_reinforced_jet_armor_chestplate" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/chestplate"
+		},
+		"next_gen_reinforced_jet_armor_leggings" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/leggings"
+		},
+		"next_gen_reinforced_jet_armor_boots" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/boots"
+		},
+		"next_gen_reinforced_jet_armor_set_1" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_1"
+		},
+		"next_gen_reinforced_jet_armor_set_2" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_2"
+		},
+		"next_gen_reinforced_jet_armor_set_3" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_3"
+		},
+		"next_gen_reinforced_jet_armor_set_4" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_4"
+		},
+		"next_gen_reinforced_jet_armor_set_5" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_5"
+		},
+		"next_gen_reinforced_jet_armor_set_6" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_6"
+		},
+		"next_gen_reinforced_jet_armor_set_7" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_7"
+		},
+		"next_gen_reinforced_jet_armor_set_8" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_8"
+		},
+		"next_gen_reinforced_jet_armor_set_9" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_9"
+		},
+		"next_gen_reinforced_jet_armor_set_10" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_10"
+		},
+		"next_gen_reinforced_jet_armor_set_11" : {
+			"textures" : "textures/items/next_gen_reinforced_jet_armor/20_11"
+		},
+		"oblivion_armor_set" : {
+			"textures" : "textures/items/oblivion_armor/5_0"
+		},
+		"oblivion_armor_helmet" : {
+			"textures" : "textures/items/oblivion_armor/helmet"
+		},
+		"oblivion_armor_chestplate" : {
+			"textures" : "textures/items/oblivion_armor/chestplate"
+		},
+		"oblivion_armor_leggings" : {
+			"textures" : "textures/items/oblivion_armor/leggings"
+		},
+		"oblivion_armor_boots" : {
+			"textures" : "textures/items/oblivion_armor/boots"
+		},
+		"oblivion_armor_set_1" : {
+			"textures" : "textures/items/oblivion_armor/5_1"
+		},
+		"oblivion_armor_set_2" : {
+			"textures" : "textures/items/oblivion_armor/5_2"
+		},
+		"oblivion_armor_set_3" : {
+			"textures" : "textures/items/oblivion_armor/5_3"
+		},
+		"oblivion_armor_set_4" : {
+			"textures" : "textures/items/oblivion_armor/5_4"
+		},
+		"oblivion_armor_set_5" : {
+			"textures" : "textures/items/oblivion_armor/5_5"
+		},
+		"oblivion_armor_set_6" : {
+			"textures" : "textures/items/oblivion_armor/5_6"
+		},
+		"oblivion_armor_set_7" : {
+			"textures" : "textures/items/oblivion_armor/5_7"
+		},
+		"oblivion_armor_set_8" : {
+			"textures" : "textures/items/oblivion_armor/5_8"
+		},
+		"oblivion_armor_set_9" : {
+			"textures" : "textures/items/oblivion_armor/5_9"
+		},
+		"oblivion_armor_set_10" : {
+			"textures" : "textures/items/oblivion_armor/5_10"
+		},
+		"oblivion_armor_set_11" : {
+			"textures" : "textures/items/oblivion_armor/5_11"
+		},
+		"reinforced_steel_armor_set" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_0"
+		},
+		"reinforced_steel_armor_helmet" : {
+			"textures" : "textures/items/reinforced_steel_armor/helmet"
+		},
+		"reinforced_steel_armor_chestplate" : {
+			"textures" : "textures/items/reinforced_steel_armor/chestplate"
+		},
+		"reinforced_steel_armor_leggings" : {
+			"textures" : "textures/items/reinforced_steel_armor/leggings"
+		},
+		"reinforced_steel_armor_boots" : {
+			"textures" : "textures/items/reinforced_steel_armor/boots"
+		},
+		"reinforced_steel_armor_set_1" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_1"
+		},
+		"reinforced_steel_armor_set_2" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_2"
+		},
+		"reinforced_steel_armor_set_3" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_3"
+		},
+		"reinforced_steel_armor_set_4" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_4"
+		},
+		"reinforced_steel_armor_set_5" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_5"
+		},
+		"reinforced_steel_armor_set_6" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_6"
+		},
+		"reinforced_steel_armor_set_7" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_7"
+		},
+		"reinforced_steel_armor_set_8" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_8"
+		},
+		"reinforced_steel_armor_set_9" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_9"
+		},
+		"reinforced_steel_armor_set_10" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_10"
+		},
+		"reinforced_steel_armor_set_11" : {
+			"textures" : "textures/items/reinforced_steel_armor/19_11"
+		},
+		"scifi_suit_armor_set" : {
+			"textures" : "textures/items/scifi_suit_armor/1_0"
+		},
+		"scifi_suit_armor_helmet" : {
+			"textures" : "textures/items/scifi_suit_armor/helmet"
+		},
+		"scifi_suit_armor_chestplate" : {
+			"textures" : "textures/items/scifi_suit_armor/chestplate"
+		},
+		"scifi_suit_armor_leggings" : {
+			"textures" : "textures/items/scifi_suit_armor/leggings"
+		},
+		"scifi_suit_armor_boots" : {
+			"textures" : "textures/items/scifi_suit_armor/boots"
+		},
+		"scifi_suit_armor_set_1" : {
+			"textures" : "textures/items/scifi_suit_armor/1_1"
+		},
+		"scifi_suit_armor_set_2" : {
+			"textures" : "textures/items/scifi_suit_armor/1_2"
+		},
+		"scifi_suit_armor_set_3" : {
+			"textures" : "textures/items/scifi_suit_armor/1_3"
+		},
+		"scifi_suit_armor_set_4" : {
+			"textures" : "textures/items/scifi_suit_armor/1_4"
+		},
+		"scifi_suit_armor_set_5" : {
+			"textures" : "textures/items/scifi_suit_armor/1_5"
+		},
+		"scifi_suit_armor_set_6" : {
+			"textures" : "textures/items/scifi_suit_armor/1_6"
+		},
+		"scifi_suit_armor_set_7" : {
+			"textures" : "textures/items/scifi_suit_armor/1_7"
+		},
+		"scifi_suit_armor_set_8" : {
+			"textures" : "textures/items/scifi_suit_armor/1_8"
+		},
+		"scifi_suit_armor_set_9" : {
+			"textures" : "textures/items/scifi_suit_armor/1_9"
+		},
+		"scifi_suit_armor_set_10" : {
+			"textures" : "textures/items/scifi_suit_armor/1_10"
+		},
+		"scifi_suit_armor_set_11" : {
+			"textures" : "textures/items/scifi_suit_armor/1_11"
+		},
+		"scifi_suit_armor_set_12" : {
+			"textures" : "textures/items/scifi_suit_armor/1_12"
+		},
+		"scifi_suit_armor_set_13" : {
+			"textures" : "textures/items/scifi_suit_armor/1_13"
+		},
+		"scifi_suit_armor_set_14" : {
+			"textures" : "textures/items/scifi_suit_armor/1_14"
+		},
+		"scifi_suit_armor_set_15" : {
+			"textures" : "textures/items/scifi_suit_armor/1_15"
+		},
+		"stormslider_armor_set" : {
+			"textures" : "textures/items/stormslider_armor/14_0"
+		},
+		"stormslider_armor_helmet" : {
+			"textures" : "textures/items/stormslider_armor/helmet"
+		},
+		"stormslider_armor_chestplate" : {
+			"textures" : "textures/items/stormslider_armor/chestplate"
+		},
+		"stormslider_armor_leggings" : {
+			"textures" : "textures/items/stormslider_armor/leggings"
+		},
+		"stormslider_armor_boots" : {
+			"textures" : "textures/items/stormslider_armor/boots"
+		},
+		"stormslider_armor_set_1" : {
+			"textures" : "textures/items/stormslider_armor/14_1"
+		},
+		"stormslider_armor_set_2" : {
+			"textures" : "textures/items/stormslider_armor/14_2"
+		},
+		"stormslider_armor_set_3" : {
+			"textures" : "textures/items/stormslider_armor/14_3"
+		},
+		"stormslider_armor_set_4" : {
+			"textures" : "textures/items/stormslider_armor/14_4"
+		},
+		"stormslider_armor_set_5" : {
+			"textures" : "textures/items/stormslider_armor/14_5"
+		},
+		"stormslider_armor_set_6" : {
+			"textures" : "textures/items/stormslider_armor/14_6"
+		},
+		"stormslider_armor_set_7" : {
+			"textures" : "textures/items/stormslider_armor/14_7"
+		},
+		"stormslider_armor_set_8" : {
+			"textures" : "textures/items/stormslider_armor/14_8"
+		},
+		"stormslider_armor_set_9" : {
+			"textures" : "textures/items/stormslider_armor/14_9"
+		},
+		"stormslider_armor_set_10" : {
+			"textures" : "textures/items/stormslider_armor/14_10"
+		},
+		"stormslider_armor_set_11" : {
+			"textures" : "textures/items/stormslider_armor/14_11"
+		},
+		"trauma_resistant_armor_set" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_0"
+		},
+		"trauma_resistant_armor_helmet" : {
+			"textures" : "textures/items/trauma_resistant_armor/helmet"
+		},
+		"trauma_resistant_armor_chestplate" : {
+			"textures" : "textures/items/trauma_resistant_armor/chestplate"
+		},
+		"trauma_resistant_armor_leggings" : {
+			"textures" : "textures/items/trauma_resistant_armor/leggings"
+		},
+		"trauma_resistant_armor_boots" : {
+			"textures" : "textures/items/trauma_resistant_armor/boots"
+		},
+		"trauma_resistant_armor_set_1" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_1"
+		},
+		"trauma_resistant_armor_set_2" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_2"
+		},
+		"trauma_resistant_armor_set_3" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_3"
+		},
+		"trauma_resistant_armor_set_4" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_4"
+		},
+		"trauma_resistant_armor_set_5" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_5"
+		},
+		"trauma_resistant_armor_set_6" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_6"
+		},
+		"trauma_resistant_armor_set_7" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_7"
+		},
+		"trauma_resistant_armor_set_8" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_8"
+		},
+		"trauma_resistant_armor_set_9" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_9"
+		},
+		"trauma_resistant_armor_set_10" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_10"
+		},
+		"trauma_resistant_armor_set_11" : {
+			"textures" : "textures/items/trauma_resistant_armor/7_11"
+		},
+		"veterans_sidearm_armor_set" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_0"
+		},
+		"veterans_sidearm_armor_helmet" : {
+			"textures" : "textures/items/veterans_sidearm_armor/helmet"
+		},
+		"veterans_sidearm_armor_chestplate" : {
+			"textures" : "textures/items/veterans_sidearm_armor/chestplate"
+		},
+		"veterans_sidearm_armor_leggings" : {
+			"textures" : "textures/items/veterans_sidearm_armor/leggings"
+		},
+		"veterans_sidearm_armor_boots" : {
+			"textures" : "textures/items/veterans_sidearm_armor/boots"
+		},
+		"veterans_sidearm_armor_set_1" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_1"
+		},
+		"veterans_sidearm_armor_set_2" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_2"
+		},
+		"veterans_sidearm_armor_set_3" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_3"
+		},
+		"veterans_sidearm_armor_set_4" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_4"
+		},
+		"veterans_sidearm_armor_set_5" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_5"
+		},
+		"veterans_sidearm_armor_set_6" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_6"
+		},
+		"veterans_sidearm_armor_set_7" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_7"
+		},
+		"veterans_sidearm_armor_set_8" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_8"
+		},
+		"veterans_sidearm_armor_set_9" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_9"
+		},
+		"veterans_sidearm_armor_set_10" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_10"
+		},
+		"veterans_sidearm_armor_set_11" : {
+			"textures" : "textures/items/veterans_sidearm_armor/16_11"
+		},
+		"car_icon" : {
+			"textures" : "textures/items/car_icon"
+		},
+		"meaty_bone" : {
+			"textures" : "textures/items/meaty_bone"
+		},
+		"palm_leaf" : {
+			"textures" : "textures/items/palm_leaf"
+		},
+		"baby_dragon_1" : {
+			"textures" : "textures/items/baby_dragon1"
+		},
+		"baby_dragon_2" : {
+			"textures" : "textures/items/baby_dragon2"
+		},
+		"baby_dragon_3" : {
+			"textures" : "textures/items/baby_dragon3"
+		},
+		"baby_dragon_4" : {
+			"textures" : "textures/items/baby_dragon4"
+		},
+		"baby_dragon_5" : {
+			"textures" : "textures/items/baby_dragon5"
+		},
+		"baby_dragon_6" : {
+			"textures" : "textures/items/baby_dragon6"
+		},
+		"baby_dragon_7" : {
+			"textures" : "textures/items/baby_dragon7"
+		},
+		"baby_dragon_8" : {
+			"textures" : "textures/items/baby_dragon8"
+		},
+		"baby_dragon_9" : {
+			"textures" : "textures/items/baby_dragon9"
+		},
+		"baby_dragon_10" : {
+			"textures" : "textures/items/baby_dragon10"
+		},
+		"baby_dragon_11" : {
+			"textures" : "textures/items/baby_dragon11"
+		},
+		"baby_dragon_12" : {
+			"textures" : "textures/items/baby_dragon12"
+		},
+		"baby_dragon_13" : {
+			"textures" : "textures/items/baby_dragon13"
+		},
+		"baby_dragon_14" : {
+			"textures" : "textures/items/baby_dragon14"
+		},
+		"baby_dragon_15" : {
+			"textures" : "textures/items/baby_dragon15"
+		},
+		"baby_dragon_16" : {
+			"textures" : "textures/items/baby_dragon16"
+		},
+		"baby_dragon_17" : {
+			"textures" : "textures/items/baby_dragon17"
+		},
+		"baby_dragon_18" : {
+			"textures" : "textures/items/baby_dragon18"
+		},
+		"baby_dragon_19" : {
+			"textures" : "textures/items/baby_dragon19"
+		},
+		"baby_dragon_20" : {
+			"textures" : "textures/items/baby_dragon20"
+		},
+		"block" : {
+			"textures" : "textures/items/block"
+		},
+		"kreatik_backpack_1_egg_black" : {
+			"textures" : "textures/items/backpack_1/black"
+		},
+		"kreatik_backpack_1_egg_blue" : {
+			"textures" : "textures/items/backpack_1/blue"
+		},
+		"kreatik_backpack_1_egg_brown" : {
+			"textures" : "textures/items/backpack_1/brown"
+		},
+		"kreatik_backpack_1_egg_cyan" : {
+			"textures" : "textures/items/backpack_1/cyan"
+		},
+		"kreatik_backpack_1_egg_gray" : {
+			"textures" : "textures/items/backpack_1/gray"
+		},
+		"kreatik_backpack_1_egg_green" : {
+			"textures" : "textures/items/backpack_1/green"
+		},
+		"kreatik_backpack_1_egg_pink" : {
+			"textures" : "textures/items/backpack_1/pink"
+		},
+		"kreatik_backpack_1_egg_red" : {
+			"textures" : "textures/items/backpack_1/red"
+		},
+		"kreatik_backpack_2_egg_orange" : {
+			"textures" : "textures/items/backpack_2/orange"
+		},
+		"kreatik_backpack_2_egg_purple" : {
+			"textures" : "textures/items/backpack_2/purple"
+		},
+		"kreatik_backpack_2_egg_brown" : {
+			"textures" : "textures/items/backpack_2/brown"
+		},
+		"kreatik_backpack_2_egg_cyan" : {
+			"textures" : "textures/items/backpack_2/cyan"
+		},
+		"kreatik_backpack_2_egg_gray" : {
+			"textures" : "textures/items/backpack_2/gray"
+		},
+		"kreatik_backpack_2_egg_green" : {
+			"textures" : "textures/items/backpack_2/green"
+		},
+		"kreatik_backpack_2_egg_pink" : {
+			"textures" : "textures/items/backpack_2/pink"
+		},
+		"kreatik_backpack_2_egg_red" : {
+			"textures" : "textures/items/backpack_2/red"
+		},
+		"kreatik_backpack_3_egg_blue" : {
+			"textures" : "textures/items/backpack_3/blue"
+		},
+		"kreatik_backpack_3_egg_orange" : {
+			"textures" : "textures/items/backpack_3/orange"
+		},
+		"kreatik_backpack_3_egg_yellow" : {
+			"textures" : "textures/items/backpack_3/yellow"
+		},
+		"kreatik_backpack_3_egg_cyan" : {
+			"textures" : "textures/items/backpack_3/cyan"
+		},
+		"kreatik_backpack_3_egg_gray" : {
+			"textures" : "textures/items/backpack_3/gray"
+		},
+		"kreatik_backpack_3_egg_green" : {
+			"textures" : "textures/items/backpack_3/green"
+		},
+		"kreatik_backpack_3_egg_pink" : {
+			"textures" : "textures/items/backpack_3/pink"
+		},
+		"kreatik_backpack_3_egg_red" : {
+			"textures" : "textures/items/backpack_3/red"
+		},
+		"kreatik_backpack_4_egg_blue" : {
+			"textures" : "textures/items/backpack_4/blue"
+		},
+		"kreatik_backpack_4_egg_yellow" : {
+			"textures" : "textures/items/backpack_4/yellow"
+		},
+		"kreatik_backpack_4_egg_brown" : {
+			"textures" : "textures/items/backpack_4/brown"
+		},
+		"kreatik_backpack_4_egg_cyan" : {
+			"textures" : "textures/items/backpack_4/cyan"
+		},
+		"kreatik_backpack_4_egg_gray" : {
+			"textures" : "textures/items/backpack_4/gray"
+		},
+		"kreatik_backpack_4_egg_green" : {
+			"textures" : "textures/items/backpack_4/green"
+		},
+		"kreatik_backpack_4_egg_purple" : {
+			"textures" : "textures/items/backpack_4/purple"
+		},
+		"kreatik_backpack_4_egg_red" : {
+			"textures" : "textures/items/backpack_4/red"
+		},
+		"kreatik_backpack_5_egg_blue" : {
+			"textures" : "textures/items/backpack_5/blue"
+		},
+		"kreatik_backpack_5_egg_black" : {
+			"textures" : "textures/items/backpack_5/black"
+		},
+		"kreatik_backpack_5_egg_brown" : {
+			"textures" : "textures/items/backpack_5/brown"
+		},
+		"kreatik_backpack_5_egg_cyan" : {
+			"textures" : "textures/items/backpack_5/cyan"
+		},
+		"kreatik_backpack_5_egg_gray" : {
+			"textures" : "textures/items/backpack_5/gray"
+		},
+		"kreatik_backpack_5_egg_green" : {
+			"textures" : "textures/items/backpack_5/green"
+		},
+		"kreatik_backpack_5_egg_white" : {
+			"textures" : "textures/items/backpack_5/white"
+		},
+		"kreatik_backpack_5_egg_red" : {
+			"textures" : "textures/items/backpack_5/red"
+		},
+		"lucky_block" : {
+			"textures" : "textures/spawn_eggs/lucky_block"
+		},
+		"return_item" : {
+			"textures" : "textures/lucky_block/return"
+		},
+		"cat1" : {
+			"textures" : [ "textures/items/cat1" ]
+		},
+		"cat2" : {
+			"textures" : [ "textures/items/cat2" ]
+		},
+		"cat3" : {
+			"textures" : [ "textures/items/cat3" ]
+		},
+		"cat4" : {
+			"textures" : [ "textures/items/cat4" ]
+		},
+		"dog_0" : {
+			"textures" : [ "textures/items/dog_0" ]
+		},
+		"dog1" : {
+			"textures" : [ "textures/items/dog1" ]
+		},
+		"dog2" : {
+			"textures" : [ "textures/items/dog2" ]
+		},
+		"dog3" : {
+			"textures" : [ "textures/items/dog3" ]
+		},
+		"dog4" : {
+			"textures" : [ "textures/items/dog4" ]
+		},
+		"german_sherperd" : {
+			"textures" : [ "textures/items/german_sherperd" ]
+		},
+		"guinea_pig" : {
+			"textures" : [ "textures/items/guinea_pig" ]
+		},
+		"hedgehog" : {
+			"textures" : [ "textures/items/hedgehog" ]
+		},
+		"komeranian" : {
+			"textures" : [ "textures/items/komeranian" ]
+		},
+		"pigeon" : {
+			"textures" : [ "textures/items/pigeon" ]
+		},
+		"pterodactyl" : {
+			"textures" : [ "textures/items/pterodactyl" ]
+		},
+		"squirrel" : {
+			"textures" : [ "textures/items/squirrel" ]
+		},
+		"cargo" : {
+			"textures" : "textures/items/cargo"
+		},
+		"cargo_tank" : {
+			"textures" : "textures/items/cargo_tank"
+		},
+		"cargo_wooden_logs" : {
+			"textures" : "textures/items/cargo_wooden_logs"
+		},
+		"carriage" : {
+			"textures" : "textures/items/carriage"
+		},
+		"train_cargo_coupler" : {
+			"textures" : "textures/items/couplers/cargo"
+		},
+		"train_cargo_tank_coupler" : {
+			"textures" : "textures/items/couplers/cargo_tank"
+		},
+		"train_cargo_wooden_logs_coupler" : {
+			"textures" : "textures/items/couplers/cargo_wooden_logs"
+		},
+		"train_carriage_coupler" : {
+			"textures" : "textures/items/couplers/carriage"
+		},
+		"engine" : {
+			"textures" : "textures/items/engine"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.iron_golem_hammer_hold": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "iron_golem_hammer_hold": "(query.get_equipped_item_name == 'iron_golem_hammer')"
+            }
+          ]
+        },
+        "iron_golem_hammer_hold": {
+          "on_entry": [
+            "/effect @s slowness 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'iron_golem_hammer')"
+            },
+            {
+              "iron_golem_hammer_hold2": "(query.get_equipped_item_name == 'iron_golem_hammer')"
+            }
+          ]
+        },
+        "iron_golem_hammer_hold2": {
+          "on_entry": [
+            "/effect @s slowness 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'iron_golem_hammer')"
+            },
+            {
+              "iron_golem_hammer_hold": "(query.get_equipped_item_name == 'iron_golem_hammer')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

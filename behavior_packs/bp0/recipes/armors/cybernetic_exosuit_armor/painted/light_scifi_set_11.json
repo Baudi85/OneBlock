@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:cybernetic_exosuit_armor_set_11"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "   ",
+      "ABC",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "armors:cybernetic_exosuit_armor_set"
+      },
+      "B": {
+        "item": "minecraft:yellow_dye"
+      },
+      "C": {
+        "item": "minecraft:white_dye"
+      }
+
+    },
+    "result": {
+      "item": "armors:cybernetic_exosuit_armor_set_11",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

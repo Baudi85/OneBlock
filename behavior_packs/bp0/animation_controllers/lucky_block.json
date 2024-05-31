@@ -1,0 +1,98 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.lucky_block": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/function lucky_block",
+						"/function option",
+						"/function mechanics"
+					],
+					"transitions": [
+						{
+							"idle": "(1.0)"
+						}
+					]
+				},
+				"idle": {
+					"on_entry": [
+						"/function lucky_block",
+						"/function option",
+						"/function mechanics"
+					],
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.summon_lucky_block": {
+			"states": {
+				"default": {
+			"on_entry": [
+			  "/setblock 2 199 -295 glass",
+	"/execute as @s if score @s luckyz matches 1 run summon kreatik:lucky_block 2 200 -295",
+	"/execute as @e[type=kreatik:lucky_block] positioned 2 200 -295 run spreadplayers -2 -286 4 60 @e[type=kreatik:lucky_block,r=1,c=1]",
+	"/fill 2 199 -295 2 199 -295 air replace glass"
+					],
+					"transitions": [
+						{
+							"later": "variable.later=query.life_time;return (1.0);"
+						}
+					]
+				},
+				"later": {
+				  					"on_entry": [
+				"/setblock 2 199 -295 glass",
+		"/execute as @s if score @s luckyz matches 1 run summon kreatik:lucky_block 2 200 -295",
+	"/execute as @e[type=kreatik:lucky_block] positioned 2 200 -295 run spreadplayers -2 -286 4 60 @e[type=kreatik:lucky_block,r=1,c=1]",
+		"/fill 2 199 -295 2 199 -295 air replace glass"
+					],
+					"transitions": [
+						{
+							"default": "return query.life_time - variable.later > 20.0;"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.place_lucky_block": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"later": "query.is_avoiding_mobs"
+						}
+					]
+				},
+				"later": {
+					"transitions": [
+						{
+							"summon": "variable.later=query.life_time;return (1.0);"
+						}
+					]
+				},
+				"summon": {
+					"on_entry": [
+						"@s minecraft:lucky_block_not_avoid"
+					],
+					"transitions": [
+						{
+							"final": "query.life_time - variable.later > 5.0"
+						}
+					]
+				},
+				"final": {
+					"on_entry": [
+						"/playsound block.false_permissions @a",
+						"/effect @s clear",
+						"/effect @s slowness 99999 255 true"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "train:engine",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/engine/wooden",
+				"magenta": "textures/entity/engine/magenta",
+				"blue": "textures/entity/engine/blue",
+				"green": "textures/entity/engine/green",
+				"orange": "textures/entity/engine/orange",
+				"red": "textures/entity/engine/red",
+				"yellow": "textures/entity/engine/yellow",
+				"iron": "textures/entity/engine/iron"
+			},
+			"geometry": {
+				"default": "geometry.engine"
+			},
+			"scripts": {
+				"animate": [
+					"body_rotation",
+					{
+						"move": "query.is_moving"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.engine.move",
+				"body_rotation": "animation.body_rotation"
+			},
+			"render_controllers": [
+				"controller.render.train"
+			],
+			"spawn_egg": {
+				"texture": "engine"
+			}
+		}
+	}
+}

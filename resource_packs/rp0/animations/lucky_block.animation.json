@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lucky_block.setup": {
+			"loop": true,
+			"bones": {
+				"main": {
+					"rotation": [0, "-query.body_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

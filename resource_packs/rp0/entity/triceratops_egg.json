@@ -1,0 +1,24 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:triceratops_egg",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/egg/egggray"
+			},
+			"geometry": {
+				"default": "geometry.egg"
+			},
+			"render_controllers": [
+				"controller.render.egg"
+			],
+			"spawn_egg":{
+				"base_color": "#ccc5c3",
+				"overlay_color": "#757575"
+			}
+		}
+	}
+}

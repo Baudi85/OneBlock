@@ -1,0 +1,199 @@
+//bridge-file-version: #191
+{
+	"minecraft:collision_box": {
+		"width": 6,
+		"height": 5
+	},
+	"minecraft:entity": {
+		"description": {
+			"identifier": "kreatik:helicopter",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"scripts": {
+				"animate": [
+					"helicopter_control",
+					"helicopter_ride"
+				]
+			},
+			"animations": {
+				"helicopter_control": "controller.animation.helicopter_control",
+				"helicopter_ride": "controller.animation.helicopter_ride"
+			}
+		},
+		"components": {
+			"minecraft:rideable": {
+				"interact_text": "action.interact.text.ride",
+				"family_types": [
+					"player"
+				],
+				"seats": [
+					{
+						"position": [
+							-0.5,
+							1.6,
+							4.3
+						],
+						"max_rider_count": 1,
+						"min_rider_count": 0
+					},
+					{
+						"position": [
+							0.5,
+							1.6,
+							4.3
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2
+					}
+				],
+				"crouching_skip_interact": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:is_sheared": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:persistent": {},
+			"minecraft:health": {
+				"value": 20
+			},
+			"minecraft:on_hurt_by_player": {
+				"event": "minecraft:despawn"
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 0.75
+			},
+			"minecraft:collision_box": {
+				"width": 5,
+				"height": 2
+			}
+		},
+		"component_groups": {
+			"minecraft:despawn": {
+				"minecraft:despawn": {},
+				"minecraft:is_chested": {}
+			},
+			"minecraft:hover": {
+				"minecraft:physics": {
+					"has_gravity": false
+				},
+				"minecraft:spawn_entity": [
+					{
+						"single_use": true,
+						"num_to_spawn": 1,
+						"spawn_entity": "kreatik:stop",
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"spawn_event": "minecraft:entity_spawned"
+					}
+				],
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"subject": "self",
+								"operator": "not",
+								"value": "haste",
+								"test": "has_mob_effect"
+							},
+							"event": "minecraft:gravity"
+						}
+					]
+				}
+			},
+			"minecraft:gravity": {
+				"minecraft:physics": {
+					"has_gravity": true
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"event": "minecraft:hover",
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_mob_effect",
+										"subject": "self",
+										"value": "haste"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "self",
+										"operator": "not",
+										"value": "levitation"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "self",
+										"operator": "not",
+										"value": "slow_falling"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"minecraft:despawn": {
+				"add": {
+					"component_groups": [
+						"minecraft:despawn"
+					]
+				}
+			},
+			"minecraft:hover": {
+				"add": {
+					"component_groups": [
+						"minecraft:hover"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:gravity"
+					]
+				}
+			},
+			"minecraft:gravity": {
+				"add": {
+					"component_groups": [
+						"minecraft:gravity"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:hover"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minecraft:gravity"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:hover"
+					]
+				}
+			}
+		}
+	},
+	"format_version": "1.13.0"
+}

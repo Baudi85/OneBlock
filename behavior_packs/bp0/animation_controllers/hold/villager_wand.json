@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.villager_wand_hold": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "villager_wand_hold": "(query.get_equipped_item_name == 'villager_wand')"
+            }
+          ]
+        },
+        "villager_wand_hold": {
+          "on_entry": [
+            "/effect @s invisibility 1",
+            "/effect @s weakness 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'villager_wand')"
+            },
+            {
+              "villager_wand_hold2": "(query.get_equipped_item_name == 'villager_wand')"
+            }
+          ]
+        },
+        "villager_wand_hold2": {
+          "on_entry": [
+            "/effect @s invisibility 1",
+            "/effect @s weakness 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'villager_wand')"
+            },
+            {
+              "villager_wand_hold": "(query.get_equipped_item_name == 'villager_wand')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

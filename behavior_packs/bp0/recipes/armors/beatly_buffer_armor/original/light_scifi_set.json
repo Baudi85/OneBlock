@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:beatly_buffer_armor_set"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AB ",
+      "CD ",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "armors:beatly_buffer_armor_helmet"
+      },
+      "B": {
+        "item": "armors:beatly_buffer_armor_chestplate"
+      },
+      "C": {
+        "item": "armors:beatly_buffer_armor_leggings"
+      },
+      "D": {
+        "item": "armors:beatly_buffer_armor_boots"
+      }
+
+    },
+    "result": {
+      "item": "armors:beatly_buffer_armor_set",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

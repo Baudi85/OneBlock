@@ -1,0 +1,13 @@
+{
+	"format_version" : "1.10",
+	"minecraft:item" : {
+		"description" : {
+			"identifier" : "kreatik:y",
+			"category" : "Nature"
+		},
+		"components" : {
+			"minecraft:icon" : "plane_palette",
+			"minecraft:render_offsets" : "apple"
+		}
+	}
+}

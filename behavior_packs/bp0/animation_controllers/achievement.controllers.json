@@ -1,0 +1,100 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.achievement" : {
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"achievement" : "1.0"
+						}
+					]
+				},
+				"achievement" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/scoreboard objectives add worldborder dummy Worldborder",
+						"/scoreboard objectives add cooldown_soundb dummy Cooldown_soundB",
+						"/execute as @s if score @s mission matches 0..99 as @s if score @s worldborder matches 0 run scoreboard players set @a worldborder 1",
+						"/execute as @s if score @s worldborder matches 1 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 1 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 1 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 1 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"my_first_blocks\"}]}",
+						"/execute as @s if score @s worldborder matches 1 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 2",
+						"/execute as @s if score @s worldborder matches 2 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 3..99 as @s if score @s worldborder matches 2 run scoreboard players set @a worldborder 3",
+						"/execute as @s if score @s worldborder matches 3 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 3 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 3 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 3 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"expanding_resources\"}]}",
+						"/execute as @s if score @s worldborder matches 3 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 4",
+						"/execute as @s if score @s worldborder matches 4 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 6..99 as @s if score @s worldborder matches 4 run scoreboard players set @a worldborder 5",
+						"/execute as @s if score @s worldborder matches 5 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 5 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 5 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 5 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"the_old_reliable\"}]}",
+						"/execute as @s if score @s worldborder matches 5 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 6",
+						"/execute as @s if score @s worldborder matches 6 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 9..99 as @s if score @s worldborder matches 6 run scoreboard players set @a worldborder 7",
+						"/execute as @s if score @s worldborder matches 7 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 7 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 7 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 7 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"the_new_stone_age\"}]}",
+						"/execute as @s if score @s worldborder matches 7 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 8",
+						"/execute as @s if score @s worldborder matches 8 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 12..99 as @s if score @s worldborder matches 8 run scoreboard players set @a worldborder 9",
+						"/execute as @s if score @s worldborder matches 9 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder  matches 9 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder  matches 9 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder  matches 9 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"magnificent_cook\"}]}",
+						"/execute as @s if score @s worldborder  matches 9 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 10",
+						"/execute as @s if score @s worldborder  matches 10 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 15..99 as @s if score @s worldborder matches 10 run scoreboard players set @a worldborder 11",
+						"/execute as @s if score @s worldborder matches 11 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 11 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 11 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 11 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"looking_for_my_ironfish\"}]}",
+						"/execute as @s if score @s worldborder matches 11 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 12",
+						"/execute as @s if score @s worldborder  matches 12 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 18..99 as @s if score @s worldborder matches 12 run scoreboard players set @a worldborder 13",
+						"/execute as @s if score @s worldborder matches 13 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 13 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 13 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 13 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"hard_mining\"}]}",
+						"/execute as @s if score @s worldborder matches 13 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 14",
+						"/execute as @s if score @s worldborder  matches 14 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 21..99 as @s if score @s worldborder matches 14 run scoreboard players set @a worldborder 15",
+						"/execute as @s if score @s worldborder matches 15 if score @s cooldown_soundb matches 0..29 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 15 if score @s cooldown_soundb matches 31..64 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 15 as @s if score @s cooldown_soundb matches 31 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 15 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 15 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"the_portal\"}]}",
+						"/execute as @s if score @s worldborder matches 15 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 16",
+						"/execute as @s if score @s worldborder  matches 16 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 23..99 as @s if score @s worldborder matches 16 run scoreboard players set @a worldborder 17",
+						"/execute as @s if score @s worldborder matches 17 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 17 as @s if score @s cooldown_soundb matches 32 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 17 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 17 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"the_eye\"}]}",
+						"/execute as @s if score @s worldborder matches 17 as @s if score @s cooldown_soundb matches 65 run scoreboard players set @a worldborder 18",
+						"/execute as @s if score @s worldborder  matches 18 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s mission matches 26..99 as @s if score @s worldborder matches 18 run scoreboard players set @a worldborder 19",
+						"/execute as @s if score @s worldborder matches 19 if score @s cooldown_soundb matches 0..29 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 19 if score @s cooldown_soundb matches 31..59 run scoreboard players add @s cooldown_soundb 1",
+						"/execute as @s if score @s worldborder matches 19 as @s if score @s cooldown_soundb matches 31 run camerashake add @a 1 5",
+						"/execute as @s if score @s worldborder matches 19 as @s if score @s cooldown_soundb matches 60 run playsound achievement @a ~~~ 400",
+						"/execute as @s if score @s worldborder matches 19 as @s if score @s cooldown_soundb matches 60 run titleraw @a title {\"rawtext\":[{\"text\":\"winner\"}]}",
+						"/execute as @s if score @s worldborder matches 19 as @s if score @s cooldown_soundb matches 60 run scoreboard players set @a worldborder 20",
+						"/execute as @s if score @s worldborder  matches 20 run scoreboard players set @a cooldown_soundb 0",
+						"/execute as @s if score @s worldborder matches 20 run scoreboard players set @a worldborder 21"
+					]
+				}
+			}
+		}
+	}
+}

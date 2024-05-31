@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.scifi_suit_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.scifi_suit_armor",
+            "Texture.scifi_suit_armor_1",
+            "Texture.scifi_suit_armor_2",
+            "Texture.scifi_suit_armor_3",
+            "Texture.scifi_suit_armor_4",
+            "Texture.scifi_suit_armor_5",
+            "Texture.scifi_suit_armor_6",
+            "Texture.scifi_suit_armor_7",
+            "Texture.scifi_suit_armor_8",
+            "Texture.scifi_suit_armor_9",
+            "Texture.scifi_suit_armor_10",
+            "Texture.scifi_suit_armor_11",
+            "Texture.scifi_suit_armor_12",
+            "Texture.scifi_suit_armor_13",
+            "Texture.scifi_suit_armor_14",
+            "Texture.scifi_suit_armor_15"
+          ]
+        }
+      },
+      "geometry": "Geometry.scifi_suit_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.husk_dagger_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "husk_dagger_active": "(query.get_equipped_item_name == 'husk_dagger') && query.is_using_item" }
+          ]
+        },
+		
+        "husk_dagger_active": {
+          "on_entry": [
+            "/playsound v.husk_dagger @a ~ ~ ~",
+            "/particle ks:husk_dagger_particle ~ ~ ~",
+            "/effect @s strength 15 1",
+            "/effect @s hunger 15"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

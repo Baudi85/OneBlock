@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.trigger_dummy.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "weapon_6": "q.variant == 6 && q.is_ignited" },
+            { "weapon_19": "q.variant == 19" }
+          ]
+        },
+        "weapon_6": {
+          "on_entry": [
+            "v.timer = q.life_time + 3.0;",
+            "/fill ~-2~~-2 ~2~2~2 ice 0 replace air 0",
+            "/damage @e[r=1,family=mob] 6 magic entity @p",
+            "/effect @e[r=1,family=mob] wither 3 3 true",
+            "/effect @e[r=1,family=mob] slowness 6 3 true"
+          ],
+          "transitions": [
+            { "weapon_6.destroy": "v.timer <= q.life_time" }
+          ]
+        },
+        "weapon_6.destroy": {
+          "on_entry": [
+            "/fill ~-2~~-2 ~2~2~2 air",
+            "@s e:despawn"
+          ]
+        },
+        "weapon_19": {
+          "on_entry": [
+            "/execute as @e[family=monster,r=4] at @s run summon ks:flame_dummy ~~0.5~"
+          ]
+        }
+      }
+    }
+  }
+}

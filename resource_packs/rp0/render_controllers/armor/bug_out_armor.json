@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.bug_out_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.bug_out_armor",
+            "Texture.bug_out_armor_1",
+            "Texture.bug_out_armor_2",
+            "Texture.bug_out_armor_3",
+            "Texture.bug_out_armor_4",
+            "Texture.bug_out_armor_5",
+            "Texture.bug_out_armor_6",
+            "Texture.bug_out_armor_7",
+            "Texture.bug_out_armor_8",
+            "Texture.bug_out_armor_9",
+            "Texture.bug_out_armor_10",
+            "Texture.bug_out_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.bug_out_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

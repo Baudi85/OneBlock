@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.move.player": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.36,
+			"override_previous_animation": false,
+			"bones": {
+				"root": {
+					"position": [0, 2, 0]
+				}
+			}
+		},
+		"animation.move.player_plus": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.36,
+			"override_previous_animation": false,
+			"bones": {
+				"root": {
+					"position": [0, 6, 0]
+				}
+			}
+		},
+		"animation.move.player_up_plus": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.36,
+			"override_previous_animation": false,
+			"bones": {
+				"root": {
+					"position": [0, 8, 0]
+				}
+			}
+		},
+		"animation.move.player_up": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.36,
+			"override_previous_animation": false,
+			"bones": {
+				"root": {
+					"position": [0, 4, 0]
+				}
+			}
+		},
+		"animation.move.player_up_hydraulic": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.36,
+			"override_previous_animation": false,
+			"bones": {
+				"root": {
+					"position": [0, 2.5, 0]
+				}
+			}
+		}
+	}
+}

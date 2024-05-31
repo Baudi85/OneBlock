@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.beatly_buffer_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.beatly_buffer_armor",
+            "Texture.beatly_buffer_armor_1",
+            "Texture.beatly_buffer_armor_2",
+            "Texture.beatly_buffer_armor_3",
+            "Texture.beatly_buffer_armor_4",
+            "Texture.beatly_buffer_armor_5",
+            "Texture.beatly_buffer_armor_6",
+            "Texture.beatly_buffer_armor_7",
+            "Texture.beatly_buffer_armor_8",
+            "Texture.beatly_buffer_armor_9",
+            "Texture.beatly_buffer_armor_10",
+            "Texture.beatly_buffer_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.beatly_buffer_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

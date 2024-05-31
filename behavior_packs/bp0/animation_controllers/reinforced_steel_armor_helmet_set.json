@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.reinforced_steel_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "reinforced_steel_armor_helmet_set_equip": "query.variant == 16"
+            }
+          ]
+        },
+        "reinforced_steel_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s slowness 1",
+            "/effect @s resistance 1 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 16"
+            },
+            {
+              "reinforced_steel_armor_helmet_set_equip2": "query.variant == 16"
+            }
+          ]
+        },
+        "reinforced_steel_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s slowness 1",
+            "/effect @s resistance 1 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 16"
+            },
+            {
+              "reinforced_steel_armor_helmet_set_equip": "query.variant == 16"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

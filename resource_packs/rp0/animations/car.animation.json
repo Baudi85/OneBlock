@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.car.move": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"wheels_front": {
+					"rotation": ["query.modified_distance_moved * 45", 0, 0]
+				},
+				"wheels_back": {
+					"rotation": ["query.modified_distance_moved * 45", 0, 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.0":{
+					"effect": "driving"
+				},
+				"0.4":{
+					"effect": "driving"
+				},
+				"0.8":{
+					"effect": "driving"
+				},
+				"1.2":{
+					"effect": "driving"
+				},
+				"1.6":{
+					"effect": "driving"
+				},
+				"2.0":{
+					"effect": "driving"
+				}
+			}
+		},
+		"animation.car.steering": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [0, 0, "-(query.camera_rotation(1) - query.head_y_rotation(0))"]
+				}
+			}
+		},
+		"animation.car.test": {
+			"animation_length": 1.04,
+			"bones": {
+				"steering_wheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.04": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

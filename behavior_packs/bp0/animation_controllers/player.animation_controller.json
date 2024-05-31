@@ -1,0 +1,68 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bp.player.jetpack_flight": {
+      "initial_state": "not_flying",
+      "states": {
+        "not_flying": {
+          "on_entry": ["/event entity @s no_fly"],
+          "transitions": [
+            {
+              "fly_up_0": "query.variant == 9 && query.is_jumping"
+            },
+            {
+              "fly_up_1": "query.variant == 14 && query.is_jumping"
+            }
+          ]
+        },
+        "fly_up_0": {
+          "on_entry": ["/event entity @s fly_up_0"],
+          "transitions": [
+            {
+              "not_flying": "(query.variant == 1 || query.variant == 2 || query.variant == 0 || query.variant == 3 || query.variant == 4 || query.variant == 5 || query.variant == 6 || query.variant == 7 || query.variant == 8 || query.variant == 10 || query.variant == 11 || query.variant == 12 || query.variant == 13 || query.variant == 15 || query.variant == 16 || query.variant == 17 || query.variant == 18 || query.variant == 19 || query.variant == 20) || !query.is_jumping"
+            }
+          ]
+        },
+        "fly_up_1": {
+          "on_entry": ["/event entity @s fly_up_1"],
+          "transitions": [
+            {
+              "not_flying": "(query.variant == 1 || query.variant == 2 || query.variant == 0 || query.variant == 3 || query.variant == 4 || query.variant == 5 || query.variant == 6 || query.variant == 7 || query.variant == 8 || query.variant == 10 || query.variant == 11 || query.variant == 12 || query.variant == 13 || query.variant == 15 || query.variant == 16 || query.variant == 17 || query.variant == 18 || query.variant == 19 || query.variant == 20) || !query.is_jumping"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.bp.player.jetpack_particles": {
+      "initial_state": "not_flying",
+      "states": {
+        "not_flying": {
+          "transitions": [
+            {
+              "jetpack_1": "query.variant == 9 && query.is_jumping"
+            },
+            {
+              "jetpack_2": "query.variant == 14 && query.is_jumping"
+            }
+          ]
+        },
+        "jetpack_1": {
+          "animations": ["particle_1"],
+          "transitions": [
+            {
+              "not_flying": "!query.is_jumping"
+            }
+          ]
+        },
+        "jetpack_2": {
+          "animations": ["particle_2"],
+          "transitions": [
+            {
+              "not_flying": "!query.is_jumping"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

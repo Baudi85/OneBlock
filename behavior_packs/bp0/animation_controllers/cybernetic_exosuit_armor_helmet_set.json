@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cybernetic_exosuit_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "cybernetic_exosuit_armor_helmet_set_equip": "query.variant == 5"
+            }
+          ]
+        },
+        "cybernetic_exosuit_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s fire_resistance 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 5"
+            },
+            {
+              "cybernetic_exosuit_armor_helmet_set_equip2": "query.variant == 5"
+            }
+          ]
+        },
+        "cybernetic_exosuit_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s fire_resistance 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 5"
+            },
+            {
+              "cybernetic_exosuit_armor_helmet_set_equip": "query.variant == 5"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

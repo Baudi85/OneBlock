@@ -1,0 +1,27 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "functions": [
+                {
+                    "author": "§cKreatik Studios",
+                    "function": "set_book_contents",
+                    "title": "§5§lQuest Book",
+                    "pages": [
+                        "§6====================\n\n§c::::::::::::::::§9QUEST§bBOOK§c::::::::::::::::\n\n§61.Chop a tree\n2.Craft a crafting table\n3.Craft a wooden Pickaxe\n\n§34.Make bread\n5.Get a chest\n6.Make a wooden sword",
+                        "§47.Craft a wooden axe\n8.Craft a stone pickaxe\n9.Create a furnace\n\n§110.Cook food\n11.Obtain coal or charcoal\n12.Create a torch\n\n§213.Go fishing\n14.Obtain iron ingot\n15.Craft iron chestplate",
+                        "§516.Aquire diamonds\n17.Craft a diamond pickaxe\n18.Get obsidian\n\n§b19.Get flint and steel\n20.Build a nether portal\n21Kill a blaze\n\n§8§l§222.Aquire 6 blaze rods\n23.Collect 12 enderpearls",
+                        "\n\n§4§l24.Create 12 Eyes of Ender.\n\n25.Find the End portal and place Eyes of Ender\n\n26.Enter the End dimension\n\n27.Fight and defeat the ender dragon"
+                    ]
+                }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

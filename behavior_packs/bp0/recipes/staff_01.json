@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:staff_01"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BAB",
+      " C ",
+      " C "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:potion",
+        "data": 12
+      },
+      "B": {
+        "item": "minecraft:magma"
+      },
+      "C": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+
+    },
+    "result": {
+      "item": "ks:staff_01",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

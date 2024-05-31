@@ -1,0 +1,12 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "armors:bionical_hazard_armor_set_6",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": "bionical_hazard_armor_set_6"
+		}
+	}
+}

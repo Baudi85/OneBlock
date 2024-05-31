@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.scifi_suit_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "scifi_suit_armor_helmet_set_equip": "query.variant == 17"
+            }
+          ]
+        },
+        "scifi_suit_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s strength 1",
+            "/effect @s jump_boost 1 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 17"
+            },
+            {
+              "scifi_suit_armor_helmet_set_equip2": "query.variant == 17"
+            }
+          ]
+        },
+        "scifi_suit_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s strength 1",
+            "/effect @s jump_boost 1 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 17"
+            },
+            {
+              "scifi_suit_armor_helmet_set_equip": "query.variant == 17"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

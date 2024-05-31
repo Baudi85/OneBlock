@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:baby_dragon_1",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"animations": {
+				"basic": "controller.animation.baby_dragon",
+				"walk": "animation.baby_dragon.walk",
+				"idle": "animation.baby_dragon.idle",
+				"fly": "animation.baby_dragon.fly"
+			},
+			"scripts": {
+				"animate": [
+					"basic"
+				]
+			},
+			"sound_effects": {
+				"dragon_wing_flap": "mob.dragon.fly"
+			},
+			"textures": {
+				"texture1": "textures/dragon_variants/baby_dragon1v1",
+				"texture2": "textures/dragon_variants/baby_dragon1v2",
+				"texture3": "textures/dragon_variants/baby_dragon1v3",
+				"texture4": "textures/dragon_variants/baby_dragon1v4",
+				"texture5": "textures/dragon_variants/baby_dragon1v5",
+				"texture6": "textures/dragon_variants/baby_dragon1v6",
+				"texture7": "textures/dragon_variants/baby_dragon1v7",
+				"texture8": "textures/dragon_variants/baby_dragon1v8",
+				"texture9": "textures/dragon_variants/baby_dragon1v9",
+				"texture10": "textures/dragon_variants/baby_dragon1v10",
+				"texture11": "textures/dragon_variants/baby_dragon1v11",
+				"texture12": "textures/dragon_variants/baby_dragon1v12"
+			},
+			"geometry": {
+				"default": "geometry.baby_dragon_1"
+			},
+			"render_controllers": ["controller.render.base1"],
+			"spawn_egg": {
+				"texture": "baby_dragon_1"
+			}
+		}
+	}
+}

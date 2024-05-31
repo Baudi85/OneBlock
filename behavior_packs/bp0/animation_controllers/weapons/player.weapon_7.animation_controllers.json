@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_7.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "use": {
+          "on_entry": [ "v.timer = q.life_time;" ],
+          "transitions": [
+            { "power_1": "q.life_time - v.timer <= 0.5 && !q.is_using_item" },
+            { "power_2": "q.life_time - v.timer > 0.5 && q.life_time - v.timer <= 1.0 && !q.is_using_item" },
+            { "power_3": "q.life_time - v.timer > 1.0 && !q.is_using_item" }
+          ]
+        },
+        "power_1": {
+          "on_entry": [ "@s e:weapon_7.use_1" ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        },
+        "power_2": {
+          "on_entry": [ "@s e:weapon_7.use_2" ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        },
+        "power_3": {
+          "on_entry": [ "@s e:weapon_7.use_3" ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        }
+      }
+    }
+  }
+}

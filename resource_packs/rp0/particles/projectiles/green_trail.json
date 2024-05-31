@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "ks:green_trail",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particles/greenflash"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_steady": {
+        "spawn_rate": 66,
+        "max_particles": 100
+      },       
+      "minecraft:emitter_lifetime_expression": {
+        "activation_expression": 1,
+        "expiration_expression": 0
+      },
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_motion_parametric": {
+				"rotation": "v.particle_age * 720"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 0.75,
+				"expiration_expression": "v.emitter_age <= 0.075"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["math.random(0.25, 0.275) * 2", "math.random(0.25, 0.275)"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 32768,
+					"texture_height": 2304,
+					"uv": [24576, 0],
+					"uv_size": [4096, 2304]
+				}
+			}
+		}
+	}
+}

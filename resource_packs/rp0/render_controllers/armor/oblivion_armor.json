@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.oblivion_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.oblivion_armor",
+            "Texture.oblivion_armor_1",
+            "Texture.oblivion_armor_2",
+            "Texture.oblivion_armor_3",
+            "Texture.oblivion_armor_4",
+            "Texture.oblivion_armor_5",
+            "Texture.oblivion_armor_6",
+            "Texture.oblivion_armor_7",
+            "Texture.oblivion_armor_8",
+            "Texture.oblivion_armor_9",
+            "Texture.oblivion_armor_10",
+            "Texture.oblivion_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.oblivion_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:stegosaurus",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/stegosaurus/stegosaurus"
+			},
+			"geometry": {
+				"default": "geometry.stegosaurus.unsaddled",
+				"saddled": "geometry.stegosaurus.saddled"
+			},
+			"animations": {
+				"walking": "animation.stegosaurus.walk",
+				"idle": "animation.stegosaurus.stand",
+				"sit": "animation.stegosaurus.sit",
+				"controller": "controller.animation.main"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"spawn_egg":{
+				"base_color": "#1c4d1b",
+				"overlay_color": "#b66e1c"
+			},
+			"render_controllers": [
+				"controller.render.main"
+			]
+		}
+	}
+}

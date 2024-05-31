@@ -1,0 +1,141 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cat3",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone6",
+					"pivot": [0, 6.3, -0.5],
+					"rotation": [37.5, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 1.86573, 0.58394], "size": [5, 4, 6], "inflate": 0.1, "pivot": [0, 4.02015, 1.19121], "rotation": [-55, 0, 0], "uv": [0, 42]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "bone6",
+					"pivot": [0, 2.27009, 4.48637],
+					"rotation": [45, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, -1.258, 3.66264], "size": [1, 1, 4], "inflate": 0.1, "pivot": [0, 0.37448, 5.38658], "rotation": [-55, 0, 0], "uv": [24, 23]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "tail",
+					"pivot": [0, -0.42991, 6.08637],
+					"rotation": [25, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, -2.47267, 5.17535], "size": [1, 1, 3], "pivot": [0, 0.27009, 7.48637], "rotation": [-12.5, 0, 0], "uv": [14, 0]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "bone4",
+					"pivot": [0, -1.12991, 8.48637],
+					"rotation": [32.5, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, -2.14564, 7.33966], "size": [1, 1, 2], "pivot": [0, -1.12991, 8.48637], "rotation": [-12.5, 0, 0], "uv": [20, 27]}
+					]
+				},
+				{
+					"name": "rightbleg",
+					"parent": "bone6",
+					"pivot": [-1.5, 1.14477, 1.55641],
+					"rotation": [50, 0, 0],
+					"cubes": [
+						{"origin": [-3.5, -2.05216, 2.87997], "size": [2, 5, 2], "inflate": -0.1, "pivot": [-1.5, 1.14477, 1.55641], "rotation": [-90, 0, 0], "uv": [12, 19]}
+					]
+				},
+				{
+					"name": "leftbleg",
+					"parent": "bone6",
+					"pivot": [1.5, 1.14477, 1.55641],
+					"rotation": [55, 0, 0],
+					"cubes": [
+						{"origin": [1.5, -2.26153, 3.02828], "size": [2, 5, 2], "inflate": -0.1, "pivot": [1.5, 1.14477, 1.55641], "rotation": [-90, 0, 0], "uv": [20, 19]}
+					]
+				},
+				{
+					"name": "frontbody",
+					"parent": "bone6",
+					"pivot": [0, 6.3, -0.5],
+					"cubes": [
+						{"origin": [-2.5, 3.12903, -1.2836], "size": [5, 3, 4], "inflate": -0.1, "pivot": [0, 4.42903, 0.7164], "rotation": [-45, 0, 0], "uv": [14, 12]}
+					]
+				},
+				{
+					"name": "bone8",
+					"parent": "frontbody",
+					"pivot": [0, 6.3, -0.5],
+					"cubes": [
+						{"origin": [-2.5, 3.7, -2.3], "size": [5, 4, 4], "pivot": [0, 6.3, -0.5], "rotation": [-42.5, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightfleg",
+					"parent": "bone8",
+					"pivot": [0, 6.3, -0.5],
+					"cubes": [
+						{"origin": [-2.5, 1.46366, -3.20839], "size": [2, 4, 2], "inflate": -0.1, "pivot": [-1.5, 5.449, -2.19754], "rotation": [-37.5, 0, 0], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "bone8",
+					"pivot": [0, 5.3, -2.5],
+					"cubes": [
+						{"origin": [0.5, 1.46366, -3.10839], "size": [2, 4, 2], "inflate": -0.1, "pivot": [1.5, 5.449, -2.19754], "rotation": [-45, 0, 0], "uv": [6, 27]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "bone8",
+					"pivot": [0, 6.3, -0.5],
+					"rotation": [-25, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 5.33831, -4.41287], "size": [3, 3, 4], "inflate": -0.1, "pivot": [0, 7.3, -1], "rotation": [-47.5, 0, 0], "uv": [0, 34]}
+					]
+				},
+				{
+					"name": "head2",
+					"parent": "head",
+					"pivot": [0, 6.5, -0.4],
+					"cubes": [
+						{"origin": [-2.5, 6.5, -5.4], "size": [5, 4, 4], "inflate": 0.1, "uv": [14, 4]},
+						{"origin": [-1.5, 6.5, -6.4], "size": [3, 2, 1], "uv": [19, 0]}
+					]
+				},
+				{
+					"name": "ears",
+					"parent": "head2",
+					"pivot": [-2, 11.5, -3.9]
+				},
+				{
+					"name": "earright",
+					"parent": "ears",
+					"pivot": [2.13659, 10.36659, -3.22708],
+					"cubes": [
+						{"origin": [-2.97408, 9.83815, -3.55485], "size": [2, 3, 1], "pivot": [-2.13659, 10.36659, -3.22708], "rotation": [-79.94767, -9.35264, -97.33722], "uv": [27, 0]}
+					]
+				},
+				{
+					"name": "earleft",
+					"parent": "ears",
+					"pivot": [2.13659, 10.36659, -3.22708],
+					"cubes": [
+						{"origin": [1.14526, 9.85161, -3.55485], "size": [2, 3, 1], "pivot": [2.13659, 10.36659, -3.22708], "rotation": [-80.08228, -0.49664, 95.60026], "uv": [14, 27]}
+					]
+				}
+			]
+		}
+	]
+}

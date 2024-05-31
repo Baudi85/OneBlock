@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "furniture:remove_block",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "remove_block",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

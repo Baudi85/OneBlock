@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.modular_exoskeleton_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.modular_exoskeleton_armor",
+            "Texture.modular_exoskeleton_armor_1",
+            "Texture.modular_exoskeleton_armor_2",
+            "Texture.modular_exoskeleton_armor_3",
+            "Texture.modular_exoskeleton_armor_4",
+            "Texture.modular_exoskeleton_armor_5",
+            "Texture.modular_exoskeleton_armor_6",
+            "Texture.modular_exoskeleton_armor_7",
+            "Texture.modular_exoskeleton_armor_8",
+            "Texture.modular_exoskeleton_armor_9",
+            "Texture.modular_exoskeleton_armor_10",
+            "Texture.modular_exoskeleton_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.modular_exoskeleton_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.staff_01_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "staff_01_active": "(query.get_equipped_item_name == 'staff_01') && query.is_using_item" }
+          ]
+        },
+		
+        "staff_01_active": {
+          "on_entry": [
+            "/playsound v.staff_01 @a ~ ~ ~",
+            "/particle ks:staff_01_particle ~ ~ ~",
+            "/effect @s fire_resistance 30"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,45 @@
+
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_helmet",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_chestplate",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_leggings",
+					"weight": 1
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_boots",
+					"weight": 1
+				}
+			],
+			"rolls": 1
+		}
+	]
+}

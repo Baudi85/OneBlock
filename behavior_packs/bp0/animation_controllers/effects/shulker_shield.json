@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.shulker_shield_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "shulker_shield_active": "(query.get_equipped_item_name == 'shulker_shield') && query.is_using_item" }
+          ]
+        },
+		
+        "shulker_shield_active": {
+          "on_entry": [
+            "/playsound v.shulker_shield_shoot @a ~ ~ ~",
+            "/particle ks:shulker_shield_particle ~ ~ ~",
+            "/effect @s resistance 15 1"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

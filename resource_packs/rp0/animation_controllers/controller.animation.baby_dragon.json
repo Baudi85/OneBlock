@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.baby_dragon": {
+            "initial_state": "idle",
+            "states": {
+                "walk":{
+                    "transitions": [
+                        {
+                            "idle": "q.modified_move_speed < 0.05"
+                        },
+                        {
+                            "fly": "q.is_on_ground == false"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "walk"
+                    ]
+                },
+                "idle":{
+                    "transitions": [
+                        {
+                            "walk": "q.modified_move_speed > 0.05"
+                        },
+                        {
+                            "fly": "q.is_on_ground == false"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "idle"
+                    ]
+                },
+                "fly":{
+                    "transitions": [
+                        {
+                            "walk": "q.is_on_ground == true"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "fly"
+                    ]
+                }
+            }
+        }
+    }
+}

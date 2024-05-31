@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:cyberpunk_robot_armor_leggings"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "C C",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:copper_ingot"
+      },
+      "B": {
+        "item": "minecraft:oxidized_copper"
+      },
+      "C": {
+        "item": "minecraft:oxidized_copper"
+      }
+
+    },
+    "result": {
+      "item": "armors:cyberpunk_robot_armor_leggings",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

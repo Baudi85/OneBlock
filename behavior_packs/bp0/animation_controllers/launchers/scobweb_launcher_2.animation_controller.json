@@ -1,0 +1,32 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.bow.spider_cobweb_launcher_2_commands" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"bow_pulling" : "query.is_using_item"
+						}
+					]
+				},
+                "bow_pulling": {
+                    "transitions": [
+                        {
+                            "default": "!query.is_using_item"
+                        }
+                    ],
+					"on_entry": [
+						"/event entity @s start_loading_bow"
+					],
+                    "on_exit": [
+						"/playsound v.spider_cobweb_shoot @a ~ ~ ~",
+                        "/event entity @s shoot_cave_spider_cobweb_projectile",
+						"/event entity @s stop_loading_bow"
+                    ]
+                }
+			}
+		}
+	}
+}

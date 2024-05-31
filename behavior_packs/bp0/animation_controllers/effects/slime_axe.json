@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.slime_axe_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "slime_axe_active": "(query.get_equipped_item_name == 'slime_axe') && query.is_using_item" }
+          ]
+        },
+		
+        "slime_axe_active": {
+          "on_entry": [
+            "/playsound v.slime_axe @a ~ ~ ~",
+            "/particle ks:slime_axe_particle ~ ~ ~",
+            "/summon slime ~ ~ ~ minecraft:invocado_slime",
+            "/summon slime ~ ~ ~ minecraft:invocado_slime"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

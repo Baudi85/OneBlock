@@ -1,0 +1,497 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.armor_tester":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 0"
+                    ],
+                    "transitions": [
+                        {"advanced_exoskeleton_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:advanced_exoskeleton_armor_helmet_set')"},
+                        {"beatly_buffer_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:beatly_buffer_armor_helmet_set')"},
+                        {"bionical_hazard_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:bionical_hazard_armor_helmet_set')"},
+                        {"bug_out_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:bug_out_armor_helmet_set')"},
+                        {"cybernetic_exosuit_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:cybernetic_exosuit_armor_helmet_set')"},
+                        {"cyberpunk_robot_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:cyberpunk_robot_armor_helmet_set')"},
+                        {"grand_vault_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:grand_vault_armor_helmet_set')"},
+                        {"hydraulic_augmented_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:hydraulic_augmented_armor_helmet_set')"},
+                        {"jetpack_ash_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:jetpack_ash_armor_helmet_set')"},
+                        {"mechanized_guard_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_guard_armor_helmet_set')"},
+                        {"mechanized_patriot_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_patriot_armor_helmet_set')"},
+                        {"modular_exoskeleton_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:modular_exoskeleton_armor_helmet_set')"},
+                        {"neutro_tethered_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:neutro_tethered_armor_helmet_set')"},
+                        {"next_gen_reinforced_jet_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:next_gen_reinforced_jet_armor_helmet_set')"},
+                        {"oblivion_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:oblivion_armor_helmet_set')"},
+                        {"reinforced_steel_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:reinforced_steel_armor_helmet_set')"},
+                        {"scifi_suit_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:scifi_suit_armor_helmet_set')"},
+                        {"stormslider_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:stormslider_armor_helmet_set')"},
+                        {"trauma_resistant_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:trauma_resistant_armor_helmet_set')"},
+                        {"veterans_sidearm_armor": "q.is_item_name_any('slot.armor.head',0, 'armors:veterans_sidearm_armor_helmet_set')"}
+                    ]
+                },
+                "advanced_exoskeleton_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 1"
+                    ],
+                    "transitions": [
+                        {
+                            "return_advanced_exoskeleton_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:advanced_exoskeleton_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:advanced_exoskeleton_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_advanced_exoskeleton_armor":{
+                    "on_entry": [
+                        "/loot give @s loot advanced_exoskeleton"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:advanced_exoskeleton_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "beatly_buffer_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 2"
+                    ],
+                    "transitions": [
+                        {
+                            "return_beatly_buffer_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:beatly_buffer_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:beatly_buffer_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_beatly_buffer_armor":{
+                    "on_entry": [
+                        "/loot give @s loot beatly_buffer"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:beatly_buffer_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "bionical_hazard_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 3"
+                    ],
+                    "transitions": [
+                        {
+                            "return_bionical_hazard_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:bionical_hazard_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:bionical_hazard_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_bionical_hazard_armor":{
+                    "on_entry": [
+                        "/loot give @s loot bionical_hazard"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:bionical_hazard_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "bug_out_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 4"
+                    ],
+                    "transitions": [
+                        {
+                            "return_bug_out_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:bug_out_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:bug_out_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_bug_out_armor":{
+                    "on_entry": [
+                        "/loot give @s loot bug_out"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:bug_out_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "cybernetic_exosuit_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 5"
+                    ],
+                    "transitions": [
+                        {
+                            "return_cybernetic_exosuit_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:cybernetic_exosuit_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:cybernetic_exosuit_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_cybernetic_exosuit_armor":{
+                    "on_entry": [
+                        "/loot give @s loot cybernetic_exosuit"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:cybernetic_exosuit_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "cyberpunk_robot_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 6"
+                    ],
+                    "transitions": [
+                        {
+                            "return_cyberpunk_robot_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:cyberpunk_robot_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:cyberpunk_robot_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_cyberpunk_robot_armor":{
+                    "on_entry": [
+                        "/loot give @s loot cyberpunk_robot"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:cyberpunk_robot_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "grand_vault_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 7"
+                    ],
+                    "transitions": [
+                        {
+                            "return_grand_vault_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:grand_vault_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:grand_vault_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_grand_vault_armor":{
+                    "on_entry": [
+                        "/loot give @s loot grand_vault"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:grand_vault_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "hydraulic_augmented_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 8"
+                    ],
+                    "transitions": [
+                        {
+                            "return_hydraulic_augmented_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:hydraulic_augmented_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:hydraulic_augmented_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_hydraulic_augmented_armor":{
+                    "on_entry": [
+                        "/loot give @s loot hydraulic_augmented"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:hydraulic_augmented_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "jetpack_ash_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 9"
+                    ],
+                    "transitions": [
+                        {
+                            "return_jetpack_ash_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:jetpack_ash_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:jetpack_ash_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_jetpack_ash_armor":{
+                    "on_entry": [
+                        "/loot give @s loot jetpack_ash"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:jetpack_ash_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "mechanized_guard_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 10"
+                    ],
+                    "transitions": [
+                        {
+                            "return_mechanized_guard_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_guard_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_guard_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_mechanized_guard_armor":{
+                    "on_entry": [
+                        "/loot give @s loot mechanized_guard"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_guard_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "mechanized_patriot_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 11"
+                    ],
+                    "transitions": [
+                        {
+                            "return_mechanized_patriot_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_patriot_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_patriot_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_mechanized_patriot_armor":{
+                    "on_entry": [
+                        "/loot give @s loot mechanized_patriot"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:mechanized_patriot_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "modular_exoskeleton_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 12"
+                    ],
+                    "transitions": [
+                        {
+                            "return_modular_exoskeleton_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:modular_exoskeleton_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:modular_exoskeleton_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_modular_exoskeleton_armor":{
+                    "on_entry": [
+                        "/loot give @s loot modular_exoskeleton"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:modular_exoskeleton_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "neutro_tethered_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 13"
+                    ],
+                    "transitions": [
+                        {
+                            "return_neutro_tethered_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:neutro_tethered_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:neutro_tethered_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_neutro_tethered_armor":{
+                    "on_entry": [
+                        "/loot give @s loot neutro_tethered"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:neutro_tethered_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "next_gen_reinforced_jet_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 14"
+                    ],
+                    "transitions": [
+                        {
+                            "return_next_gen_reinforced_jet_armo": "!q.is_item_name_any('slot.armor.head',0, 'armors:next_gen_reinforced_jet_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:next_gen_reinforced_jet_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_next_gen_reinforced_jet_armo":{
+                    "on_entry": [
+                        "/loot give @s loot next_gen_reinforced_jet"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:next_gen_reinforced_jet_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "oblivion_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 15"
+                    ],
+                    "transitions": [
+                        {
+                            "return_oblivion_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:oblivion_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:oblivion_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_oblivion_armor":{
+                    "on_entry": [
+                        "/loot give @s loot oblivion"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:oblivion_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "reinforced_steel_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 16"
+                    ],
+                    "transitions": [
+                        {
+                            "return_reinforced_steel_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:reinforced_steel_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:reinforced_steel_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_reinforced_steel_armor":{
+                    "on_entry": [
+                        "/loot give @s loot reinforced_steel"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:reinforced_steel_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "scifi_suit_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 17"
+                    ],
+                    "transitions": [
+                        {
+                            "return_scifi_suit_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:scifi_suit_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:scifi_suit_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_scifi_suit_armor":{
+                    "on_entry": [
+                        "/loot give @s loot scifi_suit"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:scifi_suit_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "stormslider_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 18"
+                    ],
+                    "transitions": [
+                        {
+                            "return_stormslider_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:stormslider_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:stormslider_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_stormslider_armor":{
+                    "on_entry": [
+                        "/loot give @s loot stormslider"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:stormslider_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "trauma_resistant_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 19"
+                    ],
+                    "transitions": [
+                        {
+                            "return_trauma_resistant_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:trauma_resistant_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:trauma_resistant_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_trauma_resistant_armor":{
+                    "on_entry": [
+                        "/loot give @s loot trauma_resistant"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:trauma_resistant_armor_helmet_set')"
+                        }
+                    ]
+                },
+                "veterans_sidearm_armor":{
+                    "on_entry": [
+                        "/scoreboard players set @s armori 20"
+                    ],
+                    "transitions": [
+                        {
+                            "return_veterans_sidearm_armor": "!q.is_item_name_any('slot.armor.head',0, 'armors:veterans_sidearm_armor_helmet_set') && !(q.is_item_name_any('slot.armor.head',0, '') || q.is_item_name_any('slot.armor.head',0, 'minecraft:netherite_helmet') ||  q.is_item_name_any('slot.armor.head',0, 'minecraft:diamond_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:iron_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:golden_helmet')|| q.is_item_name_any('slot.armor.head',0, 'minecraft:leather_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:chainmail_helmet') || q.is_item_name_any('slot.armor.head',0, 'minecraft:carved_pumpkin') )"
+                        },
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:veterans_sidearm_armor_helmet_set') && q.is_item_name_any('slot.armor.head',0, '')"
+                        }
+                    ]
+                },
+                "return_veterans_sidearm_armor":{
+                    "on_entry": [
+                        "/loot give @s loot veterans_sidearm"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_item_name_any('slot.armor.head',0, 'armors:veterans_sidearm_armor_helmet_set')"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

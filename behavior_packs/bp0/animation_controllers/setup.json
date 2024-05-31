@@ -1,0 +1,66 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {//query.body_y_rotation
+        "controller.animation.furniture_setup": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "on_summon": "!query.is_tamed"
+                        }
+                    ]
+                },
+                "on_summon": {
+                    "on_entry": [
+                       "/tp ~ ~ ~ 0 0",
+                       "@s fixed"
+                    ]
+                }
+            }
+        },
+        "controller.animation.new_furniture_setup": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "fix_south": "!query.is_tamed&&query.body_y_rotation>-45&&query.body_y_rotation<=45"
+                        },
+                        {
+                            "fix_east": "!query.is_tamed&&query.body_y_rotation>-135&&query.body_y_rotation<=-45"
+                        },
+                        {
+                            "fix_north": "!query.is_tamed&&((query.body_y_rotation<=-135&&query.body_y_rotation>=-225)||(query.body_y_rotation>135&&query.body_y_rotation<225))"
+                        },
+                        {
+                            "fix_west": "!query.is_tamed&&(query.body_y_rotation>45||query.body_y_rotation<135)"
+                        }
+                    ]
+                },
+                "fix_south": {
+                    "on_entry": [
+                       "/tp ~ ~ ~ 0 0",
+                       "@s fixed"
+                    ]
+                },
+                "fix_west": {
+                    "on_entry": [
+                       "/tp ~ ~ ~ 90 0",
+                       "@s fixed"
+                    ]
+                },
+                "fix_east": {
+                    "on_entry": [
+                       "/tp ~ ~ ~ -90 0",
+                       "@s fixed"
+                    ]
+                },
+                "fix_north": {
+                    "on_entry": [
+                       "/tp ~ ~ ~ -180 0",
+                       "@s fixed"
+                    ]
+                }
+            }
+        }
+    }
+}

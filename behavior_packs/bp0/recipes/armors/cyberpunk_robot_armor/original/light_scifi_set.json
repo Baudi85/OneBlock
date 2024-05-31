@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:cyberpunk_robot_armor_set"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AB ",
+      "CD ",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "armors:cyberpunk_robot_armor_helmet"
+      },
+      "B": {
+        "item": "armors:cyberpunk_robot_armor_chestplate"
+      },
+      "C": {
+        "item": "armors:cyberpunk_robot_armor_leggings"
+      },
+      "D": {
+        "item": "armors:cyberpunk_robot_armor_boots"
+      }
+
+    },
+    "result": {
+      "item": "armors:cyberpunk_robot_armor_set",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

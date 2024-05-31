@@ -1,0 +1,188 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.weapon_3.attack_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2917,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [-10, 0, 0],
+						"0.125": {
+							"pre": [72.5, -20, 0],
+							"post": [72.5, -20, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0.33, 1.9, -1.33],
+						"0.125": {
+							"pre": [1, 0, -4],
+							"post": [1, 0, -4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"weapon_3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, -2],
+						"0.125": [0, -2, 0],
+						"0.2917": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_3.hold_tp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightArm": {
+					"rotation": [-33.73499, -9.93191, -14.48174]
+				},
+				"leftArm": {
+					"rotation": [-25.47985, 46.04179, 22.17599],
+					"position": [-2, 0, -2]
+				},
+				"waist": {
+					"rotation": [2.5, 15, 0]
+				}
+			}
+		},
+		"animation.player.weapon_3.use_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2917,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [-10, 0, 0],
+						"0.125": {
+							"pre": [87.4057, -17.76263, -32.27975],
+							"post": [87.4057, -17.76263, -32.27975],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0.33, 1.9, -1.33],
+						"0.125": {
+							"pre": [1, 0, -4],
+							"post": [1, 0, -4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"weapon_3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, -2],
+						"0.125": [0, -2, 0],
+						"0.2917": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_3.attack_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-62.5, 0, 0],
+						"0.3333": {
+							"pre": [0, 0, -17.49524],
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4583": {
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-30, 10, 0],
+						"0.3333": [0, 0, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-27.5, 0, 0],
+						"0.375": [36.25, -7, 0],
+						"0.4583": [20.62762, -3.5007, 0],
+						"0.5417": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_3.use_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-62.5, 0, 0],
+						"0.3333": {
+							"pre": [0, 0, -17.49524],
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4583": {
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-30, 10, 0],
+						"0.3333": [0, 0, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-27.5, 0, 0],
+						"0.375": [56.25, -7, 0],
+						"0.4583": [20.62762, -3.5007, 0],
+						"0.5417": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

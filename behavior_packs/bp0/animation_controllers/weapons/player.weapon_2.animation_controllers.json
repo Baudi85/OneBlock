@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_2.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "v.attack_time" },
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "attack": {
+          "on_entry": [
+            "/summon ks:trigger_dummy ^^^1.5 e:weapon_2.attack"
+          ],
+          "transitions": [
+            { "default": "!v.attack_time" }
+          ]
+        },
+        "use": {
+          "on_entry": [ "v.timer2 = q.life_time + 0.2;" ],
+          "transitions": [
+            { "use2": "v.timer2 <= q.life_time" }
+          ]
+        },
+        "use2": {
+"on_entry": [
+            "/summon ks:trigger_dummy ^^^1.5 e:weapon_2.use",
+"/camerashake add @s 1 1 positional"
+          ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        }
+      }
+    }
+  }
+}

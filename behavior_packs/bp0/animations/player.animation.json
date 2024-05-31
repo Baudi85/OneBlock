@@ -1,0 +1,83 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+
+    "animation.bp.player.flight_fix": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/execute @s[y=300,dy=10000] ~ ~ ~ effect @s clear"]
+      }
+    },
+    "animation.bp.player.particle_1": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:afterburner ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_2": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:air ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_3": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:bubbles ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_4": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:fire ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_5": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:pulse ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_6": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:rainbow ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_7": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:smoke ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_8": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:spiral ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_9": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:twinkle ~ ~ ~"]
+      }
+    },
+    "animation.bp.player.particle_10": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": ["/particle kreatik:waterjet ~ ~ ~"]
+      }
+    }
+  }
+}

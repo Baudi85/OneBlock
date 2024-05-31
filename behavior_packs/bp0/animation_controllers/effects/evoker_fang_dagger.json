@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.evoker_fang_dagger_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "evoker_fang_dagger_active": "(query.get_equipped_item_name == 'evoker_fang_dagger') && query.is_using_item" }
+          ]
+        },
+		
+        "evoker_fang_dagger_active": {
+          "on_entry": [
+            "/playsound v.evoker_fang_dagger @a ~ ~ ~",
+            "/particle ks:evoker_fang_dagger_particle ~ ~ ~",
+            "/summon evocation_illager ~ ~ ~ minecraft:invocado_illager",
+            "/summon evocation_illager ~ ~ ~ minecraft:invocado_illager"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

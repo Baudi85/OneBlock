@@ -1,0 +1,37 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.biome.roofet_forest" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cooldown_block" : "query.mark_variant == 13"
+						}
+					]
+				},
+				"cooldown_block" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/scoreboard objectives add rfblocks dummy rfblocks",
+						"/scoreboard players add @s rfblocks 0",
+						"/execute as @s if block 0 0 0 bedrock if score @s rfblocks matches 0 run setblock 0 0 0 log2 1",
+						"/execute as @s unless block 0 0 0 bedrock if score @s rfblocks matches 0 run titleraw @s title {\"rawtext\":[{\"text\":\"roofet_forest\"}]}",
+						"/execute as @s unless block 0 0 0 bedrock if score @s rfblocks matches 0 run scoreboard players add @s rfblocks 1",
+						"/execute as @s if block 0 0 0 air if score @s rfblocks matches 0..699 run event entity @e[type=ks:floating_text] despawn",
+						"/execute as @s if block 0 0 0 air if score @s rfblocks matches 0..699 run function roofet_forest",
+						"/execute as @s if block 0 0 0 air if score @s rfblocks matches 700 run event entity @s dungeon",
+						"/execute as @s if block 0 0 0 air if score @s rfblocks matches 700 run summon ks:timer 0 1 0",
+						"/execute as @s if block 0 0 0 air if score @s rfblocks matches 700 run setblock 0 0 0 bedrock",
+						"/execute as @s if block 0 0 0 bedrock if score @s rfblocks matches 700 run scoreboard players set @s rfblocks 701"
+					]
+				}
+			}
+		}
+	}
+}

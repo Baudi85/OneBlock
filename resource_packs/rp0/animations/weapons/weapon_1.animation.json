@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.weapon_1.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"weapon": {
+					"rotation": [55, 65, -10],
+					"position": [7.5, 18, -1]
+				}
+			}
+		},
+		"animation.weapon_1.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"weapon": {
+					"scale": [0.75, 0.75, 0.75]
+				}
+			}
+		},
+		"animation.weapon_1.idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"weapon": {}
+			}
+		}
+	}
+}

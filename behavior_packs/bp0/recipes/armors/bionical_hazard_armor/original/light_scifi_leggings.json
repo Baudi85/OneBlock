@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:bionical_hazard_armor_leggings"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "C C",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:copper_ingot"
+      },
+      "B": {
+        "item": "minecraft:redstone_block"
+      },
+      "C": {
+        "item": "minecraft:redstone_block"
+      }
+
+    },
+    "result": {
+      "item": "armors:bionical_hazard_armor_leggings",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

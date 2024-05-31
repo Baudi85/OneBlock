@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "train:carriage",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/carriage/wooden",
+				"magenta": "textures/entity/carriage/magenta",
+				"blue": "textures/entity/carriage/blue",
+				"green": "textures/entity/carriage/green",
+				"orange": "textures/entity/carriage/orange",
+				"red": "textures/entity/carriage/red",
+				"yellow": "textures/entity/carriage/yellow",
+				"iron": "textures/entity/carriage/iron"
+			},
+			"geometry": {
+				"default": "geometry.carriage"
+			},
+			"scripts": {
+				"animate": [
+					"body_rotation",
+					{
+						"move": "query.is_moving"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.carriage.move",
+				"body_rotation": "animation.body_rotation"
+			},
+			"render_controllers": [
+				"controller.render.train"
+			],
+			"spawn_egg": {
+				"texture": "carriage"
+			}
+		}
+	}
+}

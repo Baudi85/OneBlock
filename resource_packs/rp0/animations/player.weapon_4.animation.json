@@ -1,0 +1,200 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.weapon_4.attack_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2917,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [-10, 0, 0],
+						"0.125": {
+							"pre": [72.5, -20, 0],
+							"post": [72.5, -20, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0.33, 1.9, -1.33],
+						"0.125": {
+							"pre": [1, 0, -4],
+							"post": [1, 0, -4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"weapon_4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, -2],
+						"0.125": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_4.hold_tp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightArm": {
+					"rotation": [-33.73499, -9.93191, -14.48174]
+				},
+				"leftArm": {
+					"rotation": [-50.47985, 46.04179, 22.17599],
+					"position": [-2, 0, -2]
+				},
+				"waist": {
+					"rotation": [12.5, 0, 0]
+				}
+			}
+		},
+		"animation.player.weapon_4.use_fp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2917,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [-10, 0, 0],
+						"0.125": {
+							"pre": [76.87841, -21.91966, -13.48975],
+							"post": [76.87841, -21.91966, -13.48975],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0.33, 1.9, -1.33],
+						"0.125": {
+							"pre": [1, 0, -4],
+							"post": [1, 0, -4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"weapon_4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, -2],
+						"0.125": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_4.attack_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-62.5, 0, 0],
+						"0.3333": {
+							"pre": [15, 0, -17.49524],
+							"post": [15, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4583": {
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-55, 10, 0],
+						"0.3333": [0, -32.5, 0],
+						"0.5417": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-2, 1, 0],
+						"0.3333": [-2, 1, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-27.5, 0, 0],
+						"0.3333": [22.81519, -5.25035, 0],
+						"0.375": [26.25, -7, 0],
+						"0.4583": [20.62762, -3.5007, 0],
+						"0.5417": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.weapon_4.use_tp": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-62.5, 0, 0],
+						"0.3333": {
+							"pre": [15, 0, -17.49524],
+							"post": [15, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4583": {
+							"post": [0, 0, -17.49524],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-55, 10, 0],
+						"0.3333": [0, -32.5, 0],
+						"0.5417": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-2, 1, 0],
+						"0.3333": [-2, 1, 0],
+						"0.5417": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-27.5, 0, 0],
+						"0.3333": [42.8152, -5.25035, 0],
+						"0.375": [26.25, -7, 0],
+						"0.4583": [20.62762, -3.5007, 0],
+						"0.5417": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

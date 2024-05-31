@@ -1,0 +1,71 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.entity_boards": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.default",
+              "Texture.two",
+              "Texture.three",
+              "Texture.four",
+              "Texture.five",
+              "Texture.six",
+              "Texture.seven",
+              "Texture.eight",
+              "Texture.nine",
+              "Texture.ten",
+
+              "Texture.once",
+              "Texture.doce",
+              "Texture.trece",
+              "Texture.catorce",
+              "Texture.quince",
+              "Texture.dieciseis",
+              "Texture.diecisiete",
+              "Texture.dieciocho",
+              "Texture.diecinueve",
+              "Texture.veinte",
+              
+              "Texture.veintiuno",
+              "Texture.veintidos",
+              "Texture.veintitres",
+              "Texture.veinticuatro",
+              "Texture.veinticinco",
+              "Texture.veintiseis",
+              "Texture.veintisiete",
+              "Texture.veintiocho",
+              "Texture.veintinueve",
+              "Texture.treinta",
+              
+              "Texture.treintayuno",
+              "Texture.treintaydos",
+              "Texture.treintaytres",
+              "Texture.treintaycuatro",
+              "Texture.treintaycinco",
+              "Texture.treintayseis",
+              "Texture.treintaysiete",
+              "Texture.treintayocho",
+              "Texture.treintaynueve",
+              "Texture.cuarenta",
+              
+              "Texture.cuarentayuno",
+              "Texture.cuarentaydos",
+              "Texture.cuarentaytres",
+              "Texture.cuarentaycuatro",
+              "Texture.cuarentaycinco",
+              "Texture.cuarentayseis",
+              "Texture.cuarentaysiete",
+              "Texture.cuarentayocho",
+              "Texture.cuarentaynueve",
+              "Texture.cincuenta"
+            ]
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[query.variant]" ]
+      }
+    }
+  }
+  

@@ -1,0 +1,70 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "is_spawnable": false,
+            "is_summonable": true,
+            "identifier": "ks:spider_cobweb",
+            "is_experimental": false,
+            "animations": {
+                "commands": "controller.animation.effect.spider_cobweb"
+            },
+            "scripts": {
+                "animate": [
+                    "commands"
+                ]
+            }
+        },
+        "component_groups": {
+            "despawn": {
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": true
+                }
+            }
+        },
+        "components": {
+            "minecraft:timer": {
+                "time": 1,
+                "looping": false,
+                "time_down_event": {
+                    "event": "instant_despawn",
+                    "target": "self"
+                }
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:type_family": {
+                "family": [
+                    "inanimate"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.3,
+                "height": 0.3
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            }
+        },
+        "events": {
+            "instant_despawn": {
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

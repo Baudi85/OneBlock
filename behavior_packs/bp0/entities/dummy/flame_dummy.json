@@ -1,0 +1,114 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ks:flame_dummy",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:ageable": {
+        "duration": 1,
+        "grow_up": {
+          "event": "e:despawn",
+          "target": "self"
+        }
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 1
+          },
+          "remove_on_hit": {}
+        },
+        "on_fire_time": 20,
+        "catch_fire": true,
+        "anchor": 1,
+        "power": 0,
+        "gravity": 0
+      },
+      "minecraft:type_family": {
+        "family": [
+          "flame",
+          "dummy"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:physics": {},
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "component_groups": {
+      "g:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "g:weapon_3": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true
+            },
+            "remove_on_hit": {}
+          },
+          "anchor": 1,
+          "power": 0,
+          "gravity": 0
+        }
+      },
+      "g:weapon_13": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true
+            },
+            "remove_on_hit": {}
+          },
+          "catch_fire": true,
+          "on_fire_time": 5,
+          "anchor": 1,
+          "power": 0,
+          "gravity": 0
+        }
+      },
+      "g:weapon_13.special": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 16,
+              "knockback": true
+            },
+            "remove_on_hit": {}
+          },
+          "catch_fire": true,
+          "on_fire_time": 10,
+          "anchor": 1,
+          "power": 0,
+          "gravity": 0
+        }
+      }
+    },
+    "events": {
+      "e:despawn": {
+        "add": { "component_groups": [ "g:despawn" ]}
+      },
+      "e:weapon_3": {
+        "add": { "component_groups": [ "g:weapon_3" ]}
+      },
+      "e:weapon_13": {
+        "add": { "component_groups": [ "g:weapon_13" ]}
+      },
+      "e:weapon_13.special": {
+        "add": { "component_groups": [ "g:weapon_13.special" ]}
+      }
+    }
+  }
+}

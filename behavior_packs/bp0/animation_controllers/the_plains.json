@@ -1,0 +1,50 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.biome.plains" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cooldown_block" : "query.mark_variant == 1"
+						}
+					]
+				},
+				"cooldown_block" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/scoreboard objectives add pblocks dummy pblocks",
+						"/scoreboard players add @s pblocks 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 0..499 run event entity @e[type=ks:floating_text] despawn",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 0..499 run function plains",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run titleraw @s title {\"rawtext\":[{\"text\":\"the_plains\"}]}",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run scoreboard players set @s cooldown_soundb 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run scoreboard players set @s worldborder 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run scoreboard players set @s cooldown_sounde 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run scoreboard players set @s effectlevel 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run scoreboard players set @s mission 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 1 run title @s actionbar §6Hello!§f Welcome to §6One Block Multipack",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 2 run title @s actionbar A map where you have to §6survive §fon §6one single block",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 3 run title @s actionbar Don't worry, the block is §6infinite",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 4 run title @s actionbar Discover new §6islands §fand play your §6favorite §fcontent in §61 world§f!",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 5 run title @s actionbar Keep §6mining §fto unlock new phases and blocks",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 6 run title @s actionbar Each phase comes with new §6achievements §and& §6entities",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 7 run title @s actionbar Don't fall into the §6void",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 8 run title @s actionbar §6Explore §fthe islands nearby",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 9 run title @s actionbar §6One Block Multipack §fawaits you!",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 10 run title @s actionbar §6Have fun§f!",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 500 run event entity @s cave",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 500 run summon ks:timer 0 1 0",
+						"/execute as @s if block 0 0 0 air if score @s pblocks matches 500 run setblock 0 0 0 bedrock",
+						"/execute as @s if block 0 0 0 bedrock if score @s pblocks matches 500 run scoreboard players set @s pblocks 501"
+					]
+				}
+			}
+		}
+	}
+}

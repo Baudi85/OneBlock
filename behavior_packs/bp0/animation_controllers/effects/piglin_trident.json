@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.piglin_trident_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "piglin_trident_active": "(query.get_equipped_item_name == 'piglin_trident') && query.is_using_item" }
+          ]
+        },
+		
+        "piglin_trident_active": {
+          "on_entry": [
+            "/playsound v.piglin_trident @a ~ ~ ~",
+            "/particle ks:piglin_trident_particle ~ ~ ~",
+            "/summon piglin ~ ~ ~ minecraft:invocado_piglin",
+            "/summon piglin ~ ~ ~ minecraft:invocado_piglin",
+            "/summon piglin ~ ~ ~ minecraft:invocado_piglin"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

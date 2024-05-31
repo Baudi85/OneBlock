@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:cyberpunk_robot_armor_set_8"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "   ",
+      "AB ",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "armors:cyberpunk_robot_armor_set"
+      },
+      "B": {
+        "item": "minecraft:green_dye"
+      },
+      "C": {
+        "item": "minecraft:white_dye"
+      }
+
+    },
+    "result": {
+      "item": "armors:cyberpunk_robot_armor_set_8",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

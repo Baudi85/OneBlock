@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:squirrel",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"texture1": "textures/entity/squirrel1",
+				"texture2": "textures/entity/squirrel2",
+				"texture3": "textures/entity/squirrel3",
+				"texture4": "textures/entity/squirrel4",
+				"texture5": "textures/entity/squirrel5",
+				"texture6": "textures/entity/squirrel4",
+				"texture7": "textures/entity/squirrel3",
+				"texture8": "textures/entity/squirrel4",
+				"texture9": "textures/entity/squirrel4",
+				"texture10": "textures/entity/squirrel2",
+				"texture11": "textures/entity/squirrel3",
+				"texture12": "textures/entity/squirrel4"
+			},
+			"geometry": {
+				"default": "geometry.squirrel"
+			},
+			"animations": {
+				"movement_controller": "controller.animation.squirrel",
+					"walk": "animation.squirrel.idle",
+					"sit": "animation.squirrel.sit",
+					"sick": "animation.squirrel.sick"
+			},
+			"scripts": {
+				"animate": [
+					"movement_controller"
+				]
+			},
+			"render_controllers": ["controller.render.base"],
+			"spawn_egg": {
+				"texture": "squirrel",
+				"texture_index": 0
+			}
+		}
+	}
+}

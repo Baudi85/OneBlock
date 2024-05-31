@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "ks:tornado_fire",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particles/circle"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": true
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 0.25
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [1.0, 1.0, 0, 1]
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["math.random(0.1, 0.8)", "math.random(0.1, 0.8)"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 32768,
+					"texture_height": 2304,
+					"flipbook": {
+						"base_UV": [24576, 0],
+						"size_UV": [4096, 2304],
+						"step_UV": [-4096, 0],
+						"frames_per_second": 12,
+						"max_frame": 3
+					}
+				}
+			}
+		}
+	}
+}

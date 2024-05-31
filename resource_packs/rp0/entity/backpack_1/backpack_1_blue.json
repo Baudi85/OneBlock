@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:backpack_1_blue",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/backpack1/backpack1_blue"
+			},
+			"geometry": {
+				"default": "geometry.backpack1"
+			},
+			"render_controllers": ["controller.render.main"],
+			"spawn_egg": {
+				"texture": "kreatik_backpack_1_egg_blue",
+				"texture_index": 0
+			}
+		}
+	}
+}

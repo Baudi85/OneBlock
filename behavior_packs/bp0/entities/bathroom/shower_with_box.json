@@ -1,0 +1,481 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "furniture:shower_with_box",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false,
+			"animations": {
+				"setup": "controller.animation.new_furniture_setup",
+				"bridge_execute_commands": "controller.animation.execute_commands"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					"bridge_execute_commands"
+				]
+			}
+      },
+      "component_groups": {
+        "despawn": {
+          "minecraft:type_family": {
+            "family": [ "furniture", "inanimate", "mob", "despawn" ]
+          }
+      },
+      "fixed": {
+        "minecraft:is_tamed": {}
+      },
+        "0_degrees": {
+            "minecraft:variant": {
+              "value": 0
+            }
+        },
+        "30_degrees": {
+            "minecraft:variant": {
+              "value": 1
+            }
+        },
+        "60_degrees": {
+            "minecraft:variant": {
+              "value": 2
+            }
+        },
+        "90_degrees": {
+            "minecraft:variant": {
+              "value": 3
+            }
+        },
+        "120_degrees": {
+            "minecraft:variant": {
+              "value": 4
+            }
+        },
+        "150_degrees": {
+            "minecraft:variant": {
+              "value": 5
+            }
+        },
+        "180_degrees": {
+            "minecraft:variant": {
+              "value": 6
+            }
+        },
+        "210_degrees": {
+            "minecraft:variant": {
+              "value": 7
+            }
+        },
+        "240_degrees": {
+            "minecraft:variant": {
+              "value": 8
+            }
+        },
+        "270_degrees": {
+            "minecraft:variant": {
+              "value": 9
+            }
+        },
+        "300_degrees": {
+            "minecraft:variant": {
+              "value": 10
+            }
+        },
+        "330_degrees": {
+            "minecraft:variant": {
+              "value": 11
+            }
+        },
+
+        "variant_0": {
+            "minecraft:skin_id": {
+                "value": 0
+            }
+        },
+        "variant_1": {
+            "minecraft:skin_id": {
+                "value": 1
+            }
+        },
+        "variant_2": {
+            "minecraft:skin_id": {
+                "value": 2
+            }
+        },
+        "variant_3": {
+          "minecraft:skin_id": {
+              "value": 3
+          }
+        },
+        "variant_4": {
+          "minecraft:skin_id": {
+              "value": 4
+          }
+        },
+        "variant_5": {
+          "minecraft:skin_id": {
+              "value": 5
+          }
+        },
+			"bridge:execute_command_id_1": {
+				"minecraft:health": {
+					"max": 67
+				}
+			},
+			"bridge:execute_no_command": {
+				"minecraft:health": {
+					"max": 20
+				}
+			},
+			"bridge:execute_command_id_2": {
+				"minecraft:health": {
+					"max": 200
+				}
+			},
+			"bridge:execute_command_id_3": {
+				"minecraft:health": {
+					"max": 201
+				}
+			},
+			"bridge:execute_command_id_4": {
+				"minecraft:health": {
+					"max": 202
+				}
+			}
+
+      },
+  
+      "components": {
+        "minecraft:type_family": {
+          "family": [ "furniture", "inanimate", "mob" ]
+        },
+
+        "minecraft:despawn": {
+          "filters": {
+            "all_of": [
+              { "test": "is_family", "subject": "self", "value": "despawn" }
+            ]
+          }
+        },
+
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+        "minecraft:collision_box": {
+          "width": 1.0,
+          "height": 1.9
+        },
+        "minecraft:health": {
+          "value": 203,
+          "max": 1
+        },
+
+        "minecraft:variant": {
+            "value": 0
+        },
+
+        "minecraft:skin_id": {
+            "value": 0
+        },
+        "minecraft:interact": {
+            "interactions": [
+              {
+                "use_item": false,
+                
+                "interact_text": "Rotate",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "furniture:x"},
+                      { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                    ]
+                  },
+                  "event": "minecraft:on_rotated",
+                  "target": "self"
+                }
+              },
+              {
+                "use_item": false,
+
+                "interact_text": "Remove",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "furniture:remove_block"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "target": "self",
+                  "event": "furniture:despawn"
+                }
+              },
+              {
+                "use_item": false,
+
+                "interact_text": "Copy",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "furniture:pick_block"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "target": "self",
+                  "event": "furniture:copy"
+                }
+              }
+            ]
+          },
+
+        "minecraft:physics": { }
+      },
+  
+      "events": {
+        "fixed": {
+          "add": {
+            "component_groups": [ "fixed" ]
+          }
+        },
+        "furniture:despawn": {
+          "add": {
+            "component_groups": [ "bridge:execute_command_id_2", "despawn" ]
+          }
+        },
+        "furniture:copy": {
+          "add": {
+            "component_groups": [
+              "bridge:execute_command_id_1"
+            ]
+          }
+        },
+        "bridge:remove_command_id_1": {
+          "add": {
+            "component_groups": [
+              "bridge:execute_no_command"
+            ]
+          },
+          "remove": {
+            "component_groups": [
+              "bridge:execute_command_id_1",
+              "bridge:execute_command_id_2",
+              "bridge:execute_command_id_3",
+              "bridge:execute_command_id_4"
+            ]
+          }
+        },
+        "minecraft:on_variant_changed": {
+            "sequence": [
+              {
+                "filters": {
+                  "test": "is_skin_id",
+                  "value": 0
+                },
+                "add": {
+                  "component_groups": [ "variant_1" ]
+                },
+                "remove": {
+                  "component_groups": [ "variant_0" ]
+                }
+              },
+              {
+                "filters": {
+                  "test": "is_skin_id",
+                  "value": 1
+                },
+                "add": {
+                  "component_groups": [ "variant_2" ]
+                },
+                "remove": {
+                  "component_groups": [ "variant_1" ]
+                }
+              },
+              {
+                "filters": {
+                  "test": "is_skin_id",
+                  "value": 2
+                },
+                "add": {
+                  "component_groups": [ "variant_3" ]
+                },
+                "remove": {
+                  "component_groups": [ "variant_2" ]
+                }
+              },
+              {
+                "filters": {
+                  "test": "is_skin_id",
+                  "value": 3
+                },
+                "add": {
+                  "component_groups": [ "variant_4" ]
+                },
+                "remove": {
+                  "component_groups": [ "variant_3" ]
+                }
+              },
+              {
+                "filters": {
+                  "test": "is_skin_id",
+                  "value": 4
+                },
+                "add": {
+                  "component_groups": [ "variant_5" ]
+                },
+                "remove": {
+                  "component_groups": [ "variant_4" ]
+                }
+              },
+              {
+                "filters": {
+                  "test": "is_skin_id",
+                  "value": 5
+                },
+                "add": {
+                  "component_groups": [ "variant_0" ]
+                },
+                "remove": {
+                  "component_groups": [ "variant_5" ]
+                }
+              },
+              {
+                "add": {
+                  "component_groups": [
+                    "bridge:execute_command_id_3"
+                  ]
+                }
+              }
+            ]
+        },
+        "minecraft:on_rotated": {
+          "sequence": [
+            {
+              "filters": {
+                "test": "is_variant",
+                "value": 0
+              },
+              "add": {
+                "component_groups": [ "30_degrees" ]
+              },
+              "remove": {
+                "component_groups": [ "0_degrees" ]
+              }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 1
+                },
+                "add": {
+                  "component_groups": [ "60_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "30_degrees" ]
+                }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 2
+                },
+                "add": {
+                  "component_groups": [ "90_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "60_degrees" ]
+                }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 3
+                },
+                "add": {
+                  "component_groups": [ "120_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "90_degrees" ]
+                }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 4
+                },
+                "add": {
+                  "component_groups": [ "150_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "120_degrees" ]
+                }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 5
+                },
+                "add": {
+                  "component_groups": [ "180_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "150_degrees" ]
+                }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 6
+                },
+                "add": {
+                  "component_groups": [ "210_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "180_degrees" ]
+                }
+            },
+            {
+                "filters": {
+                  "test": "is_variant",
+                  "value": 7
+                },
+                "add": {
+                  "component_groups": [ "0_degrees" ]
+                },
+                "remove": {
+                  "component_groups": [ "210_degrees" ]
+                }
+            },
+            {
+              "add": {
+                "component_groups": [
+                  "bridge:execute_command_id_4"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

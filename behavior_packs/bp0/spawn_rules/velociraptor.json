@@ -1,0 +1,22 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "kreatik:velociraptor",
+			"population_control": "monster"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:weight": {
+					"default": 8
+				},
+				"minecraft:herd": {
+					"min_size": 4,
+					"max_size": 5
+				}
+			}
+		]
+	}
+}

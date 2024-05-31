@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "armors:beatly_buffer_armor_leggings"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "C C",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_block"
+      },
+      "B": {
+        "item": "minecraft:diamond_block"
+      },
+      "C": {
+        "item": "minecraft:diamond_block"
+      }
+
+    },
+    "result": {
+      "item": "armors:beatly_buffer_armor_leggings",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

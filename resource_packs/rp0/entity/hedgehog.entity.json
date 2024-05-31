@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:hedgehog",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/hedgehog"
+			},
+			"animations": {
+				"movement_controller": "controller.animation.hedgehog",
+					"walk": "animation.hedgehog.walk",
+					"idle": "animation.hedgehog.idle",
+					"ball": "animation.hedgehog.ball"
+			},
+			"scripts": {
+				"animate": [
+					"movement_controller"
+				]
+			},
+			"geometry": {
+				"default": "geometry.hedgehog"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "hedgehog",
+				"texture_index": 0
+			}
+		}
+	}
+}

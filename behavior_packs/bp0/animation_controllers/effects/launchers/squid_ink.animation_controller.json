@@ -1,0 +1,50 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.effect.squid_ink" : {
+			"initial_state" : "initial",
+			"states" : {
+				"initial": {
+					"transitions": [
+						{
+							"particles": "(1.0)"
+						}
+					]
+				},
+				"particles": {
+					"on_entry": [
+						"/effect @e [r=2,type=!ks:squid_ink] blindness 3",
+						"/effect @e [r=2,type=!ks:squid_ink] slowness 3"
+					],
+					"transitions": [
+						{
+							"stage_0": "(1.0)"
+						}
+					]
+				},
+				"stage_0" : {
+					"transitions": [
+                        {
+                            "stage_1": "(1.0)"
+                        }
+                    ],
+					"on_entry": [
+						"/effect @e [r=2,type=!ks:squid_ink] blindness 3",
+						"/effect @e [r=2,type=!ks:squid_ink] slowness 3"
+                    ]
+				},
+                "stage_1": {
+                    "on_entry": [
+						"/effect @e [r=3,type=!ks:squid_ink] blindness 3",
+						"/effect @e [r=2,type=!ks:squid_ink] slowness 3"
+                    ],
+					"transitions": [
+                        {
+                            "stage_0": "(1.0)"
+                        }
+                    ]
+                }
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.german": {
+            "initial_state": "idle",
+            "states": {
+                "idle":{
+                    "transitions": [
+                        {
+                            "walk": "q.modified_move_speed > 0.05 && !q.is_sitting"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "idle"
+                    ]
+                },
+                "walk":{
+                    "transitions": [
+                        {
+                            "idle": "q.modified_move_speed < 0.05 && !q.is_sitting"
+                        }
+                    ],
+                    "blend_transition": 0.3,
+                    "animations": [
+                        "walk"
+                    ]
+                }
+            }
+        }
+    }
+}

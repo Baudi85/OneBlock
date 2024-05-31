@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.boost_effect": {
+        "arrays": {
+          "textures": {
+            "Array.skins":[
+              "Texture.strength_boost",
+              "Texture.health_boost",
+              "Texture.speed_boost",
+              "Texture.resistance_boost"
+            ]
+          }
+        },
+        "geometry": "Geometry.boost_effect",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[query.variant == 7 ? 0 : (query.variant == 8 ? 1 : (query.variant == 18 ? 2 : 3))]" ],
+        "ignore_lighting": true
+      }
+    }
+  }

@@ -1,0 +1,1190 @@
+pack.name=ONE BLOCK MULTIPACK Resource Pack
+pack.description=ONE BLOCK MULTIPACK Resources
+
+
+
+item.ks:axe_01.name=Hatchet
+
+item.ks:axe_02.name=Soul Freezer
+
+item.ks:axe_03.name=Knight Slayer
+
+item.ks:double_sword_01.name=Double Blazing Sword
+
+item.ks:double_sword_02.name=Double Elven Dagger
+
+item.ks:hammer_01.name=Energy Smasher
+
+item.ks:hammer_02.name=Fulminant Crusher
+
+item.ks:hammer_03.name=Void Breaker
+
+item.ks:knife_01.name=Elven Dagger
+
+item.ks:knife_02.name=Blazing Sword
+
+item.ks:spear_01.name=Void Spear
+
+item.ks:staff_01.name=Fire Staff
+
+item.ks:staff_02.name=Power Staff
+
+item.ks:staff_03.name=Wind Staff
+
+item.ks:sword_01.name=Wind Blade
+
+item.ks:sword_02.name=Void Cutter
+
+item.ks:sword_03.name=Edge of Fire
+
+item.ks:sword_04.name=Energy Sword
+
+item.ks:sword_05.name=Steel Cremator
+
+item.ks:sword_06.name=Sojourn Sword
+
+item.ks:sword_07.name=Scorching Cutlass
+
+item.ks:sword_08.name=Rapier of Aqua
+
+item.ks:sword_09.name=Demon Blade
+
+item.ks:trident_01.name=Trident of Atlantis
+
+item.ks:trident_02.name=Nether Trident
+
+
+
+
+item.armors:advanced_exoskeleton_armor_set.name=Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_helmet_set.name=Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_helmet.name=Advanced Exoskeleton Armor Helmet
+item.armors:advanced_exoskeleton_armor_chestplate.name=Advanced Exoskeleton Armor Chestplate
+item.armors:advanced_exoskeleton_armor_leggings.name=Advanced Exoskeleton Armor Leggings
+item.armors:advanced_exoskeleton_armor_boots.name=Advanced Exoskeleton Armor Boots
+
+
+
+
+item.armors:advanced_exoskeleton_armor_set_1.name=Light Blue Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_2.name=Yellow Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_3.name=Light Purple Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_4.name=Green Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_5.name=Light Pink Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_6.name=Cyan Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_7.name=Light Red Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_8.name=Pink Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_9.name=Light Green Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_10.name=Blue Advanced Exoskeleton Armor Set
+item.armors:advanced_exoskeleton_armor_set_11.name=Light Yellow Advanced Exoskeleton Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:beatly_buffer_armor_set.name=Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_helmet_set.name=Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_helmet.name=Beatly Buffer Armor Helmet
+item.armors:beatly_buffer_armor_chestplate.name=Beatly Buffer Armor Chestplate
+item.armors:beatly_buffer_armor_leggings.name=Beatly Buffer Armor Leggings
+item.armors:beatly_buffer_armor_boots.name=Beatly Buffer Armor Boots
+
+
+
+
+item.armors:beatly_buffer_armor_set_11.name=Purple Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_1.name=Yellow Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_2.name=Light Purple Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_3.name=Green Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_4.name=Light Pink Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_5.name=Cyan Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_6.name=Light Yellow Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_7.name=Blue Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_8.name=Light Cyan Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_9.name=Light Red Beatly Buffer Armor Set
+item.armors:beatly_buffer_armor_set_10.name=Light Green Beatly Buffer Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:bionical_hazard_armor_set.name=Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_helmet_set.name=Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_helmet.name=Bionical Hazard Armor Helmet
+item.armors:bionical_hazard_armor_chestplate.name=Bionical Hazard Armor Chestplate
+item.armors:bionical_hazard_armor_leggings.name=Bionical Hazard Armor Leggings
+item.armors:bionical_hazard_armor_boots.name=Bionical Hazard Armor Boots
+
+
+
+
+item.armors:bionical_hazard_armor_set_1.name=Light Blue Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_2.name=Yellow Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_3.name=Light Purple Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_4.name=Green Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_5.name=Light Pink Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_6.name=Cyan Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_7.name=Light Red Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_8.name=Pink Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_9.name=Light Green Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_10.name=Blue Bionical Hazard Armor Set
+item.armors:bionical_hazard_armor_set_11.name=Light Yellow Bionical Hazard Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:bug_out_armor_set.name=Bug Out Armor Set
+item.armors:bug_out_armor_helmet_set.name=Bug Out Armor Set
+item.armors:bug_out_armor_helmet.name=Bug Out Armor Helmet
+item.armors:bug_out_armor_chestplate.name=Bug Out Armor Chestplate
+item.armors:bug_out_armor_leggings.name=Bug Out Armor Leggings
+item.armors:bug_out_armor_boots.name=Bug Out Armor Boots
+
+
+
+
+item.armors:bug_out_armor_set_1.name=Light Blue Bug Out Armor Set
+item.armors:bug_out_armor_set_2.name=Yellow Bug Out Armor Set
+item.armors:bug_out_armor_set_3.name=Light Purple Bug Out Armor Set
+item.armors:bug_out_armor_set_4.name=Green Bug Out Armor Set
+item.armors:bug_out_armor_set_5.name=Light Pink Bug Out Armor Set
+item.armors:bug_out_armor_set_6.name=Cyan Bug Out Armor Set
+item.armors:bug_out_armor_set_7.name=Light Red Bug Out Armor Set
+item.armors:bug_out_armor_set_8.name=Pink Bug Out Armor Set
+item.armors:bug_out_armor_set_9.name=Light Green Bug Out Armor Set
+item.armors:bug_out_armor_set_10.name=Blue Bug Out Armor Set
+item.armors:bug_out_armor_set_11.name=Light Yellow Bug Out Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:cybernetic_exosuit_armor_set.name=Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_helmet_set.name=Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_helmet.name=Cybernetic Exosuit Armor Helmet
+item.armors:cybernetic_exosuit_armor_chestplate.name=Cybernetic Exosuit Armor Chestplate
+item.armors:cybernetic_exosuit_armor_leggings.name=Cybernetic Exosuit Armor Leggings
+item.armors:cybernetic_exosuit_armor_boots.name=Cybernetic Exosuit Armor Boots
+
+
+
+
+item.armors:cybernetic_exosuit_armor_set_1.name=Light Blue Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_2.name=Yellow Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_3.name=Light Purple Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_4.name=Green Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_5.name=Light Pink Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_6.name=Cyan Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_7.name=Light Red Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_8.name=Pink Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_9.name=Light Green Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_10.name=Blue Cybernetic Exosuit Armor Set
+item.armors:cybernetic_exosuit_armor_set_11.name=Light Yellow Cybernetic Exosuit Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:cyberpunk_robot_armor_set.name=Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_helmet_set.name=Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_helmet.name=Cyberpunk Robot Armor Helmet
+item.armors:cyberpunk_robot_armor_chestplate.name=Cyberpunk Robot Armor Chestplate
+item.armors:cyberpunk_robot_armor_leggings.name=Cyberpunk Robot Armor Leggings
+item.armors:cyberpunk_robot_armor_boots.name=Cyberpunk Robot Armor Boots
+
+
+
+
+item.armors:cyberpunk_robot_armor_set_1.name=Light Red Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_2.name=Blue Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_3.name=Light Yellow Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_4.name=Purple Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_5.name=Light Green Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_6.name=Red Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_7.name=Light Red Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_8.name=Green Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_9.name=Light Purple Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_10.name=Yellow Cyberpunk Robot Armor Set
+item.armors:cyberpunk_robot_armor_set_11.name=Light Blue Cyberpunk Robot Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:grand_vault_armor_set.name=Grand Vault Armor Set
+item.armors:grand_vault_armor_helmet_set.name=Grand Vault Armor Set
+item.armors:grand_vault_armor_helmet.name=Grand Vault Armor Helmet
+item.armors:grand_vault_armor_chestplate.name=Grand Vault Armor Chestplate
+item.armors:grand_vault_armor_leggings.name=Grand Vault Armor Leggings
+item.armors:grand_vault_armor_boots.name=Grand Vault Armor Boots
+
+
+
+
+item.armors:grand_vault_armor_set_1.name=Light Blue Grand Vault Armor Set
+item.armors:grand_vault_armor_set_2.name=Yellow Grand Vault Armor Set
+item.armors:grand_vault_armor_set_3.name=Light Purple Grand Vault Armor Set
+item.armors:grand_vault_armor_set_4.name=Green Grand Vault Armor Set
+item.armors:grand_vault_armor_set_5.name=Light Pink Grand Vault Armor Set
+item.armors:grand_vault_armor_set_6.name=Cyan Grand Vault Armor Set
+item.armors:grand_vault_armor_set_7.name=Light Red Grand Vault Armor Set
+item.armors:grand_vault_armor_set_8.name=Pink Grand Vault Armor Set
+item.armors:grand_vault_armor_set_9.name=Light Green Grand Vault Armor Set
+item.armors:grand_vault_armor_set_10.name=Blue Grand Vault Armor Set
+item.armors:grand_vault_armor_set_11.name=Light Yellow Grand Vault Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:hydraulic_augmented_armor_set.name=Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_helmet_set.name=Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_helmet.name=Hydraulic Augmented Armor Helmet
+item.armors:hydraulic_augmented_armor_chestplate.name=Hydraulic Augmented Armor Chestplate
+item.armors:hydraulic_augmented_armor_leggings.name=Hydraulic Augmented Armor Leggings
+item.armors:hydraulic_augmented_armor_boots.name=Hydraulic Augmented Armor Boots
+
+
+
+
+item.armors:hydraulic_augmented_armor_set_1.name=Light Blue Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_2.name=Yellow Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_3.name=Light Purple Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_4.name=Green Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_5.name=Light Pink Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_6.name=Cyan Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_7.name=Light Red Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_8.name=Pink Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_9.name=Light Green Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_10.name=Blue Hydraulic Augmented Armor Set
+item.armors:hydraulic_augmented_armor_set_11.name=Light Yellow Hydraulic Augmented Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:jetpack_ash_armor_set.name=Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_helmet_set.name=Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_helmet.name=Jetpack Ash Armor Helmet
+item.armors:jetpack_ash_armor_chestplate.name=Jetpack Ash Armor Chestplate
+item.armors:jetpack_ash_armor_leggings.name=Jetpack Ash Armor Leggings
+item.armors:jetpack_ash_armor_boots.name=Jetpack Ash Armor Boots
+
+
+
+
+item.armors:jetpack_ash_armor_set_1.name=Light Blue Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_2.name=Yellow Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_3.name=Light Purple Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_4.name=Green Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_5.name=Light Pink Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_6.name=Cyan Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_7.name=Light Red Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_8.name=Pink Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_9.name=Light Green Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_10.name=Blue Jetpack Ash Armor Set
+item.armors:jetpack_ash_armor_set_11.name=Light Yellow Jetpack Ash Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:mechanized_guard_armor_set.name=Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_helmet_set.name=Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_helmet.name=Mechanized Guard Armor Helmet
+item.armors:mechanized_guard_armor_chestplate.name=Mechanized Guard Armor Chestplate
+item.armors:mechanized_guard_armor_leggings.name=Mechanized Guard Armor Leggings
+item.armors:mechanized_guard_armor_boots.name=Mechanized Guard Armor Boots
+
+
+
+
+item.armors:mechanized_guard_armor_set_1.name=Light Blue Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_2.name=Yellow Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_3.name=Light Purple Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_4.name=Green Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_5.name=Light Pink Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_6.name=Cyan Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_7.name=Light Red Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_8.name=Pink Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_9.name=Light Green Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_10.name=Blue Mechanized Guard Armor Set
+item.armors:mechanized_guard_armor_set_11.name=Light Yellow Mechanized Guard Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:mechanized_patriot_armor_set.name=Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_helmet_set.name=Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_helmet.name=Mechanized Patriot Armor Helmet
+item.armors:mechanized_patriot_armor_chestplate.name=Mechanized Patriot Armor Chestplate
+item.armors:mechanized_patriot_armor_leggings.name=Mechanized Patriot Armor Leggings
+item.armors:mechanized_patriot_armor_boots.name=Mechanized Patriot Armor Boots
+
+
+
+
+item.armors:mechanized_patriot_armor_set_1.name=Light Blue Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_2.name=Yellow Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_3.name=Light Purple Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_4.name=Green Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_5.name=Light Pink Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_6.name=Cyan Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_7.name=Light Red Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_8.name=Pink Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_9.name=Light Green Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_10.name=Blue Mechanized Patriot Armor Set
+item.armors:mechanized_patriot_armor_set_11.name=Light Yellow Mechanized Patriot Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:modular_exoskeleton_armor_set.name=Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_helmet_set.name=Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_helmet.name=Modular Exoskeleton Armor Helmet
+item.armors:modular_exoskeleton_armor_chestplate.name=Modular Exoskeleton Armor Chestplate
+item.armors:modular_exoskeleton_armor_leggings.name=Modular Exoskeleton Armor Leggings
+item.armors:modular_exoskeleton_armor_boots.name=Modular Exoskeleton Armor Boots
+
+
+
+
+item.armors:modular_exoskeleton_armor_set_1.name=Light Purple Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_2.name=Green Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_3.name=Light Pink Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_4.name=Blue Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_5.name=Light Red Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_6.name=Purple Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_7.name=Light Yellow Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_8.name=Red Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_9.name=Light Blue Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_10.name=Pink Modular Exoskeleton Armor Set
+item.armors:modular_exoskeleton_armor_set_11.name=Light Green Modular Exoskeleton Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:neutro_tethered_armor_set.name=Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_helmet_set.name=Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_helmet.name=Neutro Tethered Armor Helmet
+item.armors:neutro_tethered_armor_chestplate.name=Neutro Tethered Armor Chestplate
+item.armors:neutro_tethered_armor_leggings.name=Neutro Tethered Armor Leggings
+item.armors:neutro_tethered_armor_boots.name=Neutro Tethered Armor Boots
+
+
+
+
+item.armors:neutro_tethered_armor_set_1.name=Light Blue Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_2.name=Green Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_3.name=Light Purple Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_4.name=Cyan Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_5.name=Light Red Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_6.name=Blue Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_7.name=Light Yellow Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_8.name=Red Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_9.name=Light Cyan Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_10.name=Purple Neutro Tethered Armor Set
+item.armors:neutro_tethered_armor_set_11.name=Light Green Neutro Tethered Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:next_gen_reinforced_jet_armor_set.name=Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_helmet_set.name=Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_helmet.name=Next Gen Reinforced Jet Armor Helmet
+item.armors:next_gen_reinforced_jet_armor_chestplate.name=Next Gen Reinforced Jet Armor Chestplate
+item.armors:next_gen_reinforced_jet_armor_leggings.name=Next Gen Reinforced Jet Armor Leggings
+item.armors:next_gen_reinforced_jet_armor_boots.name=Next Gen Reinforced Jet Armor Boots
+
+
+
+
+item.armors:next_gen_reinforced_jet_armor_set_1.name=Light Yellow Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_2.name=Purple Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_3.name=Light Green Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_4.name=Red Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_5.name=Light Cyan Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_6.name=Yellow Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_7.name=Light Blue Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_8.name=Cyan Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_9.name=Light Red Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_10.name=Green Next Gen Reinforced Jet Armor Set
+item.armors:next_gen_reinforced_jet_armor_set_11.name=Light Purple Next Gen Reinforced Jet Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:oblivion_armor_set.name=Oblivion Armor Set
+item.armors:oblivion_armor_helmet_set.name=Oblivion Armor Set
+item.armors:oblivion_armor_helmet.name=Oblivion Armor Helmet
+item.armors:oblivion_armor_chestplate.name=Oblivion Armor Chestplate
+item.armors:oblivion_armor_leggings.name=Oblivion Armor Leggings
+item.armors:oblivion_armor_boots.name=Oblivion Armor Boots
+
+
+
+
+item.armors:oblivion_armor_set_1.name=Light Blue Oblivion Armor Set
+item.armors:oblivion_armor_set_2.name=Yellow Oblivion Armor Set
+item.armors:oblivion_armor_set_3.name=Light Purple Oblivion Armor Set
+item.armors:oblivion_armor_set_4.name=Green Oblivion Armor Set
+item.armors:oblivion_armor_set_5.name=Light Pink Oblivion Armor Set
+item.armors:oblivion_armor_set_6.name=Cyan Oblivion Armor Set
+item.armors:oblivion_armor_set_7.name=Light Red Oblivion Armor Set
+item.armors:oblivion_armor_set_8.name=Pink Oblivion Armor Set
+item.armors:oblivion_armor_set_9.name=Light Green Oblivion Armor Set
+item.armors:oblivion_armor_set_10.name=Blue Oblivion Armor Set
+item.armors:oblivion_armor_set_11.name=Light Yellow Oblivion Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:reinforced_steel_armor_set.name=Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_helmet_set.name=Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_helmet.name=Reinforced Steel Armor Helmet
+item.armors:reinforced_steel_armor_chestplate.name=Reinforced Steel Armor Chestplate
+item.armors:reinforced_steel_armor_leggings.name=Reinforced Steel Armor Leggings
+item.armors:reinforced_steel_armor_boots.name=Reinforced Steel Armor Boots
+
+
+
+
+item.armors:reinforced_steel_armor_set_1.name=Light Blue Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_2.name=Yellow Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_3.name=Light Purple Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_4.name=Green Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_5.name=Light Pink Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_6.name=Cyan Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_7.name=Light Red Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_8.name=Pink Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_9.name=Light Green Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_10.name=Blue Reinforced Steel Armor Set
+item.armors:reinforced_steel_armor_set_11.name=Light Yellow Reinforced Steel Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:scifi_suit_armor_set.name=Scifi Suit Armor Set
+item.armors:scifi_suit_armor_helmet_set.name=Scifi Suit Armor Set
+item.armors:scifi_suit_armor_helmet.name=Scifi Suit Armor Helmet
+item.armors:scifi_suit_armor_chestplate.name=Scifi Suit Armor Chestplate
+item.armors:scifi_suit_armor_leggings.name=Scifi Suit Armor Leggings
+item.armors:scifi_suit_armor_boots.name=Scifi Suit Armor Boots
+
+
+
+
+item.armors:scifi_suit_armor_set_1.name=Light Blue Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_2.name=Green Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_3.name=Pink Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_4.name=Cyan Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_5.name=Light Blue Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_6.name=Blue Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_7.name=Red Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_8.name=Light Red Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_9.name=Light Cyan Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_10.name=Purple Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_11.name=Light Green Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_12.name=Black Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_13.name=Light Purple Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_14.name=Orange Scifi Suit Armor Set
+item.armors:scifi_suit_armor_set_15.name=Light Yellow Scifi Suit Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:stormslider_armor_set.name=Stormslider Armor Set
+item.armors:stormslider_armor_helmet_set.name=Stormslider Armor Set
+item.armors:stormslider_armor_helmet.name=Stormslider Armor Helmet
+item.armors:stormslider_armor_chestplate.name=Stormslider Armor Chestplate
+item.armors:stormslider_armor_leggings.name=Stormslider Armor Leggings
+item.armors:stormslider_armor_boots.name=Stormslider Armor Boots
+
+
+
+
+item.armors:stormslider_armor_set_1.name=Yellow Stormslider Armor Set
+item.armors:stormslider_armor_set_2.name=Green Stormslider Armor Set
+item.armors:stormslider_armor_set_3.name=Light Pink Stormslider Armor Set
+item.armors:stormslider_armor_set_4.name=Cyan Stormslider Armor Set
+item.armors:stormslider_armor_set_5.name=Light Red Stormslider Armor Set
+item.armors:stormslider_armor_set_6.name=Blue Stormslider Armor Set
+item.armors:stormslider_armor_set_7.name=Light Yellow Stormslider Armor Set
+item.armors:stormslider_armor_set_8.name=Red Stormslider Armor Set
+item.armors:stormslider_armor_set_9.name=Light Cyan Stormslider Armor Set
+item.armors:stormslider_armor_set_10.name=Pink Stormslider Armor Set
+item.armors:stormslider_armor_set_11.name=Light Green Stormslider Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:trauma_resistant_armor_set.name=Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_helmet_set.name=Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_helmet.name=Trauma Resistant Armor Helmet
+item.armors:trauma_resistant_armor_chestplate.name=Trauma Resistant Armor Chestplate
+item.armors:trauma_resistant_armor_leggings.name=Trauma Resistant Armor Leggings
+item.armors:trauma_resistant_armor_boots.name=Trauma Resistant Armor Boots
+
+
+
+
+item.armors:trauma_resistant_armor_set_1.name=Blue Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_2.name=Light Green Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_3.name=Purple Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_4.name=Cyan Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_5.name=Red Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_6.name=Light Blue Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_7.name=Yellow Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_8.name=Pink Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_9.name=Bluish Green Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_10.name=Light Purple Trauma Resistant Armor Set
+item.armors:trauma_resistant_armor_set_11.name=Green Trauma Resistant Armor Set
+
+
+
+
+
+
+
+
+
+
+
+
+item.armors:veterans_sidearm_armor_set.name=Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_helmet_set.name=Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_helmet.name=Veteran's Sidearm Armor Helmet
+item.armors:veterans_sidearm_armor_chestplate.name=Veteran's Sidearm Armor Chestplate
+item.armors:veterans_sidearm_armor_leggings.name=Veteran's Sidearm Armor Leggings
+item.armors:veterans_sidearm_armor_boots.name=Veteran's Sidearm Armor Boots
+
+
+
+
+item.armors:veterans_sidearm_armor_set_1.name=Light Purple Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_2.name=Cyan Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_3.name=Light Red Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_4.name=Blue Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_5.name=Light Yellow Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_6.name=Purple Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_7.name=Light Green Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_8.name=Yellow Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_9.name=Light Blue Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_10.name=Red Veteran's Sidearm Armor Set
+item.armors:veterans_sidearm_armor_set_11.name=Light Cyan Veteran's Sidearm Armor Set
+item.train:cargo_coupler.name=Cargo Coupler
+
+item.train:cargo_tank_coupler.name=Cargo Tank Coupler
+
+item.train:cargo_wooden_logs_coupler.name=Cargo Wooden Logs Coupler
+item.train:carriage_coupler.name=Carriage Coupler
+item.spawn_egg.entity.train:cargo.name=Cargo
+item.spawn_egg.entity.train:cargo_tank.name=Cargo Tank
+item.spawn_egg.entity.train:cargo_wooden_logs.name=Cargo Wooden Logs
+item.spawn_egg.entity.train:engine.name=Engine
+item.spawn_egg.entity.train:carriage.name=Carriage
+item.train:palette.name=Color Switch Tool
+action.hint.exit.train:engine=Exit
+action.hint.exit.train:carriage=Exit
+
+action.interact.ride.car=Ride the Car!
+action.hint.exit.kreatik:car_m7=Exit the Car by Sneaking!
+action.hint.exit.kreatik:car_m9=Exit the Car by Sneaking!
+action.hint.exit.kreatik:car_m10=Exit the Car by Sneaking!
+action.hint.exit.kreatik:car_m11=Exit the Car by Sneaking!
+item.spawn_egg.entity.kreatik:car_m7.name=Spawn Car M7
+item.spawn_egg.entity.kreatik:car_m9.name=Spawn Car M9
+item.spawn_egg.entity.kreatik:car_m10.name=Spawn Car M10
+item.spawn_egg.entity.kreatik:car_m11.name=Spawn Car M11
+
+action.hint.exit.kreatik:helicopter=Exit the Helicopter by Sneaking!
+action.hint.exit.kreatik:jetski=Exit by Sneaking!
+
+
+entity.kreatik:dog_0.name=Beagle
+
+item.spawn_egg.entity.kreatik:dog_0.name=Spawn Beagle
+entity.kreatik:dog4.name=Silky Terrier
+item.spawn_egg.entity.dog:dog4.name=Spawn Silky Terrier
+entity.kreatik:dog3.name=Jack Russel Terrier
+item.spawn_egg.entity.dog:dog3.name=Spawn Jack Russel Terrier
+entity.kreatik:dog1.name=Dagchshund
+item.spawn_egg.entity.dog:dog1.name=Spawn Dachshund
+entity.kreatik:dog2.name=Greyhound
+item.spawn_egg.entity.dog:dog2.name=Spawn Greyhound
+entity.kreatik:cat_1.name=Sokoke Cat
+item.spawn_egg.entity.cat:cat1.name=Spawn Sokoke Cat
+entity.kreatik:cat_2.name=Himalayan Cat
+item.spawn_egg.entity.cat:cat2.name=Spawn Himalayan Cat
+entity.kreatik:cat_3.name=Maine Coone Cat
+item.spawn_egg.entity.cat:cat3.name=Spawn Maine Coone Cat
+entity.kreatik:cat_4.name=Birman Cat
+item.spawn_egg.entity.cat:cat4.name=Spawn Birman Cat
+entity.kreatik:guinea_pig.name=Guinea Pig
+item.spawn_egg.entity.kreatik:guinea_pig.name=Spawn Guinea Pig
+entity.kreatik:komeranian.name=Pomeranian
+item.spawn_egg.entity.kreatik:komeranian.name=Spawn Pomeranian
+entity.kreatik:german_sherperd.name=German Sherperd
+item.spawn_egg.entity.kreatik:german_sherperd.name=Spawn German Sherperd
+entity.kreatik:hedgehog.name=Hedgehog
+item.spawn_egg.entity.kreatik:hedgehog.name=Spawn Hedgehog
+entity.kreatik:pigeon.name=Pigeon
+item.spawn_egg.entity.kreatik:pigeon.name=Spawn Pigeon
+entity.kreatik:squirrel.name=Squirrel
+item.spawn_egg.entity.kreatik:squirrel.name=Spawn Squirrel
+entity.kreatik:pterodactyl.name=Pterodactyl
+item.spawn_egg.entity.kreatik:pterodactyl.name=Spawn Pterodactyl
+
+
+entity.kreatik:baby_dragon_1.name=Toothless Dragon
+
+item.spawn_egg.entity.kreatik:baby_dragon_1.name=Spawn Toothless Dragon
+entity.kreatik:baby_dragon_2.name=Goofy Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_2.name=Spawn Goofy Dragon
+entity.kreatik:baby_dragon_3.name=Two Headed Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_3.name=Spawn Two Headed Dragon
+entity.kreatik:baby_dragon_4.name=Swirl Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_4.name=Spawn Swirl Dragon
+entity.kreatik:baby_dragon_5.name=Transcluent Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_5.name=Spawn Transcluent Dragon
+entity.kreatik:baby_dragon_6.name=Org Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_6.name=Spawn Org Dragon
+entity.kreatik:baby_dragon_7.name=Flower Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_7.name=Spawn Flower Dragon
+entity.kreatik:baby_dragon_8.name=Bruteforce Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_8.name=Spawn Bruteforce Dragon
+entity.kreatik:baby_dragon_9.name=Unicorn Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_9.name=Spawn Unicorn Dragon
+entity.kreatik:baby_dragon_10.name=Seahorse Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_10.name=Spawn Seahorse Dragon
+entity.kreatik:baby_dragon_11.name=Spiked Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_11.name=Spawn Alien Dragon
+entity.kreatik:baby_dragon_12.name=Alien Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_12.name=Spawn Alien Dragon
+entity.kreatik:baby_dragon_13.name=Flight Fang Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_13.name=Spawn Flight Fang Dragon
+entity.kreatik:baby_dragon_14.name=Multi-eyed Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_14.name=Spawn Multi-eyed Dragon
+entity.kreatik:baby_dragon_15.name=Snapdragon
+item.spawn_egg.entity.kreatik:baby_dragon_15.name=Spawn Snapdragon
+entity.kreatik:baby_dragon_16.name=Baby Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_16.name=Spawn Baby Dragon
+entity.kreatik:baby_dragon_17.name=Hydra Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_17.name=Spawn Hydra Dragon
+entity.kreatik:baby_dragon_18.name=Wyvern Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_18.name=Spawn Wyvern Dragon
+entity.kreatik:baby_dragon_19.name=Cloudcrusher Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_19.name=Spawn Cloudcrusher Dragon
+entity.kreatik:baby_dragon_20.name=Elf Dragon
+item.spawn_egg.entity.kreatik:baby_dragon_20.name=Spawn Elf Dragon
+
+action.hint.exit.kreatik:baby_dragon_1=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_2=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_3=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_4=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_5=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_6=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_7=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_8=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_9=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_10=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_11=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_12=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_13=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_14=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_15=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_16=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_17=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_18=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_19=Unmount Dragon
+action.hint.exit.kreatik:baby_dragon_20=Unmount Dragon
+
+
+item.kreatik:y.name=Paint Tool planes
+
+action.hint.exit.kreatik:car_m1=Press Sneak to Exit
+action.hint.exit.kreatik:car_m2=Press Sneak to Exit
+action.hint.exit.kreatik:car_m3=Press Sneak to Exit
+action.hint.exit.kreatik:car_m4=Press Sneak to Exit
+action.hint.exit.kreatik:car_m5=Press Sneak to Exit
+action.hint.exit.kreatik:car_m6=Press Sneak to Exit
+action.hint.exit.kreatik:car_m8=Press Sneak to Exit
+item.spawn_egg.entity.kreatik:car_m1.name=Spawn Car M1
+item.spawn_egg.entity.kreatik:car_m2.name=Spawn Car M2
+item.spawn_egg.entity.kreatik:car_m3.name=Spawn Car M3
+item.spawn_egg.entity.kreatik:car_m4.name=Spawn Car M4
+item.spawn_egg.entity.kreatik:car_m5.name=Spawn Car M5
+item.spawn_egg.entity.kreatik:car_m6.name=Spawn Car M6
+item.spawn_egg.entity.kreatik:car_m8.name=Spawn Car M8
+
+action.hint.exit.kreatik:plane1=§fLook §4up or down §f to control altitude
+action.hint.exit.kreatik:plane2=§fLook §4up or down §f to control altitude
+action.hint.exit.kreatik:plane3=§fLook §4up or down §f to control altitude
+action.hint.exit.kreatik:plane4=§fLook §4up or down §f to control altitude
+action.hint.exit.kreatik:plane5=§fLook §4up or down §f to control altitude
+
+
+item.furniture:x.name=Rotate Tool furniture
+
+item.furniture:y.name=Paint Tool furniture
+item.furniture:pick_block.name=Copy Tool
+item.furniture:remove_block.name=Remove Tool
+
+action.interact.seat=Seat
+action.interact.rotate=Rotate
+action.interact.change_texture=Change Texture
+
+action.hint.exit.furniture:office_chair=Tap Sneak to get out of the chair
+action.hint.exit.furniture:rocking_chair=Tap Sneak to get out of the chair
+action.hint.exit.furniture:armchair=Tap Sneak to get out of the chair
+action.hint.exit.furniture:chair=Tap Sneak to get out of the chair
+action.hint.exit.furniture:sunchair=Tap Sneak to get out of the chair
+action.hint.exit.furniture:one_person_couch=Tap Sneak to get out of the couch
+action.hint.exit.furniture:two_person_couch=Tap Sneak to get out of the couch
+action.hint.exit.furniture:three_person_couch=Tap Sneak to get out of the couch
+action.hint.exit.furniture:single_couch=Tap Sneak to get out of the couch
+action.hint.exit.furniture:bench_1=Tap Sneak to get out of the bench
+action.hint.exit.furniture:bench_2=Tap Sneak to get out of the bench
+action.hint.exit.furniture:toilet=Tap Sneak to get out of the toilet
+
+##Bathroom
+item.spawn_egg.entity.furniture:bath_with_shower.name=Bath with Shower
+entity.furniture:bath_with_shower.name=Bath with shower
+item.spawn_egg.entity.furniture:bathroom_sink.name=Bathroom Sink
+entity.furniture:bathroom_sink.name=Bathroom Sink
+item.spawn_egg.entity.furniture:mirror.name=Mirror
+entity.furniture:mirror.name=Mirror
+item.spawn_egg.entity.furniture:shower_with_box.name=Shower with Box
+entity.furniture:shower_with_box.name=Shower with Box
+item.spawn_egg.entity.furniture:shower.name=Shower
+entity.furniture:shower.name=Shower
+item.spawn_egg.entity.furniture:toilet_paper.name=Toilet Paper
+entity.furniture:toilet_paper.name=Toilet Paper
+item.spawn_egg.entity.furniture:toilet.name=Toilet
+entity.furniture:toilet.name=Toilet
+item.spawn_egg.entity.furniture:towel_holder.name=Towel Holder
+entity.furniture:towel_holder.name=Towel Holder
+
+##Bedroom
+item.spawn_egg.entity.furniture:armchair.name=Armchair
+entity.furniture:armchair.name=Armchair
+item.spawn_egg.entity.furniture:bedside_table.name=Bedside Table
+entity.furniture:bedside_table.name=Bedside Table
+item.spawn_egg.entity.furniture:curtains_left.name=Bedroom Left Curtains
+entity.furniture:curtains_left.name=Bedroom Left Curtains
+item.spawn_egg.entity.furniture:curtains_right.name=Bedroom Right Curtains
+entity.furniture:curtains_right.name=Bedroom Right Curtains
+item.spawn_egg.entity.furniture:desk.name=Desk
+entity.furniture:desk.name=Desk
+item.spawn_egg.entity.furniture:office_chair.name=Office Chair
+entity.furniture:office_chair.name=Office Chair
+item.spawn_egg.entity.furniture:one_person_bed.name=One Person Bed
+entity.furniture:one_person_bed.name=One Person Bed
+item.spawn_egg.entity.furniture:shelf.name=Shelf
+entity.furniture:shelf.name=Shelf
+item.spawn_egg.entity.furniture:tall_bedside_table.name=Tall Bedside Table
+entity.furniture:tall_bedside_table.name=Tall Bedside Table
+item.spawn_egg.entity.furniture:two_person_bed.name=Two Person Bed
+entity.furniture:two_person_bed.name=Two Person Bed
+item.spawn_egg.entity.furniture:wardrobe.name=Wardrobe
+entity.furniture:wardrobe.name=Wardrobe
+item.spawn_egg.entity.furniture:wide_shelf.name=Wide Shelf
+entity.furniture:wide_shelf.name=Wide Shelf
+
+##Kitchen
+item.spawn_egg.entity.furniture:chair.name=Chair
+entity.furniture:chair.name=Chair
+item.spawn_egg.entity.furniture:dining_table.name=Dining Table
+entity.furniture:dining_table.name=Dining Table
+item.spawn_egg.entity.furniture:dough_roller.name=Dough Roller
+entity.furniture:dough_roller.name=Dough Roller
+item.spawn_egg.entity.furniture:kitchen_cabinets.name=Kitchen Cabinet
+entity.furniture:kitchen_cabinets.name=Kitchen Cabinet
+item.spawn_egg.entity.furniture:kitchen_sink.name=Kitchen Sink
+entity.furniture:kitchen_sink.name=Kitchen Sink
+item.spawn_egg.entity.furniture:knife.name=Knife
+entity.furniture:knife.name=Knife
+item.spawn_egg.entity.furniture:microwave.name=Microwave
+entity.furniture:microwave.name=Microwave
+item.spawn_egg.entity.furniture:oven.name=Oven
+entity.furniture:oven.name=Oven
+item.spawn_egg.entity.furniture:plate_with_cutlery.name=Plate with Cutlery
+entity.furniture:plate_with_cutlery.name=Plate with Cutlery
+item.spawn_egg.entity.furniture:plate.name=Plate
+entity.furniture:plate.name=Plate
+item.spawn_egg.entity.furniture:range_hood.name=Range Hood
+entity.furniture:range_hood.name=Range Hood
+item.spawn_egg.entity.furniture:refrigerator.name=Refrigerator
+entity.furniture:refrigerator.name=Refrigerator
+item.spawn_egg.entity.furniture:stove.name=Stove
+entity.furniture:stove.name=Stove
+
+##Living Room
+item.spawn_egg.entity.furniture:bookshelf.name=Bookshelf
+entity.furniture:bookshelf.name=Bookshelf
+item.spawn_egg.entity.furniture:carpet.name=Carpet
+entity.furniture:carpet.name=Carpet
+item.spawn_egg.entity.furniture:coffeetable.name=Coffeetable
+entity.furniture:coffeetable.name=Coffeetable
+item.spawn_egg.entity.furniture:living_room_curtains_left.name=Living Room Left Curtains
+entity.furniture:living_room_curtains_left.name=Living Room Left Curtains
+item.spawn_egg.entity.furniture:living_room_curtains_right.name=Living Room Right Curtains
+entity.furniture:living_room_curtains_right.name=Living Room Right Curtains
+item.spawn_egg.entity.furniture:drawer_unit.name=Drawer Unit
+entity.furniture:drawer_unit.name=Drawer Unit
+item.spawn_egg.entity.furniture:flatscreen_tv.name=Flatscreen TV
+entity.furniture:flatscreen_tv.name=Flatscreen TV
+item.spawn_egg.entity.furniture:flower_pot.name=Flower Pot
+entity.furniture:flower_pot.name=Flower Pot
+item.spawn_egg.entity.furniture:one_person_couch.name=One Person Couch
+entity.furniture:one_person_couch.name=One Person Couch
+item.spawn_egg.entity.furniture:rocking_chair.name=Rocking Chair
+entity.furniture:rocking_chair.name=Rocking Chair
+item.spawn_egg.entity.furniture:single_couch.name=Single Couch
+entity.furniture:single_couch.name=Single Couch
+item.spawn_egg.entity.furniture:small_closet.name=Small Closet
+entity.furniture:small_closet.name=Small Closet
+item.spawn_egg.entity.furniture:standing_lamp.name=Stainding Lamp
+entity.furniture:standing_lamp.name=Stainding Lamp
+item.spawn_egg.entity.furniture:tall_closet.name=Tall Closet
+entity.furniture:tall_closet.name=Tall Closet
+item.spawn_egg.entity.furniture:three_person_couch.name=Three Person Couch
+entity.furniture:three_person_couch.name=Three Person Couch
+item.spawn_egg.entity.furniture:tv_stand.name=TV Stand
+entity.furniture:tv_stand.name=TV Stand
+item.spawn_egg.entity.furniture:two_person_couch.name=Two Person Couch
+entity.furniture:two_person_couch.name=Two Person Couch
+item.spawn_egg.entity.furniture:vase.name=Vase
+entity.furniture:vase.name=Vase
+
+##Miscellaneous
+item.spawn_egg.entity.furniture:bench_1.name=Bench
+entity.furniture:bench_1.name=Bench
+item.spawn_egg.entity.furniture:ceiling_lamps.name=Ceiling Lamps
+entity.furniture:ceiling_lamps.name=Ceiling Lamps
+item.spawn_egg.entity.furniture:clock.name=Clock
+entity.furniture:clock.name=Clock
+item.spawn_egg.entity.furniture:closet.name=Closet
+entity.furniture:closet.name=Closet
+item.spawn_egg.entity.furniture:high_cabinet.name=High Cabinet
+entity.furniture:high_cabinet.name=High Cabinet
+item.spawn_egg.entity.furniture:indoor_trash_bin.name=Indoor Trash Bin
+entity.furniture:indoor_trash_bin.name=Indoor Trash Bin
+item.spawn_egg.entity.furniture:large_bookshelf.name=Large Bookshelf
+entity.furniture:large_bookshelf.name=Large Bookshelf
+item.spawn_egg.entity.furniture:medium_cabinet.name=Medium Cabinet
+entity.furniture:medium_cabinet.name=Medium Cabinet
+item.spawn_egg.entity.furniture:office_desk.name=Office Desk
+entity.furniture:office_desk.name=Office Desk
+item.spawn_egg.entity.furniture:outdoor_trash_bin.name=Outdoor Trash Bin
+entity.furniture:outdoor_trash_bin.name=Outdoor Trash Bin
+item.spawn_egg.entity.furniture:pendulum_clock.name=Pendulum Clock
+entity.furniture:pendulum_clock.name=Pendulum Clock
+item.spawn_egg.entity.furniture:plants.name=Plants
+entity.furniture:plants.name=Plants
+item.spawn_egg.entity.furniture:radiator.name=Radiator
+entity.furniture:radiator.name=Radiator
+item.spawn_egg.entity.furniture:trophy.name=Trophy
+entity.furniture:trophy.name=Trophy
+
+##Outside
+item.spawn_egg.entity.furniture:barbeque.name=Barbeque
+entity.furniture:barbeque.name=Barbeque
+item.spawn_egg.entity.furniture:bench_2.name=Outside Bench
+entity.furniture:bench_2.name=Outside Bench
+item.spawn_egg.entity.furniture:picnic_table.name=Picnic Table
+entity.furniture:picnic_table.name=Picnic Table
+item.spawn_egg.entity.furniture:sunchair.name=Sunchair
+entity.furniture:sunchair.name=Sunchair
+
+##Cars
+action.hint.exit.cars:car_m1=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m3=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m4=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m5=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m6=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m7=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m9=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m10=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m11=Exit the Car by Sneaking!
+item.spawn_egg.entity.cars:car_m1.name=Spawn Car M1
+item.spawn_egg.entity.cars:car_m3.name=Spawn Car M3
+item.spawn_egg.entity.cars:car_m4.name=Spawn Car M4
+item.spawn_egg.entity.cars:car_m5.name=Spawn Car M5
+item.spawn_egg.entity.cars:car_m6.name=Spawn Car M6
+item.spawn_egg.entity.cars:car_m7.name=Spawn Car M7
+item.spawn_egg.entity.cars:car_m9.name=Spawn Car M9
+item.spawn_egg.entity.cars:car_m10.name=Spawn Car M10
+item.spawn_egg.entity.cars:car_m11.name=Spawn Car M11
+
+
+ks.change_color=Change color
+
+
+item.ks:j.palette.name=Paint Tool
+
+item.spawn_egg.entity.kreatik:backpack_1_black.name=Daypack Backpack Black
+item.spawn_egg.entity.kreatik:backpack_1_blue.name=Daypack Backpack Blue
+item.spawn_egg.entity.kreatik:backpack_1_brown.name=Daypack Backpack Brown
+item.spawn_egg.entity.kreatik:backpack_1_cyan.name=Daypack Backpack Cyan
+item.spawn_egg.entity.kreatik:backpack_1_gray.name=Daypack Backpack Gray
+item.spawn_egg.entity.kreatik:backpack_1_green.name=Daypack Backpack Green
+item.spawn_egg.entity.kreatik:backpack_1_pink.name=Daypack Backpack Pink
+item.spawn_egg.entity.kreatik:backpack_1_red.name=Daypack Backpack Red
+
+item.spawn_egg.entity.kreatik:backpack_2_orange.name=Knapsack Backpack Orange
+item.spawn_egg.entity.kreatik:backpack_2_purple.name=Knapsack Backpack Purple
+item.spawn_egg.entity.kreatik:backpack_2_brown.name=Knapsack Backpack Brown
+item.spawn_egg.entity.kreatik:backpack_2_cyan.name=Knapsack Backpack Cyan
+item.spawn_egg.entity.kreatik:backpack_2_gray.name=Knapsack Backpack Gray
+item.spawn_egg.entity.kreatik:backpack_2_green.name=Knapsack Backpack Green
+item.spawn_egg.entity.kreatik:backpack_2_pink.name=Knapsack Backpack Pink
+item.spawn_egg.entity.kreatik:backpack_2_red.name=Knapsack Backpack Red
+
+item.spawn_egg.entity.kreatik:backpack_3_orange.name=Satchel Backpack Orange
+item.spawn_egg.entity.kreatik:backpack_3_blue.name=Satchel Backpack Blue
+item.spawn_egg.entity.kreatik:backpack_3_yellow.name=Satchel Backpack Yellow
+item.spawn_egg.entity.kreatik:backpack_3_cyan.name=Satchel Backpack Cyan
+item.spawn_egg.entity.kreatik:backpack_3_gray.name=Satchel Backpack Gray
+item.spawn_egg.entity.kreatik:backpack_3_green.name=Satchel Backpack Green
+item.spawn_egg.entity.kreatik:backpack_3_pink.name=Satchel Backpack Pink
+item.spawn_egg.entity.kreatik:backpack_3_red.name=Satchel Backpack Red
+
+item.spawn_egg.entity.kreatik:backpack_4_purple.name=Mountain Climber Backpack Purple
+item.spawn_egg.entity.kreatik:backpack_4_blue.name=Mountain Climber Backpack Blue
+item.spawn_egg.entity.kreatik:backpack_4_brown.name=Mountain Climber Backpack Brown
+item.spawn_egg.entity.kreatik:backpack_4_cyan.name=Mountain Climber Backpack Cyan
+item.spawn_egg.entity.kreatik:backpack_4_gray.name=Mountain Climber Backpack Gray
+item.spawn_egg.entity.kreatik:backpack_4_green.name=Mountain Climber Backpack Green
+item.spawn_egg.entity.kreatik:backpack_4_yellow.name=Mountain Climber Backpack Yellow
+item.spawn_egg.entity.kreatik:backpack_4_red.name=Mountain Climber Backpack Red
+
+item.spawn_egg.entity.kreatik:backpack_5_black.name=Camping Backpack Black
+item.spawn_egg.entity.kreatik:backpack_5_blue.name=Camping Backpack Blue
+item.spawn_egg.entity.kreatik:backpack_5_brown.name=Camping Backpack Brown
+item.spawn_egg.entity.kreatik:backpack_5_cyan.name=Camping Backpack Cyan
+item.spawn_egg.entity.kreatik:backpack_5_gray.name=Camping Backpack Gray
+item.spawn_egg.entity.kreatik:backpack_5_green.name=Camping Backpack Green
+item.spawn_egg.entity.kreatik:backpack_5_white.name=Camping Backpack White
+item.spawn_egg.entity.kreatik:backpack_5_red.name=Camping Backpack Red
+
+item.kreatik:block.name=Block
+
+action.hint.exit.cars:car_m2=Exit the Car by Sneaking!
+action.hint.exit.cars:car_m8=Exit the Car by Sneaking!
+item.spawn_egg.entity.cars:car_m2.name=Spawn Car M2
+item.spawn_egg.entity.cars:car_m8.name=Spawn Car M8
+
+
+entity.kreatik:brachiosaurus.name=Brachiosaurus
+
+entity.kreatik:brontosaurus.name=Brontosaurus
+entity.kreatik:parasaurophus.name=Parasaurophus
+entity.kreatik:spinosaurus.name=Spinosaurus
+entity.kreatik:stegosaurus.name=Stegosaurus
+entity.kreatik:trex.name=T-Rex
+entity.kreatik:triceratops.name=Triceratops
+entity.kreatik:velociraptor.name=Velociraptor
+
+item.spawn_egg.entity.kreatik:brachiosaurus.name=Spawn Brachiosaurus
+item.spawn_egg.entity.kreatik:brontosaurus.name=Spawn Brontosaurus
+item.spawn_egg.entity.kreatik:parasaurophus.name=Spawn Parasaurophus
+item.spawn_egg.entity.kreatik:spinosaurus.name=Spawn Spinosaurus
+item.spawn_egg.entity.kreatik:stegosaurus.name=Spawn Stegosaurus
+item.spawn_egg.entity.kreatik:trex.name=Spawn T-Rex
+item.spawn_egg.entity.kreatik:triceratops.name=Spawn Triceratops
+item.spawn_egg.entity.kreatik:velociraptor.name=Spawn Velociraptor
+
+item.spawn_egg.entity.kreatik:brachiosaurus_egg.name=Spawn Brachiosaurus Egg
+item.spawn_egg.entity.kreatik:brontosaurus_egg.name=Spawn Brontosaurus Egg
+item.spawn_egg.entity.kreatik:parasaurophus_egg.name=Spawn Parasaurophus Egg
+item.spawn_egg.entity.kreatik:spinosaurus_egg.name=Spawn Spinosaurus Egg
+item.spawn_egg.entity.kreatik:stegosaurus_egg.name=Spawn Stegosaurus Egg
+item.spawn_egg.entity.kreatik:trex_egg.name=Spawn T-Rex Egg
+item.spawn_egg.entity.kreatik:triceratops_egg.name=Spawn Triceratops Egg
+item.spawn_egg.entity.kreatik:velociraptor_egg.name=Spawn Velociraptor Egg
+
+item.kreatik:meaty_bone.name=Meaty Bone
+item.kreatik:palm_leaf.name=Palm Leaf
+
+action.hint.exit.kreatik:brachiosaurus=Sneak to Dismount
+action.hint.exit.kreatik:brontosaurus=Sneak to Dismount
+action.hint.exit.kreatik:parasaurophus=Sneak to Dismount
+action.hint.exit.kreatik:spinosaurus=Sneak to Dismount
+action.hint.exit.kreatik:stegosaurus=Sneak to Dismount
+action.hint.exit.kreatik:trex=Sneak to Dismount
+action.hint.exit.kreatik:triceratops=Sneak to Dismount
+action.hint.exit.kreatik:velociraptor=Sneak to Dismount
+
+
+item.ks:weapon_1.name=§bPickaxe Dash
+item.ks:weapon_2.name=§6Smashing ax
+item.ks:weapon_3.name=§7Explosive Cube Sword
+item.ks:weapon_4.name=§2Dragon §aflying §0sword
+item.ks:weapon_5.name=§3Storm summoner
+item.ks:weapon_6.name=§9Frozen ax
+item.ks:weapon_7.name=§bBig bow
+item.ks:weapon_9.name=§aMagnetic mallet
+item.ks:weapon_10.name=§2Aerodynamic Katana
+
+entity.kreatik:lucky_block.name=Lucky Block
+
+item.spawn_egg.entity.kreatik:lucky_block.name=Lucky Block
+item.kreatik:slowness.name=Slowness Drop
+item.kreatik:regeneration.name=Regeneration Drop
+item.kreatik:saturation.name=Saturation Drop
+item.kreatik:village_hero.name=Village_hero Drop
+item.kreatik:night_vision.name=Night_vision Drop
+item.kreatik:jump_boost.name=Jump Boost Drop
+item.kreatik:poison.name=Poison Drop
+item.kreatik:instant_damage.name=Instant Damage Drop
+item.kreatik:fire.name=Fire Drop
+item.kreatik:night.name=Night Drop
+item.kreatik:lightning.name=Lightning Drop
+item.kreatik:teleport.name=Teleport Drop
+item.kreatik:creeper.name=Creeper Drop
+item.kreatik:zombie.name=Zombie Drop
+item.kreatik:spider.name=Spider Drop
+item.kreatik:slime.name=Slime Drop
+item.kreatik:ghast.name=Ghast Drop
+item.kreatik:return.name=§fOff §4Lucky Blocks §0[§fLeft-Click§0]
+
+item.ks:weapon_8.name=The Oblivior
+item.ks:no_offhand.name=No Offhand
+item.spawn_egg.entity.ks:entity_boards.name=Boards

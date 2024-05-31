@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "kreatik:palm_leaf",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "palm_leaf",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

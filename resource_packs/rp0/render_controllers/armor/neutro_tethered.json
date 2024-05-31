@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.neutro_tethered_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.neutro_tethered_armor",
+            "Texture.neutro_tethered_armor_1",
+            "Texture.neutro_tethered_armor_2",
+            "Texture.neutro_tethered_armor_3",
+            "Texture.neutro_tethered_armor_4",
+            "Texture.neutro_tethered_armor_5",
+            "Texture.neutro_tethered_armor_6",
+            "Texture.neutro_tethered_armor_7",
+            "Texture.neutro_tethered_armor_8",
+            "Texture.neutro_tethered_armor_9",
+            "Texture.neutro_tethered_armor_10",
+            "Texture.neutro_tethered_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.neutro_tethered_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

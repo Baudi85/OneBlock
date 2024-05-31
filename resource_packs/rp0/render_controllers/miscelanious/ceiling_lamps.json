@@ -1,0 +1,34 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": { 
+        "controller.render.ceiling_lamps": {
+          "arrays": {
+            "textures": {
+              "Array.skins_off": [
+                "Texture.texture_off_1",
+                "Texture.texture_off_2",
+                "Texture.texture_off_3",
+                "Texture.texture_off_4",
+                "Texture.texture_off_5",
+                "Texture.texture_off_6"
+              ],
+              "Array.skins_on": [
+                "Texture.texture_on_1",
+                "Texture.texture_on_2",
+                "Texture.texture_on_3",
+                "Texture.texture_on_4",
+                "Texture.texture_on_5",
+                "Texture.texture_on_6"
+              ]
+            }
+          },
+            "geometry": "Geometry.default",
+            "materials": [
+              { "*": "Material.default" }
+            ],
+            "textures": [
+              "query.is_saddled ? Array.skins_on[query.skin_id] : Array.skins_off[query.skin_id]"
+            ]
+        }
+    } 
+}

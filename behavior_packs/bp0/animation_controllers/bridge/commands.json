@@ -1,0 +1,961 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.execute_commands": {
+			"states": {
+				"default": {
+					"transitions": [
+						{"despawn": "query.max_health == 200"},
+						{"color": "query.max_health == 201"},
+						{"rotate": "query.max_health == 202"},
+						{"spawned": "query.max_health == 203"},
+						{"execute_command_id_1": "query.max_health == 1"},
+						{"execute_command_id_2": "query.max_health == 2"},
+						{"execute_command_id_3": "query.max_health == 3"},
+						{"execute_command_id_4": "query.max_health == 4"},
+						{"execute_command_id_5": "query.max_health == 5"},
+						{"execute_command_id_6": "query.max_health == 6"},
+						{"execute_command_id_7": "query.max_health == 7"},
+						{"execute_command_id_8": "query.max_health == 8"},
+						{"execute_command_id_9": "query.max_health == 9"},
+						{"execute_command_id_10": "query.max_health == 10"},
+						{"execute_command_id_11": "query.max_health == 11"},
+						{"execute_command_id_12": "query.max_health == 12"},
+						{"execute_command_id_13": "query.max_health == 13"},
+						{"execute_command_id_14": "query.max_health == 14"},
+						{"execute_command_id_15": "query.max_health == 15"},
+						{"execute_command_id_16": "query.max_health == 16"},
+						{"execute_command_id_17": "query.max_health == 17"},
+						{"execute_command_id_18": "query.max_health == 18"},
+						{"execute_command_id_19": "query.max_health == 19"},
+						{"execute_command_id_21": "query.max_health == 21"},
+						{"execute_command_id_22": "query.max_health == 22"},
+						{"execute_command_id_23": "query.max_health == 23"},
+						{"execute_command_id_24": "query.max_health == 24"},
+						{"execute_command_id_25": "query.max_health == 25"},
+						{"execute_command_id_26": "query.max_health == 26"},
+						{"execute_command_id_27": "query.max_health == 27"},
+						{"execute_command_id_28": "query.max_health == 28"},
+						{"execute_command_id_29": "query.max_health == 29"},
+						{"execute_command_id_30": "query.max_health == 30"},
+						{"execute_command_id_31": "query.max_health == 31"},
+						{"execute_command_id_32": "query.max_health == 32"},
+						{"execute_command_id_33": "query.max_health == 33"},
+						{"execute_command_id_34": "query.max_health == 34"},
+						{"execute_command_id_35": "query.max_health == 35"},
+						{"execute_command_id_36": "query.max_health == 36"},
+						{"execute_command_id_37": "query.max_health == 37"},
+						{"execute_command_id_38": "query.max_health == 38"},
+						{"execute_command_id_39": "query.max_health == 39"},
+						{"execute_command_id_40": "query.max_health == 40"},
+						{"execute_command_id_41": "query.max_health == 41"},
+						{"execute_command_id_42": "query.max_health == 42"},
+						{"execute_command_id_43": "query.max_health == 43"},
+						{"execute_command_id_44": "query.max_health == 44"},
+						{"execute_command_id_45": "query.max_health == 45"},
+						{"execute_command_id_46": "query.max_health == 46"},
+						{"execute_command_id_47": "query.max_health == 47"},
+						{"execute_command_id_48": "query.max_health == 48"},
+						{"execute_command_id_49": "query.max_health == 49"},
+						{"execute_command_id_50": "query.max_health == 50"},
+						{"execute_command_id_51": "query.max_health == 51"},
+						{"execute_command_id_52": "query.max_health == 52"},
+						{"execute_command_id_53": "query.max_health == 53"},
+						{"execute_command_id_54": "query.max_health == 54"},
+						{"execute_command_id_55": "query.max_health == 55"},
+						{"execute_command_id_56": "query.max_health == 56"},
+						{"execute_command_id_57": "query.max_health == 57"},
+						{"execute_command_id_58": "query.max_health == 58"},
+						{"execute_command_id_59": "query.max_health == 59"},
+						{"execute_command_id_60": "query.max_health == 60"},
+						{"execute_command_id_61": "query.max_health == 61"},
+						{"execute_command_id_62": "query.max_health == 62"},
+						{"execute_command_id_63": "query.max_health == 63"},
+						{"execute_command_id_64": "query.max_health == 64"},
+						{"execute_command_id_65": "query.max_health == 65"},
+						{"execute_command_id_66": "query.max_health == 66"},
+						{"execute_command_id_67": "query.max_health == 67"},
+						{"execute_command_id_68": "query.max_health == 68"},
+						{"execute_command_id_69": "query.max_health == 69"},
+						{"execute_command_id_70": "query.max_health == 70"}
+					]
+				},
+				"despawn": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/playsound furniture.remove @a ~ ~ ~",
+						"@s bridge:remove_command_id_1"
+					]
+				},
+				"color": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/playsound furniture.color @a ~ ~ ~",
+						"@s bridge:remove_command_id_1"
+					]
+				},
+				"rotate": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/playsound furniture.rotate @a ~ ~ ~",
+						"@s bridge:remove_command_id_1"
+					]
+				},
+				"spawned": {
+					"transitions": [
+						{
+							"default": "query.max_health != 203"
+						}
+					],
+					"on_entry": [
+						"/execute @s[tag=!played] ~ ~ ~ playsound furniture.place @a ~ ~ ~",
+						"/particle furniture:place ~ ~ ~",
+						"/tag @s add played"
+					]
+				},
+				"execute_command_id_1": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:barbeque_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_2": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:bench_2_spawn_egg",
+						"@s bridge:remove_command_id_1"
+						,
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_3": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:picnic_table_spawn_egg",
+						"@s bridge:remove_command_id_1"
+						,
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_4": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:sunchair_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_5": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:bench_1_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_6": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:ceiling_lamps_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_7": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:clock_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_8": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:closet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_9": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:high_cabinet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_10": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:indoor_trash_bin_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_11": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:large_bookshelf_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_12": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:medium_cabinet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_13": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:office_desk_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_14": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:outdoor_trash_bin_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_15": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:pendulum_clock_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_16": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:plants_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_17": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:radiator_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_18": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:trophy_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_19": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:bookshelf_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_21": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:carpet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_22": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:coffeetable_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_23": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:living_room_curtains_left_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_24": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:living_room_curtains_right_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_25": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:drawer_unit_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_26": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:flatscreen_tv_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_27": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:flower_pot_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_28": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:one_person_couch_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_29": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:rocking_chair_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_30": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:single_couch_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_31": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:small_closet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_32": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:standing_lamp_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_33": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:tall_closet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_34": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:three_person_couch_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_35": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:tv_stand_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_36": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:two_person_couch_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_37": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:vase_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_38": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:chair_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_39": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:dining_table_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_40": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:dough_roller_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_41": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:kitchen_cabinets_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_42": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:kitchen_sink_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_43": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:knife_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_44": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:microwave_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_45": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:oven_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_46": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:plate_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_47": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:plate_with_cutlery_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_48": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:range_hood_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_49": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:refrigerator_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_50": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:stove_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_51": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:armchair_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_52": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:bedside_table_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_53": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:curtains_left_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_54": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:curtains_right_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_55": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:desk_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_56": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:office_chair_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_57": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:one_person_bed_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_58": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:shelf_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_59": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:tall_bedside_table_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_60": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:two_person_bed_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_61": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:wardrobe_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_62": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:wide_shelf_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_63": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:bath_with_shower_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_64": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:bathroom_sink_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_65": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:mirror_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_66": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:shower_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_67": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:shower_with_box_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_68": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:toilet_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_69": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:toilet_paper_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				},
+				"execute_command_id_70": {
+					"transitions": [
+						{
+							"default": "query.max_health == 20"
+						}
+					],
+					"on_entry": [
+						"/give @p furniture:towel_holder_spawn_egg",
+						"@s bridge:remove_command_id_1",
+						"/playsound furniture.pick_block @a ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

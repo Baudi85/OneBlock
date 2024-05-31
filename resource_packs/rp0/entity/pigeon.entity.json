@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:pigeon",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/pigeon"
+			},
+			"geometry": {
+				"default": "geometry.pigeon"
+			},
+			"animations": {
+				"movement_controller": "controller.animation.fly",
+					"walk": "animation.pigeon.walk",
+					"idle": "animation.pigeon.idle",
+					"fly": "animation.pigeon.fly"
+			},
+			"scripts": {
+				"animate": [
+					"movement_controller"
+				]
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "pigeon",
+				"texture_index": 0
+			}
+		}
+	}
+}

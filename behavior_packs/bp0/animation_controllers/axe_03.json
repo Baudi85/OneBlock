@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.axe_03_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "axe_03_active": "(query.get_equipped_item_name == 'axe_03') && query.is_using_item" }
+          ]
+        },
+		
+        "axe_03_active": {
+          "on_entry": [
+            "/playsound v.axe_03 @a ~ ~ ~",
+            "/particle ks:axe_03_particle ~ ~ ~",
+            "/effect @s strength 20 1"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

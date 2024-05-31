@@ -1,0 +1,13 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "kreatik:poison"
+		},
+		"components": {
+			"minecraft:icon": "lucky_block",
+			"minecraft:render_offsets": "miscellaneous"
+		}
+	}
+}

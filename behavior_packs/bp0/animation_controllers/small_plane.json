@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.small_plane": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "query.has_rider"
+						}
+					]
+				},
+				"flying": {
+					"on_entry": [
+						"/function small_plane"
+					],
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

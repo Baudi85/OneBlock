@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.axe_01.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"rotation": [70, 0, 0],
+					"position": [-6, 12, 0]
+				}
+			}
+		},
+		"animation.axe_01.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"rotation": [52.12415, 48.04345, -75.29991],
+					"position": [-6, 13, 1]
+				}
+			}
+		}
+	}
+}

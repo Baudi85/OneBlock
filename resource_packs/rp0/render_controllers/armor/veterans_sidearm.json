@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.veterans_sidearm_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.veterans_sidearm_armor",
+            "Texture.veterans_sidearm_armor_1",
+            "Texture.veterans_sidearm_armor_2",
+            "Texture.veterans_sidearm_armor_3",
+            "Texture.veterans_sidearm_armor_4",
+            "Texture.veterans_sidearm_armor_5",
+            "Texture.veterans_sidearm_armor_6",
+            "Texture.veterans_sidearm_armor_7",
+            "Texture.veterans_sidearm_armor_8",
+            "Texture.veterans_sidearm_armor_9",
+            "Texture.veterans_sidearm_armor_10",
+            "Texture.veterans_sidearm_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.veterans_sidearm_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

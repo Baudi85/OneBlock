@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.dragon_controll": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"idle": "(1.0)"
+						}
+					],
+					"on_entry": [
+						
+					]
+				},
+				"idle": {
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/effect @s speed 1 0 true"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,225 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.player.weapon_1": {
+      "geometry": "Geometry.weapon_1",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_1" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_2": {
+      "geometry": "Geometry.weapon_2",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_2" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_3": {
+      "geometry": "Geometry.weapon_3",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_3" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_4": {
+      "geometry": "Geometry.weapon_4",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_4" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_5": {
+      "geometry": "Geometry.weapon_5",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_5" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_6": {
+      "geometry": "Geometry.weapon_6",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_6" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_7": {
+      "geometry": "Geometry.weapon_7",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_7" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_8": {
+      "geometry": "Geometry.weapon_8",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_8" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_9": {
+      "geometry": "Geometry.weapon_9",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_9" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_10": {
+      "geometry": "Geometry.weapon_10",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_10" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_11": {
+      "geometry": "Geometry.weapon_11",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_11" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_12": {
+      "geometry": "Geometry.weapon_12",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_12" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_13": {
+      "geometry": "Geometry.weapon_13",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_13" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_14": {
+      "geometry": "Geometry.weapon_14",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_14" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_15": {
+      "geometry": "Geometry.weapon_15",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_15" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_16": {
+      "geometry": "Geometry.weapon_16",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_16" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_17": {
+      "geometry": "Geometry.weapon_17",
+      "materials": [
+        { "*": "Material.default" },
+        { "light": "Material.glowing" }
+      ],
+      "textures": [ "Texture.weapon_17" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_18": {
+      "geometry": "Geometry.weapon_18",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_18" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_19": {
+      "geometry": "Geometry.weapon_19",
+      "materials": [
+        { "*": "Material.default" },
+        { "light": "Material.glowing" }
+      ],
+      "textures": [ "Texture.weapon_19" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_20": {
+      "geometry": "Geometry.weapon_20",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_20" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_21": {
+      "geometry": "Geometry.weapon_21",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_21" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_22": {
+      "geometry": "Geometry.weapon_22",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_22" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_23": {
+      "geometry": "Geometry.weapon_23",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_23" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_24": {
+      "geometry": "Geometry.weapon_24",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_24" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_24_arm": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.default" ],
+      "part_visibility": [
+        { "leftArm": true },
+        { "*": "false" }
+      ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_25": {
+      "geometry": "Geometry.weapon_25",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_25" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_26": {
+      "geometry": "Geometry.weapon_26",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_26" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_27": {
+      "geometry": "Geometry.weapon_27",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_27" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_28": {
+      "geometry": "Geometry.weapon_28",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_28" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    },
+    "controller.render.player.weapon_29": {
+      "geometry": "Geometry.weapon_29",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [ "Texture.weapon_29" ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    }
+  }
+}

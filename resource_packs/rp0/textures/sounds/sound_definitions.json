@@ -1,0 +1,684 @@
+{
+  "format_version":"1.14.0",
+  "sound_definitions": {
+  "weapon_11.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.5,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_12.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 2.0,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_14.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 1.0,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_15.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 1.6,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_17.charge": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.3,
+          "name": "sounds/weapons/electric"
+        }
+      ]
+    },
+    "weapon_17.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.9,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_19.charge": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.4,
+          "name": "sounds/weapons/electric"
+        }
+      ]
+    },
+    "weapon_19.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.7,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_20.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 1.35,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_21.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.55,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_23.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 1.85,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_24.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.85,
+          "name": "sounds/weapons/canon"
+        }
+      ]
+    },
+    "weapon_25.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.75,
+          "name": "sounds/weapons/canon"
+        }
+      ]
+    },
+    "weapon_26.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.7,
+          "name": "sounds/weapons/canon"
+        }
+      ]
+    },
+    "weapon_27.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.65,
+          "name": "sounds/weapons/canon"
+        }
+      ]
+    },
+    "weapon_28.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.75,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "weapon_29.use": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "volume": 1.0,
+          "pitch": 0.5,
+          "name": "sounds/weapons/blaster"
+        }
+      ]
+    },
+    "ambient:music_cat": {
+      "category":"music",
+      "sounds":[{
+
+        "name":"sounds/music/ambient_music_1",
+        "volume":1
+      },
+        {
+          "name":"sounds/music/ambient_music_2",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_3",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_4",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_5",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_6",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_7",
+          "volume":1
+        }]},
+    "kreatik.bleep": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/Bleep",
+        "volume":0.5
+      }]},
+	"qcomplete" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "player",
+			"sounds" : [
+				{
+					"load_on_low_memory" : true,
+					"name" : "sounds/sfx/qcomplete"
+				}
+			]
+		},
+				"cut_scene" : {
+			"category" : "ui",
+			"sounds" : [
+				{
+					"name" : "sounds/sfx/cut_scene"
+				}
+			]
+		},
+		"newquest" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "player",
+			"sounds" : [
+				{
+					"load_on_low_memory" : true,
+					"name" : "sounds/sfx/newquest"
+				}
+			]
+		},
+		"achievement" : {
+			"category" : "music",
+			"sounds" : [
+				{
+					"load_on_low_memory" : true,
+					"name" : "sounds/sfx/achievement"
+				}
+			]
+		},
+    "kreatik.blaze_sword:shoot": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/fireball",
+        "volume":1
+      }]},
+    "v.blaze_sword": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_blaze_sword",
+        "volume":1
+      }]},
+    "v.cat_scythe": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_cat_scythe_use",
+        "volume":1
+      }]},
+    "v.stray_scythe": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_stray_scythe_use",
+        "volume":1
+      }]},
+    "v.dolphin_amulet": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_dolphin_amulet_use",
+        "volume":1
+      }]},
+    "v.enderdragon_sword": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_enderdragon_sword_use",
+        "volume":1
+      }]},
+    "v.enderman_trident": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_enderman",
+        "volume":1
+      }]},
+    "v.evoker_fang_dagger": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_evoker",
+        "volume":1
+      }]},
+    "v.husk_dagger": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_husk_dagger_use",
+        "volume":1
+      }]},
+    "v.iron_golem_hammer": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_iron_golem",
+        "volume":1
+      }]},
+    "v.ravager_shield": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_ravager",
+        "volume":1
+      }]},
+    "v.shulker_shield_impact": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_shulker_impact",
+        "volume":1
+      }]},
+    "v.shulker_shield_shoot": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_shulker_shoot",
+        "volume":1
+      }]},
+    "v.slime_axe": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_slime_axe_use",
+        "volume":1
+      }]},
+    "v.spider_cobweb_impact": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_spider_cobweb_impact",
+        "volume":1
+      }]},
+    "v.spider_cobweb_shoot": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_spider_cobweb_shoot",
+        "volume":1
+      }]},
+    "v.squid_ink_shoot": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_squid_ink_shoot",
+        "volume":1
+      }]},
+    "v.squid_ink_impact": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_squid_ink_impact",
+        "volume":1
+      }]},
+    "v.villager_wand": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_villager_wand_use",
+        "volume":1
+      }]},
+    "v.warden_hammer": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_warden",
+        "volume":1
+      }]},
+    "v.piglin_trident": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_piglin_trident",
+        "volume":1
+      }]},
+    "v.guardian_trident": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_guardian_trident",
+        "volume":1
+      }]},
+    "v.wither_1": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/v_wither_1",
+        "volume":1
+      },
+        {
+          "name":"sounds/v_wither_2",
+          "volume":1
+        },
+        {
+          "name":"sounds/v_wither_3",
+          "volume":1
+        },
+        {
+          "name":"sounds/v_wither_4",
+          "volume":1
+        }]},
+    "v.creeper_bomb": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/creeper_bomb_explode",
+        "volume":1
+      }]},
+    "vehicle.driving": {
+      "category":"neutral",
+      "sounds":["sounds/vehicle/bus_driving"]},
+    "vehicle.driving1": {
+      "category":"neutral",
+      "sounds":["sounds/vehicle/fast_car"]},
+    "vehicle.driving2": {
+      "category":"neutral",
+      "sounds":["sounds/vehicle/sports_car"]},
+    "environment.background_music": {
+      "category":"music",
+      "sounds":[{
+        "name":"sounds/environment/Background_music",
+        "volume":0.2
+      }]},
+    "environment.eruption": {
+      "category":"music",
+      "sounds":[{
+        "name":"sounds/environment/Eruption",
+        "volume":3
+      }]},
+    "environment.lava": {
+      "category":"music",
+      "sounds":[{
+        "name":"sounds/environment/Lava",
+        "volume":3
+      }]},
+    "mob.trex.roar": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/trexroar",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/trexroar1",
+          "volume":3
+        },
+        {
+          "name":"sounds/mobs/DinosaurCarnivore",
+          "volume":3
+        }]},
+    "mob.brachiosaurus.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/DinosaurGroan_BW",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/DinosaurHerbivore",
+          "volume":3
+        }]},
+    "mob.brontosaurus.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/AnAncientDinosaur",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/DinosaurHerbivore",
+          "volume":3
+        }]},
+    "mob.parasaurophus.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/dinosaurgurglemoan-full",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/InquisitiveDinosaur",
+          "volume":3
+        }]},
+    "mob.spinosaurus.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/DinosaurSnarling",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/DinosaurCarnivore",
+          "volume":3
+        }]},
+    "mob.stegosaurus.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/dinosaurclosesnorewhirr-full",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/InquisitiveDinosaur",
+          "volume":3
+        }]},
+    "mob.triceratops.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/DinosaurTriceratops",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/DinosaurHerbivore",
+          "volume":3
+        }]},
+    "mob.velociraptor.ambient": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/DinosaurScreech",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/InquisitiveDinosaur",
+          "volume":3
+        }]},
+    "mob.dino.death": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/DinosaurGroan_BW_2",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/monstermoans",
+          "volume":3
+        }]},
+    "mob.dino.baby": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/mobs/baby/09455smallptherodactiluscroak-full",
+        "volume":3
+      },
+        {
+          "name":"sounds/mobs/baby/09457babydinosaurssqueaks-full",
+          "volume":3
+        },
+        {
+          "name":"sounds/mobs/baby/09694babyptherodinosaurcreaking-full",
+          "volume":3
+        },
+        {
+          "name":"sounds/mobs/baby/11857cutedinowhimpers-full",
+          "volume":3
+        },
+        {
+          "name":"sounds/mobs/baby/CartoonBabyDinosaurSqueak",
+          "volume":3
+        }]},
+    "mob.baby_dragon.hurt": {
+      "max_distance":6,
+      "sounds":["sounds/mob/dragon/dragon_pain_hurt_1",
+        "sounds/mob/dragon/dragon_pain_hurt_2",
+        "sounds/mob/dragon/dragon_pain_hurt_3"]},
+    "mob.baby_dragon.idle": {
+      "max_distance":16,
+      "sounds":["sounds/mob/dragon/dragon_snarl1",
+        "sounds/mob/dragon/dragon_snarl2",
+        "sounds/mob/dragon/dragon_snarl3",
+        "sounds/mob/dragon/dragon_snarl4",
+        "sounds/mob/dragon/dragon_snarl5",
+        "sounds/mob/dragon/dragon_snarl6",
+        "sounds/mob/dragon/dragon_snarl7",
+        "sounds/mob/dragon/dragon_snarl8"]},
+   "mob.dragon.fly": {
+      "max_distance":7,
+      "sounds":["sounds/mob/dragon/dragon_wing_flap_1",
+        "sounds/mob/dragon/dragon_wing_flap_2",
+        "sounds/mob/dragon/dragon_wing_flap_3",
+        "sounds/mob/dragon/dragon_wing_flap_4",
+        "sounds/mob/dragon/dragon_wing_flap_5"]},
+    "mob.baby_dragon.fly": {
+      "max_distance":7,
+      "sounds":["sounds/mob/dragon/dragon_wing_flap_1",
+        "sounds/mob/dragon/dragon_wing_flap_2",
+        "sounds/mob/dragon/dragon_wing_flap_3",
+        "sounds/mob/dragon/dragon_wing_flap_4",
+        "sounds/mob/dragon/dragon_wing_flap_5"]},
+    "ambient:music_1": {
+      "category":"music",
+      "sounds":[{
+        "name":"sounds/music/ambient_music_1",
+        "volume":1
+      },
+        {
+          "name":"sounds/music/ambient_music_2",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_3",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_4",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_5",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_6",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_7",
+          "volume":1
+        },
+        {
+          "name":"sounds/music/ambient_music_8",
+          "volume":1
+        }]},
+    "mob.dog.idle": {
+      "max_distance":6,
+      "sounds":["sounds/mob/pets/Dog_Beg_2",
+        "sounds/mob/pets/Dog_Beg_3",
+        "sounds/mob/pets/Dog_Beg_4"]},
+    "mob.cat.idled": {
+      "max_distance":16,
+      "sounds":["sounds/mob/pets/cat_meow_1",
+        "sounds/mob/pets/cat_meow_2",
+        "sounds/mob/pets/cat_meow_3"]},
+    "mob.dyno.idle": {
+      "max_distance":16,
+      "sounds":["sounds/mob/pets/idle_1",
+        "sounds/mob/pets/idle_2",
+        "sounds/mob/pets/idle_3"]},
+    "mob.dyno.hurt": {
+      "max_distance":16,
+      "sounds":["sounds/mob/pets/idle_4",
+        "sounds/mob/pets/hurt",
+        "sounds/mob/pets/hurt_1"]},
+    "mob.squrrel.idle": {
+      "max_distance":16,
+      "sounds":["sounds/mob/pets/squirrel_idle_1",
+        "sounds/mob/pets/squirrel_idle_2",
+        "sounds/mob/pets/squirrel_idle_3"]},
+    "mob.squrrel.hurt": {
+      "max_distance":16,
+      "sounds":["sounds/mob/pets/hurt_sq"]},
+    "mob.guinea.idle": {
+      "max_distance":16,
+      "sounds":["sounds/mob/pets/guinea_idle"]},
+    "mob.propeller.sound": {
+      "sounds":[{
+        "name":"sounds/entity/plane/propeller",
+        "volume":0.7
+      }]},
+    "vehicle.ambulance.siren": {
+      "sounds":[{
+        "name":"sounds/vehicle/siren",
+        "volume":3
+      }]},
+    "vehicle.ambulance.moving": {
+      "sounds":[{
+        "name":"sounds/vehicle/ambulance",
+        "volume":3
+      }]},
+    "vehicle.pick_up_truck.moving": {
+      "sounds":[{
+        "name":"sounds/vehicle/pick_up_truck",
+        "volume":3
+      }]},
+    "vehicle.police.siren": {
+      "sounds":[{
+        "name":"sounds/vehicle/siren",
+        "volume":3
+      }]},
+    "kreatik.color": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/color",
+        "volume":0.7
+      }]},
+    "color": {
+      "category":"neutral",
+      "sounds":[{
+        "name":"sounds/color",
+        "volume":0.7
+      }]},
+    "vehicle.helicopter.propellers": {
+      "sounds":[{
+        "name":"sounds/helicopter/helicopter_01"
+      },
+        {
+          "name":"sounds/helicopter/helicopter_02"
+        }]}}}

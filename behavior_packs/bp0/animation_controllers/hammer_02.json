@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hammer_02_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "hammer_02_active": "(query.get_equipped_item_name == 'hammer_02') && query.is_using_item" }
+          ]
+        },
+		
+        "hammer_02_active": {
+          "on_entry": [
+            "/playsound v.hammer_02 @a ~ ~ ~",
+            "/particle ks:hammer_02_particle ~ ~ ~",
+            "/effect @s fire_resistance 8"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

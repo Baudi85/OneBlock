@@ -1,0 +1,48 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "ks:star_fire",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particles/star"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 3
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {
+				"direction": ["Math.random(-0.1, 0.1)", "Math.random(0.1, -1.0)", "Math.random(-0.1, 0.1)"]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(3.0, 4.5)"
+			},
+			"minecraft:particle_initial_speed": "Math.random(1.5, 2.0)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": ["(variable.particle_random_1 * 5.0 - 2.5)", 0.5, "(variable.particle_random_2 * 5.0 - 2.5)"]
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [1.0, 1.0, 0.4039, 0.9]
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [0.3, 0.3],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 16384,
+					"texture_height": 1152,
+					"flipbook": {
+						"base_UV": [0, 0],
+						"size_UV": [2048, 1152],
+						"step_UV": [2048, 0],
+						"frames_per_second": 12,
+						"max_frame": 8
+					}
+				}
+			}
+		}
+	}
+}

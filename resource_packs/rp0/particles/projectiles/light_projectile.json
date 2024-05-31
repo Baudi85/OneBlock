@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "ks:light_projectile",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particles/electricdust"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_expression": {
+				"activation_expression": 1,
+				"expiration_expression": 0
+			},
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": true
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 99999
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [1, 1],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 16384,
+					"texture_height": 1152,
+					"flipbook": {
+						"base_UV": [4096, 0],
+						"size_UV": [2048, 1152],
+						"step_UV": [2048, 0],
+						"frames_per_second": 12,
+						"max_frame": 4,
+						"loop": true
+					}
+				}
+			}
+		}
+	}
+}

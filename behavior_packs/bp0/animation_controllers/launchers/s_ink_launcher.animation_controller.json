@@ -1,0 +1,32 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.bow.squid_ink_launcher_commands" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"bow_pulling" : "query.is_using_item"
+						}
+					]
+				},
+                "bow_pulling": {
+                    "transitions": [
+                        {
+                            "default": "!query.is_using_item"
+                        }
+                    ],
+					"on_entry": [
+						"/event entity @s start_loading_bow"
+					],
+                    "on_exit": [
+						"/playsound v.squid_ink_shoot @a ~ ~ ~",
+                        "/event entity @s shoot_squid_ink_projectile",
+						"/event entity @s stop_loading_bow"
+                    ]
+                }
+			}
+		}
+	}
+}

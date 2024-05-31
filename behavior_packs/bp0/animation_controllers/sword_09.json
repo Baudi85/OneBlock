@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.sword_09_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "sword_09_active": "(query.get_equipped_item_name == 'sword_09') && query.is_using_item" }
+          ]
+        },
+		
+        "sword_09_active": {
+          "on_entry": [
+            "/playsound v.sword_09 @a ~ ~ ~",
+            "/particle ks:sword_09_particle ~ ~ ~",
+            "/effect @s strength 15 2"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

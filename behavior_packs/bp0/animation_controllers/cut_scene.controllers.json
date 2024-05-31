@@ -1,0 +1,24 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.tutorial" : {
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"a" : "1.0"
+						}
+					]
+				},
+				"a" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [ "/function cut_scene" ]
+				}
+			}
+		}
+	}
+}

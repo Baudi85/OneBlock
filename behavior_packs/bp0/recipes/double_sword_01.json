@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:double_sword_01"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  B",
+      "BDB",
+      "B "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:emerald_block"
+      },
+      "C": {
+        "item": "minecraft:copper_block"
+      },
+      "D": {
+        "item": "minecraft:iron_ingot"
+      }
+
+    },
+    "result": {
+      "item": "ks:double_sword_01",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

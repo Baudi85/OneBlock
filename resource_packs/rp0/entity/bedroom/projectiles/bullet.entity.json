@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ks:bullet",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/items/fireball"
+      },
+      "geometry": {
+        "default": "geometry.fireball"
+      },
+      "scripts": {
+        "scale": "0",
+        "animate": [ "root" ]
+      },
+      "animations": {
+        "root": "controller.animation.projectile.root"
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "particle_effects": {
+        "energy_projectile": "ks:energy_projectile",
+        "energy_trail": "ks:energy_trail",
+        "blue_projectile": "ks:blue_projectile",
+        "blue_trail": "ks:blue_trail",
+        "electric_projectile": "ks:electric_projectile",
+        "electric_trail": "ks:electric_trail",
+        "star_projectile": "ks:star_projectile",
+        "explosion_projectile": "ks:explosion_projectile",
+        "fire_blast_projectile": "ks:fire_blast_projectile",
+        "fire_blast_trail": "ks:fire_blast_trail",
+        "red_blast_projectile": "ks:red_blast_projectile",
+        "red_blast_trail": "ks:red_blast_trail",
+        "circle_projectile": "ks:circle_projectile",
+        "circle_trail": "ks:circle_trail",
+        "heat_blast_projectile": "ks:heat_blast_projectile",
+        "heat_blast_trail": "ks:heat_blast_trail",
+        "cartoon_projectile": "ks:cartoon_projectile",
+        "cartoon_trail": "ks:cartoon_trail",
+        "purple_projectile": "ks:purple_projectile",
+        "purple_trail": "ks:purple_trail",
+        "tornado_projectile": "ks:tornado_projectile",
+        "tornado_trail": "ks:tornado_trail",
+        "green_trail": "ks:green_trail",
+        "light_projectile": "ks:light_projectile",
+        "light_trail": "ks:light_trail"
+      }
+    }
+  }
+}

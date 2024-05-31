@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.goat_wand_used": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "goat_wand_active": "(query.get_equipped_item_name == 'goat_wand') && query.is_using_item" }
+          ]
+        },
+		
+        "goat_wand_active": {
+          "on_entry": [
+            "/playsound raid.horn @a ~ ~ ~",
+            "/particle ks:goat_wand_particle ~ ~ ~",
+            "/effect @s strength 6 2",
+            "/effect @s speed 6 2"
+
+		  ],
+          "transitions": [ { "default": "!query.is_using_item" } ]
+		}
+	  }
+	}
+  }
+}

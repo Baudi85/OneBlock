@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "train:cargo_wooden_logs",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cargo_wooden_logs/wooden",
+				"magenta": "textures/entity/cargo_wooden_logs/magenta",
+				"blue": "textures/entity/cargo_wooden_logs/blue",
+				"green": "textures/entity/cargo_wooden_logs/green",
+				"orange": "textures/entity/cargo_wooden_logs/orange",
+				"red": "textures/entity/cargo_wooden_logs/red",
+				"yellow": "textures/entity/cargo_wooden_logs/yellow",
+				"iron": "textures/entity/cargo_wooden_logs/iron"
+			},
+			"geometry": {
+				"default": "geometry.cargo_wooden_logs"
+			},
+			"scripts": {
+				"animate": [
+					"body_rotation",
+					{
+						"move": "query.is_moving"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.cargo_wooden_logs.move",
+				"body_rotation": "animation.body_rotation"
+			},
+			"render_controllers": [
+				"controller.render.train"
+			],
+			"spawn_egg": {
+				"texture": "cargo_wooden_logs"
+			}
+		}
+	}
+}

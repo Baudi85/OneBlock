@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ks:scifi_arrow",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/arrows"
+      },
+      "geometry": {
+        "default": "geometry.scifi_arrow"
+      },
+      "scripts": {
+        "animate": [
+          "rotation"
+        ]
+      },
+      "animations": {
+        "rotation": "animation.projectile.rotation"
+      },
+      "render_controllers": [ "controller.render.arrow" ]
+    }
+  }
+}

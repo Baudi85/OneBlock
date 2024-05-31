@@ -1,0 +1,12 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "armors:cybernetic_exosuit_armor_chestplate",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

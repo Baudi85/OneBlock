@@ -1,0 +1,304 @@
+/* Adjust weapon scale and position here */
+{
+	"format_version": "1.8.0",
+	"animations": {
+		// First Person
+		"animation.player.weapon_animation_fp": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, -180, 0]
+				},
+				"rightArm": {
+					"rotation": [-105, 0, 0]
+				},
+				// Weapon 1
+				"weapon_1": {
+					"position": [0, 0, 7.5],
+					"scale": 0.45
+				},
+				// Weapon 2
+				"weapon_2": {
+					"position": [0, 0, 2.5],
+					"scale": 0.5
+				},
+				// Weapon 3
+				"weapon_3": {
+					"position": [0, 0, 11.5],
+					"scale": 0.5
+				},
+				// Weapon 4
+				"weapon_4": {
+					"position": [0, 0, 9.5],
+					"scale": 0.3
+				},
+				// Weapon 5
+				"weapon_5": {
+					"position": [0, 0, 10.5],
+					"scale": 0.3
+				},
+				// Weapon 6
+				"weapon_6": {
+					"position": [0, 0, 8],
+					"scale": 0.3
+				},
+				// Weapon 7
+				"weapon_7": {
+					"position": [0, 0, 1],
+					"scale": 0.18
+				},
+				// Weapon 8
+				"weapon_8": {
+					"position": [0, 0, 12],
+					"scale": 0.2
+				},
+				// Weapon 9
+				"weapon_9": {
+					"position": [0, 0, 2],
+					"scale": 0.3
+				},
+				// Weapon 10
+				"weapon_10": {
+					"position": [0, 0, 7],
+					"scale": 0.3
+				},
+				// Weapon 11
+				"weapon_11": {
+					"position": [0, 0, 6],
+					"scale": 0.3
+				},
+				// Weapon 12
+				"weapon_12": {
+					"position": [0, 0, 5],
+					"scale": 0.5
+				},
+				// Weapon 13
+				"weapon_13": {
+					"position": [0, 0, 5],
+					"scale": 0.3
+				},
+				// Weapon 14
+				"weapon_14": {
+					"position": [0, 0, 1],
+					"scale": 0.3
+				},
+				// Weapon 15
+				"weapon_15": {
+					"position": [0, 0, 3],
+					"scale": 0.3
+				},
+				// Weapon 16
+				"weapon_16": {
+					"position": [0, 0, 8],
+					"scale": 0.25
+				},
+				// Weapon 17
+				"weapon_17": {
+					"position": [0, 0, 3],
+					"scale": 0.3
+				},
+				// Weapon 18
+				"weapon_18": {
+					"position": [0, 0, 8],
+					"scale": 0.3
+				},
+				// Weapon 19
+				"weapon_19": {
+					"position": [0, 0, 4],
+					"scale": 0.45
+				},
+				// Weapon 20
+				"weapon_20": {
+					"position": [0, 0, 4],
+					"scale": 0.45
+				},
+				// Weapon 21
+				"weapon_21": {
+					"position": [0, 0, 5],
+					"scale": 0.4
+				},
+				// Weapon 22
+				"weapon_22": {
+					"position": [0, 0, 9],
+					"scale": 0.3
+				},
+				// Weapon 23
+				"weapon_23": {
+					"position": [0, 0, 7],
+					"scale": 0.75
+				},
+				// Weapon 24
+				"weapon_24": {
+					"position": [0, 0, 10],
+					"scale": 0.5
+				},
+				// Weapon 25
+				"weapon_25": {
+					"position": [0, 0, 10],
+					"scale": 0.6
+				},
+				// Weapon 26
+				"weapon_26": {
+					"position": [0, 0, 10],
+					"scale": 0.6
+				},
+				// Weapon 27
+				"weapon_27": {
+					"position": [0, 0, 4],
+					"scale": 0.6
+				},
+				// Weapon 28
+				"weapon_28": {
+					"rotation": [-270, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 0.6
+				},
+				// Weapon 29
+				"weapon_29": {
+					"position": [0, 0, 7],
+					"scale": 0.65
+				}
+			}
+		},
+
+		// Third Person
+		"animation.player.weapon_animation_tp": {
+			"loop": true,
+			"bones": {
+				// Weapon 1
+				"weapon_1": {
+					"scale": 0.75
+				},
+				// Weapon 2
+				"weapon_2": {
+					"scale": 0.75
+				},
+				// Weapon 3
+				"weapon_3": {
+					"scale": 0.75
+				},
+				// Weapon 4
+				"weapon_4": {
+					"scale": 0.75
+				},
+				// Weapon 5
+				"weapon_5": {
+					"scale": 0.75
+				},
+				// Weapon 6
+				"weapon_6": {
+					"scale": 0.75
+				},
+				// Weapon 7
+				"weapon_7": {
+					"scale": 0.5
+				},
+				// Weapon 8
+				"weapon_8": {
+					"scale": 0.75
+				},
+				// Weapon 9
+				"weapon_9": {
+					"scale": 0.75
+				},
+				// Weapon 10
+				"weapon_10": {
+					"scale": 0.75
+				},
+				// Weapon 11
+				"weapon_11": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.5
+				},
+				// Weapon 12
+				"weapon_12": {
+					"rotation": [-12.5, 0, 0],
+					"position": [0, 3, 0],
+					"scale": 0.5
+				},
+				// Weapon 13
+				"weapon_13": {
+					"scale": 0.75
+				},
+				// Weapon 14
+				"weapon_14": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.5
+				},
+				// Weapon 15
+				"weapon_15": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.5
+				},
+				// Weapon 16
+				"weapon_16": {
+					"scale": 0.75
+				},
+				// Weapon 17
+				"weapon_17": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.6
+				},
+				// Weapon 18
+				"weapon_18": {
+					"scale": 0.75
+				},
+				// Weapon 19
+				"weapon_19": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.7
+				},
+				// Weapon 20
+				"weapon_20": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.6
+				},
+				// Weapon 21
+				"weapon_21": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 0.6
+				},
+				// Weapon 22
+				"weapon_22": {
+					"scale": 0.5
+				},
+				// Weapon 23
+				"weapon_23": {
+					"rotation": [0, -12.5, 0],
+					"scale": 0.8
+				},
+				// Weapon 24
+				"weapon_24": {
+					"rotation": [0, 12.5, 0],
+					"scale": 0.8
+				},
+				// Weapon 25
+				"weapon_25": {
+					"rotation": [0, 12.5, 0],
+					"scale": 0.8
+				},
+				// Weapon 26
+				"weapon_26": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 1.0
+				},
+				// Weapon 27
+				"weapon_27": {
+					"rotation": [-12.5, 0, 0],
+					"scale": 1.0
+				},
+				// Weapon 28
+				"weapon_28": {
+					"rotation": [-52.5965, -20.1656, -23.7296],
+					"position": [0, 3, -3],
+					"scale": 1.0
+				},
+				// Weapon 29
+				"weapon_29": {
+					"rotation": [0, -12.5, 0],
+					"scale": 1.0
+				}
+			}
+		}
+	}
+}

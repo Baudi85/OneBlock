@@ -1,0 +1,13 @@
+{
+  "format_version":"1.8.0",
+  "render_controllers": {
+    "controller.render.dinosaur": {
+      "geometry":"array.geos[query.is_saddled ? 1.0 : 0.0]",
+      "materials":[{
+        "*":"Material.default"
+      }],
+      "arrays": {
+        "geometries": {
+          "Array.geos":["Geometry.default",
+            "Geometry.saddled"]}},
+      "textures":["Texture.default"]}}}

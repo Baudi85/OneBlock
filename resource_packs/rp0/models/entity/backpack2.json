@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.backpack2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bag",
+					"pivot": [0, 14.5, 2],
+					"cubes": [
+						{"origin": [-3.5, 0.1, 2], "size": [7, 8, 5], "uv": [0, 17]},
+						{"origin": [0, 7.1, 2.5], "size": [5, 5, 5], "pivot": [0, 12.1, 5.5], "rotation": [-5, 0, 5], "uv": [24, 22]},
+						{"origin": [-5, 7.1, 2.5], "size": [5, 5, 5], "pivot": [0, 12.1, 5.5], "rotation": [-5, 0, -5], "uv": [23, 12]},
+						{"origin": [-1, 6.6, 2.875], "size": [2, 6, 5], "pivot": [0, 12.6, 2.875], "rotation": [-7.5, 0, 0], "uv": [28, 0]},
+						{"origin": [3.5, 0.6, 3], "size": [1, 4, 3], "uv": [20, 32]},
+						{"origin": [-4.5, 0.6, 3], "size": [1, 4, 3], "uv": [12, 30]},
+						{"origin": [-2.5, 0.1, 7], "size": [5, 5, 1], "uv": [0, 30]}
+					]
+				},
+				{
+					"name": "handle",
+					"pivot": [0, 0, 0.125],
+					"cubes": [
+						{"origin": [-4.5, 1.1, -2.375], "size": [9, 12, 5], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

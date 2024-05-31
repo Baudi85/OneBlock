@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:spear_01"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      " CA",
+      "C  "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "B": {
+        "item": "minecraft:potion",
+        "data": 37
+      },
+      "C": {
+        "item": "minecraft:stick"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+
+    },
+    "result": {
+      "item": "ks:spear_01",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.grand_vault_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.grand_vault_armor",
+            "Texture.grand_vault_armor_1",
+            "Texture.grand_vault_armor_2",
+            "Texture.grand_vault_armor_3",
+            "Texture.grand_vault_armor_4",
+            "Texture.grand_vault_armor_5",
+            "Texture.grand_vault_armor_6",
+            "Texture.grand_vault_armor_7",
+            "Texture.grand_vault_armor_8",
+            "Texture.grand_vault_armor_9",
+            "Texture.grand_vault_armor_10",
+            "Texture.grand_vault_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.grand_vault_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

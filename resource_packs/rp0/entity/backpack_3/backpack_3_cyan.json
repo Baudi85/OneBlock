@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:backpack_3_cyan",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/backpack3/backpack3_cyan"
+			},
+			"geometry": {
+				"default": "geometry.backpack3"
+			},
+			"render_controllers": ["controller.render.main"],
+			"spawn_egg": {
+				"texture": "kreatik_backpack_3_egg_cyan",
+				"texture_index": 0
+			}
+		}
+	}
+}

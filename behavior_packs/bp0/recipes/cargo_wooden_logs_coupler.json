@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "train:cargo_wooden_logs_coupler"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"priority": 0,
+		"ingredients": [
+			{
+				"item": "train:cargo_wooden_logs_spawn_egg",
+				"count": 1
+			},
+			{
+				"count": 1,
+				"item": "chain"
+			}
+		],
+		"result": {
+			"item": "train:cargo_wooden_logs_coupler"
+		}
+	}
+}

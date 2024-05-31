@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.main": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"idle": "query.modified_move_speed < 0.01 && !query.is_sitting"
+						},
+						{
+							"sit": "query.is_sitting"
+						},
+						{
+							"walk": "query.modified_move_speed >= 0.01 && query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"idle": {
+					"on_entry": [
+                        "variable.random_chance = math.random_integer(1.0, 9.0);"
+                      ],
+                    "animations": [
+                        {
+                            "idle": "variable.random_chance > 1.0 || query.has_rider"
+                        },
+                        {
+                            "sit": "variable.random_chance == 1.0 && !query.has_rider"
+                        }
+                    ],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed >= 0.01 || query.is_sitting"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"sit": {
+					"animations": [
+						"sit"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_sitting"
+						}
+					],
+					"blend_transition": 2
+				},
+				"walk": {
+					"animations": [
+						"walking"
+					],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed < 0.01 && query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

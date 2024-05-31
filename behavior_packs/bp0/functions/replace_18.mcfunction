@@ -1,0 +1,12 @@
+replaceitem entity @s slot.inventory 0 kreatik:block 1
+replaceitem entity @s slot.inventory 1 kreatik:block 1
+replaceitem entity @s slot.inventory 7 kreatik:block 1
+replaceitem entity @s slot.inventory 8 kreatik:block 1
+replaceitem entity @s slot.inventory 9 kreatik:block 1
+replaceitem entity @s slot.inventory 10 kreatik:block 1
+replaceitem entity @s slot.inventory 16 kreatik:block 1
+replaceitem entity @s slot.inventory 17 kreatik:block 1
+replaceitem entity @s slot.inventory 18 kreatik:block 1
+replaceitem entity @s slot.inventory 19 kreatik:block 1
+replaceitem entity @s slot.inventory 25 kreatik:block 1
+replaceitem entity @s slot.inventory 26 kreatik:block 1

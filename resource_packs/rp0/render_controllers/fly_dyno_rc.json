@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.flying_dyno": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.one",
+              "Texture.two",
+              "Texture.three",
+              "Texture.four",
+              "Texture.five",
+              "Texture.six",
+              "Texture.seven",
+              "Texture.eight",
+              "Texture.nine",
+              "Texture.ten",
+              "Texture.eleven",
+              "Texture.twelve",
+              "Texture.thirteen",
+              "Texture.fourteen",
+              "Texture.fifteen",
+              "Texture.sixteen"
+            ]
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[query.variant]" ]
+      }
+    }
+  }
+  

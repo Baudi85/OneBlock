@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.piglin_trident_hold": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "piglin_trident_hold": "(query.get_equipped_item_name == 'piglin_trident')"
+            }
+          ]
+        },
+        "piglin_trident_hold": {
+          "on_entry": [
+
+            "/effect @s fire_resistance 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'piglin_trident')"
+            },
+            {
+              "piglin_trident_hold2": "(query.get_equipped_item_name == 'piglin_trident')"
+            }
+          ]
+        },
+        "piglin_trident_hold2": {
+          "on_entry": [
+
+            "/effect @s fire_resistance 1"
+          ],
+          "transitions": [
+            {
+              "default": "!(query.get_equipped_item_name == 'piglin_trident')"
+            },
+            {
+              "piglin_trident_hold": "(query.get_equipped_item_name == 'piglin_trident')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

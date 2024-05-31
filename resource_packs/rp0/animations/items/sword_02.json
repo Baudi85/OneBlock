@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sword_02.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"rotation": [90, 0, 0],
+					"position": [-6, 11, 1]
+				}
+			}
+		},
+		"animation.sword_02.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"rotation": [52.12415, 48.04345, -75.29991],
+					"position": [-2, 12, 4]
+				}
+			}
+		}
+	}
+}

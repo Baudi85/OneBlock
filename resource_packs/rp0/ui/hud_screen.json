@@ -1,0 +1,570 @@
+{
+  "ui_animation_released": {
+    "anim_type":"offset",
+    "easing":"linear",
+    "duration":"$title_fade_in_time",
+    "from":["5% + 200px",
+      "-175%"],
+    "to":[0,
+      "-175%"],
+    "next":"@hud.static_ui_animation"
+  },
+  "static_ui_animation": {
+    "anim_type":"wait",
+    "duration":"$title_stay_time",
+    "next":"@hud.finished_ui_animation"
+  },
+  "finished_ui_animation": {
+    "anim_type":"offset",
+    "easing":"linear",
+    "duration":"$title_fade_out_time",
+    "from":[0,
+      "-175%"],
+    "to":["5% + 200px",
+      "-175%"],
+    "destroy_at_end":"hud_title_text"
+  },
+    "lucky": {
+    "type":"image",
+    "size":["1%c + 300px",
+      "1%c + 300px"],
+    "texture":"textures/ui/lucky",
+    "clips_children":true
+  },
+  "cut_scene": {
+    "type":"image",
+    "size":["1%c + 1000px",
+      "1%c + 1000px"],
+    "texture":"textures/ui/cut_scene",
+    "clips_children":true
+  },
+  "winner": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/winner",
+    "clips_children":true
+  },
+  "the_eye": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_eye",
+    "clips_children":true
+  },
+  "the_portal": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_portal",
+    "clips_children":true
+  },
+  "hard_mining": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/hard_mining",
+    "clips_children":true
+  },
+  "looking_for_my_ironfish": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/looking_for_my_ironfish",
+    "clips_children":true
+  },
+  "magnificent_cook": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/magnificent_cook",
+    "clips_children":true
+  },
+  "the_new_stone_age": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_new_stone_age",
+    "clips_children":true
+  },
+  "the_old_reliable": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_old_reliable",
+    "clips_children":true
+  },
+  "expanding_resources": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/expanding_resources",
+    "clips_children":true
+  },
+  "my_first_blocks": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/my_first_blocks",
+    "clips_children":true
+  },
+  "roofet_forest": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/roofet_forest",
+    "clips_children":true
+  },
+  "the_end": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_end",
+    "clips_children":true
+  },
+  "the_nether": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_nether",
+    "clips_children":true
+  },
+  "the_red_desert": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_red_desert",
+    "clips_children":true
+  },
+  "the_idyll": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_idyll",
+    "clips_children":true
+  },
+  "the_desolate_land": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_desolate_land",
+    "clips_children":true
+  },
+  "the_dungeon": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_dungeon",
+    "clips_children":true
+  },
+  "the_ocean": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_ocean",
+    "clips_children":true
+  },
+  "the_roofet_forest": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_roofet_forest",
+    "clips_children":true
+  },
+  "the_jungle": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_jungle",
+    "clips_children":true
+  },
+  "the_snowy": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/snowy_taiga",
+    "clips_children":true
+  },
+  "the_mushroom": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_mushroom",
+    "clips_children":true
+  },
+  "the_cave": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_cave",
+    "clips_children":true
+  },
+  "the_plains": {
+    "type":"image",
+    "size":["1%c + 160px",
+      "1%c + 45px"],
+    "texture":"textures/ui/the_plains",
+    "clips_children":true
+  },
+  "map": {
+    "type":"image",
+    "size":["1%c + 90px",
+      "1%c + 90px"],
+    "offset":[-10,-10],
+    "texture":"textures/ui/map/oneblock",
+    "clips_children":true,
+    "anchor_from":"bottom_right",
+    "anchor_to":"bottom_right"
+  },
+  "hud_title_text": {
+    "type":"stack_panel",
+    "orientation":"vertical",
+    "controls":[{
+      "title_frame": {
+        "type":"panel",
+        "size":["100%",
+          "100%cm"],
+        "controls":[{
+          "title": {
+            "type":"stack_panel",
+            "size":["100%c",
+              "100%c"],
+            "alpha":1,
+            "controls":[{
+              "ui_achievements23@hud.roofet_forest": {
+                "bindings":[{
+                  "binding_name":"#hud_title_text_string",
+                  "binding_name_override":"#text",
+                  "binding_type":"global"
+                },
+                  {
+                    "binding_type":"view",
+                    "source_property_name":"(#text = 'roofet_forest')",
+                    "target_property_name":"#visible"
+                  }]}},
+              {
+                "ui_achievements22@hud.winner": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'winner')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements21@hud.the_eye": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_eye')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements20@hud.the_portal": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_portal')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements19@hud.hard_mining": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'magnificent_cook')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements18@hud.looking_for_my_ironfish": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'looking_for_my_ironfish')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements17@hud.magnificent_cook": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'magnificent_cook')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements16@hud.the_new_stone_age": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_old_reliable')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements15@hud.the_old_reliable": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_old_reliable')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements14@hud.expanding_resources": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'expanding_resources')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements13@hud.my_first_blocks": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'my_first_blocks')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements12@hud.the_snowy": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_snowy')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements11@hud.the_red_desert": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_red_desert')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements10@hud.the_nether": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_nether')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements9@hud.the_idyll": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_idyll')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements8@hud.the_end": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_end')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_7@hud.the_dungeon": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_dungeon')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_6@hud.the_desolate_land": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_desolate_land')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements5@hud.the_ocean": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_ocean')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements4@hud.the_jungle": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_jungle')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements3@hud.the_mushroom": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_mushroom')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements2@hud.the_cave": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_cave')",
+                      "target_property_name":"#visible"
+                    }]}},
+              {
+                "ui_achievements1@hud.the_plains": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'the_plains')",
+                      "target_property_name":"#visible"
+                    }]}}],
+            "anchor_from":"right_middle",
+            "anchor_to":"right_middle",
+            "anims":["@hud.ui_animation_released"]}}]}},
+      {
+        "subtitle_frame": {
+          "type":"panel",
+          "size":["100%",
+            "100%cm"],
+          "controls":[{
+            "subtitle": {
+              "type":"stack_panel",
+              "size":["100%c",
+                "100%c"],
+              "anchor_from":"center",
+              "anchor_to":"center",
+              "alpha":1,
+              "offset":[0,
+                "0px"],
+              "controls":[{
+      "ui_image2@hud.lucky": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",         "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'lucky')",
+                      "target_property_name":"#visible"
+                    }]},
+       "ui_image1@hud.cut_scene": {
+                  "bindings":[{
+                    "binding_name":"#hud_title_text_string",
+                    "binding_name_override":"#text",
+                    "binding_type":"global"
+                  },
+                    {
+                      "binding_type":"view",
+                      "source_property_name":"(#text = 'cut_scene')",
+                      "target_property_name":"#visible"
+                    }]}
+              }]}}]}}]},
+  "hud_content": {
+    "type":"panel",
+    "$hud_size":["100%",
+      "100%"],
+    "$hud_player_rend_desktop_offset|default":[15,
+      15],
+    "variables":[{
+      "requires":"($is_holographic and not $is_living_room_mode)",
+      "$hud_player_rend_desktop_offset":[100,
+        50]},
+      {
+        "requires":"($compress_hud_width)",
+        "$hud_size":["90%",
+          "100%"]}],
+    "size":"$hud_size",
+    "controls":[{
+      "root_panel@hud.root_panel": {}},
+      {
+        "camera_renderer@camera_renderer": {}},
+      {
+        "map@map": {}}]}}

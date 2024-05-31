@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.beatly_buffer_armor_equip": {
+      "states": {
+        "default": {
+          "on_entry": [
+
+          ],
+          "transitions": [
+            {
+              "beatly_buffer_armor_helmet_set_equip": "query.variant == 2"
+            }
+          ]
+        },
+        "beatly_buffer_armor_helmet_set_equip": {
+          "on_entry": [
+            "/effect @s slowness 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 2"
+            },
+            {
+              "beatly_buffer_armor_helmet_set_equip2": "query.variant == 2"
+            }
+          ]
+        },
+        "beatly_buffer_armor_helmet_set_equip2": {
+          "on_entry": [
+            "/effect @s slowness 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.variant == 2"
+            },
+            {
+              "beatly_buffer_armor_helmet_set_equip": "query.variant == 2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

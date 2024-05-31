@@ -1,0 +1,161 @@
+  {
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.projectile.root": {
+      "initial_state" : "default",
+			"states" : {
+				"default" : {
+          "transitions" : [
+            { "effect1" : "q.variant == 1 && q.is_alive" },
+            { "effect2" : "q.variant == 2 && q.is_alive" },
+            { "effect3" : "q.variant == 3 && q.is_alive" },
+            { "effect4" : "q.variant == 4 && q.is_alive" },
+            { "effect5" : "q.variant == 5 && q.is_alive" },
+            { "effect6" : "q.variant == 6 && q.is_alive" },
+            { "effect7" : "q.variant == 7 && q.is_alive" },
+            { "effect8" : "q.variant == 8 && q.is_alive" },
+            { "effect10" : "q.variant == 10 && q.is_alive" },
+            { "effect11" : "q.variant == 11 && q.is_alive" },
+            { "effect12" : "q.variant == 12 && q.is_alive" },
+            { "effect13" : "q.variant == 13 && q.is_alive" },
+            { "effect14" : "q.variant == 14 && q.is_alive" },
+            { "effect15" : "q.variant == 15 && q.is_alive" },
+            { "effect16" : "q.variant == 16 && q.is_alive" }
+          ]
+        },
+        "effect1": {
+          "particle_effects": [
+            { "effect": "energy_projectile" },
+            { "effect": "energy_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect2": {
+          "particle_effects": [
+            { "effect": "blue_projectile" },
+            { "effect": "blue_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect3": {
+          "particle_effects": [
+            { "effect": "electric_projectile" },
+            { "effect": "electric_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect4": {
+          "particle_effects": [
+            { "effect": "star_projectile" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect5": {
+          "particle_effects": [
+            { "effect": "explosion_projectile" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect6": {
+          "particle_effects": [
+            { "effect": "fire_blast_projectile" },
+            { "effect": "fire_blast_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect7": {
+          "particle_effects": [
+            { "effect": "red_blast_projectile" },
+            { "effect": "red_blast_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect8": {
+          "particle_effects": [
+            { "effect": "circle_projectile" },
+            { "effect": "circle_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect10": {
+          "particle_effects": [
+            { "effect": "circle3_projectile" },
+            { "effect": "circle3_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect11": {
+          "particle_effects": [
+            { "effect": "heat_blast_projectile" },
+            { "effect": "heat_blast_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect12": {
+          "particle_effects": [
+            { "effect": "cartoon_projectile" },
+            { "effect": "cartoon_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect13": {
+          "particle_effects": [
+            { "effect": "purple_projectile" },
+            { "effect": "purple_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect14": {
+          "particle_effects": [
+            { "effect": "tornado_projectile" },
+            { "effect": "tornado_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect15": {
+          "particle_effects": [
+            { "effect": "green_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        },
+        "effect16": {
+          "particle_effects": [
+            { "effect": "light_projectile" },
+            { "effect": "light_trail" }
+          ],
+          "transitions" : [
+            { "default" : "!q.is_alive" }
+          ]
+        }
+			}
+    }
+  }
+}

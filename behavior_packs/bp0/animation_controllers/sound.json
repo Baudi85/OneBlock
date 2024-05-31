@@ -1,0 +1,48 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.sound": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "query.has_rider"
+						}
+					]
+				},
+				"flying": {
+					"on_entry": [
+						"/playsound mob.propeller.sound @p ^ ^ ^3"
+					],
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.colour_change_sound": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"sound": "query.mark_variant == 1"
+						}
+					]
+				},
+				"sound": {
+					"on_entry": [
+						"/playsound kreatik.color @a[r=5] ~ ~ ~",
+						"@s kreatik:sound_reset"
+					],
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

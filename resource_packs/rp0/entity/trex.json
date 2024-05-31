@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "kreatik:trex",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/trex/trex"
+			},
+			"geometry": {
+				"default": "geometry.trex.unsaddled",
+				"saddled": "geometry.trex.saddled"
+			},
+			"animations": {
+				"walking": "animation.trex.walk",
+				"idle": "animation.trex.stand",
+				"sit": "animation.trex.sit",
+				"controller": "controller.animation.main"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"spawn_egg":{
+				"base_color": "#4e4c47",
+				"overlay_color": "#c9b678"
+			},
+			"render_controllers": [
+				"controller.render.main"
+			]
+		}
+	}
+}

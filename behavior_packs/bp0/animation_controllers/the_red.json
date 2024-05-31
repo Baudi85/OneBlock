@@ -1,0 +1,37 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.biome.red_desert" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cooldown_block" : "query.mark_variant == 8"
+						}
+					]
+				},
+				"cooldown_block" : {
+					"transitions" : [
+						{
+							"default" : "1.0"
+						}
+					],
+					"on_entry" : [
+						"/scoreboard objectives add rblocks dummy rblocks",
+						"/scoreboard players add @s rblocks 0",
+						"/execute as @s if block 0 0 0 bedrock if score @s rblocks matches 0 run setblock 0 0 0 sand 1",
+						"/execute as @s unless block 0 0 0 bedrock if score @s rblocks matches 0 run titleraw @s title {\"rawtext\":[{\"text\":\"the_red_desert\"}]}",
+						"/execute as @s unless block 0 0 0 bedrock if score @s rblocks matches 0 run scoreboard players add @s rblocks 1",
+						"/execute as @s if block 0 0 0 air if score @s rblocks matches 0..699 run event entity @e[type=ks:floating_text] despawn",
+						"/execute as @s if block 0 0 0 air if score @s rblocks matches 0..699 run function red_desert",
+						"/execute as @s if block 0 0 0 air if score @s rblocks matches 700 run event entity @s nether",
+						"/execute as @s if block 0 0 0 air if score @s rblocks matches 700 run summon ks:timer 0 1 0",
+						"/execute as @s if block 0 0 0 air if score @s rblocks matches 700 run setblock 0 0 0 bedrock",
+						"/execute as @s if block 0 0 0 bedrock if score @s rblocks matches 700 run scoreboard players set @s rblocks 701"
+					]
+				}
+			}
+		}
+	}
+}

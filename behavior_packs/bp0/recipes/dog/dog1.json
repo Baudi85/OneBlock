@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "crafting:dog1"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            "#E#",
+            " # "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:bone"
+            },
+            "E": {
+                "item": "minecraft:egg"
+            }
+        },
+        "result": {
+            "item": "dog:dog1_spawn_egg",
+            "count": 1
+        }
+    }
+}

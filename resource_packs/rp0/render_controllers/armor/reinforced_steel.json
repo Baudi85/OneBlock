@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.reinforced_steel_armor": {
+      "arrays": {
+        "textures": {
+          "Array.skins":[
+            "Texture.reinforced_steel_armor",
+            "Texture.reinforced_steel_armor_1",
+            "Texture.reinforced_steel_armor_2",
+            "Texture.reinforced_steel_armor_3",
+            "Texture.reinforced_steel_armor_4",
+            "Texture.reinforced_steel_armor_5",
+            "Texture.reinforced_steel_armor_6",
+            "Texture.reinforced_steel_armor_7",
+            "Texture.reinforced_steel_armor_8",
+            "Texture.reinforced_steel_armor_9",
+            "Texture.reinforced_steel_armor_10",
+            "Texture.reinforced_steel_armor_11"
+          ]
+        }
+      },
+      "geometry": "Geometry.reinforced_steel_armor",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

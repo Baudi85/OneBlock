@@ -1,0 +1,77 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.weapon_9.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "@s e:weapon_9.special.stop",
+            "/tag @s remove weapon9special"
+        ],
+          "transitions": [
+            { "attack": "v.attack_time" },
+						{ "use": "q.is_using_item" }
+					]
+        },
+        "attack": {
+          "on_entry": [ "v.timer = q.life_time + 0.2;" ],
+          "transitions": [
+            { "attack2": "v.timer <= q.life_time" }
+          ]
+        },
+        "attack2": {
+          "on_entry": [
+            "/summon ks:trigger_dummy ^^^2.0 e:weapon_9.attack"
+          ],
+          "transitions": [
+            { "default": "1.0" }
+          ]
+        },
+        "use": {
+          "on_entry": [
+            "@s e:weapon_9.special",
+            "/tag @s add weapon9special"
+          ],
+          "transitions": [
+            { "default": "!q.is_using_item" }
+          ],
+          "on_exit": [
+            "@s e:weapon_9.special.stop",
+            "/tag @s remove weapon9special"
+          ]
+        }
+      }
+    },
+    "controller.animation.player.weapon_9.special.tick": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+						{ "execute": "q.property('ks:weapon_9_special') != 0" }
+					]
+        },
+        "execute": {
+          "on_entry": [
+            "/damage @e[type=!player,r=3] 1 suicide",
+            "/execute as @e[type=!player,r=30] at @s facing entity @p[tag=weapon9special] feet run tp @s ^^^1"
+          ],
+          "transitions": [
+            { "default": "q.property('ks:weapon_9_special') == 0" },
+            { "execute2": "q.property('ks:weapon_9_special') != 0" }
+          ]
+        },
+        "execute2": {
+          "on_entry": [
+            "/damage @e[type=!player,r=3] 1 suicide",
+            "/execute as @e[type=!player,r=30] at @s facing entity @p[tag=weapon9special] feet run tp @s ^^^1"
+          ],
+          "transitions": [
+            { "default": "q.property('ks:weapon_9_special') == 0" },
+            { "execute": "q.property('ks:weapon_9_special') != 0" }
+          ]
+        }
+      }
+    }
+  }
+}

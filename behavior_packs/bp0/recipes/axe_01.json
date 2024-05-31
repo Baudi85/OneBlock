@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ks:axe_01"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "CB ",
+      "BAD",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:copper_block"
+      },
+      "C": {
+        "item": "minecraft:iron_block"
+      },
+      "D": {
+        "item": "minecraft:iron_ingot"
+      }
+
+    },
+    "result": {
+      "item": "ks:axe_01",
+      "data": 0,
+      "count": 1
+    }
+  }
+}
